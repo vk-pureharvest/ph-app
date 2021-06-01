@@ -91,7 +91,8 @@ div {
                 <option value="" disabled selected>Select Product Type</option>        
                 <option value="COV">COV</option>
                 <option value="TOV">TOV</option>
-                <option value="Candy">Candy</option>   
+                <option value="Candy">Candy</option>
+                <option value="Cocktail">Candy</option>   
             </select>    
         </td>
         
