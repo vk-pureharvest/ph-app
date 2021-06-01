@@ -88,11 +88,23 @@ div {
         </td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-                <option value="" disabled selected>Select Product Type</option>        
-                <option value="COV">COV</option>
-                <option value="TOV">TOV</option>
-                <option value="Candy">Candy</option>
-                <option value="Cocktail">Candy</option>   
+                <option value="" disabled selected>Select Product Type</option> +
+                <option value="Candy">Candy</option>+
+                <option value="Cocktail">Cocktail</option>+
+                <option value="Candy/Swetela">Candy/Swetela</option>+
+                <option value="Cocktail Brioso">Cocktail Brioso</option>+
+                <option value="Cocktail/Campri">Cocktail/Campri</option>+
+                <option value="COV">COV</option>+
+                <option value="Intense Plum">Intense Plum</option>+
+                <option value="Intense Plum Line 09">Intense Plum Line 09</option>+
+                <option value="Intense Plum Line 10">Intense Plum Line 10</option>+
+                <option value="Pink Fujemaru">Pink Fujemaru</option>+
+                <option value="Pink kavakutchi">Pink kavakutchi</option>+
+                <option value="Pink Rose">Pink Rose</option>+
+                <option value="Strabena">Strabena</option>+
+                <option value="TOV">TOV</option>+
+                <option value="Yoom">Yoom</option>+
+
             </select>    
         </td>
         
@@ -118,11 +130,23 @@ $('thead').on('click', '.addRow', function(){
             '<input type="date" name="date_received[]" class="form-control" id="dob"  placeholder="Enter Date"/>'+
         '</td>'+
         '<td>'+
-            '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
+        '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
                 '<option value="" disabled selected>Select Product Type</option> '+
-                '<option value="TOV">TOV</option>'+
-                '<option value="COV">COV</option>'+
                 '<option value="Candy">Candy</option>'+
+                '<option value="Cocktail">Cocktail</option>'+
+                '<option value="Candy/Swetela">Candy/Swetela</option>'+
+                '<option value="Cocktail Brioso">Cocktail Brioso</option>'+
+                '<option value="Cocktail/Campri">Cocktail/Campri</option>'+
+                '<option value="COV">COV</option>'+
+                '<option value="Intense Plum">Intense Plum</option>'+
+                '<option value="Intense Plum Line 09">Intense Plum Line 09</option>'+
+                '<option value="Intense Plum Line 10">Intense Plum Line 10</option>'+
+                '<option value="Pink Fujemaru">Pink Fujemaru</option>'+
+                '<option value="Pink kavakutchi">Pink kavakutchi</option>'+
+                '<option value="Pink Rose">Pink Rose</option>'+
+                '<option value="Strabena">Strabena</option>'+
+                '<option value="TOV">TOV</option>'+
+                '<option value="Yoom">Yoom</option>'+
             '</select>     '+   
         '</td>'+
         '<td>'+
