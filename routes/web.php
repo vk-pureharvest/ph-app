@@ -30,6 +30,8 @@ Route::resource('users','UsersController');
 Route::resource('complaints','ComplaintsController');
 
 Route::resource('meter_readings','Meter_ReadingsController');
+
+Route::resource('dimensions','DimensionsController');
  
 Route::resource('brixs','BrixesController');
 
