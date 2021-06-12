@@ -64,11 +64,11 @@ class IncidentsController extends Controller
            'addn_people'    =>  $request->get('addn_people'),
            'witnesses'    =>  $request->get('witnesses'),
            'incident_desc'    =>  $request->get(nl2br('incident_desc')),
-           'root_cause'    =>  $request->get('root_cause'),
-           'action_exec'    =>  $request->get('action_exec'),
-           'action_plan'    =>  $request->get('action_plan')
+           'root_cause'    =>  $request->get(nl2br('root_cause')),
+           'action_exec'    =>  $request->get(nl2br('action_exec')),
+           'action_plan'    =>  $request->get(nl2br('action_plan'))
         ]);
-       // return ($request->get('incident_desc'));
+        //return ($request->get(nl2br('incident_desc')));
        $incidents->save();
        return redirect()->route('incidents.create')->with('success', 'Data Added');
     }
