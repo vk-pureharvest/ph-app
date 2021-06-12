@@ -63,7 +63,7 @@ class IncidentsController extends Controller
            'sp_loc'    =>  $request->get('sp_loc'),
            'addn_people'    =>  $request->get('addn_people'),
            'witnesses'    =>  $request->get('witnesses'),
-           'incident_desc'    => $request->get('incident_desc') ),
+           'incident_desc'    => $request->get('incident_desc') ,
            'root_cause'    =>  $request->get('root_cause'),
            'action_exec'    =>  $request->get('action_exec'),
            'action_plan'    =>  $request->get('action_plan')
