@@ -35,6 +35,6 @@ Route::resource('dimensions','DimensionsController');
  
 Route::resource('brixs','BrixesController');
 
-
+Route::resource('incidents','IncidentsController');
 
 Route::get('/home', 'HomeController@index')->name('home');

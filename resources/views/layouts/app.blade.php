@@ -58,6 +58,9 @@
                                         {{ __('Add Fruit Size and Weight') }}
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Report Incident') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
