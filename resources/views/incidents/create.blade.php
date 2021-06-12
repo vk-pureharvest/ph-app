@@ -115,20 +115,20 @@ div {
    </div>
    
  <div>
- <H7> INCIDENT DESCRIPTION INCLUDING EVENTS LEADING TO THE INCIDENT </H7>
+ <div><H7> INCIDENT DESCRIPTION INCLUDING EVENTS LEADING TO THE INCIDENT </H7><div>
     <textarea white-space="pre-wrap" type="text" name="incident_desc" cols="150" rows="4"></textarea>
    </div>
    <div>
- <H7> ROOT CAUSES FOR THE SAFETY INCIDENT </H7>
+   <div><H7> ROOT CAUSES FOR THE SAFETY INCIDENT </H7><div>
     <textarea white-space="pre-wrap" type="text" name="root_cause" cols="150" rows="4"></textarea>
    </div>
    <div>
- <H7>   RESULTING ACTION EXECUTED    </H7>
+   <div><H7>   RESULTING ACTION EXECUTED    </H7><div>
     <textarea white-space="pre-wrap" type="text" name="action_exec" cols="150" rows="4"></textarea>
    </div>
   
    <div>
- <H7> ACTION PLAN TO AVOID SUCH INSTANCES IN FUTURE  </H7>
+   <div><H7> ACTION PLAN TO AVOID SUCH INSTANCES IN FUTURE  </H7><div>
     <textarea white-space="pre-wrap" type="text" name="action_plan" cols="150" rows="4"></textarea>
    </div>
    
