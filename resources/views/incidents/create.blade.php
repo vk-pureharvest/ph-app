@@ -58,7 +58,7 @@ div {
 <div class="row">
  <div class="col-md-12">
   <br />
-  <h3 aling="center">Report Safety Incident</h3>
+  <h3 aling="center">REPORT SAFETY INCIDENT</h3>
   <br />
   @if(count($errors) > 0)
   <div class="alert alert-danger">
@@ -81,12 +81,12 @@ div {
    <div>
   <table class='table borderless'>
    <tr>
-    <td> Reported by: <input type="text" name="reported_by"/></td>
-    <td>Date of Report:<input type="date" name="date_received"  id="dob"/></td>
+    <td> REPORTED BY: <input type="text" name="reported_by"/></td>
+    <td>DATE OF REPORT:<input type="date" name="date_received"  id="dob"/></td>
    </tr>
    <tr>
-    <td> Title: <input type="text" name="title"/></td>
-    <td>Type of incident: <select id="selectCategory" name="type_of_incident" required focus>
+    <td> TITLE: <input type="text" name="title"/></td>
+    <td>TYPE OF INCIDENT: <select id="selectCategory" name="type_of_incident" required focus>
                             <option value="" disabled selected>Select Incident Type</option>        
                             <option value="Near Miss">{{"Near Miss"}}</option>
                             <option value="Minor Injury">{{"Minor Injury"}}</option>
@@ -98,20 +98,20 @@ div {
  <div>
  <table class='table borderless'>
    <tr>
-     <td> Employee Name: <input type="text" name="emp_name"/></td>
-     <td> Employee Title/Role: <input type="text" name="emp_title"/></td>
+     <td> EMPLOYEE NAME: <input type="text" name="emp_name"/></td>
+     <td> EMPLOYEE TITLE/ROLE: <input type="text" name="emp_title"/></td>
    </tr>
    <tr>
-    <td>Location: <input type="text" name="location"/></td>
-    <td>Specific Area of Location: <input type="text" name="sp_loc"/></td>
+    <td>LOCATION: <input type="text" name="location"/></td>
+    <td>SPECIFIC AREA OF LOCATION: <input type="text" name="sp_loc"/></td>
    </tr>
   </table>
  </div>
  <div>
-    Additional Person(s) Involved: <textarea type="text" name="addn_people" cols="100" rows="1"></textarea>
+    ADDITIONAL PERSON(S) INVOLVED: <textarea type="text" name="addn_people" cols="100" rows="1"></textarea>
    </div>
  <div>
-    Witnesses: <textarea type="text" name="witnesses" cols="100" rows="1"></textarea>
+    WITNESSES: <textarea type="text" name="witnesses" cols="100" rows="1"></textarea>
    </div>
    
  <div>
