@@ -45,6 +45,7 @@ class ComplaintsController extends Controller
 
 
         $this->validate($request, [
+            'site_name'      =>   'required',
            'date_received'    =>  'required',
            'customer_name'     =>  'required',
            'complaint_category'     =>  'required',
@@ -52,6 +53,7 @@ class ComplaintsController extends Controller
         ]);
         $complaints = new Complaint([
            'user_id'    =>  $authUser->id,
+           'site_name'    =>  $request->get('site_name'),
            'date_received'    =>  $request->get('date_received'),
            'customer_name'     =>  $request->get('customer_name'),
            'complaint_category'     =>  $request->get('complaint_category'),

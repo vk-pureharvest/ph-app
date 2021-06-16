@@ -40,6 +40,7 @@ div {
   </div>
   <table class="table table-bordered table-striped">
    <tr>
+    <th>Location</th>
     <th>Date</th>
     <th>Customer Name</th>
     <th>Complaint Category</th>
@@ -50,6 +51,7 @@ div {
    </tr>
    @foreach($complaints as $row)
    <tr>
+    <td>{{$row['site_name']}}</td>
     <td>{{$row['date_received']}}</td>
     <td>{{$row['customer_name']}}</td>
     <td>{{$row['complaint_category']}}</td>

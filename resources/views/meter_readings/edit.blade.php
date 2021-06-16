@@ -76,7 +76,13 @@ div {
    {{csrf_field()}}
    <input type="hidden" name="_method" value="PATCH" />
    <div class="form-group">
-    <input type="date" name="date_added" class="form-control" id="dob" value="{{$meter_reading->date_added}}" placeholder="Enter Date" />
+    <select class="form-control" id="site" name="site_name" required focus>
+    <option value="{{$meter_reading->site_name}}" selected="selected">{{$meter_reading->site_name}}</option>    
+    <option value="Nahel">{{"Nahel"}}</option>
+  </select>
+  </div>
+   <div class="form-group">
+    <input type="date" name="date_received" class="form-control" id="dob" value="{{$meter_reading->date_received}}" placeholder="Enter Date" />
    </div>
    <div class="form-group">
    <select class="form-control" id="selectmetric" name="metric" required focus>

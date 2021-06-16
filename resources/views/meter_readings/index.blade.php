@@ -40,6 +40,7 @@ div {
   </div>
   <table class="table table-bordered table-striped">
    <tr>
+    <th>Location</th>
     <th>Date</th>
     <th>Metric</th>
     <th>Reading Type</th>
@@ -49,7 +50,8 @@ div {
    </tr>
    @foreach($meter_reading as $row)
    <tr>
-    <td>{{$row['date_added']}}</td>
+    <td>{{$row['site_name']}}</td>
+    <td>{{$row['date_received']}}</td>
     <td>{{$row['metric']}}</td>
     <td>{{$row['reading_type']}}</td>
     <td>{{$row['value']}}</td>

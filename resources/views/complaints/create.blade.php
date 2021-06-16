@@ -82,18 +82,38 @@ div {
   <form method="post" action="{{url('complaints')}}">
    {{csrf_field()}}
  
- 
+   <div class="form-group w-25">
+   <select class="form-control" id="selectCategory" name="site_name" required focus>
+    <option value="Al Ain" selected>Al Ain</option>        
+    <option value="Nahel">{{"Nahel"}}</option>
+  </select>
+  </div>
     <div class="form-group w-25">
     <input type="date" name="date_received" class="form-control" id="dob"  placeholder="Enter Complaint Date"/>
    </div>
 
    <div class="form-group w-25">  
        <select class="form-control" id="selectCustomer" name="customer_name" required focus>
-    <option value="" disabled selected>Select Customer Name</option>        
-    <option value="Spinneys">{{"Spinneys"}}</option>
-    <option value="Carrefour">{{"Carrefour"}}</option>
-    <option value="Wholesale">{{"Wholesale"}}</option>   
-  </select>
+       <option value="" disabled selected>Select Customer</option>   
+       <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
+      <option value="ANAZSINULABEEDEEN">{{"ANAZSINULABEEDEEN"}}</option>
+      <option value="BARAKAT VEGETABLE AND FRUITS CO.">{{"BARAKAT VEGETABLE AND FRUITS CO."}}</option>
+      <option value="FRESHONTABLE DWC-LLC">{{"FRESHONTABLE DWC-LLC"}}</option>
+      <option value="GHAZI ALHAJERI">{{"GHAZI ALHAJERI"}}</option>
+      <option value="GLOBAL FRESH FRUITS AND VEGETABLES L.L.C">{{"GLOBAL FRESH FRUITS AND VEGETABLES L.L.C"}}</option>
+      <option value="JALEEL FRESH PRODUCE LLC (BRANCH)">{{"JALEEL FRESH PRODUCE LLC (BRANCH)"}}</option>
+      <option value="KIBSONS INTERNATIONAL LLC">{{"KIBSONS INTERNATIONAL LLC"}}</option>
+      <option value="LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC">{{"LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC"}}</option>
+      <option value="MAEN AHMAD HAMADEH IDRIS">{{"MAEN AHMAD HAMADEH IDRIS"}}</option>
+      <option value="MAJID AL FUTTAIM HYPERMARKETS LLC">{{"MAJID AL FUTTAIM HYPERMARKETS LLC"}}</option>
+      <option value="SAMPLE TO PURE HARVEST MANAGEMENT">{{"SAMPLE TO PURE HARVEST MANAGEMENT"}}</option>
+      <option value="SAMPLES TO NEW CUSTOMERS">{{"SAMPLES TO NEW CUSTOMERS"}}</option>
+      <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
+      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
+      <option value="TRANSMED OVERSEAS INCORPORATED S.A.">{{"TRANSMED OVERSEAS INCORPORATED S.A."}}</option>
+      <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
+      <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
+ </select>
   </div>
 
    <div class="form-group w-25">  
@@ -106,15 +126,27 @@ div {
   </select>
   </div>
    <div class="form-group w-25">
-    <input type="text" name="complaint_sub_category" class="form-control" value="If Other enter reason"/>
+    <textarea white-space="pre-wrap" type="text" class="form-control" name="complaint_sub_category" value="If Other enter reason" cols="100" rows="4">If Other enter reason</textarea>
    </div>
    
    <div class="form-group w-25">  
        <select class="form-control" id="selectProduct" name="product_type" required focus>
     <option value="" disabled selected>Select Product Type</option>        
-    <option value="COV">{{"COV"}}</option>
-    <option value="TOV">{{"TOV"}}</option>
-    <option value="Candy">{{"Candy"}}</option>   
+    <option value="Candy">Candy</option>
+    <option value="Cocktail">Cocktail</option>
+    <option value="Candy/Swetela">Candy/Swetela</option>
+    <option value="Cocktail Brioso">Cocktail Brioso</option>
+    <option value="Cocktail/Campri">Cocktail/Campri</option>
+    <option value="COV">COV</option>
+    <option value="Intense Plum">Intense Plum</option>
+    <option value="Intense Plum Line 09">Intense Plum Line 09</option>
+    <option value="Intense Plum Line 10">Intense Plum Line 10</option>
+    <option value="Pink Fujemaru">Pink Fujemaru</option>
+    <option value="Pink kavakutchi">Pink kavakutchi</option>
+    <option value="Pink Rose">Pink Rose</option>
+    <option value="Strabena">Strabena</option>
+    <option value="TOV">TOV</option>
+    <option value="Yoom">Yoom</option>
   </select>
   </div>
 

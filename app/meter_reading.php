@@ -12,7 +12,7 @@ class meter_reading extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id','date_added', 'metric','reading_type','value',
+        'user_id','site_name','date_received', 'metric','reading_type','value',
     ];
 
     function user(){

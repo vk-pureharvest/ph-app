@@ -40,7 +40,8 @@ class Meter_ReadingsController extends Controller
         $authUser = auth()->user();
 
         $this->validate($request, [
-           'date_added'    =>  'required',
+            'site_name'      =>   'required',
+           'date_received'    =>  'required',
            'metric'     =>  'required',
            'reading_type'     =>  'required',
            'value'     =>  'required'
@@ -48,7 +49,8 @@ class Meter_ReadingsController extends Controller
 
         $meter_readings = new meter_reading([
            'user_id'    =>  $authUser->id,
-           'date_added'    =>  $request->get('date_added'),
+           'site_name'      =>    $request->get('site_name'),
+           'date_received'    =>  $request->get('date_received'),
            'metric'     =>  $request->get('metric'),
            'reading_type'     =>  $request->get('reading_type'),
            'value'     =>  $request->get('value')
@@ -90,14 +92,16 @@ class Meter_ReadingsController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'date_added'    =>  'required',
+            'site_name'      =>   'required',
+            'date_received'    =>  'required',
             'metric'     =>  'required',
             'reading_type'     =>  'required',
             'value'     =>  'required'
         ]);
 
         $meter_reading = meter_reading::find($id);
-        $meter_reading->date_added = $request->get('date_added');
+        $meter_reading->site_name =$request->get('site_name');
+        $meter_reading->date_received = $request->get('date_received');
         $meter_reading->metric = $request->get('metric');
         $meter_reading->reading_type = $request->get('reading_type');
         $meter_reading->value = $request->get('value');

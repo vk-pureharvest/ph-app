@@ -82,9 +82,14 @@ div {
   <form method="post" action="{{url('meter_readings')}}">
    {{csrf_field()}}
  
- 
+   <div class="form-group w-25">
+   <select class="form-control" id="selectCategory" name="site_name" required focus>
+    <option value="Al Ain" selected>Al Ain</option>        
+    <option value="Nahel">{{"Nahel"}}</option>
+  </select>
+  </div>
     <div class="form-group w-25">
-    <input type="date" name="date_added" class="form-control" id="dob"  placeholder="Enter Readings Date"/>
+    <input type="date" name="date_received" class="form-control" id="dob"  placeholder="Enter Readings Date"/>
    </div>
 
    <div class="form-group w-25">  

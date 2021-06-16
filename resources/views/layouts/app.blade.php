@@ -46,18 +46,22 @@
                                         {{ __('Add Customer Complaint') }}
                                     </a>
                                     
-                                    <a class="dropdown-item" href="{{ route('brixs.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add BRIX') }}
-                                    </a>
 
                                     <a class="dropdown-item" href="{{ route('meter_readings.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Climate Metrics') }}
                                     </a>
-
+                                     <!-- Right Side Of Navbar 
                                     <a class="dropdown-item" href="{{ route('dimensions.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Fruit Size and Weight') }}
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('brixs.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add BRIX') }}
+                                    </a>
+                                    -->
+                                    <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Quality Measures') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Report Incident') }}
                                     </a>

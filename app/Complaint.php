@@ -14,7 +14,7 @@ class Complaint extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id','date_received', 'customer_name','complaint_category','complaint_sub_category','product_type',
+        'user_id','site_name','date_received', 'customer_name','complaint_category','complaint_sub_category','product_type',
     ];
 
     function user(){

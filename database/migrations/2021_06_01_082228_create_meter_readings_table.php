@@ -16,7 +16,8 @@ class CreateMeterReadingsTable extends Migration
         Schema::create('meter_readings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
-            $table->date('date_added'); 
+            $table->string('site_name');
+            $table->date('date_received'); 
             $table->string('metric');
             $table->string('reading_type');
             $table->decimal('value', 10, 2);
