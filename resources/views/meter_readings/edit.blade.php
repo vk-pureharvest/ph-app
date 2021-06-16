@@ -78,6 +78,7 @@ div {
    <div class="form-group">
     <select class="form-control" id="site" name="site_name" required focus>
     <option value="{{$meter_reading->site_name}}" selected="selected">{{$meter_reading->site_name}}</option>    
+    <option value="Al Ain">{{"Al Ain"}}</option>   
     <option value="Nahel">{{"Nahel"}}</option>
   </select>
   </div>

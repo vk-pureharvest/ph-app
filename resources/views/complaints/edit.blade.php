@@ -77,7 +77,8 @@ div {
    <input type="hidden" name="_method" value="PATCH" />
    <div class="form-group">
     <select class="form-control" id="site" name="site_name" required focus>
-    <option value="{{$complaint->site_name}}" selected="selected">{{$complaint->site_name}}</option>    
+    <option value="{{$complaint->site_name}}" selected="selected">{{$complaint->site_name}}</option>   
+    <option value="Al Ain">{{"Al Ain"}}</option>   
     <option value="Nahel">{{"Nahel"}}</option>
   </select>
   </div>
