@@ -19,14 +19,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+ <!-- Styles -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- new additions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css" /> 
-    
     
      <!-- new additions -->
 
@@ -56,9 +52,6 @@ div {
 
 <div class="row">
  <div class="col-md-12">
-  <br />
-  <h3 aling="center">Add Meter Readings</h3>
-  <br />
   @if(count($errors) > 0)
   <div class="alert alert-danger">
    <ul>
@@ -73,6 +66,9 @@ div {
    <p>{{ \Session::get('success') }}</p>
   </div>
   @endif
+  <br />
+  <div><H4 >  Add Meter Readings </H4></div>
+  <br />
   <div align="middle">
    <a href="{{route('meter_readings.index')}}" class="btn btn-primary">View Meter Readings</a>
    <br />
@@ -82,34 +78,44 @@ div {
   <form method="post" action="{{url('meter_readings')}}">
    {{csrf_field()}}
  
-   <div class="form-group w-25">
-   <select class="form-control" id="selectCategory" name="site_name" required focus>
-    <option value="Al Ain" selected>Al Ain</option>        
-    <option value="Nahel">{{"Nahel"}}</option>
-  </select>
-  </div>
-    <div class="form-group w-25">
-    <input type="date" name="date_received" class="form-control" id="dob"  placeholder="Enter Readings Date"/>
-   </div>
 
-   <div class="form-group w-25">  
-       <select class="form-control" id="selectmetric" name="metric" required focus>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Site Name</label>
+      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
+        <option value="Al Ain" selected>Al Ain</option>        
+        <option value="Nahel">{{"Nahel"}}</option>
+      </select>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Date</label>
+    <input class="form-control w-25" type="date" name="date_received" class="form-control" id="dob"  placeholder="Enter Complaint Date"/>
+  </div>
+  
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Metric</label>
+    <select class="form-control w-25" id="selectmetric" name="metric" required focus>
     <option value="" disabled selected>Select Metric</option>        
     <option value="CO2">{{"CO2"}}</option>
     <option value="Water">{{"Water"}}</option>  
   </select>
   </div>
-
-   <div class="form-group w-25">  
-       <select class="form-control" id="selectreadingtype" name="reading_type" required focus>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Refill/Reading</label>
+    <select class="form-control w-25" id="selectreadingtype" name="reading_type" required focus>
     <option value="" disabled selected>Select Reading Type</option>        
     <option value="Refill">{{"Refill"}}</option>
     <option value="Meter reading">{{"Meter reading"}}</option>
   </select>
   </div>
-   <div class="form-group w-25">
-    <input type="decimal" name="value" class="form-control" placeholder="Enter Value"/>
-   </div>
+
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Value</label>
+    <input type="decimal" name="value" class="form-control w-25" placeholder="Enter Value"/>
+  </div>
    
    <div class="form-group w-25">
     <input type="submit" class="btn btn-primary" />

@@ -21,17 +21,18 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- new additions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css" /> 
-    
     
      <!-- new additions -->
 
 </head>
 <style>
+.borderless td, .borderless th {
+    border: none;
+}
+
 div {
   padding-right: 30px;
   padding-left: 40px;
@@ -57,9 +58,6 @@ div {
 
 <div class="row">
  <div class="col-md-12">
-  <br />
-  <h3 aling="center">REPORT SAFETY INCIDENT</h3>
-  <br />
   @if(count($errors) > 0)
   <div class="alert alert-danger">
    <ul>
@@ -78,60 +76,78 @@ div {
   <form method="post" action="{{url('incidents')}}">
    {{csrf_field()}}
  
-   <div>
-  <table class='table borderless'>
-   <tr>
-    <td> REPORTED BY: <input type="text" name="reported_by"/></td>
-    <td>DATE OF REPORT:<input type="date" name="date_received"  id="dob"/></td>
-   </tr>
-   <tr>
-    <td> TITLE: <input type="text" name="title"/></td>
-    <td>TYPE OF INCIDENT: <select id="selectCategory" name="type_of_incident" required focus>
+   <div><H4 >  Report Safety Incident </H4></div>
+  <br />
+  
+     <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Reported by</label>
+      <input class="form-control w-25" type="text"  name="reported_by" class="form-control"/>
+      
+      <label class="col-sm-2 col-form-label">Date of Report</label>
+      <input class="form-control w-25" type="date"  name="date_received"  id="dob" class="form-control"/>
+      </div>
+
+      
+     <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Title</label>
+      <input class="form-control w-25" type="text" name="title"/>
+
+      <label class="col-sm-2 col-form-label">Type of Incident:</label>
+      <select class="form-control w-25" id="selectCategory" name="type_of_incident" required focus>
                             <option value="" disabled selected>Select Incident Type</option>        
                             <option value="Near Miss">{{"Near Miss"}}</option>
                             <option value="Minor Injury">{{"Minor Injury"}}</option>
-                            <option value="Significant Injury">{{"Significant Injury"}}</option></td>
-   </tr>
-  </table>
- </div>
-           <H4 >         EMPLOYEE INCIDENT INFORMATION </H4>
- <div>
- <table class='table borderless'>
-   <tr>
-     <td> EMPLOYEE NAME: <input type="text" name="emp_name"/></td>
-     <td> EMPLOYEE TITLE/ROLE: <input type="text" name="emp_title"/></td>
-   </tr>
-   <tr>
-    <td>LOCATION: <input type="text" name="location"/></td>
-    <td>SPECIFIC AREA OF LOCATION: <input type="text" name="sp_loc"/></td>
-   </tr>
-  </table>
- </div>
- <div>
-    ADDITIONAL PERSON(S) INVOLVED: <textarea type="text" name="addn_people" cols="100" rows="1"></textarea>
-   </div>
- <div>
-    WITNESSES: <textarea type="text" name="witnesses" cols="100" rows="1"></textarea>
-   </div>
-   
- <div>
- <H7> INCIDENT DESCRIPTION INCLUDING EVENTS LEADING TO THE INCIDENT </H7>
-    <textarea white-space="pre-wrap" type="text" name="incident_desc" cols="150" rows="4"></textarea>
-   </div>
-   <div>
- <H7> ROOT CAUSES FOR THE SAFETY INCIDENT </H7>
-    <textarea white-space="pre-wrap" type="text" name="root_cause" cols="150" rows="4"></textarea>
-   </div>
-   <div>
- <H7>   RESULTING ACTION EXECUTED    </H7>
-    <textarea white-space="pre-wrap" type="text" name="action_exec" cols="150" rows="4"></textarea>
-   </div>
-  
-   <div>
- <H7> ACTION PLAN TO AVOID SUCH INSTANCES IN FUTURE  </H7>
-    <textarea white-space="pre-wrap" type="text" name="action_plan" cols="150" rows="4"></textarea>
-   </div>
-   
+                            <option value="Significant Injury">{{"Significant Injury"}}</option>
+                            </select>
+      </div>
+  <br />
+      <div><H4 > Employee Incident Information</H4></div>
+  <br />
+
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Employee Name</label>
+      <input class="form-control w-25" type="text"  name="emp_name" class="form-control"/>
+      
+      <label class="col-sm-2 col-form-label">Employee Title/Role</label>
+      <input class="form-control w-25" type="text"  name="emp_title" class="form-control"/>
+      </div>
+
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Location</label>
+      <input class="form-control w-25" type="text"  name="location" class="form-control"/>
+      
+      <label class="col-sm-2 col-form-label">Specific Area of Location</label>
+      <input class="form-control w-25" type="text"  name="sp_loc" class="form-control"/>
+      </div>
+
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Additional Person(s) Involved</label>
+      <textarea class="form-control w-75" type="text" name="addn_people" cols="100" rows="1"></textarea>
+      </div>
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Witnesses</label>
+      <textarea class="form-control w-75" type="text" name="addn_people" cols="100" rows="1"></textarea>
+      </div>
+
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Incident Description Including Events Leading to the Incident</label>
+      <textarea class="form-control w-75" type="text" name="incident_desc" cols="100" rows="4"></textarea>
+      </div>
+      
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Root Causes for the Safety Incident</label>
+      <textarea class="form-control w-75" type="text" name="root_cause" cols="100" rows="4"></textarea>
+      </div>
+      
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Resulting Action Executed</label>
+      <textarea class="form-control w-75" type="text" name="action_exec" cols="100" rows="4"></textarea>
+      </div>
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Action Plan to Avoid such Instances in Future</label>
+      <textarea class="form-control w-75" type="text" name="action_exec" cols="100" rows="4"></textarea>
+      </div>
+      
    <div class="form-group w-25">
     <input type="submit" class="btn btn-primary" />
    </div>  
