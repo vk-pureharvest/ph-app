@@ -31,6 +31,8 @@ Route::resource('complaints','ComplaintsController');
 
 Route::resource('fruit_measures','FruitMeasuresController');
 
+Route::resource('productions','ProductionsController');
+
 Route::resource('meter_readings','Meter_ReadingsController');
 
 Route::resource('dimensions','DimensionsController');

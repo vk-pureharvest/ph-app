@@ -16,7 +16,7 @@
 <style>
 div {
   padding-right: 30px;
-  padding-left: 80px;
+  padding-left: 30px;
 }
 </style>
 @endsection

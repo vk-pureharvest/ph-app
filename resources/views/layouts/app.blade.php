@@ -59,6 +59,9 @@
                                         {{ __('Add BRIX') }}
                                     </a>
                                     -->
+                                    <a class="dropdown-item" href="{{ route('productions.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Hourly Production') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Quality Measures') }}
                                     </a>

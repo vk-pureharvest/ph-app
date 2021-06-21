@@ -20,12 +20,9 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- new additions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     
     
-     <!-- new additions -->
-
 </head>
 <style>
 div {
@@ -151,9 +148,9 @@ div {
     <option value="Yoom">Yoom</option>
   </select>
   </div>
-  
+  <br />
    <div class="form-group w-25">
-    <input type="submit" class="btn btn-primary" />
+    <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" />
    </div>
   </form>
  </div>

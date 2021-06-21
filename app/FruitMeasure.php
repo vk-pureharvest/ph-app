@@ -12,7 +12,7 @@ class FruitMeasure extends Model
     * @var array
     */
    protected $fillable = [
-       'user_id','site_name','date_received', 'row_num','product_type','BRIX','color','weight','length','width',
+       'user_id','site_name','date_received', 'row_num','product_type','BRIX','color_L','color_A','color_B','weight','length','width',
    ];
 
    function user(){

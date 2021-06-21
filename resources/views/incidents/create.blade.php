@@ -129,6 +129,9 @@ div {
       <textarea class="form-control w-75" type="text" name="addn_people" cols="100" rows="1"></textarea>
       </div>
 
+      <br />
+      <div><H4 > Incident Details</H4></div>
+        <br />
       <div class="form-group row">
       <label class="col-sm-2 col-form-label">Incident Description Including Events Leading to the Incident</label>
       <textarea class="form-control w-75" type="text" name="incident_desc" cols="100" rows="4"></textarea>
@@ -147,9 +150,9 @@ div {
       <label class="col-sm-2 col-form-label">Action Plan to Avoid such Instances in Future</label>
       <textarea class="form-control w-75" type="text" name="action_exec" cols="100" rows="4"></textarea>
       </div>
-      
+      <br />
    <div class="form-group w-25">
-    <input type="submit" class="btn btn-primary" />
+    <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" />
    </div>  
   </form>
  </div>

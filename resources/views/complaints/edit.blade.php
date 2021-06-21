@@ -4,7 +4,6 @@
 @section('header')
 
 <head>
-
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,23 +17,16 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
+    
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- new additions -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css" /> 
     
-    
-     <!-- new additions -->
      
 <style>
 div {
   padding-right: 30px;
-  padding-left: 80px;
+  padding-left: 30px;
 }
 </style>
 </head>
@@ -60,9 +52,6 @@ div {
 
 <div class="row">
  <div class="col-md-12">
-  <br />
-  <h3>Edit Complaint</h3>
-  <br />
   @if(count($errors) > 0)
 
   <div class="alert alert-danger">
@@ -74,19 +63,29 @@ div {
   @endif
   <form method="post" action="{{action('ComplaintsController@update', $id)}}">
    {{csrf_field()}}
+   
+
    <input type="hidden" name="_method" value="PATCH" />
-   <div class="form-group">
-    <select class="form-control" id="site" name="site_name" required focus>
+   
+  <br />
+  <h3>Edit Complaint</h3>
+  <br />
+
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Site Name</label>
+    <select class="form-control w-25" id="site" name="site_name" required focus>
     <option value="{{$complaint->site_name}}" selected="selected">{{$complaint->site_name}}</option>   
     <option value="Al Ain">{{"Al Ain"}}</option>   
     <option value="Nahel">{{"Nahel"}}</option>
   </select>
   </div>
-   <div class="form-group">
-    <input type="date" name="date_received" class="form-control" id="dob" value="{{$complaint->date_received}}" placeholder="Enter Date" />
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Date Added</label>
+    <input class="form-control w-25" type="date" name="date_received" class="form-control" id="dob" value="{{$complaint->date_received}}" placeholder="Enter Date" />
    </div>
-   <div class="form-group">
-    <select class="form-control" id="selectCustomer" name="customer_name" required focus>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Customer Name</label>
+    <select class="form-control w-25" id="selectCustomer" name="customer_name" required focus>
     <option value="{{$complaint->customer_name}}" selected="selected">{{$complaint->customer_name}}</option>        
     <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
       <option value="ANAZSINULABEEDEEN">{{"ANAZSINULABEEDEEN"}}</option>
@@ -108,8 +107,9 @@ div {
       <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
    </select>   
    </div>
-   <div class="form-group">
-    <select class="form-control" id="selectCategory" name="complaint_category" required focus>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Complaint Category</label>
+    <select class="form-control w-25" id="selectCategory" name="complaint_category" required focus>
     <option value="{{$complaint->complaint_category}}" selected="selected">{{$complaint->complaint_category}}</option>        
     <option value="Quality">{{"Quality"}}</option>
     <option value="Quantity">{{"Quantity"}}</option>
@@ -118,13 +118,14 @@ div {
   </select>
 
    </div>
-   <div class="form-group">
-    <textarea type="text" name="complaint_sub_category" class="form-control" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Additional Details</label>
+    <textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
     {{$complaint->complaint_sub_category}}</textarea>
    </div>
-   <div class="form-group">
-
-   <select class="form-control" id="selectProduct" name="product_type" required focus>
+   <div class="form-group row">
+   <label class="col-sm-2 col-form-label">Product Type</label>
+   <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
     <option value="{{$complaint->product_type}}" selected="selected">{{$complaint->product_type}}</option>        
     <option value="Candy">Candy</option>
     <option value="Cocktail">Cocktail</option>
@@ -143,8 +144,9 @@ div {
     <option value="Yoom">Yoom</option>
   </select>
   </div>
+  <br />
    <div class="form-group">
-    <input type="submit" class="btn btn-primary" value="Edit" />
+    <input style="position: relative; left: 250px"  type="submit" class="btn btn-primary" value="Edit" />
    </div>
   </form>
  </div>

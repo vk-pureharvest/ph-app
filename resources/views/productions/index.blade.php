@@ -4,6 +4,7 @@
 @section('header')
 
 <head>
+
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +20,15 @@ div {
   padding-left: 30px;
 }
 </style>
+
 @endsection
 
 @section('content')
 
-<div class="row">
+<div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Complaints Data</h3>
+  <h3 align="center">Quality Measures</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
@@ -34,32 +36,36 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('complaints.create')}}" class="btn btn-primary">Add Complaint</a>
+   <a href="{{route('productions.create')}}" class="btn btn-primary">Add Hourly Production</a>
    <br />
    <br />
   </div>
   <table class="table table-bordered table-striped">
    <tr>
-    <th>Location</th>
+    <th>Site</th>
     <th>Date</th>
-    <th>Customer Name</th>
-    <th>Complaint Category</th>
-    <th>Complaint Sub Category</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <th>Workstation</th>
+    <th>Number of People</th>
+    <th>Production (boxes)</th>
     <th>Product Type</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
-   @foreach($complaints as $row)
+   @foreach($productions as $row)
    <tr>
     <td>{{$row['site_name']}}</td>
-    <td>{{$row['date_received']}}</td>
-    <td>{{$row['customer_name']}}</td>
-    <td>{{$row['complaint_category']}}</td>
-    <td>{{$row['complaint_sub_category']}}</td>
+    <td>{{$row['date_added']}}</td>
+    <td>{{$row['start_time']}}</td>
+    <td>{{$row['end_time']}}</td>
+    <td>{{$row['workstation']}}</td>
+    <td>{{$row['ppl_num']}}</td>
+    <td>{{$row['prod_boxes']}}</td>
     <td>{{$row['product_type']}}</td>
-    <td><a href="{{action('ComplaintsController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+    <td><a href="{{action('ProductionsController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-     <form method="post" class="delete_form" action="{{action('ComplaintsController@destroy', $row['id'])}}">
+     <form method="post" class="delete_form" action="{{action('ProductionsController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
       <button type="submit" class="btn btn-danger">Delete</button>

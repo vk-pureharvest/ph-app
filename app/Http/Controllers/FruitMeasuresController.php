@@ -15,7 +15,8 @@ class FruitMeasuresController extends Controller
      */
     public function index()
     {
-        //
+        $fruit_measures = FruitMeasure::all()->sortBy('id')->reverse()->take(10)->toArray();
+        return view('fruit_measures.index',compact('fruit_measures'));
     }
 
     /**
@@ -43,28 +44,26 @@ class FruitMeasuresController extends Controller
         $this->validate($request, [
             'site_name'    =>  'required',
             'date_received'    =>  'required',
-            'row_num'     =>  'required',
-            'product_type'     =>  'required',
-            'BRIX'     =>  'required',
-            'color'     =>  'required',
-            'weight'     =>  'required',
-            'length'     =>  'required',
-            'width'     =>  'required'
+            'row_num'     =>  'required'
          ]);
 
-         $fruit_measures = new FruitMeasure([
-            'user_id'    =>  $authUser->id,
-            'site_name'    =>  $request->get('site_name'),
-            'date_received'     =>  $request->get('date_received'),
-            'row_num'     =>  $request->get('row_num'),
-            'product_type'     =>  $request->get('product_type'),
-            'BRIX'     =>  $request->get('BRIX'),
-            'color'     =>  $request->get('color'),
-            'weight'     =>  $request->get('weight'),
-            'length'     =>  $request->get('length'),
-            'width'     =>  $request->get('width')
-         ]);
-        $fruit_measures->save();
+         foreach($request->product_type as $key=>$product_type){
+            $data = new FruitMeasure();
+            $data->user_id = $authUser->id;
+            $data->site_name = $request->get('site_name');
+            $data->date_received = $request->get('date_received');
+            $data->row_num = $request->get('row_num');
+            $data->product_type=$request->product_type[$key];
+            $data->BRIX=$request->BRIX[$key];
+            $data->color_L=$request->color_L[$key];
+            $data->color_A=$request->color_A[$key];
+            $data->color_B=$request->color_B[$key];
+            $data->weight=$request->weight[$key];
+            $data->length=$request->length[$key];
+            $data->width=$request->width[$key];
+            
+            $data->save();
+       }
        return redirect()->route('fruit_measures.create')->with('success', 'Data Added');
     }
 
@@ -87,7 +86,8 @@ class FruitMeasuresController extends Controller
      */
     public function edit($id)
     {
-        //
+        $fruit_measures = FruitMeasure::find($id);
+        return view('fruit_measures.edit', compact('fruit_measures', 'id'));
     }
 
     /**
@@ -99,7 +99,34 @@ class FruitMeasuresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'site_name'    =>  'required',
+            'date_received'     =>  'required',
+            'row_num'     =>  'required',
+            'product_type'     =>  'required',
+            'BRIX'     =>  'required',
+            'color_L'     =>  'required',
+            'color_A'     =>  'required',
+            'color_B'     =>  'required',
+            'weight'     =>  'required',
+            'length'     =>  'required',
+            'width'     =>  'required'
+         ]);
+
+        $fruit_measures = FruitMeasure::find($id);
+        $fruit_measures->site_name = $request->get('site_name');
+        $fruit_measures->date_received = $request->get('date_received');
+        $fruit_measures->row_num = $request->get('row_num');
+        $fruit_measures->product_type = $request->get('product_type');
+        $fruit_measures->BRIX = $request->get('BRIX');
+        $fruit_measures->color_L = $request->get('color_L');
+        $fruit_measures->color_A = $request->get('color_A');
+        $fruit_measures->color_B = $request->get('color_B');
+        $fruit_measures->weight = $request->get('weight');
+        $fruit_measures->length = $request->get('length');
+        $fruit_measures->width = $request->get('width');
+        $fruit_measures->save();
+        return redirect()->route('fruit_measures.index')->with('success', 'Data Updated');
     }
 
     /**
@@ -110,6 +137,8 @@ class FruitMeasuresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $fruit_measures = FruitMeasure::find($id);
+        $fruit_measures->delete();
+        return redirect()->route('fruit_measures.index')->with('success', 'Data Deleted');
     }
 }

@@ -29,7 +29,7 @@
 <style>
 div {
   padding-right: 30px;
-  padding-left: 80px;
+  padding-left: 30px;
 }
 </style>
 
@@ -40,6 +40,9 @@ div {
 
 <div class="row">
  <div class="col-md-12">
+  <br />
+  <h3>Edit Size data</h3>
+  <br />
   @if(count($errors) > 0)
 
   <div class="alert alert-danger">
@@ -49,20 +52,50 @@ div {
          @endforeach
          </ul>
   @endif
-  
-  <form method="post" action="{{action('DimensionsController@update', $id)}}">
+  <form method="post" action="{{action('ProductionsController@update', $id)}}">
    {{csrf_field()}}
    <input type="hidden" name="_method" value="PATCH" />
-   
+
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Site Name</label>
+      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
+      <option value="{{$productions->site_name}}" selected="selected">{{$productions->site_name}}</option>
+        <option value="Al Ain" selected>Al Ain</option>        
+        <option value="Nahel">{{"Nahel"}}</option>
+      </select>
+  </div>
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Date Added</label>
-      <input class="form-control w-25" type="date" name="date_added" class="form-control" id="dob" value="{{$dimensions->date_added}}" placeholder="Enter Date" />
+      <input class="form-control w-25"  type="date" name="date_added" class="form-control" id="dob" value="{{$productions->date_added}}"/>
+  </div>
+
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Start Time</label>
+    <input class="form-control w-25" type="time" name="start_time" class="form-control" value="{{$productions->start_time}}" placeholder="Enter Date" />
    </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">End Time</label>
+    <input class="form-control w-25" type="time" name="end_time" class="form-control" value="{{$productions->end_time}}" placeholder="Enter Date" />
+   </div>
+   
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Workstation</label>
+    <input class="form-control w-25" type="decimal" name="workstation" class="form-control" value="{{$productions->workstation}}" placeholder="Enter BRIX" />
+   </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Number of people</label>
+    <input class="form-control w-25" type="decimal" name="ppl_num" class="form-control" value="{{$productions->ppl_num}}" placeholder="Enter Color L" />
+   </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Production (boxes)</label>
+    <input class="form-control w-25" type="decimal" name="prod_boxes" class="form-control" value="{{$productions->prod_boxes}}" placeholder="Enter Color A" />
+   </div>
+
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
-                <option value="{{$dimensions->product_type}}" selected="selected">{{$dimensions->product_type}}</option>  
+                <option value="{{$productions->product_type}}" selected="selected">{{$productions->product_type}}</option>  
                 <option value="Candy">Candy</option>
                 <option value="Cocktail">Cocktail</option>
                 <option value="COV">COV</option>
@@ -77,18 +110,10 @@ div {
             </select>
 
    </div>
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Length</label>
-    <input type="decimal" name="length" class="form-control" value="{{$dimensions->length}}" placeholder="Enter Length" />
-   </div>
+   
+   <br />
    <div class="form-group">
-    <input type="decimal" name="width" class="form-control" value="{{$dimensions->width}}" placeholder="Enter Width" />
-   </div>
-   <div class="form-group">
-    <input type="decimal" name="weight" class="form-control" value="{{$dimensions->weight}}" placeholder="Enter Weight" />
-   </div>
-   <div class="form-group">
-    <input type="submit" class="btn btn-primary" value="Edit" />
+    <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />
    </div>
   </form>
  </div>

@@ -116,9 +116,9 @@ div {
     <label class="col-sm-2 col-form-label">Value</label>
     <input type="decimal" name="value" class="form-control w-25" placeholder="Enter Value"/>
   </div>
-   
+   <br />
    <div class="form-group w-25">
-    <input type="submit" class="btn btn-primary" />
+    <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" />
    </div>
   </form>
  </div>

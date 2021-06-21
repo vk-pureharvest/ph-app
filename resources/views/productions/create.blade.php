@@ -53,13 +53,13 @@ div {
   @endif
   
 
-  <form method="post" action="{{url('fruit_measures')}}">
+  <form method="post" action="{{url('productions')}}">
    {{csrf_field()}}
    
-   <div><H4 >  Add Quality Measures </H4></div>
+   <div><H4 >  Add Hourly Production </H4></div>
 
    <div align="middle">
-   <a href="{{route('fruit_measures.index')}}" class="btn btn-primary">View Quality Measures</a>
+   <a href="{{route('productions.index')}}" class="btn btn-primary">View Hourly Production</a>
    <br />
    <br />
    <br />
@@ -75,32 +75,42 @@ div {
 
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Date</label>
-    <input class="form-control w-25" type="date" name="date_received" class="form-control" id="dob"  placeholder="Enter Date"/>
+    <input class="form-control w-25" type="date" name="date_added" class="form-control" id="dob"  placeholder="Enter Date"/>
   </div>
 
   <div style="position: relative; left: 50px" class="form-group row">
-    <label class="col-sm-2 col-form-label">Row number</label>
-    <input class="form-control w-25" type="text" name="row_num" class="form-control"  placeholder="Enter Row number"/>
+    <label class="col-sm-2 col-form-label">Start Time</label>
+    <input class="form-control w-25" type="time" name="start_time" class="form-control" placeholder="Enter Start Time"/>
+  </div>
+
+  <div style="position: relative; left: 50px" class="form-group row">
+    <label class="col-sm-2 col-form-label">End Time</label>
+    <input class="form-control w-25" type="time" name="end_time" class="form-control"  placeholder="Enter End Time"/>
   </div>
   <br />
-
   <div class="form-group row">
   <table class="table">
     <thead>
       <tr>
-        <th>Product Type</th>
-        <th>BRIX</th>
-        <th>Color (L)</th>
-        <th>Color (A)</th>
-        <th>Color (B)</th>
-        <th>Weight (gm)</th>
-        <th>Length (mm)</th>
-        <th>Width (mm)</th>
+        <th>Workstation</th>
+        <th>Number of people</th>
+        <th>Production (Boxes)</th>
+        <th>Production Type</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
     <tbody>
       <tr>
+      <td><select type="text" name="workstation[]" class="form-control" placeholder="Enter Workstation" required focus>
+      <option value="" disabled selected>Select Workstation</option>          
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+      </td>
+      <td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>
+      <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
         <option value="" disabled selected>Product Type</option>          
@@ -117,13 +127,6 @@ div {
         <option value="Yoom">Yoom</option>
         </select>  
         </td>
-        <td><input type="decimal" name="BRIX[]" class="form-control" placeholder="Enter BRIX" /></td>
-        <td><input type="decimal" name="color_L[]" class="form-control" placeholder="Enter Color (L)" /></td>
-        <td><input type="decimal" name="color_A[]" class="form-control" placeholder="Enter Color (A)" /></td>
-        <td><input type="decimal" name="color_B[]" class="form-control" placeholder="Enter Color (B)" /></td>
-        <td><input type="decimal" name="weight[]" class="form-control" placeholder="Enter Weight" /></td>
-        <td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>
-        <td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
       
@@ -143,9 +146,19 @@ div {
   <script>
 $('thead').on('click', '.addRow', function(){
     var tr='<tr>'+
+      '<td><select type="text" name="workstation[]" class="form-control" placeholder="Enter Workstation" required focus>'+
+      '<option value="" disabled selected>Select Workstation</option>'+
+        '<option value="A">A</option>'+
+        '<option value="B">B</option>'+
+        '<option value="C">C</option>'+
+        '<option value="D">D</option>'+
+        '<option value="E">E</option>'+
+      '</td>'+
+      '<td><input type="integer" name="num_ppl[]" class="form-control" placeholder="Enter Number of people" /></td>'+
+      '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
       '<td>'+
         '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
-        '<option value="" disabled selected>Product Type</option>          '+
+        '<option value="" disabled selected>Product Type</option>'+
         '<option value="Candy">Candy</option>'+
         '<option value="Cocktail">Cocktail</option>'+
         '<option value="COV">COV</option>'+
@@ -159,13 +172,6 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Yoom">Yoom</option>'+
         '</select>  '+
         '</td>'+
-        '<td><input type="decimal" name="BRIX[]" class="form-control" placeholder="Enter BRIX" /></td>'+
-        '<td><input type="decimal" name="color_L[]" class="form-control" placeholder="Enter Color (L)" /></td>'+
-        '<td><input type="decimal" name="color_A[]" class="form-control" placeholder="Enter Color (A)" /></td>'+
-        '<td><input type="decimal" name="color_B[]" class="form-control" placeholder="Enter Color (B)" /></td>'+
-        '<td><input type="decimal" name="weight[]" class="form-control" placeholder="Enter Weight" /></td>'+
-        '<td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>'+
-        '<td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 
