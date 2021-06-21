@@ -126,7 +126,7 @@ div {
       </div>
       <div class="form-group row">
       <label class="col-sm-2 col-form-label">Witnesses</label>
-      <textarea class="form-control w-75" type="text" name="addn_people" cols="100" rows="1"></textarea>
+      <textarea class="form-control w-75" type="text" name="witnesses" cols="100" rows="1"></textarea>
       </div>
 
       <br />
@@ -148,7 +148,7 @@ div {
       </div>
       <div class="form-group row">
       <label class="col-sm-2 col-form-label">Action Plan to Avoid such Instances in Future</label>
-      <textarea class="form-control w-75" type="text" name="action_exec" cols="100" rows="4"></textarea>
+      <textarea class="form-control w-75" type="text" name="action_plan" cols="100" rows="4"></textarea>
       </div>
       <br />
    <div class="form-group w-25">
