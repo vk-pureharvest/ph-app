@@ -28,7 +28,7 @@ div {
 <div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Quality Measures</h3>
+  <h3 align="center">Hourly Production</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
