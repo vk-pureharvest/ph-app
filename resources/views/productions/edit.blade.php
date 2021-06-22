@@ -81,7 +81,14 @@ div {
    
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Workstation</label>
-    <input class="form-control w-25" type="decimal" name="workstation" class="form-control" value="{{$productions->workstation}}" placeholder="Enter BRIX" />
+    <select class="form-control w-25" id="text" name="workstation" required focus>
+                <option value="{{$productions->workstation}}" selected="selected">{{$productions->workstation}}</option>  
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+   </select>
    </div>
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Number of people</label>
