@@ -154,7 +154,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="D">D</option>'+
         '<option value="E">E</option>'+
       '</td>'+
-      '<td><input type="integer" name="num_ppl[]" class="form-control" placeholder="Enter Number of people" /></td>'+
+      '<td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>'+
       '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
       '<td>'+
         '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
