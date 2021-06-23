@@ -95,7 +95,8 @@ div {
         <th>Workstation</th>
         <th>Number of people</th>
         <th>Production (Boxes)</th>
-        <th>Production Type</th>
+        <th>Product Type</th>
+        <th>Harvest Date</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -127,10 +128,11 @@ div {
         <option value="Yoom">Yoom</option>
         </select>  
         </td>
+        <td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>
+   
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
-      
-    </tbody>
+     </tbody>
   </table>
 </div>
 <br />
@@ -172,6 +174,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Yoom">Yoom</option>'+
         '</select>  '+
         '</td>'+
+        '<td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

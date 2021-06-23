@@ -57,6 +57,7 @@ class ProductionsController extends Controller
             $data->ppl_num=$request->ppl_num[$key];
             $data->prod_boxes=$request->prod_boxes[$key];
             $data->product_type=$request->product_type[$key];
+            $data->harvest_date=$request->harvest_date[$key];
             
             $data->save();
        }
@@ -104,7 +105,8 @@ class ProductionsController extends Controller
             'workstation'     =>  'required',
             'ppl_num'     =>  'required',
             'prod_boxes'     =>  'required',
-            'product_type'     =>  'required'
+            'product_type'     =>  'required',
+            'harvest_date'     =>  'required'
          ]);
 
         $productions = Production::find($id);
@@ -116,6 +118,7 @@ class ProductionsController extends Controller
         $productions->ppl_num = $request->get('ppl_num');
         $productions->prod_boxes = $request->get('prod_boxes');
         $productions->product_type = $request->get('product_type');
+        $productions->harvest_date = $request->get('harvest_date');
         $productions->save();
         return redirect()->route('productions.index')->with('success', 'Data Updated');
     }

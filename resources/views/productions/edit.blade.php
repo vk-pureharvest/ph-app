@@ -118,6 +118,12 @@ div {
 
    </div>
    
+   
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Harvest Date</label>
+      <input class="form-control w-25"  type="date" name="harvest_date" class="form-control" id="dob" value="{{$productions->harvest_date}}"/>
+  </div>
+
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />
