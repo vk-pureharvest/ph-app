@@ -131,7 +131,7 @@ div {
         </select>  
         </td>
         <td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>
-        <td><input class="form-control" type="text" name="comment[]" class="form-control" value="Addln comments" placeholder="Addln Comments"/></td>
+        <td><input class="form-control" type="text" name="comment[]" class="form-control"  placeholder="Addln Comments"/></td>
   
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
