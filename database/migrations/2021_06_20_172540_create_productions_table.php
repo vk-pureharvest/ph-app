@@ -25,6 +25,7 @@ class CreateProductionsTable extends Migration
             $table->integer('prod_boxes');
             $table->string('product_type');
             $table->date('harvest_date'); 
+            $table->string('comment');
             $table->timestamps();
         });
     }

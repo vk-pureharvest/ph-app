@@ -97,6 +97,7 @@ div {
         <th>Production (Boxes)</th>
         <th>Product Type</th>
         <th>Harvest Date</th>
+        <th>Comments</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -130,7 +131,8 @@ div {
         </select>  
         </td>
         <td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>
-   
+        <td><input class="form-control" type="text" name="comment[]" class="form-control" value="Addln comments" placeholder="Addln Comments"/></td>
+  
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -177,6 +179,7 @@ $('thead').on('click', '.addRow', function(){
         '</select>  '+
         '</td>'+
         '<td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>'+
+        '<td><input class="form-control" type="text" name="comment[]" class="form-control" value="Addln comments" placeholder="Addln Comments"/></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

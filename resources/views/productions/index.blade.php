@@ -51,6 +51,7 @@ div {
     <th>Production (boxes)</th>
     <th>Product Type</th>
     <th>Harvest Date</th>
+    <th>Comments</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -65,6 +66,7 @@ div {
     <td>{{$row['prod_boxes']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['harvest_date']}}</td>
+    <td>{{$row['comment']}}</td>
     <td><a href="{{action('ProductionsController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('ProductionsController@destroy', $row['id'])}}">

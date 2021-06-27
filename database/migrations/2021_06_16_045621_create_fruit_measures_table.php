@@ -21,10 +21,10 @@ class CreateFruitMeasuresTable extends Migration
             $table->string('row_num');
             $table->string('product_type');
             $table->decimal('BRIX', 10, 2);
-            $table->decimal('color_L');
-            $table->decimal('color_A');
-            $table->decimal('color_B');
-            $table->decimal('weight', 10, 2);
+            $table->decimal('color_L')->nullable();
+            $table->decimal('color_A')->nullable();
+            $table->decimal('color_B')->nullable();
+            $table->decimal('weight', 10, 2)->nullable();
             $table->decimal('length', 10, 2);
             $table->decimal('width', 10, 2);
             $table->timestamps();
