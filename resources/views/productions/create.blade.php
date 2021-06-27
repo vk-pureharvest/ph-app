@@ -127,7 +127,7 @@ div {
         <option value="TOV">TOV</option>
         <option value="Yellow TOV">Yellow TOV</option>
         <option value="Yoom">Yoom</option>
-        <option value="None">None</option>
+        <option value="Other">None</option>
         </select>  
         </td>
         <td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>

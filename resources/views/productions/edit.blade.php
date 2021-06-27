@@ -114,7 +114,7 @@ div {
                 <option value="TOV">TOV</option>
                 <option value="Yellow TOV">Yellow TOV</option>
                 <option value="Yoom">Yoom</option>
-                <option value="None">None</option>
+                <option value="Other">None</option>
             </select>
 
    </div>
