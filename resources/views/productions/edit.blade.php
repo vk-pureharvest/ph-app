@@ -41,7 +41,7 @@ div {
 <div class="row">
  <div class="col-md-12">
   <br />
-  <h3>Edit Size data</h3>
+  <h3>Edit Production data</h3>
   <br />
   @if(count($errors) > 0)
 
@@ -110,6 +110,7 @@ div {
                 <option value="Mixed Candy">Mixed Candy</option>
                 <option value="Orange TOV">Orange TOV</option>
                 <option value="Plum">Plum</option>
+                <option value="Round">Round</option>
                 <option value="Strabena">Strabena</option>
                 <option value="TOV">TOV</option>
                 <option value="Yellow TOV">Yellow TOV</option>
