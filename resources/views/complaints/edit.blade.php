@@ -128,20 +128,17 @@ div {
    <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
     <option value="{{$complaint->product_type}}" selected="selected">{{$complaint->product_type}}</option>        
     <option value="Candy">Candy</option>
-    <option value="Cocktail">Cocktail</option>
-    <option value="Candy/Swetela">Candy/Swetela</option>
-    <option value="Cocktail Brioso">Cocktail Brioso</option>
-    <option value="Cocktail/Campri">Cocktail/Campri</option>
-    <option value="COV">COV</option>
-    <option value="Intense Plum">Intense Plum</option>
-    <option value="Intense Plum Line 09">Intense Plum Line 09</option>
-    <option value="Intense Plum Line 10">Intense Plum Line 10</option>
-    <option value="Pink Fujemaru">Pink Fujemaru</option>
-    <option value="Pink kavakutchi">Pink kavakutchi</option>
-    <option value="Pink Rose">Pink Rose</option>
-    <option value="Strabena">Strabena</option>
-    <option value="TOV">TOV</option>
-    <option value="Yoom">Yoom</option>
+                <option value="Cocktail">Cocktail</option>
+                <option value="COV">COV</option>
+                <option value="Heirloom">Heirloom</option>
+                <option value="Mixed Candy">Mixed Candy</option>
+                <option value="Orange TOV">Orange TOV</option>
+                <option value="Plum">Plum</option>
+                <option value="Round">Round</option>
+                <option value="Strabena">Strabena</option>
+                <option value="TOV">TOV</option>
+                <option value="Yellow TOV">Yellow TOV</option>
+                <option value="Yoom">Yoom</option>
   </select>
   </div>
   <br />

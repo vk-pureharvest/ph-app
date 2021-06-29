@@ -68,7 +68,7 @@ div {
     <td>{{$row['color_B']}}</td>
     <td>{{$row['weight']}}</td>
     <td>{{$row['length']}}</td>
-    <td>{{$row['product_type']}}</td>
+    <td>{{$row['width']}}</td>
     <td><a href="{{action('FruitMeasuresController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('FruitMeasuresController@destroy', $row['id'])}}">

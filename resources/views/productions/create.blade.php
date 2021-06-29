@@ -123,6 +123,7 @@ div {
         <option value="Mixed Candy">Mixed Candy</option>
         <option value="Orange TOV">Orange TOV</option>
         <option value="Plum">Plum</option>
+        <option value="Round">Round</option>
         <option value="Strabena">Strabena</option>
         <option value="TOV">TOV</option>
         <option value="Yellow TOV">Yellow TOV</option>
@@ -171,6 +172,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Mixed Candy">Mixed Candy</option>'+
         '<option value="Orange TOV">Orange TOV</option>'+
         '<option value="Plum">Plum</option>'+
+        '<option value="Round">Round</option>'+
         '<option value="Strabena">Strabena</option>'+
         '<option value="TOV">TOV</option>'+
         '<option value="Yellow TOV">Yellow TOV</option>'+
