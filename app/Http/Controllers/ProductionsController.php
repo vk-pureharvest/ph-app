@@ -15,7 +15,7 @@ class ProductionsController extends Controller
      */
     public function index()
     {
-        $productions = Production::all()->sortBy('id')->reverse()->take(10)->toArray();
+        $productions = Production::all()->sortBy('id')->reverse()->take(50)->toArray();
         return view('productions.index',compact('productions'));
     }
 

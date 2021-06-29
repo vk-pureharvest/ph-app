@@ -15,7 +15,7 @@ class FruitMeasuresController extends Controller
      */
     public function index()
     {
-        $fruit_measures = FruitMeasure::all()->sortBy('id')->reverse()->take(10)->toArray();
+        $fruit_measures = FruitMeasure::all()->sortBy('id')->reverse()->take(50)->toArray();
         return view('fruit_measures.index',compact('fruit_measures'));
     }
 
