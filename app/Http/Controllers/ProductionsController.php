@@ -104,9 +104,6 @@ class ProductionsController extends Controller
             'start_time'     =>  'required',
             'end_time'     =>  'required',
             'workstation'     =>  'required',
-            'ppl_num'     =>  'required',
-            'prod_boxes'     =>  'required',
-            'product_type'     =>  'required',
          ]);
 
         $productions = Production::find($id);
