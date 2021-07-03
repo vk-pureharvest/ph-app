@@ -107,8 +107,6 @@ class ProductionsController extends Controller
             'ppl_num'     =>  'required',
             'prod_boxes'     =>  'required',
             'product_type'     =>  'required',
-            'harvest_date'     =>  'required',
-            'comment'     =>  'required'
          ]);
 
         $productions = Production::find($id);

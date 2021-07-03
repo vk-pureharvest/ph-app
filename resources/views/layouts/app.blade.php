@@ -65,6 +65,11 @@
                                     <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Quality Measures') }}
                                     </a>
+                                    <!-- Right Side Of Navbar 
+                                    <a class="dropdown-item" href="{{ route('wtfile.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Upload Weights') }}
+                                    </a>
+                                     -->
                                     <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Report Incident') }}
                                     </a>

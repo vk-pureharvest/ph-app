@@ -41,4 +41,13 @@ Route::resource('brixs','BrixesController');
 
 Route::resource('incidents','IncidentsController');
 
+
+Route::resource('wtfile','UploadWtfileController');
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/uploadfile', 'UploadWtfileController@index');
+Route::post('/uploadfile', 'UploadWtfileController@store');
+
+
+?>

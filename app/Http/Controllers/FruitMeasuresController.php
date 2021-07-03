@@ -103,14 +103,7 @@ class FruitMeasuresController extends Controller
             'site_name'    =>  'required',
             'date_received'     =>  'required',
             'row_num'     =>  'required',
-            'product_type'     =>  'required',
-            'BRIX'     =>  'required',
-            'color_L'     =>  'required',
-            'color_A'     =>  'required',
-            'color_B'     =>  'required',
-            'weight'     =>  'required',
-            'length'     =>  'required',
-            'width'     =>  'required'
+            'product_type'     =>  'required'
          ]);
 
         $fruit_measures = FruitMeasure::find($id);
