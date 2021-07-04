@@ -128,7 +128,7 @@ div {
   
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Additional Details</label>
-    <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="complaint_sub_category" value="If Other enter reason" cols="100" rows="4">If Other enter reason</textarea>
+    <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="complaint_sub_category" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
   </div>
   
   <div class="form-group row">
