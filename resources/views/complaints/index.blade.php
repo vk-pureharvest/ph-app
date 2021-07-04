@@ -44,7 +44,7 @@ div {
     <th>Date</th>
     <th>Customer Name</th>
     <th>Complaint Category</th>
-    <th>Complaint Sub Category</th>
+    <th>Additional Details</th>
     <th>Product Type</th>
     <th>Edit</th>
     <th>Delete</th>

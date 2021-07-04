@@ -94,6 +94,7 @@ class ComplaintsController extends Controller
             'date_received'    =>  'required',
             'customer_name'     =>  'required',
             'complaint_category'     =>  'required',
+            'complaint_sub_category'     =>  'required',
             'product_type'     =>  'required'
         ]);
         $complaint = Complaint::find($id);
