@@ -120,8 +120,7 @@ div {
    </div>
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Additional Details</label>
-    <textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
-    {{$complaint->complaint_sub_category}}</textarea>
+    <textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>{{$complaint->complaint_sub_category}}</textarea>
    </div>
    <div class="form-group row">
    <label class="col-sm-2 col-form-label">Product Type</label>
