@@ -110,6 +110,9 @@ div {
         <option value="C">C</option>
         <option value="D">D</option>
         <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
       </td>
       <td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
@@ -159,6 +162,9 @@ $('thead').on('click', '.addRow', function(){
         '<option value="C">C</option>'+
         '<option value="D">D</option>'+
         '<option value="E">E</option>'+
+        '<option value="F">F</option>'+
+        '<option value="G">G</option>'+
+        '<option value="H">H</option>'+
       '</td>'+
       '<td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>'+
       '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
