@@ -23,33 +23,17 @@ div {
 
 @section('content')
 
-
 <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-  $(function() {
-  $('#datetimepicker1').datetimepicker({
-            format: 'HH:mm'
-  });
-  
-  $('#datetimepicker2').datetimepicker({
-          format: 'HH:mm'
-  });
-  $('#datetimepicker3').datetimepicker({
-      format: 'hh:mm A',
-  });
-});
+    $( function() {
+        $( "#datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true
+        });
+    } );
     </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
-
 
 <div class="row">
  <div class="col-md-12">
@@ -88,30 +72,22 @@ div {
         <option value="Nahel">{{"Nahel"}}</option>
       </select>
   </div>
-  <?php
-  date_default_timezone_set('Asia/Dubai');
-  ?>
+
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Date</label>
-    <input class="form-control w-25" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
+    <input class="form-control w-25" type="date" name="date_added" class="form-control" id="dob"  placeholder="Enter Date"/>
   </div>
 
-  <div style="position: relative; left: 35px" class='input-group date' id='datetimepicker1'>
-         <label class="col-sm-2 col-form-label">Start Time</label>
-          <input type='text' name="start_time" class="form-control w-25" placeholder="Enter Start Time"/>
-            <span class="input-group-addon" style="display: inline-block; position: relative;">
-              <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+  <div style="position: relative; left: 50px" class="form-group row">
+    <label class="col-sm-2 col-form-label">Start Time</label>
+    <input class="form-control w-25" type="time" name="start_time" class="form-control" placeholder="Enter Start Time"/>
   </div>
-        <br/>
-  <div style="position: relative; left: 35px" class='input-group date' id='datetimepicker2'>
-         <label class="col-sm-2 col-form-label">End Time</label>
-          <input type='text' name="end_time" class="form-control w-25" placeholder="Enter End Time"/>
-            <span class="input-group-addon" style="display: inline-block; position: relative;">
-              <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+
+  <div style="position: relative; left: 50px" class="form-group row">
+    <label class="col-sm-2 col-form-label">End Time</label>
+    <input class="form-control w-25" type="time" name="end_time" class="form-control"  placeholder="Enter End Time"/>
   </div>
-    <br/>
+  <br />
   <div class="form-group row">
   <table class="table">
     <thead>
