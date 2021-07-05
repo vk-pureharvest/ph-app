@@ -37,13 +37,7 @@ class ComplaintsController extends Controller
     public function store(Request $request)
     {
         $authUser = auth()->user();
-        if($request->has('complaint_sub_category')) {
-            $subcategory = $request->get('complaint_sub_category');
-        } else {
-            $subcategory = null;
-        }
-
-
+       
         $this->validate($request, [
             'site_name'      =>   'required',
            'date_received'    =>  'required',
@@ -57,10 +51,11 @@ class ComplaintsController extends Controller
            'date_received'    =>  $request->get('date_received'),
            'customer_name'     =>  $request->get('customer_name'),
            'complaint_category'     =>  $request->get('complaint_category'),
-           'complaint_sub_category'     =>  $subcategory,
-           'product_type'     =>  $request->get('product_type')
+           'complaint_sub_category'     =>  $request->get('complaint_sub_category'),
+           'product_type'     =>  $request->get('product_type'),
+           'fin_impact'     =>  $request->get('fin_impact')
         ]);
-       $complaints->save();
+        $complaints->save();
        return redirect()->route('complaints.index')->with('success', 'Data Added');
     }
 
@@ -94,7 +89,6 @@ class ComplaintsController extends Controller
             'date_received'    =>  'required',
             'customer_name'     =>  'required',
             'complaint_category'     =>  'required',
-            'complaint_sub_category'     =>  'required',
             'product_type'     =>  'required'
         ]);
         $complaint = Complaint::find($id);
@@ -103,6 +97,7 @@ class ComplaintsController extends Controller
         $complaint->complaint_category = $request->get('complaint_category');
         $complaint->complaint_sub_category = $request->get('complaint_sub_category');
         $complaint->product_type = $request->get('product_type');
+        $complaint->fin_impact = $request->get('fin_impact');
         $complaint->save();
         return redirect()->route('complaints.index')->with('success', 'Data Updated');
     

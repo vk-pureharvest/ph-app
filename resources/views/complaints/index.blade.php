@@ -46,6 +46,7 @@ div {
     <th>Complaint Category</th>
     <th>Additional Details</th>
     <th>Product Type</th>
+    <th>Financial Impact</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -57,6 +58,7 @@ div {
     <td>{{$row['complaint_category']}}</td>
     <td>{{$row['complaint_sub_category']}}</td>
     <td>{{$row['product_type']}}</td>
+    <td>{{$row['fin_impact']}}</td>
     <td><a href="{{action('ComplaintsController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('ComplaintsController@destroy', $row['id'])}}">
