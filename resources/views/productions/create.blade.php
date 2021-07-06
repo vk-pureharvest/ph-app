@@ -122,18 +122,35 @@ div {
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
         <option value="" disabled selected>Product Type</option>          
-        <option value="Candy">Candy</option>
-        <option value="Cocktail">Cocktail</option>
-        <option value="COV">COV</option>
-        <option value="Heirloom">Heirloom</option>
-        <option value="Mixed Candy">Mixed Candy</option>
-        <option value="Orange TOV">Orange TOV</option>
-        <option value="Plum">Plum</option>
-        <option value="Round">Round</option>
-        <option value="Strabena">Strabena</option>
+        <option value="Plum 5kg">Plum 5kg</option>
+        <option value="Round 5kg">Round 5kg</option>
         <option value="TOV">TOV</option>
-        <option value="Yellow TOV">Yellow TOV</option>
+        <option value="TOV - Yellow">TOV - Yellow</option>
+        <option value="TOV - Orange">TOV - Orange</option>
+        <option value="TOV Pink">TOV Pink</option>
+        <option value="TOV Green">TOV Green</option>
+        <option value="Heirloom">Heirloom</option>
+        <option value="COV">COV</option>
+        <option value="COV Yellow">COV Yellow</option>
+        <option value="Strabena">Strabena</option>
         <option value="Yoom">Yoom</option>
+        <option value="Cocktail">Cocktail</option>
+        <option value="Candy Cup">Candy Cup</option>
+        <option value="Candy 350gm kft">Candy 350gm kft</option>
+        <option value="Candy Shaker ">Candy Shaker </option>
+        <option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>
+        <option value="Candy Mixed">Candy Mixed</option>
+        <option value="Candy (loose)">Candy (loose)</option>
+        <option value="COV (loose)">COV (loose)</option>
+        <option value="Cocktail (loose)">Cocktail (loose)</option>
+        <option value="Strabena (loose)">Strabena (loose)</option>
+        <option value="Mixed candy (loose)">Mixed candy (loose)</option>
+        <option value="COV Yellow (Loose)">COV Yellow (Loose)</option>
+        <option value="COV Orange(Loose)">COV Orange(Loose)</option>
+        <option value="SF COV">SF COV</option>
+        <option value="FF COV">FF COV</option>
+        <option value="SF Candy">SF Candy</option>
+        <option value="FF Candy">FF Candy</option>
         <option value="Other">None</option>
         </select>  
         </td>
