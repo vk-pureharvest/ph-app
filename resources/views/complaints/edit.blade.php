@@ -88,6 +88,7 @@ div {
     <select class="form-control w-25" id="selectCustomer" name="customer_name" required focus>
     <option value="{{$complaint->customer_name}}" selected="selected">{{$complaint->customer_name}}</option>        
     <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
+      <option value="Al Dahra Agriculture LLC">{{"Al Dahra Agriculture LLC"}}</option>
       <option value="ANAZSINULABEEDEEN">{{"ANAZSINULABEEDEEN"}}</option>
       <option value="BARAKAT VEGETABLE AND FRUITS CO.">{{"BARAKAT VEGETABLE AND FRUITS CO."}}</option>
       <option value="FRESHONTABLE DWC-LLC">{{"FRESHONTABLE DWC-LLC"}}</option>
@@ -96,6 +97,8 @@ div {
       <option value="JALEEL FRESH PRODUCE LLC (BRANCH)">{{"JALEEL FRESH PRODUCE LLC (BRANCH)"}}</option>
       <option value="KIBSONS INTERNATIONAL LLC">{{"KIBSONS INTERNATIONAL LLC"}}</option>
       <option value="LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC">{{"LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC"}}</option>
+      <option value="Lulu Hypermarket LLC - CPD Dubai">{{"Lulu Hypermarket LLC - CPD Dubai"}}</option>
+      <option value="Lulu Hypermarket LLC - Abu Dhabi">{{"Lulu Hypermarket LLC - Abu Dhabi"}}</option>
       <option value="MAEN AHMAD HAMADEH IDRIS">{{"MAEN AHMAD HAMADEH IDRIS"}}</option>
       <option value="MAJID AL FUTTAIM HYPERMARKETS LLC">{{"MAJID AL FUTTAIM HYPERMARKETS LLC"}}</option>
       <option value="SAMPLE TO PURE HARVEST MANAGEMENT">{{"SAMPLE TO PURE HARVEST MANAGEMENT"}}</option>
