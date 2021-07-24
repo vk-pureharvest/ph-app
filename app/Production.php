@@ -18,7 +18,7 @@ class Production extends Model
     
     protected $table = 'productions';
     public static function getProduction(){
-        $records = DB::table('productions')->select("site_name","comment","created_at")->orderBy('created_at','desc')->get()->toArray();
+        $records = DB::table('productions')->select("site_name","date_added", "start_time","end_time","workstation","ppl_num","prod_boxes","product_type","harvest_date","comment")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
     }
 }

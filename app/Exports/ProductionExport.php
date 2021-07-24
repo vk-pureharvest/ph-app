@@ -4,14 +4,14 @@ namespace App\Exports;
 
 use App\Production;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithHeadings;
 
-class ProductionExport implements FromCollection
+class ProductionExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "site_name",
-            "comment",
-            "created_at"
+            "Site","Date", "Start Time","End Time","Workstation","Number of People","Production (boxes)","Product Type",
+            "Harvest Date","Comments"
         ];
     }
     /**
