@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\FruitMeasure;
 use Illuminate\Support\Facades\Auth;
+use App\Exports\FruitMeasuresExport;
+use Excel;
 
 class FruitMeasuresController extends Controller
 {
@@ -17,6 +19,15 @@ class FruitMeasuresController extends Controller
     {
         $fruit_measures = FruitMeasure::all()->sortBy('id')->reverse()->take(50)->toArray();
         return view('fruit_measures.index',compact('fruit_measures'));
+    }
+
+    public function exportDimExcel(){
+        return Excel::download(new FruitMeasuresExport,'Dimensions.xlsx');
+    }
+
+    
+    public function exportDimCSV(){
+        return Excel::download(new FruitMeasuresExport,'Dimensions.csv');
     }
 
     /**

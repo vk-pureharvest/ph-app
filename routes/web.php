@@ -54,8 +54,18 @@ Route::post('/uploadfile', 'UploadWtfileController@store');
 
 Route::get('/production-excel','ProductionsController@exportProdExcel');
 Route::get('/production-excel/exportProdExcel', 'ProductionsController@exportProdExcel')->name('production-excel.exportProdExcel');
-Route::get('/production-csv','ProductionsController@exportProdCSV');
-Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');
+
+Route::get('/complaint-excel','ComplaintsController@exportCompExcel');
+Route::get('/complaint-excel/exportCompExcel', 'ComplaintsController@exportCompExcel')->name('complaint-excel.exportCompExcel');
+
+Route::get('/fruitmeasures-excel','FruitMeasuresController@exportDimExcel');
+Route::get('/fruitmeasures-excel/exportDimExcel', 'FruitMeasuresController@exportDimExcel')->name('fruitmeasures-excel.exportDimExcel');
+
+Route::get('/incidents-excel','IncidentsController@exportIncidentExcel');
+Route::get('/incidents-excel/exportIncidentExcel', 'IncidentsController@exportIncidentExcel')->name('incidents-excel.exportIncidentExcel');
+
+//Route::get('/production-csv','ProductionsController@exportProdCSV');
+//Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');
 
 
 ?>

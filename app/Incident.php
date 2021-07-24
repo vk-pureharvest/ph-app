@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Incident extends Model
 {
@@ -16,4 +17,10 @@ class Incident extends Model
          'addn_people','witnesses','incident_desc','root_cause','action_exec','action_plan',
     ];
 
+    protected $table = 'incidents';
+    public static function getIncident(){
+        $records = DB::table('incidents')->select("reported_by","date_received","title","type_of_incident","emp_name","emp_title","location","sp_loc",
+                                                  "addn_people","witnesses","incident_desc","root_cause","action_exec","action_plan")->orderBy('date_received','desc')->get()->toArray();
+        return $records; 
+    }
 }

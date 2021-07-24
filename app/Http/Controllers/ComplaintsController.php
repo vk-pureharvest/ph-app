@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Complaint;
+use Illuminate\Support\Facades\Auth;
+use App\Exports\ComplaintsExport;
+use Excel;
 
 class ComplaintsController extends Controller
 {
@@ -16,6 +19,15 @@ class ComplaintsController extends Controller
     {
         $complaints = Complaint::all()->sortBy('id')->reverse()->take(10)->toArray();
         return view('complaints.index', compact('complaints'));
+    }
+
+    public function exportCompExcel(){
+        return Excel::download(new ComplaintsExport,'Customer Complaints.xlsx');
+    }
+
+    
+    public function exportCompCSV(){
+        return Excel::download(new ComplaintsExport,'Customer Complaints.csv');
     }
 
     /**

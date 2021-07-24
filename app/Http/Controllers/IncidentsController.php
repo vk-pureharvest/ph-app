@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Incident;
+use Illuminate\Support\Facades\Auth;
+use App\Exports\IncidentsExport;
+use Excel;
 
 class IncidentsController extends Controller
 {
@@ -17,6 +20,14 @@ class IncidentsController extends Controller
         //
     }
 
+    public function exportIncidentExcel(){
+        return Excel::download(new IncidentsExport,'Incidents.xlsx');
+    }
+
+    
+    public function exportIncidentCSV(){
+        return Excel::download(new IncidentsExport,'Incidents.csv');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -43,14 +54,7 @@ class IncidentsController extends Controller
             'type_of_incident'    =>  'required',
             'emp_name'    =>  'required',
             'emp_title'    =>  'required',
-            'location'    =>  'required',
-            'sp_loc'    =>  'required',
-            'addn_people'    =>  'required',
-            'witnesses'    =>  'required',
-            'incident_desc'    =>  'required',
-            'root_cause'    =>  'required',
-            'action_exec'    =>  'required',
-            'action_plan'    =>  'required'            
+            'location'    =>  'required'       
         ]);
         $incidents = new Incident([
            'reported_by'    =>  $request->get('reported_by'),

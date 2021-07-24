@@ -54,7 +54,7 @@ div {
                 </p>
             </td>
             <td class="align-middle" style="text-align: right">
-                <a href='#'>
+            <a href="{{route('complaint-excel.exportCompExcel')}}">
                     <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
                         Download
                     </button>
@@ -65,11 +65,11 @@ div {
             <td>
                 <p>Dimensions</p>
                 <p style="color:grey;font-size:14px;text-align:justify">
-                Download Fruit Measures such as BRIX, weight, length, etc.
+                Download Fruit Measures such as BRIX, Color, Weight, etc.
                 </p>
             </td>
             <td class="align-middle" style="text-align: right">
-                <a href='#'>
+            <a href="{{route('fruitmeasures-excel.exportDimExcel')}}">
                     <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
                         Download
                     </button>
@@ -80,11 +80,11 @@ div {
             <td>
                 <p>Incidents</p>
                 <p style="color:grey;font-size:14px;text-align:justify">
-                Download Incident/Accident Reports
+                Download Accident Reports
                 </p>
             </td>
             <td class="align-middle" style="text-align: right">
-                <a href='#'>
+            <a href="{{route('incidents-excel.exportIncidentExcel')}}">
                     <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
                         Download
                     </button>

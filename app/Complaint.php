@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Complaint extends Model
 {
@@ -22,5 +23,11 @@ class Complaint extends Model
     }
 
     
+    
+    protected $table = 'complaints';
+    public static function getComplaint(){
+        $records = DB::table('complaints')->select("site_name","date_received", "customer_name","complaint_category","complaint_sub_category","product_type","fin_impact")->orderBy('date_received','desc')->get()->toArray();
+        return $records; 
+    }
 
 }

@@ -34,13 +34,13 @@
                         @if(Auth::user()->role_id==1)
                         <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Download<span class="caret"></span>
+                                    Admin<span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                    
                                 <a class="dropdown-item" href="{{ route('users.show',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Reports in Excel') }}
+                                        {{ __('Download Reports') }}
                                     </a>
                                 </div>
                             </li>
