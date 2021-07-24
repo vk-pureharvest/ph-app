@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Production;
 use Illuminate\Support\Facades\Auth;
+use App\Exports\ProductionExport;
+use Excel;
+
 
 class ProductionsController extends Controller
 {
@@ -17,6 +20,15 @@ class ProductionsController extends Controller
     {
         $productions = Production::all()->sortBy('id')->reverse()->take(50)->toArray();
         return view('productions.index',compact('productions'));
+    }
+
+    public function exportProdExcel(){
+        return Excel::download(new ProductionExport,'Production.xlsx');
+    }
+
+    
+    public function exportProdCSV(){
+        return Excel::download(new ProductionExport,'Production.csv');
     }
 
     /**

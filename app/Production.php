@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Production extends Model
 {
@@ -12,5 +13,12 @@ class Production extends Model
  
     function user(){
         return $this->belongsto('App\User');
+    }
+
+    
+    protected $table = 'productions';
+    public static function getProduction(){
+        $records = DB::table('productions')->select("site_name","comment","created_at")->orderBy('created_at','desc')->get()->toArray();
+        return $records; 
     }
 }

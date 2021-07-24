@@ -42,12 +42,20 @@ Route::resource('brixs','BrixesController');
 Route::resource('incidents','IncidentsController');
 
 
+Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
+
+
 Route::resource('wtfile','UploadWtfileController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/uploadfile', 'UploadWtfileController@index');
 Route::post('/uploadfile', 'UploadWtfileController@store');
+
+Route::get('/production-excel','ProductionsController@exportProdExcel');
+Route::get('/production-excel/exportProdExcel', 'ProductionsController@exportProdExcel')->name('production-excel.exportProdExcel');
+Route::get('/production-csv','ProductionsController@exportProdCSV');
+Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');
 
 
 ?>

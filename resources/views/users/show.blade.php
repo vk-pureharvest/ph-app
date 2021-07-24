@@ -1,79 +1,101 @@
+
 @extends('layouts.app')
 
-@section('content')
+
+@section('header')
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel1') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- new additions -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css" /> 
-    
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <!-- new additions -->
 
 </head>
+<style>
+div {
+  padding-right: 10px;
+  padding-left: 30px;
+}
+</style>
 @endsection
 
 @section('content')
-
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('User Profile') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<div class="row; mt-5">
+<div class="col-md-8">
 
-                    <div class="panel panel-default">
-                        <!-- Default panel contents -->
-                        <div class="panel-heading"></div>
-                        <div class="panel-body">
-                           
-                        </div>
 
-                        <!-- Table -->
-                        <table class="table">
-                            <tr> 
-                                <td> Name </td>
-                                <td> {{Auth::user()->name}} </td> 
-                            </tr>
-                            <tr> 
-                                <td> Email </td>
-                                <td> {{Auth::user()->email}} </td> 
-                            </tr>
-                            <tr> 
-                                <td> Role </td>
-                                <td> {{$user->role['name']}} </td> 
-                            </tr>
-                        </table>
-                        </div>
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <td>
+                <p>Production</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download hourly production data by Workstation 
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+                <a href="{{route('production-excel.exportProdExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Customer Complaints</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Historic Customer Complaints
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+                <a href='#'>
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Dimensions</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Fruit Measures such as BRIX, weight, length, etc.
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+                <a href='#'>
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Incidents</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Incident/Accident Reports
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+                <a href='#'>
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>               
+        </tbody>
+    </table>
 
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
 </div>
 
 @endsection
