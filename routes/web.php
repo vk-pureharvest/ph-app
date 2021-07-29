@@ -41,6 +41,8 @@ Route::resource('brixs','BrixesController');
 
 Route::resource('incidents','IncidentsController');
 
+Route::resource('pallet_tracker','Pallect_trackerController');
+
 
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
@@ -63,6 +65,10 @@ Route::get('/fruitmeasures-excel/exportDimExcel', 'FruitMeasuresController@expor
 
 Route::get('/incidents-excel','IncidentsController@exportIncidentExcel');
 Route::get('/incidents-excel/exportIncidentExcel', 'IncidentsController@exportIncidentExcel')->name('incidents-excel.exportIncidentExcel');
+
+Route::get('/incidents-excel','Pallect_trackerController@exportPalletExcel');
+Route::get('/incidents-excel/exportPalletExcel', 'Pallect_trackerController@exportPalletExcel')->name('pallet_tracker-excel.exportPalletExcel');
+
 
 //Route::get('/production-csv','ProductionsController@exportProdCSV');
 //Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');
