@@ -121,7 +121,7 @@ div {
       </td>
       <td><input class="form-control" type="text" name="quality_controller[]" class="form-control"  placeholder="Controller"/></td>
       <td><input class="form-control" type="text" name="shift_leader[]" class="form-control"  placeholder="Shift leader"/></td>
-       <td><textarea class="form-control" type="text" name="remarks[]" cols="100" rows="1" placeholder="Remarks"></textarea></td>
+       <td><textarea class="form-control" type="text" name="remarks[]" cols="50" rows="1" placeholder="Remarks"></textarea></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -162,7 +162,7 @@ $('thead').on('click', '.addRow', function(){
       '</td>'+
       '<td><input class="form-control" type="text" name="quality_controller[]" class="form-control"  placeholder="Controller"/></td>'+
       '<td><input class="form-control" type="text" name="shift_leader[]" class="form-control"  placeholder="Shift leader"/></td>'+
-       '<td><input class="form-control" type="text" name="remarks[]" class="form-control"  placeholder="Remarks"/></td>'+
+       '<td><textarea class="form-control" type="text" name="remarks[]" cols="50" rows="1" placeholder="Remarks"></textarea></td>'+
   
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>'
