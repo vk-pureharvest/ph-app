@@ -10,7 +10,7 @@ class ComplaintsExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "Site","Date", "Customer","Complaint Category","Additional Details","Product Type","Financial Impact (AED)"
+            "Site","Date", "Customer","Complaint Category 1","Complaint Category 2","Additional Details","Product Type","Financial Impact (AED)"
         ];
     }
     /**

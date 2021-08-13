@@ -41,6 +41,47 @@ div {
         changeYear: true
         });
     } );
+
+    function dynamicdropdown(listindex)
+    {
+        switch (listindex)
+        {
+        case "100 - Product Quality" :
+            document.getElementById("status").options[0]=new Option("Select Category #2","");
+            document.getElementById("status").options[1]=new Option("110 - Size","110 - Size");
+            document.getElementById("status").options[2]=new Option("120 - Color","120 - Color");
+            document.getElementById("status").options[3]=new Option("130 - Shape","130 - Shape");
+            document.getElementById("status").options[4]=new Option("140 - Taste","140 - Taste");
+            document.getElementById("status").options[5]=new Option("150 - Hardness","150 - Hardness");
+            document.getElementById("status").options[6]=new Option("160 - Defects ","160 - Defects ");
+            document.getElementById("status").options[7]=new Option("170 - Smell","170 - Smell");
+            document.getElementById("status").options[8]=new Option("180 - Wrong pack weight","180 - Wrong pack weight");
+            break;
+        case "200 - Service quality" :
+            document.getElementById("status").options[0]=new Option("Select Category #2","");
+            document.getElementById("status").options[1]=new Option("210 - Quantity","210 - Quantity");
+            document.getElementById("status").options[2]=new Option("220 - Wrong product","220 - Wrong product");
+            document.getElementById("status").options[3]=new Option("230 - Late delivery","230 - Late delivery");
+            document.getElementById("status").options[4]=new Option("240 - Wrong destination","240 - Wrong destination");
+            document.getElementById("status").options[5]=new Option("250 - Damage in transport","250 - Damage in transport");
+            document.getElementById("status").options[6]=new Option("","");
+            document.getElementById("status").options[7]=new Option("","");
+            document.getElementById("status").options[8]=new Option("","");
+            break;
+        case "300 - Admin error" :
+            document.getElementById("status").options[0]=new Option("Select Category #2","");
+            document.getElementById("status").options[1]=new Option("310 - Wrong quantity","310 - Wrong quantity");
+            document.getElementById("status").options[2]=new Option("320 - Wrong product","320 - Wrong product");
+            document.getElementById("status").options[3]=new Option("330 - Wrong price","330 - Wrong price");
+            document.getElementById("status").options[4]=new Option("","");
+            document.getElementById("status").options[5]=new Option("","");
+            document.getElementById("status").options[6]=new Option("","");
+            document.getElementById("status").options[7]=new Option("","");
+            document.getElementById("status").options[8]=new Option("","");
+            break;
+        }
+        return true;
+    }
     </script>
 
 
@@ -112,14 +153,27 @@ div {
    </select>   
    </div>
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Complaint Category</label>
-    <select class="form-control w-25" id="selectCategory" name="complaint_category" required focus>
-    <option value="{{$complaint->complaint_category}}" selected="selected">{{$complaint->complaint_category}}</option>        
-    <option value="Quality">{{"Quality"}}</option>
-    <option value="Quantity">{{"Quantity"}}</option>
-    <option value="Delivery">{{"Delivery"}}</option>    
-    <option value="Other">{{"Other"}}</option>
-  </select>
+    <label class="col-sm-2 col-form-label">Complaint Category #1</label>
+        <select class="form-control w-25"  id="source" name="complaint_category_1" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+        <option value="{{$complaint->complaint_category_1}}" selected="selected">{{$complaint->complaint_category_1}}</option>     
+        <option value="100 - Product Quality">100 - Product Quality</option>
+        <option value="200 - Service quality">200 - Service quality</option>
+        <option value="300 - Admin error">300 - Admin Error</option>
+        </select>
+    </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Complaint Category #2</label> 
+        <script class="form-control w-25"  type="text/javascript" language="JavaScript">
+        document.write('<select class="form-control w-25"  name="complaint_category_2" id="status"><option value="{{$complaint->complaint_category_2}}">Select status</option></select>')
+        </script>
+        <noscript>
+        <select class="form-control w-25"  id="status" name="complaint_category_2">
+          <option value="100 - Product Quality">100 - Product Quality</option>
+          <option value="200 - Service quality">200 - Service quality</option>
+          <option value="300 - Admin error">300 - Admin Error</option>
+        </select>
+        </noscript>
+    </div>
 
    </div>
    <div class="form-group row">

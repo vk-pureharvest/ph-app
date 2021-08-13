@@ -54,15 +54,18 @@ class ComplaintsController extends Controller
             'site_name'      =>   'required',
            'date_received'    =>  'required',
            'customer_name'     =>  'required',
-           'complaint_category'     =>  'required',
-           'product_type'     =>  'required'
+           'complaint_category_1'     =>  'required',
+           'complaint_category_2'     =>  'required',
+           'product_type'     =>  'required',
+           'fin_impact'     =>  'required'
         ]);
         $complaints = new Complaint([
            'user_id'    =>  $authUser->id,
            'site_name'    =>  $request->get('site_name'),
            'date_received'    =>  $request->get('date_received'),
            'customer_name'     =>  $request->get('customer_name'),
-           'complaint_category'     =>  $request->get('complaint_category'),
+           'complaint_category_1'     =>  $request->get('complaint_category_1'),
+           'complaint_category_2'     =>  $request->get('complaint_category_2'),
            'complaint_sub_category'     =>  $request->get('complaint_sub_category'),
            'product_type'     =>  $request->get('product_type'),
            'fin_impact'     =>  $request->get('fin_impact')
@@ -100,13 +103,16 @@ class ComplaintsController extends Controller
         $this->validate($request, [
             'date_received'    =>  'required',
             'customer_name'     =>  'required',
-            'complaint_category'     =>  'required',
-            'product_type'     =>  'required'
+            'complaint_category_1'     =>  'required',
+            'complaint_category_2'     =>  'required',
+            'product_type'     =>  'required',
+            'fin_impact'     =>  'required'
         ]);
         $complaint = Complaint::find($id);
         $complaint->date_received = $request->get('date_received');
         $complaint->customer_name = $request->get('customer_name');
-        $complaint->complaint_category = $request->get('complaint_category');
+        $complaint->complaint_category_1 = $request->get('complaint_category_1');
+        $complaint->complaint_category_2 = $request->get('complaint_category_2');
         $complaint->complaint_sub_category = $request->get('complaint_sub_category');
         $complaint->product_type = $request->get('product_type');
         $complaint->fin_impact = $request->get('fin_impact');

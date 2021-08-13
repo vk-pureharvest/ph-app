@@ -63,7 +63,7 @@ div {
         </tr>
         <tr>
             <td>
-                <p>Dimensions</p>
+                <p>Dimensions/Quality</p>
                 <p style="color:grey;font-size:14px;text-align:justify">
                 Download Fruit Measures such as BRIX, Color, Weight, etc.
                 </p>

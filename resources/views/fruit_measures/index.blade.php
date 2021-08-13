@@ -53,6 +53,7 @@ div {
     <th>Weight</th>
     <th>Length</th>
     <th>Width</th>
+    <th>Pressure</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -69,6 +70,7 @@ div {
     <td>{{$row['weight']}}</td>
     <td>{{$row['length']}}</td>
     <td>{{$row['width']}}</td>
+    <td>{{$row['pressure']}}</td>
     <td><a href="{{action('FruitMeasuresController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('FruitMeasuresController@destroy', $row['id'])}}">

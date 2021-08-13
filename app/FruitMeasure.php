@@ -13,7 +13,7 @@ class FruitMeasure extends Model
     * @var array
     */
    protected $fillable = [
-       'user_id','site_name','date_received', 'row_num','product_type','BRIX','color_L','color_A','color_B','weight','length','width',
+       'user_id','site_name','date_received', 'row_num','product_type','BRIX','color_L','color_A','color_B','weight','length','width','pressure',
    ];
 
    function user(){
@@ -22,7 +22,7 @@ class FruitMeasure extends Model
 
    protected $table = 'fruit_measures';
    public static function getFruitMeasure(){
-       $records = DB::table('fruit_measures')->select("site_name","date_received", "row_num","product_type","BRIX","color_L","color_A","color_B","weight","length","width")->orderBy('date_received','desc')->get()->toArray();
+       $records = DB::table('fruit_measures')->select("site_name","date_received", "row_num","product_type","BRIX","color_L","color_A","color_B","weight","length","width","pressure")->orderBy('date_received','desc')->get()->toArray();
        return $records; 
    }
 

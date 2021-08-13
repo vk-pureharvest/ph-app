@@ -10,7 +10,7 @@ class FruitMeasuresExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "Site","Date", "Row #","Product Type","BRIX","Color L","Color A","Color B","Weight","Length","Width"
+            "Site","Date", "Row #","Product Type","BRIX","Color L","Color A","Color B","Weight","Length","Width","Pressure"
         ];
     }
     /**

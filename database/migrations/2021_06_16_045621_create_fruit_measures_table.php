@@ -27,6 +27,7 @@ class CreateFruitMeasuresTable extends Migration
             $table->decimal('weight', 10, 2)->nullable();
             $table->decimal('length', 10, 2);
             $table->decimal('width', 10, 2);
+            $table->decimal('pressure', 10, 2);
             $table->timestamps();
         });
     }

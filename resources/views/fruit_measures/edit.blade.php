@@ -122,6 +122,10 @@ div {
     <label class="col-sm-2 col-form-label">Width</label>
     <input class="form-control w-25" type="decimal" name="width" class="form-control" value="{{$fruit_measures->width}}" placeholder="Enter Width" />
    </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Pressure</label>
+    <input class="form-control w-25" type="decimal" name="pressure" class="form-control" value="{{$fruit_measures->pressure}}" placeholder="Enter Pressure" />
+   </div>
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />

@@ -96,6 +96,7 @@ div {
         <th>Weight (gm)</th>
         <th>Length (mm)</th>
         <th>Width (mm)</th>
+        <th>Pressure (PSI)</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -125,6 +126,7 @@ div {
         <td><input type="decimal" name="weight[]" class="form-control" placeholder="Enter Weight" /></td>
         <td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>
         <td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>
+        <td><input type="decimal" name="pressure[]" class="form-control" placeholder="Enter Pressure" /></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
       
@@ -168,6 +170,7 @@ $('thead').on('click', '.addRow', function(){
         '<td><input type="decimal" name="weight[]" class="form-control" placeholder="Enter Weight" /></td>'+
         '<td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>'+
         '<td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>'+
+        '<td><input type="decimal" name="pressure[]" class="form-control" placeholder="Enter Pressure" /></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

@@ -72,6 +72,7 @@ class FruitMeasuresController extends Controller
             $data->weight=$request->weight[$key];
             $data->length=$request->length[$key];
             $data->width=$request->width[$key];
+            $data->pressure=$request->pressure[$key];
             
             $data->save();
        }
@@ -129,6 +130,7 @@ class FruitMeasuresController extends Controller
         $fruit_measures->weight = $request->get('weight');
         $fruit_measures->length = $request->get('length');
         $fruit_measures->width = $request->get('width');
+        $fruit_measures->pressure = $request->get('pressure');
         $fruit_measures->save();
         return redirect()->route('fruit_measures.index')->with('success', 'Data Updated');
     }
