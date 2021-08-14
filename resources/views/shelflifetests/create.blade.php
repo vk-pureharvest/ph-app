@@ -72,10 +72,12 @@ div {
         <option value="Nahel">{{"Nahel"}}</option>
       </select>
   </div>
-
+  <?php
+  date_default_timezone_set('Asia/Dubai');
+  ?>
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Date of Testing</label>
-    <input class="form-control w-25" type="date" name="testing_date" class="form-control" id="dob"  placeholder="Date of Testing"/>
+    <input class="form-control w-25" type="date" name="testing_date" value="<?php echo date('Y-m-d'); ?>"/>
   </div>
 
   <div style="position: relative; left: 50px" class="form-group row">
