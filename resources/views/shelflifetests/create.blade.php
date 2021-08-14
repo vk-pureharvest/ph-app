@@ -173,6 +173,7 @@ $('thead').on('click', '.addRow', function(){
         '<td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>'+
         '<td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>'+
         '<td><input type="decimal" name="pressure[]" class="form-control" placeholder="Enter Pressure" /></td>'+
+        '        <td><textarea  class="form-control" white-space="pre-wrap" type="text"  name="remarks[]" placeholder="Remarks" rows="1" ></textarea></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 
