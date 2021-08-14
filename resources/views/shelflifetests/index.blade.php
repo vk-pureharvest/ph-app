@@ -36,7 +36,7 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('shelflifetests.create')}}" class="btn btn-primary">Add Quality Measures</a>
+   <a href="{{route('shelflifetests.create')}}" class="btn btn-primary">Add Shelf Life Test</a>
    <br />
    <br />
   </div>
