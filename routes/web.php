@@ -41,8 +41,13 @@ Route::resource('brixs','BrixesController');
 
 Route::resource('incidents','IncidentsController');
 
+Route::resource('class2_prod','Class2_productionController');
+
 Route::resource('pallet_tracker','Pallect_trackerController');
 
+Route::resource('packingqc','PackingQCController');
+
+Route::resource('shelflifetests','ShelfLifeTestController');
 
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
@@ -69,6 +74,14 @@ Route::get('/incidents-excel/exportIncidentExcel', 'IncidentsController@exportIn
 Route::get('/incidents-excel','Pallect_trackerController@exportPalletExcel');
 Route::get('/incidents-excel/exportPalletExcel', 'Pallect_trackerController@exportPalletExcel')->name('pallet_tracker-excel.exportPalletExcel');
 
+Route::get('/class2_prod-excel','Class2_productionController@exportClass2ProdExcel');
+Route::get('/class2_prod-excel/Class2_productionExport', 'Class2_productionController@exportClass2ProdExcel')->name('class2_prod-excel.exportClass2ProdExcel');
+
+Route::get('/packingqc-excel','PackingQCController@exportPackingQCExcel');
+Route::get('/packingqc-excel/PackingQCExport', 'PackingQCController@exportPackingQCExcel')->name('packingqc-excel.exportPackingQCExcel');
+
+Route::get('/packingqc-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
+Route::get('/packingqc-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
 
 //Route::get('/production-csv','ProductionsController@exportProdCSV');
 //Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');

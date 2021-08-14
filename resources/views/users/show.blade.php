@@ -105,7 +105,53 @@ div {
                     </button>
                 </a>        
             </td>
-        </tr>          
+        </tr>   
+        <tr>
+            <td>
+                <p>Production by Class</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Class 2 production details
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+            <a href="{{route('class2_prod-excel.exportClass2ProdExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>   
+            <tr>
+            <td>
+                <p>Packing Quality Check</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Packing Quality Check data
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+            <a href="{{route('packingqc-excel.exportPackingQCExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                <p>Shelf Life Testing</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download shelf lift testing data 
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+            <a href="{{route('shelflifetests-excel.exportShelfLifeTestExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>   
+        
         </tbody>
     </table>
 

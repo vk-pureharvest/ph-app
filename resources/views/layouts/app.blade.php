@@ -82,11 +82,15 @@
                                     <a class="dropdown-item" href="{{ route('pallet_tracker.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Pallet Tracking') }}
                                     </a>
-                                    <!-- Right Side Of Navbar 
-                                    <a class="dropdown-item" href="{{ route('wtfile.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Upload Weights') }}
+                                    <a class="dropdown-item" href="{{ route('class2_prod.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Class 2 Recordings') }}
                                     </a>
-                                     -->
+                                    <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Packing QC') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing') }}
+                                    </a>                                    
                                     <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Report Incident') }}
                                     </a>

@@ -41,7 +41,7 @@ div {
 <div class="row">
  <div class="col-md-12">
   <br />
-  <h3>Edit Production data</h3>
+  <h3>Edit Packing Quality Check data</h3>
   <br />
   @if(count($errors) > 0)
 
@@ -52,14 +52,14 @@ div {
          @endforeach
          </ul>
   @endif
-  <form method="post" action="{{action('ProductionsController@update', $id)}}">
+  <form method="post" action="{{action('PackingQCController@update', $id)}}">
    {{csrf_field()}}
    <input type="hidden" name="_method" value="PATCH" />
 
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
-      <option value="{{$productions->site_name}}" selected="selected">{{$productions->site_name}}</option>
+      <option value="{{$packingqcs->site_name}}" selected="selected">{{$packingqcs->site_name}}</option>
         <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>
       </select>
@@ -67,45 +67,13 @@ div {
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Date Added</label>
-      <input class="form-control w-25"  type="date" name="date_added" class="form-control" id="dob" value="{{$productions->date_added}}"/>
+      <input class="form-control w-25"  type="date" name="date_added" class="form-control" id="dob" value="{{$packingqcs->date_added}}"/>
   </div>
-
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Start Time</label>
-    <input class="form-control w-25" type="time" name="start_time" class="form-control" value="{{$productions->start_time}}" placeholder="Enter Date" />
-   </div>
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">End Time</label>
-    <input class="form-control w-25" type="time" name="end_time" class="form-control" value="{{$productions->end_time}}" placeholder="Enter Date" />
-   </div>
    
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Workstation</label>
-    <select class="form-control w-25" id="text" name="workstation" required focus>
-                <option value="{{$productions->workstation}}" selected="selected">{{$productions->workstation}}</option>  
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="G">G</option>
-                <option value="H">H</option>
-   </select>
-   </div>
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Number of people</label>
-    <input class="form-control w-25" type="decimal" name="ppl_num" class="form-control" value="{{$productions->ppl_num}}" placeholder="Enter Color L" />
-   </div>
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Production (boxes)</label>
-    <input class="form-control w-25" type="decimal" name="prod_boxes" class="form-control" value="{{$productions->prod_boxes}}" placeholder="Enter Color A" />
-   </div>
-
-   <div class="form-group row">
+  <div class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
-                <option value="{{$productions->product_type}}" selected="selected">{{$productions->product_type}}</option>  
+                <option value="{{$packingqcs->product_type}}" selected="selected">{{$packingqcs->product_type}}</option>  
                 <option value="Plum 5kg">Plum 5kg</option>
                 <option value="Round 5kg">Round 5kg</option>
                 <option value="TOV">TOV</option>
@@ -139,17 +107,19 @@ div {
             </select>
 
    </div>
-   
-   
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Harvest Date</label>
-      <input class="form-control w-25"  type="date" name="harvest_date" class="form-control" id="dob" value="{{$productions->harvest_date}}"/>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Total Kg</label>
+    <input class="form-control w-25" type="decimal" name="total_kg" class="form-control" value="{{$packingqcs->total_kg}}" placeholder="Enter Kg" />
+   </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Damange Reason</label>
+    <textarea type="text" name="damage_reason" class="form-control w-25" value="{{$packingqcs->damage_reason}}" cols="100" rows="1"/>{{$packingqcs->damage_reason}}</textarea>  
   </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Percentage</label>
+    <input class="form-control w-25" type="decimal" name="perc" class="form-control" value="{{$packingqcs->perc}}" placeholder="Enter Reason" />
+   </div>
 
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Comments</label>
-      <input class="form-control w-25"  type="text" name="comment" class="form-control" id="dob" value="{{$productions->comment}}"/>
-  </div>
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />
