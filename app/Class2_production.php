@@ -16,7 +16,7 @@ class Class2_production extends Model
     }
 
     
-    protected $table = 'Class2_productions';
+    protected $table = 'class2_productions';
     public static function getClass2Production(){
         $records = DB::table('class2_productions')->select("site_name","date_added","product_type","class_type","production")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
