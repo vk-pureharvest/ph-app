@@ -172,7 +172,7 @@ div {
     <label class="col-sm-2 col-form-label">Complaint Category #2</label>
     <!--<div class="sub_category_div" id="sub_category_div">Status:-->
         <script class="form-control w-25"  type="text/javascript" language="JavaScript">
-        document.write('<select class="form-control w-25"  name="complaint_category_2" id="status"><option value="">Select Category 2</option></select>')
+        document.write('<select class="form-control w-25"  name="complaint_category_2" id="status"><option value="">Select Category #2</option></select>')
         </script>
     </div>
   
