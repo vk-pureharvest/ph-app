@@ -113,7 +113,7 @@ div {
    <br />
   </div>
 
-  <form method="post" action="{{url('complaints')}}">
+  <form action="{{url('complaints')}}"  method="post" enctype="multipart/form-data">
    {{csrf_field()}}
  
    <div class="form-group row">
@@ -202,6 +202,14 @@ div {
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Financial Impact</label>
     <input type="decimal" name="fin_impact" class="form-control w-25" placeholder="Enter Amount"/>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Select Image for Upload</label>
+     <tr> <td width="30"><input type="file" name="image" /></td></tr>
+   
+     <!--  <input type="file" name="image" class="custom-file_input">
+       <label class ="custom-file-label"> Choose file</lable>-->
+    
   </div>
   <br />
    <div class="form-group w-25">

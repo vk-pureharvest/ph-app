@@ -48,6 +48,7 @@ div {
     <th>Additional Details</th>
     <th>Product Type</th>
     <th>Financial Impact</th>
+    <th>Image</th>
     <th>Delete</th>
    </tr>
    @foreach($complaints as $row)
@@ -60,6 +61,7 @@ div {
     <td>{{$row['complaint_sub_category']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['fin_impact']}}</td>
+    <td><img src="{{ asset('uploads/complaints/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
     <td>
      <form method="post" class="delete_form" action="{{action('ComplaintsController@destroy', $row['id'])}}">
       {{csrf_field()}}

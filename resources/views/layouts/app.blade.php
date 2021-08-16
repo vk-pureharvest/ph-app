@@ -83,7 +83,7 @@
                                         {{ __('Pallet Tracking') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('class2_prod.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Class 2 Recordings') }}
+                                        {{ __('Product Sorting') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Packing QC') }}

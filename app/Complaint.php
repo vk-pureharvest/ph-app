@@ -15,7 +15,7 @@ class Complaint extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id','site_name','date_received', 'customer_name','complaint_category_1','complaint_category_2','complaint_sub_category','product_type','fin_impact',
+        'user_id','site_name','date_received', 'customer_name','complaint_category_1','complaint_category_2','complaint_sub_category','product_type','fin_impact','image'
     ];
 
     function user(){
@@ -26,7 +26,7 @@ class Complaint extends Model
     
     protected $table = 'complaints';
     public static function getComplaint(){
-        $records = DB::table('complaints')->select("site_name","date_received", "customer_name","complaint_category_1","complaint_category_2","complaint_sub_category","product_type","fin_impact")->orderBy('date_received','desc')->get()->toArray();
+        $records = DB::table('complaints')->select("site_name","date_received", "customer_name","complaint_category_1","complaint_category_2","complaint_sub_category","product_type","fin_impact","image")->orderBy('date_received','desc')->get()->toArray();
         return $records; 
     }
 

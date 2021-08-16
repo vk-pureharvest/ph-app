@@ -59,6 +59,8 @@ class ComplaintsController extends Controller
            'product_type'     =>  'required',
            'fin_impact'     =>  'required'
         ]);
+
+        
         $complaints = new Complaint([
            'user_id'    =>  $authUser->id,
            'site_name'    =>  $request->get('site_name'),
@@ -70,8 +72,19 @@ class ComplaintsController extends Controller
            'product_type'     =>  $request->get('product_type'),
            'fin_impact'     =>  $request->get('fin_impact')
         ]);
+        if ($request->hasfile('image')){
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads/complaints/', $filename);
+            $complaints->image = $filename;
+        } else {
+            $complaints->image='';
+        }
+        
         $complaints->save();
-       return redirect()->route('complaints.index')->with('success', 'Data Added');
+        //print($request->get('image'));
+        return redirect()->route('complaints.index')->with('success', 'Data Added');
     }
 
     /**
