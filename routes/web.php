@@ -49,6 +49,8 @@ Route::resource('packingqc','PackingQCController');
 
 Route::resource('shelflifetests','ShelfLifeTestController');
 
+Route::resource('cold_storage_temps','ColdStorageTempController');
+
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
 
