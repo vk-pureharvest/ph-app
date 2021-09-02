@@ -57,6 +57,7 @@ class ComplaintsController extends Controller
            'complaint_category_1'     =>  'required',
            'complaint_category_2'     =>  'required',
            'product_type'     =>  'required',
+           'class'     =>  'required',
            'fin_impact'     =>  'required'
         ]);
 
@@ -70,6 +71,7 @@ class ComplaintsController extends Controller
            'complaint_category_2'     =>  $request->get('complaint_category_2'),
            'complaint_sub_category'     =>  $request->get('complaint_sub_category'),
            'product_type'     =>  $request->get('product_type'),
+           'class'     =>  $request->get('class'),
            'fin_impact'     =>  $request->get('fin_impact')
         ]);
         if ($request->hasfile('image')){
@@ -119,6 +121,7 @@ class ComplaintsController extends Controller
             'complaint_category_1'     =>  'required',
             'complaint_category_2'     =>  'required',
             'product_type'     =>  'required',
+            'class'     =>  'required',
             'fin_impact'     =>  'required'
         ]);
         $complaint = Complaint::find($id);
@@ -128,6 +131,7 @@ class ComplaintsController extends Controller
         $complaint->complaint_category_2 = $request->get('complaint_category_2');
         $complaint->complaint_sub_category = $request->get('complaint_sub_category');
         $complaint->product_type = $request->get('product_type');
+        $complaint->class = $request->get('class');
         $complaint->fin_impact = $request->get('fin_impact');
         $complaint->save();
         return redirect()->route('complaints.index')->with('success', 'Data Updated');

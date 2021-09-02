@@ -23,6 +23,7 @@ class CreateComplaintsTable extends Migration
             $table->string('complaint_category_2');
             $table->string('complaint_sub_category')->default("NA");
             $table->string('product_type');
+            $table->string('class');
             $table->decimal('fin_impact');
             $table->string('image');
             $table->timestamps();

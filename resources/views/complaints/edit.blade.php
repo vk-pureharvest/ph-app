@@ -201,6 +201,16 @@ div {
                 <option value="Yoom">Yoom</option>
   </select>
   </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Quality</label>
+    <select class="form-control w-25" id="selectProduct" name="class" required focus>
+    <option value="{{$complaint->class}}" selected="selected">{{$complaint->class}}</option> 
+    <option value="Class 1">Class 1</option>
+    <option value="Class 2">Class 2</option>
+    <option value="Class 3">Class 3</option>
+  </select>
+  </div>
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Financial Impact</label>
     <input type="decimal" name="fin_impact" class="form-control w-25" placeholder="Enter Value"/>{{$complaint->fin_impact}}
