@@ -116,6 +116,7 @@ div {
         <option value="F">F</option>
         <option value="G">G</option>
         <option value="H">H</option>
+        <option value="Candy Machine ">Candy Machine </option>
       </td>
       <td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
@@ -138,7 +139,6 @@ div {
         <option value="Candy Cup">Candy Cup</option>
         <option value="Candy 350gm kft">Candy 350gm kft</option>
         <option value="Candy Shaker ">Candy Shaker </option>
-        <option value="Candy Machine ">Candy Machine </option>
         <option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>
         <option value="Candy Mixed">Candy Mixed</option>
         <option value="Candy (loose)">Candy (loose)</option>
@@ -186,6 +186,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="F">F</option>'+
         '<option value="G">G</option>'+
         '<option value="H">H</option>'+
+        '<option value="Candy Machine ">Candy Machine </option>'+
       '</td>'+
       '<td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>'+
       '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
@@ -208,7 +209,6 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Candy Cup">Candy Cup</option>'+
         '<option value="Candy 350gm kft">Candy 350gm kft</option>'+
         '<option value="Candy Shaker ">Candy Shaker </option>'+
-        '<option value="Candy Machine ">Candy Machine </option>'+
         '<option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>'+
         '<option value="Candy Mixed">Candy Mixed</option>'+
         '<option value="Candy (loose)">Candy (loose)</option>'+
