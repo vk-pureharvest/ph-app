@@ -138,6 +138,7 @@ div {
         <option value="Candy Cup">Candy Cup</option>
         <option value="Candy 350gm kft">Candy 350gm kft</option>
         <option value="Candy Shaker ">Candy Shaker </option>
+        <option value="Candy Machine ">Candy Machine </option>
         <option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>
         <option value="Candy Mixed">Candy Mixed</option>
         <option value="Candy (loose)">Candy (loose)</option>
@@ -207,6 +208,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Candy Cup">Candy Cup</option>'+
         '<option value="Candy 350gm kft">Candy 350gm kft</option>'+
         '<option value="Candy Shaker ">Candy Shaker </option>'+
+        '<option value="Candy Machine ">Candy Machine </option>'+
         '<option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>'+
         '<option value="Candy Mixed">Candy Mixed</option>'+
         '<option value="Candy (loose)">Candy (loose)</option>'+
