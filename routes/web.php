@@ -51,6 +51,8 @@ Route::resource('shelflifetests','ShelfLifeTestController');
 
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
+Route::resource('inventories','InventoryController');
+
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
 
@@ -84,6 +86,9 @@ Route::get('/packingqc-excel/PackingQCExport', 'PackingQCController@exportPackin
 
 Route::get('/packingqc-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
 Route::get('/packingqc-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
+
+Route::get('/packingqc-excel','InventoryController@exportInventoryExcel');
+Route::get('/packingqc-excel/InventoryExport', 'InventoryController@exportInventoryExcel')->name('inventory-excel.exportInventoryExcel');
 
 //Route::get('/production-csv','ProductionsController@exportProdCSV');
 //Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');

@@ -91,6 +91,9 @@
                                     <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Shelf Life Testing') }}
                                     </a>     
+                                    <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Cold Storage Closing Stock') }}
+                                    </a>      
                                     <a class="dropdown-item" href="{{ route('cold_storage_temps.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Record Cold Storage Temperature') }}
                                     </a>                                    
