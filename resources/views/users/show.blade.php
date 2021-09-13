@@ -166,6 +166,21 @@ div {
                 </a>        
             </td>
         </tr>   
+        <tr>
+            <td>
+                <p>Nahel Utitlies Data</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Nahel Utitlies Readings Data 
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+            <a href="{{route('nahel_utitlies-excel.exportNahel_UtilityExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
+        </tr>   
         </tbody>
     </table>
 

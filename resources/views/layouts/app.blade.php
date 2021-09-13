@@ -78,28 +78,31 @@
                                     </a>
                                     <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Quality Measures') }}
+                                    </a>    
+                                    <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Packing QC') }}
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Cold Storage Closing Stock') }}
+                                    </a>      
+                                    <a class="dropdown-item" href="{{ route('nahel_utilities.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Nahel Utilities Readings') }}
+                                    </a>           
                                     <a class="dropdown-item" href="{{ route('pallet_tracker.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Pallet Tracking') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('class2_prod.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Product Sorting') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add Packing QC') }}
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Shelf Life Testing') }}
-                                    </a>     
-                                    <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Cold Storage Closing Stock') }}
-                                    </a>      
                                     <a class="dropdown-item" href="{{ route('cold_storage_temps.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Record Cold Storage Temperature') }}
-                                    </a>                                    
+                                    </a>                            
                                     <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Report Incident') }}
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing') }}
+                                    </a>    
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

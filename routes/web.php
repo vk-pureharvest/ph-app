@@ -51,10 +51,11 @@ Route::resource('shelflifetests','ShelfLifeTestController');
 
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
+Route::resource('nahel_utilities','NahelUtilityController');
+
 Route::resource('inventories','InventoryController');
 
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
-
 
 Route::resource('wtfile','UploadWtfileController');
 
@@ -75,8 +76,8 @@ Route::get('/fruitmeasures-excel/exportDimExcel', 'FruitMeasuresController@expor
 Route::get('/incidents-excel','IncidentsController@exportIncidentExcel');
 Route::get('/incidents-excel/exportIncidentExcel', 'IncidentsController@exportIncidentExcel')->name('incidents-excel.exportIncidentExcel');
 
-Route::get('/incidents-excel','Pallect_trackerController@exportPalletExcel');
-Route::get('/incidents-excel/exportPalletExcel', 'Pallect_trackerController@exportPalletExcel')->name('pallet_tracker-excel.exportPalletExcel');
+Route::get('/pallet_tracker-excel','Pallect_trackerController@exportPalletExcel');
+Route::get('/pallet_tracker-excel/exportPalletExcel', 'Pallect_trackerController@exportPalletExcel')->name('pallet_tracker-excel.exportPalletExcel');
 
 Route::get('/class2_prod-excel','Class2_productionController@exportClass2ProdExcel');
 Route::get('/class2_prod-excel/Class2_productionExport', 'Class2_productionController@exportClass2ProdExcel')->name('class2_prod-excel.exportClass2ProdExcel');
@@ -84,11 +85,14 @@ Route::get('/class2_prod-excel/Class2_productionExport', 'Class2_productionContr
 Route::get('/packingqc-excel','PackingQCController@exportPackingQCExcel');
 Route::get('/packingqc-excel/PackingQCExport', 'PackingQCController@exportPackingQCExcel')->name('packingqc-excel.exportPackingQCExcel');
 
-Route::get('/packingqc-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
-Route::get('/packingqc-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
+Route::get('/shelflifetests-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
+Route::get('/shelflifetests-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
 
-Route::get('/packingqc-excel','InventoryController@exportInventoryExcel');
-Route::get('/packingqc-excel/InventoryExport', 'InventoryController@exportInventoryExcel')->name('inventory-excel.exportInventoryExcel');
+Route::get('/inventory-excel','InventoryController@exportInventoryExcel');
+Route::get('/inventory-excel/InventoryExport', 'InventoryController@exportInventoryExcel')->name('inventory-excel.exportInventoryExcel');
+
+Route::get('/nahel_utitlies-excel','NahelUtilityController@exportInventoryExcel');
+Route::get('/nahel_utitlies-excel/NahelUtilityExport', 'NahelUtilityController@exportNahel_UtilityExcel')->name('nahel_utitlies-excel.exportNahel_UtilityExcel');
 
 //Route::get('/production-csv','ProductionsController@exportProdCSV');
 //Route::get('/production-csv/exportProdCSV', 'ProductionsController@exportProdCSV')->name('production-excel.exportProdCSV');
