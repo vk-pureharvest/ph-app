@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Shelf_Life_Berry;
+use App\Shelf_life_Berry;
 use Illuminate\Support\Facades\Auth;
 use App\Exports\ShelfLifeBerryExport;
 use Excel;
