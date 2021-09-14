@@ -13,13 +13,13 @@ class Incident extends Model
      * @var array
      */
     protected $fillable = [
-        'reported_by','date_received','title','type_of_incident','emp_name','emp_title','location','sp_loc',
+        'reported_by','date_received','title','type_of_incident','site_name','emp_name','emp_title','location','sp_loc',
          'addn_people','witnesses','incident_desc','root_cause','action_exec','action_plan',
     ];
 
     protected $table = 'incidents';
     public static function getIncident(){
-        $records = DB::table('incidents')->select("reported_by","date_received","title","type_of_incident","emp_name","emp_title","location","sp_loc",
+        $records = DB::table('incidents')->select("reported_by","date_received","title","type_of_incident","site_name","emp_name","emp_title","location","sp_loc",
                                                   "addn_people","witnesses","incident_desc","root_cause","action_exec","action_plan")->orderBy('date_received','desc')->get()->toArray();
         return $records; 
     }

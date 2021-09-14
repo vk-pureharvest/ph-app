@@ -100,6 +100,14 @@ div {
                             <option value="Significant Injury">{{"Significant Injury"}}</option>
                             </select>
       </div>
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Site</label>
+      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
+        <option value="Al Ain" selected>Al Ain</option>        
+        <option value="Nahel">{{"Nahel"}}</option>
+      </select>
+
+      </div>
   <br />
       <div><H4 > Employee Incident Information</H4></div>
   <br />

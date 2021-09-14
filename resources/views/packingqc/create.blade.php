@@ -114,6 +114,13 @@ div {
         <option value="FF COV">FF COV</option>
         <option value="SF Candy">SF Candy</option>
         <option value="FF Candy">FF Candy</option>
+        <option value="Strawberry - Albion">Strawberry - Albion</option>  
+        <option value="Strawberry - Aurora Karima">Strawberry - Aurora Karima</option>
+        <option value="Strawberry - Bravura">Strawberry - Bravura</option>
+        <option value="Strawberry - Carbillo">Strawberry - Carbillo</option>
+        <option value="Strawberry - Furore">Strawberry - Furore</option>
+        <option value="Strawberry - Murano">Strawberry - Murano</option>
+        <option value="Strawberry - San Andreas">Strawberry - San Andreas</option>
         <option value="Other">None</option>
         </select>  
         </div>

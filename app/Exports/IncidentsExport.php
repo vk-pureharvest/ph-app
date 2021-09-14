@@ -10,7 +10,7 @@ class IncidentsExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "Reported By","Date Received","Title","Type of Incident","Employee Name","Employee Title","Location","Specific Location",
+            "Reported By","Date Received","Title","Type of Incident","Site","Employee Name","Employee Title","Location","Specific Location",
          "Additional People Involved","Witnesses","Incident Description","Root Cause","Resulting Action Executed","Action Plan to Avoid Future Instances"
         ];
     }

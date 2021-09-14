@@ -136,6 +136,9 @@ div {
                 <option value="FF COV">FF COV</option>
                 <option value="SF Candy">SF Candy</option>
                 <option value="FF Candy">FF Candy</option>
+                <option value="Strawberry Loose">Strawberry Loose</option>  
+                <option value="Strawberry Branded">Strawberry Branded</option>
+                <option value="Strawberry Unbranded">Strawberry Unbranded</option>
                 <option value="Other">None</option>
             </select>
 

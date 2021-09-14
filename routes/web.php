@@ -49,6 +49,8 @@ Route::resource('packingqc','PackingQCController');
 
 Route::resource('shelflifetests','ShelfLifeTestController');
 
+Route::resource('shelflifeberry','ShelfLifeBerryController');
+
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
 Route::resource('nahel_utilities','NahelUtilityController');
@@ -87,6 +89,9 @@ Route::get('/packingqc-excel/PackingQCExport', 'PackingQCController@exportPackin
 
 Route::get('/shelflifetests-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
 Route::get('/shelflifetests-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
+
+Route::get('/shelflifeberry-excel','ShelfLifeBerryController@exportShelfLifeBerryExcel');
+Route::get('/shelflifeberry-excel/ShelfLifeBerryExport', 'ShelfLifeBerryController@exportShelfLifeBerryExcel')->name('shelflifeberry-excel.exportShelfLifeBerryExcel');
 
 Route::get('/inventory-excel','InventoryController@exportInventoryExcel');
 Route::get('/inventory-excel/InventoryExport', 'InventoryController@exportInventoryExcel')->name('inventory-excel.exportInventoryExcel');

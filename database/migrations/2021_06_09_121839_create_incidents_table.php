@@ -19,6 +19,7 @@ class CreateIncidentsTable extends Migration
             $table->date('date_received');
             $table->string('title');
             $table->string('type_of_incident'); 
+            $table->string('site_name'); 
             $table->string('emp_name');
             $table->string('emp_title');
             $table->string('location'); 

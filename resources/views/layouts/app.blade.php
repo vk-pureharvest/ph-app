@@ -60,11 +60,11 @@
                                         {{ __('Add Customer Complaint') }}
                                     </a>
                                     
+                                     <!-- Right Side Of Navbar 
 
                                     <a class="dropdown-item" href="{{ route('meter_readings.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Climate Metrics') }}
                                     </a>
-                                     <!-- Right Side Of Navbar 
                                     <a class="dropdown-item" href="{{ route('dimensions.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Fruit Size and Weight') }}
                                     </a>
@@ -101,8 +101,11 @@
                                         {{ __('Report Incident') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Shelf Life Testing') }}
-                                    </a>    
+                                        {{ __('Shelf Life Testing - Tomatoes') }}
+                                    </a> 
+                                    <a class="dropdown-item" href="{{ route('shelflifeberry.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing - Strawberry') }}
+                                    </a>       
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

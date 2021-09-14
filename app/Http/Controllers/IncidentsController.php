@@ -52,6 +52,7 @@ class IncidentsController extends Controller
             'date_received'    =>  'required',
             'title'    =>  'required',
             'type_of_incident'    =>  'required',
+            'site_name'    =>  'required',
             'emp_name'    =>  'required',
             'emp_title'    =>  'required',
             'location'    =>  'required'       
@@ -61,6 +62,7 @@ class IncidentsController extends Controller
            'date_received'    =>  $request->get('date_received'),
            'title'    =>  $request->get('title'),
            'type_of_incident'    =>  $request->get('type_of_incident'),
+           'site_name'    =>  $request->get('site_name'),
            'emp_name'    =>  $request->get('emp_name'),
            'emp_title'    =>  $request->get('emp_title'),
            'location'    =>  $request->get('location'),
