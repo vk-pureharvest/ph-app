@@ -90,6 +90,13 @@ div {
                 <option value="TOV">TOV</option>
                 <option value="Yellow TOV">Yellow TOV</option>
                 <option value="Yoom">Yoom</option>
+                <option value="Strawberry - Albion">Strawberry - Albion</option>  
+                <option value="Strawberry - Aurora Karima">Strawberry - Aurora Karima</option>
+                <option value="Strawberry - Bravura">Strawberry - Bravura</option>
+                <option value="Strawberry - Carbillo">Strawberry - Carbillo</option>
+                <option value="Strawberry - Furore">Strawberry - Furore</option>
+                <option value="Strawberry - Murano">Strawberry - Murano</option>
+                <option value="Strawberry - San Andreas">Strawberry - San Andreas</option>
             </select>
 
    </div>
