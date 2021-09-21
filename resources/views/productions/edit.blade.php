@@ -139,7 +139,7 @@ div {
                 <option value="Strawberry Loose">Strawberry Loose</option>  
                 <option value="Strawberry Branded">Strawberry Branded</option>
                 <option value="Strawberry Unbranded">Strawberry Unbranded</option>
-                <option value="Other">None</option>
+                <option value="Other">Other</option>
             </select>
 
    </div>

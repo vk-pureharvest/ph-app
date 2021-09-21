@@ -155,7 +155,7 @@ div {
         <option value="Strawberry Loose">Strawberry Loose</option>  
         <option value="Strawberry Branded">Strawberry Branded</option>
         <option value="Strawberry Unbranded">Strawberry Unbranded</option>
-        <option value="Other">None</option>
+        <option value="Other">Other</option>
         </select>  
         </td>
         <td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>
@@ -228,7 +228,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Strawberry Loose">Strawberry Loose</option>  '+
         '<option value="Strawberry Branded">Strawberry Branded</option>'+
         '<option value="Strawberry Unbranded">Strawberry Unbranded</option>'+
-        '<option value="None">None</option>'+
+        '<option value="Other">Other</option>'+
         '</select>  '+
         '</td>'+
         '<td><input class="form-control" type="date" name="harvest_date[]" class="form-control" id="dob"  placeholder="Harvest Date"/></td>'+
