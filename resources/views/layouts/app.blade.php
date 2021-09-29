@@ -42,11 +42,11 @@
                                 <a class="dropdown-item" href="{{ route('users.show',['id'=>Auth::user()->id]) }}">
                                         {{ __('Download Reports') }}
                                     </a>
-                                    
+                                  <!--  
                                 <a class="dropdown-item" href="{{ route('users.index') }}">
                                         {{ __('Priva Reports') }}
                                     </a>
-                                </div>
+                                </div> -->
                             </li>
                         @endif
                             <li class="nav-item dropdown">
