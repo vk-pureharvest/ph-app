@@ -55,6 +55,8 @@ Route::resource('cold_storage_temps','ColdStorageTempController');
 
 Route::resource('nahel_utilities','NahelUtilityController');
 
+Route::resource('alain_utilities','AlAinUtilityController');
+
 Route::resource('inventories','InventoryController');
 
 Route::resource('prod_export_xls','ProductionsController@exportProdExcel');

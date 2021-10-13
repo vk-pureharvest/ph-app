@@ -85,7 +85,10 @@
                                     </a>    
                                     <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Packing QC') }}
-                                    </a>
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('alain_utilities.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Al Ain Utilities Readings') }}
+                                    </a>     
                                     <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Cold Storage Closing Stock') }}
                                     </a>      
