@@ -101,6 +101,9 @@ Route::get('/inventory-excel/InventoryExport', 'InventoryController@exportInvent
 Route::get('/nahel_utitlies-excel','NahelUtilityController@exportInventoryExcel');
 Route::get('/nahel_utitlies-excel/NahelUtilityExport', 'NahelUtilityController@exportNahel_UtilityExcel')->name('nahel_utitlies-excel.exportNahel_UtilityExcel');
 
+Route::get('/alain_utitlies-excel','AlAinUtilityController@exportInventoryExcel');
+Route::get('/alain_utitlies-excel/AlAinUtilityExport', 'AlAinUtilityController@exportAlAin_UtilityExcel')->name('alain_utitlies-excel.exportAlAin_UtilityExcel');
+
 Route::get('/priva_prod-excel','UsersController@exportPrivaProdExcel');
 Route::get('/priva_prod-excel/PrivaProductionExport', 'UsersController@exportPrivaProdExcel')->name('priva_prod-excel.exportPrivaProdExcel');
 

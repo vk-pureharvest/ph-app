@@ -195,6 +195,21 @@ div {
                     </button>
                 </a>        
             </td>
+        </tr>  
+        <tr>
+            <td>
+                <p>Al Ain Utitlies Data</p>
+                <p style="color:grey;font-size:14px;text-align:justify">
+                Download Al Ain Utitlies Readings Data 
+                </p>
+            </td>
+            <td class="align-middle" style="text-align: right">
+            <a href="{{route('alain_utitlies-excel.exportAlAin_UtilityExcel')}}">
+                    <button type="button" class="btn btn-outline-info btn-sm m-0 waves-effect">
+                        Download
+                    </button>
+                </a>        
+            </td>
         </tr>   
         </tbody>
     </table>
