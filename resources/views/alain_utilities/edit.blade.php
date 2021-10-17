@@ -149,6 +149,13 @@ div {
     <label class="col-sm-2 col-form-label">Electricity meter 2</label>
     <input type="decimal" name="electric_meter_2" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->electric_meter_2}}"/>
   </div>
+
+<div class="form-group row">
+  <label class="col-sm-2 col-form-label">CO2 Leafy Greens</label>
+  <input type="decimal" name="co2_leafy_green" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_leafy_green}}"/>
+  <label class="col-sm-2 col-form-label">CO2 Tomatoes</label>
+  <input type="decimal" name="co2_tomatoes" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_tomatoes}}"/>
+</div>
   
   <br />
    <div class="form-group">

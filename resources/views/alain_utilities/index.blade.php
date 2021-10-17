@@ -62,6 +62,8 @@ div {
     <th>Mixing unit 60 </th>
     <th>Electricity meter 1</th>
     <th>Electricity meter 2</th>
+    <th>CO2 Leafy Greens</th>
+    <th>CO2 Tomatoes</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -89,6 +91,8 @@ div {
     <td>{{$row['mixing_unit_60']}}</td>
     <td>{{$row['electric_meter_1']}}</td>
     <td>{{$row['electric_meter_2']}}</td>
+    <td>{{$row['co2_leafy_green']}}</td>
+    <td>{{$row['co2_tomatoes']}}</td>
 
     <td><a href="{{action('AlAinUtilityController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>

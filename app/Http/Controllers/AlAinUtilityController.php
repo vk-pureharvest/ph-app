@@ -72,7 +72,9 @@ class AlAinUtilityController extends Controller
             'mixing_unit_50'      =>   'required',
             'mixing_unit_60'      =>   'required',
             'electric_meter_1'      =>   'required',
-            'electric_meter_2'      =>   'required'
+            'electric_meter_2'      =>   'required',
+            'co2_leafy_green'      =>   'required',
+            'co2_tomatoes'      =>   'required'
         ]);
 
         
@@ -99,11 +101,13 @@ class AlAinUtilityController extends Controller
             'mixing_unit_50'    =>  $request->get('mixing_unit_50'),
             'mixing_unit_60'    =>  $request->get('mixing_unit_60'),
             'electric_meter_1'    =>  $request->get('electric_meter_1'),
-            'electric_meter_2'    =>  $request->get('electric_meter_2')
+            'electric_meter_2'    =>  $request->get('electric_meter_2'),
+            'co2_leafy_green'    =>  $request->get('co2_leafy_green'),
+            'co2_tomatoes'    =>  $request->get('co2_tomatoes')
         ]);
         $alain_utilities->save();
-        //print($request->get('image'));
-        return redirect()->route('alain_utilities.index')->with('success', 'Data Added');
+       // print($request->get('co2_leafy_green'));
+       return redirect()->route('alain_utilities.index')->with('success', 'Data Added');
     }
 
     /**
@@ -154,7 +158,9 @@ class AlAinUtilityController extends Controller
            'mixing_unit_50'      =>   'required',
            'mixing_unit_60'      =>   'required',
            'electric_meter_1'      =>   'required',
-           'electric_meter_2'      =>   'required'
+           'electric_meter_2'      =>   'required',
+           'co2_leafy_green'      =>   'required',
+           'co2_tomatoes'      =>   'required'
         ]);
 
         $alain_utilities = AlAin_Utility::find($id);
@@ -179,6 +185,8 @@ class AlAinUtilityController extends Controller
         $alain_utilities->mixing_unit_60 = $request->get('mixing_unit_60');
         $alain_utilities->electric_meter_1 = $request->get('electric_meter_1');
         $alain_utilities->electric_meter_2 = $request->get('electric_meter_2');
+        $alain_utilities->co2_leafy_green = $request->get('co2_leafy_green');
+        $alain_utilities->co2_tomatoes = $request->get('co2_tomatoes');
 
         $alain_utilities->save();
         return redirect()->route('alain_utilities.index')->with('success', 'Data Updated');

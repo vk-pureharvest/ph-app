@@ -38,6 +38,8 @@ class CreateAlainUtilitiesTable extends Migration
             $table->decimal('mixing_unit_60');
             $table->decimal('electric_meter_1');
             $table->decimal('electric_meter_2');
+            $table->decimal('co2_leafy_green');
+            $table->decimal('co2_tomatoes');
             $table->timestamps();
         });
     }
