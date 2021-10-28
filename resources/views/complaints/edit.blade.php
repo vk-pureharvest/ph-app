@@ -145,12 +145,14 @@ div {
       <option value="LULU HYPERMARKET LLC - ABU DHABI">{{"LULU HYPERMARKET LLC - ABU DHABI"}}</option>
       <option value="MAEN AHMAD HAMADEH IDRIS">{{"MAEN AHMAD HAMADEH IDRIS"}}</option>
       <option value="MAJID AL FUTTAIM HYPERMARKETS LLC">{{"MAJID AL FUTTAIM HYPERMARKETS LLC"}}</option>
+      <option value="N.R.T.C. DUBAI INTERNATIONAL VEGETABLES & FRUITS TRADING LLC">{{"N.R.T.C. DUBAI INTERNATIONAL VEGETABLES & FRUITS TRADING LLC"}}</option>
       <option value="SAMPLE TO PURE HARVEST MANAGEMENT">{{"SAMPLE TO PURE HARVEST MANAGEMENT"}}</option>
       <option value="SAMPLES TO NEW CUSTOMERS">{{"SAMPLES TO NEW CUSTOMERS"}}</option>
-      <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
       <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
-      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
+      <option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>
+      <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
       <option value="TRANSMED OVERSEAS INCORPORATED S.A.">{{"TRANSMED OVERSEAS INCORPORATED S.A."}}</option>
+      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
       <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
       <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
    </select>   
@@ -207,6 +209,11 @@ div {
                 <option value="Strawberry - Furore">Strawberry - Furore</option>
                 <option value="Strawberry - Murano">Strawberry - Murano</option>
                 <option value="Strawberry - San Andreas">Strawberry - San Andreas</option>
+                <option value="Red Lettuce">Red Lettuce</option>
+                <option value="Green Lettuce">Green Lettuce</option>
+                <option value="Baby Spinach">Baby Spinach</option>
+                <option value="Rucola">Rucola</option>
+                <option value="Mix Salad">Mix Salad</option>
   </select>
   </div>
   </div>
