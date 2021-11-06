@@ -63,6 +63,10 @@ Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
 Route::resource('wtfile','UploadWtfileController');
 
+Route::resource('leafy_green_harvest','LeafyGreenHarvestedController');
+
+Route::resource('leafy_green_package','LeafyGreenPackedController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/uploadfile', 'UploadWtfileController@index');

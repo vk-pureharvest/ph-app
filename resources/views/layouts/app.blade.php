@@ -94,7 +94,13 @@
                                     </a>      
                                     <a class="dropdown-item" href="{{ route('nahel_utilities.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Nahel Utilities Readings') }}
-                                    </a>           
+                                    </a>      
+                                    <a class="dropdown-item" href="{{ route('leafy_green_harvest.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Leafy Green Harvest Details') }}
+                                    </a>            
+                                    <a class="dropdown-item" href="{{ route('leafy_green_package.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Leafy Greens Packaging Details') }}
+                                    </a>          
                                     <a class="dropdown-item" href="{{ route('pallet_tracker.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Pallet Tracking') }}
                                     </a>
