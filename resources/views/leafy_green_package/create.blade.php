@@ -56,7 +56,7 @@ div {
   <form method="post" action="{{url('leafy_green_package')}}">
    {{csrf_field()}}
    
-   <div><H4 >  Add Hourly Production </H4></div>
+   <div><H4 >  Leafy Green Packaging Details </H4></div>
 
    <div align="middle">
    <a href="{{route('leafy_green_package.index')}}" class="btn btn-primary">View Leafy Greens Packed</a>

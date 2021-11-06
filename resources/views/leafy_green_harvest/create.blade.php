@@ -56,7 +56,7 @@ div {
   <form method="post" action="{{url('leafy_green_harvest')}}">
    {{csrf_field()}}
    
-   <div><H4 >  Pallet Tracking Form </H4></div>
+   <div><H4 > Leafy Green Harvesting Details </H4></div>
 
    <div align="middle">
    <a href="{{route('leafy_green_harvest.index')}}" class="btn btn-primary">View History</a>
