@@ -118,6 +118,9 @@
                                     </a> 
                                     <a class="dropdown-item" href="{{ route('shelflifeberry.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Shelf Life Testing - Strawberry') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('truck_trackers.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Truck Delivery Details') }}
                                     </a>       
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

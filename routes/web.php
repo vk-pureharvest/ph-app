@@ -67,6 +67,8 @@ Route::resource('leafy_green_harvest','LeafyGreenHarvestedController');
 
 Route::resource('leafy_green_package','LeafyGreenPackedController');
 
+Route::resource('truck_trackers','TruckController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/uploadfile', 'UploadWtfileController@index');
