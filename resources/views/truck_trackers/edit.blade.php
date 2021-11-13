@@ -92,6 +92,11 @@ div {
 
 
    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Number of Pallets</label>
+    <input class="form-control w-25" type="integer" name="pallet_num" class="form-control" value="{{$truck_trackers->pallet_num}}" placeholder="Enter Color A" />
+   </div>
+
+   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Customer Name</label>
     <select class="form-control w-25" id="selectCustomer" name="customer" required focus>
     <option value="{{$truck_trackers->customer}}" selected="selected">{{$truck_trackers->customer}}</option>        
