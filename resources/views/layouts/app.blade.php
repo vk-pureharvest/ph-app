@@ -91,6 +91,9 @@
                                     </a>     
                                     <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Cold Storage Closing Stock') }}
+                                    </a>    
+                                    <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Harvesting Schedule') }}
                                     </a>      
                                     <a class="dropdown-item" href="{{ route('nahel_utilities.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Nahel Utilities Readings') }}
