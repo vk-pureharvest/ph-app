@@ -127,6 +127,7 @@ div {
       <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
       <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
       <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
+      <option value="Other">{{"Other"}}</option>
    </select>   
    </div>
    
