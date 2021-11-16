@@ -39,7 +39,6 @@ table.center {
     <th>Crop Type</th>
     <th>Number of Harvests</th>
     <th>Rows Harvested</th>
-    <th>KGs Harvested</th>
     <th>Buffer(%)</th>
     <th>Saturday Harvest</th>
     <th>Sunday Harvest</th>
@@ -54,7 +53,6 @@ table.center {
     <td >{{$row['crop_type']}}</td>
     <td align="center">{{$row['num_of_harvests']}}</td>
     <td align="center">{{$row['total_rows']}}</td>
-    <td align="center">{{$row['kg_harvested']}}</td>
     <td align="center">{{$row['buffer']}}</td>
     <td align="center">{{$row['sat_harvest']}}</td>
     <td align="center">{{$row['sun_harvest']}}</td>

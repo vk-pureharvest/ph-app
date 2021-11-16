@@ -19,7 +19,6 @@ class CreateHarvestSchedulesTable extends Migration
             $table->string('crop_type');
             $table->float('num_of_harvests');
             $table->float('total_rows');
-            $table->float('kg_harvested');
             $table->float('buffer');
             $table->float('sat_harvest');
             $table->float('sun_harvest');

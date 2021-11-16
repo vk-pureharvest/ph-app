@@ -65,10 +65,6 @@ div {
     <input class="form-control w-25" type="decimal" name="total_rows" class="form-control" value="{{$harvest_schedules->total_rows}}" />
    </div>
    
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Total KGs harvested per crop</label>
-    <input class="form-control w-25" type="decimal" name="kg_harvested" class="form-control" value="{{$harvest_schedules->kg_harvested}}" />
-   </div>
    
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Buffer</label>

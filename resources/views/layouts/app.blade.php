@@ -49,6 +49,28 @@
                                 </div> -->
                             </li>
                         @endif
+                        @if(Auth::user()->role_id==1)
+                        <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Harvest Plan<span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                   
+                                <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Harvesting Schedule') }}
+                                    </a>      
+                                    
+                                    <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Weekly Harvest Forecast') }}
+                                    </a>      
+                                  <!--  
+                                <a class="dropdown-item" href="{{ route('users.index') }}">
+                                        {{ __('Priva Reports') }}
+                                    </a>
+                                </div> -->
+                            </li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Menu <span class="caret"></span>
@@ -92,9 +114,6 @@
                                     <a class="dropdown-item" href="{{ route('inventories.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Cold Storage Closing Stock') }}
                                     </a>    
-                                    <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Harvesting Schedule') }}
-                                    </a>      
                                     <a class="dropdown-item" href="{{ route('nahel_utilities.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Nahel Utilities Readings') }}
                                     </a>      
