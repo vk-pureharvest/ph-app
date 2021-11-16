@@ -63,6 +63,8 @@ Route::resource('prod_export_xls','ProductionsController@exportProdExcel');
 
 Route::resource('wtfile','UploadWtfileController');
 
+Route::resource('weekly_harvest_forecasts','WeeklyHarvestController');
+
 Route::resource('leafy_green_harvest','LeafyGreenHarvestedController');
 
 Route::resource('leafy_green_package','LeafyGreenPackedController');

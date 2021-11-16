@@ -62,7 +62,6 @@ class HarvestScheduleController extends Controller
         $this->validate($request, [
             'num_of_harvests'    =>  'required',
             'total_rows'     =>  'required',
-            'kg_harvested'     =>  'required',
             'buffer'     =>  'required',
             'sat_harvest'     =>  'required',
             'sun_harvest'     =>  'required',
@@ -74,7 +73,6 @@ class HarvestScheduleController extends Controller
         $harvest_schedules = harvest_schedule::find($id);
         $harvest_schedules->num_of_harvests = $request->get('num_of_harvests');
         $harvest_schedules->total_rows = $request->get('total_rows');
-        $harvest_schedules->kg_harvested = $request->get('kg_harvested');
         $harvest_schedules->buffer = $request->get('buffer');
         $harvest_schedules->sat_harvest = $request->get('sat_harvest');
         $harvest_schedules->sun_harvest = $request->get('sun_harvest');

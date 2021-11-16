@@ -61,7 +61,7 @@
                                         {{ __('Harvesting Schedule') }}
                                     </a>      
                                     
-                                    <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
+                                    <a class="dropdown-item" href="{{ route('weekly_harvest_forecasts.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Weekly Harvest Forecast') }}
                                     </a>      
                                   <!--  
