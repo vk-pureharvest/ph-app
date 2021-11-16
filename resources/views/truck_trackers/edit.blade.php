@@ -137,6 +137,7 @@ div {
     <option value="{{$truck_trackers->location}}" selected="selected">{{$truck_trackers->location}}</option>            
         <option value="Abu Dhabi">Abu Dhabi</option>
         <option value="Dubai">Dubai</option>
+        <option value="Sharjah">Sharjah</option>
    </select>   
    </div>
 

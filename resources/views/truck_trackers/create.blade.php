@@ -147,6 +147,7 @@ div {
         <option value="" disabled selected>Choose location</option>          
         <option value="Abu Dhabi">Abu Dhabi</option>
         <option value="Dubai">Dubai</option>
+        <option value="Sharjah">Sharjah</option>
         </select>  
         </td>
   
