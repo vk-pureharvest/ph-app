@@ -41,8 +41,7 @@ class WeeklyHarvestController extends Controller
     {
         $authUser = auth()->user();
         
-        $this->validate($request, [
-            'site_name'    =>  'required',
+        $this->validate($request, [ 
             'week_num'    =>  'required'
          ]);
 

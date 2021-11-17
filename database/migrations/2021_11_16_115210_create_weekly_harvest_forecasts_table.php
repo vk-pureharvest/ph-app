@@ -15,7 +15,7 @@ class CreateWeeklyHarvestForecastsTable extends Migration
     {
         Schema::create('weekly_harvest_forecasts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('site_name');
+            $table->string('site_name')->default('Al Ain');
             $table->integer('week_num');
             $table->string('product_name');
             $table->float('kgs_harvested');

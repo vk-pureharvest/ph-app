@@ -222,6 +222,7 @@ $('thead').on('click', '.addRow', function(){
      '  <option value="" disabled selected>Choose location</option>       '+   
      '  <option value="Abu Dhabi">Abu Dhabi</option>'+
      '  <option value="Dubai">Dubai</option>'+
+     '  <option value="Sharjah">Sharjah</option>'+
      '  </select>'+  
      '  </td>'+
      '  <td><input class="form-control" type="time" name="time_entered[]" class="form-control" id="dob"  placeholder="Enter End Entered"/></td>'+
