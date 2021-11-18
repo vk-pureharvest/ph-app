@@ -139,7 +139,7 @@ div {
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
-      <td><input type="text" name="product_type[]" class="form-control" value="Coktail" /></td>
+      <td><input type="text" name="product_type[]" class="form-control" value="Cocktail" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
      </tbody>
