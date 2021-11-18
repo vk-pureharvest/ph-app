@@ -63,24 +63,18 @@ div {
    <br />
    <br />
    <br />
-  </div>
-  
-
-  <div class="form-group row" style="width:564px;text-align: center;">
-    
   </div> 
   
       <div class="form-group row" style="width:564px;text-align: center;">
-        <label class="col-sm-2 col-form-label">Week #</label>
+        <label class="col-sm-3 col-form-label">Week #</label>
           <input class="form-control w-25" type="integer" name="week_num" >
      
-          
-      <label class="col-sm-2 col-form-label">Site</label>
-      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
-        <option value="Al Ain" selected>Al Ain</option>        
-        <option value="Nahel">{{"Nahel"}}</option>
+      <label class="col-sm-3 col-form-label">Year</label>
+      <select class="form-control w-25" id="selectCategory" name="year" required focus>
+        <option value=2021 selected>2021</option>        
+        <option value=2022>{{"2022"}}</option>
       </select>
-
+      
       </div>
 
   <br />

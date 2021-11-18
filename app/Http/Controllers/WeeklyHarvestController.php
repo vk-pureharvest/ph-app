@@ -48,8 +48,8 @@ class WeeklyHarvestController extends Controller
          foreach($request->product_type as $key=>$product_type){
             $data = new weekly_harvest_forecast();
             $data->user_id = $authUser->id;
-            $data->site_name = $request->get('site_name');
             $data->week_num = $request->get('week_num');
+            $data->year = $request->get('year');
             $data->product_type=$request->product_type[$key];
             $data->kgs_harvested=$request->kgs_harvested[$key];
             
@@ -94,7 +94,6 @@ class WeeklyHarvestController extends Controller
         $authUser = auth()->user();
 
         $this->validate($request, [
-            'site_name'    =>  'required',
             'week_num'     =>  'required',
             'product_type'     =>  'required',
             'kgs_harvested'     =>  'required',
@@ -102,8 +101,8 @@ class WeeklyHarvestController extends Controller
 
         $weekly_harvest_forecasts = weekly_harvest_forecast::find($id);
         $weekly_harvest_forecasts->user_id = $authUser->id;
-        $weekly_harvest_forecasts->site_name = $request->get('site_name');
         $weekly_harvest_forecasts->week_num = $request->get('week_num');
+        $weekly_harvest_forecasts->year = $request->get('year');
         $weekly_harvest_forecasts->product_type = $request->get('product_type');
         $weekly_harvest_forecasts->kgs_harvested = $request->get('kgs_harvested');
         $weekly_harvest_forecasts->save();

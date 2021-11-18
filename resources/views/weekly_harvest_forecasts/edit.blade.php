@@ -55,19 +55,17 @@ div {
   <form method="post" action="{{action('WeeklyHarvestController@update', $id)}}">
    {{csrf_field()}}
    <input type="hidden" name="_method" value="PATCH" />
-
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Site Name</label>
-      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
-      <option value="{{$weekly_harvest_forecasts->site_name}}" selected="selected">{{$weekly_harvest_forecasts->site_name}}</option>
-        <option value="Al Ain" selected>Al Ain</option>        
-        <option value="Nahel">{{"Nahel"}}</option>
-      </select>
-  </div>
+ 
    
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Week #</label>
       <input class="form-control w-25"  type="integer" name="week_num" class="form-control" value="{{$weekly_harvest_forecasts->week_num}}"/>
+  </div>
+  
+   
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Year</label>
+      <input class="form-control w-25"  type="integer" name="year" class="form-control" value="{{$weekly_harvest_forecasts->year}}"/>
   </div>
 
    <div class="form-group row">

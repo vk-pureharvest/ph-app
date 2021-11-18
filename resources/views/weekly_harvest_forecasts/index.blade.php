@@ -42,7 +42,7 @@ div {
   </div>
   <table class="table table-bordered table-striped">
    <tr>
-    <th>Site</th>
+    <th>Year</th>
     <th>Week Number</th>
     <th>Crop Variety</th>
     <th>KGs Harvested</th>
@@ -51,7 +51,7 @@ div {
    </tr>
    @foreach($weekly_harvest_forecasts as $row)
    <tr>
-    <td>{{$row['site_name']}}</td>
+    <td>{{$row['year']}}</td>
     <td>{{$row['week_num']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['kgs_harvested']}}</td>
