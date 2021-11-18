@@ -12,7 +12,7 @@ class weekly_harvest_forecast extends Model
     * @var array
     */
    protected $fillable = [
-    'user_id','site_name','week_num','product_name','kgs_harvested',
+    'user_id','site_name','week_num','product_type','kgs_harvested',
 ];
 
 function user(){

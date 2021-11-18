@@ -79,7 +79,7 @@ class WeeklyHarvestController extends Controller
     public function edit($id)
     {
         $weekly_harvest_forecasts = weekly_harvest_forecast::find($id);
-        return view('weekly_harvest_forecast.edit', compact('weekly_harvest_forecast', 'id'));
+        return view('weekly_harvest_forecasts.edit', compact('weekly_harvest_forecasts', 'id'));
     }
 
     /**
@@ -91,6 +91,8 @@ class WeeklyHarvestController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $authUser = auth()->user();
+
         $this->validate($request, [
             'site_name'    =>  'required',
             'week_num'     =>  'required',
@@ -99,12 +101,13 @@ class WeeklyHarvestController extends Controller
          ]);
 
         $weekly_harvest_forecasts = weekly_harvest_forecast::find($id);
+        $weekly_harvest_forecasts->user_id = $authUser->id;
         $weekly_harvest_forecasts->site_name = $request->get('site_name');
-        $weekly_harvest_forecasts->date_added = $request->get('week_num');
-        $weekly_harvest_forecasts->start_time = $request->get('product_type');
-        $weekly_harvest_forecasts->end_time = $request->get('kgs_harvested');
+        $weekly_harvest_forecasts->week_num = $request->get('week_num');
+        $weekly_harvest_forecasts->product_type = $request->get('product_type');
+        $weekly_harvest_forecasts->kgs_harvested = $request->get('kgs_harvested');
         $weekly_harvest_forecasts->save();
-        return redirect()->route('weekly_harvest_forecast.index')->with('success', 'Data Updated');
+        return redirect()->route('weekly_harvest_forecasts.index')->with('success', 'Data Updated');
     }
 
     /**

@@ -59,6 +59,8 @@ class HarvestScheduleController extends Controller
 
     public function update(Request $request, $id)
     {
+        $authUser = auth()->user();
+
         $this->validate($request, [
             'num_of_harvests'    =>  'required',
             'total_rows'     =>  'required',
@@ -71,6 +73,7 @@ class HarvestScheduleController extends Controller
             'thu_harvest'     =>  'required'
         ]);
         $harvest_schedules = harvest_schedule::find($id);
+        $harvest_schedules->user_id = $authUser->id;
         $harvest_schedules->num_of_harvests = $request->get('num_of_harvests');
         $harvest_schedules->total_rows = $request->get('total_rows');
         $harvest_schedules->buffer = $request->get('buffer');
@@ -82,7 +85,7 @@ class HarvestScheduleController extends Controller
         $harvest_schedules->thu_harvest = $request->get('thu_harvest');
         $harvest_schedules->save();
         return redirect()->route('harvest_schedules.create')->with('success', 'Data Updated');
-    
+           
     }
 
     /**

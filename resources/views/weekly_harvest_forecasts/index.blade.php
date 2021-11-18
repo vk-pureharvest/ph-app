@@ -55,9 +55,9 @@ div {
     <td>{{$row['week_num']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['kgs_harvested']}}</td>
-    <td><a href="{{action('HarvestScheduleController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+    <td><a href="{{action('WeeklyHarvestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-     <form method="post" class="delete_form" action="{{action('HarvestScheduleController@destroy', $row['id'])}}">
+     <form method="post" class="delete_form" action="{{action('WeeklyHarvestController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
       <button type="submit" class="btn btn-danger">Delete</button>

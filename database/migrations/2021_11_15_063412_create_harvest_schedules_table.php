@@ -15,6 +15,7 @@ class CreateHarvestSchedulesTable extends Migration
     {
         Schema::create('harvest_schedules', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('site_name');
             $table->string('crop_type');
             $table->float('num_of_harvests');

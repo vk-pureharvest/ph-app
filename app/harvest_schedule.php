@@ -14,7 +14,7 @@ class harvest_schedule extends Model
      * @var array
      */
     protected $fillable = [
-        'site_name','crop_type','num_of_harvests', 'total_rows','buffer','sat_harvest','sun_harvest','mon_harvest','tue_harvest','wed_harvest','thu_harvest',
+        'user_id','site_name','crop_type','num_of_harvests', 'total_rows','buffer','sat_harvest','sun_harvest','mon_harvest','tue_harvest','wed_harvest','thu_harvest',
     ];
 
     function user(){
