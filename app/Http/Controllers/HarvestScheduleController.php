@@ -22,7 +22,7 @@ class HarvestScheduleController extends Controller
     
     public function create()
     {
-        $harvest_schedules = harvest_schedule::all()->sortBy('id')->reverse()->take(10)->toArray();
+        $harvest_schedules = harvest_schedule::all()->sortBy('id')->reverse()->toArray();
         return view('harvest_schedules.index', compact('harvest_schedules'));
     }
 
