@@ -20,6 +20,7 @@ class CreateWeeklyHarvestForecastsTable extends Migration
             $table->integer('year');
             $table->string('product_type');
             $table->float('kgs_harvested');
+            $table->float('first_quality');
             $table->timestamps();
         });
     }

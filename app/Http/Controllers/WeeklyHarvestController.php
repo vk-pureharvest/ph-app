@@ -52,6 +52,7 @@ class WeeklyHarvestController extends Controller
             $data->year = $request->get('year');
             $data->product_type=$request->product_type[$key];
             $data->kgs_harvested=$request->kgs_harvested[$key];
+            $data->first_quality=$request->first_quality[$key];
             
             $data->save();
        }
@@ -97,6 +98,7 @@ class WeeklyHarvestController extends Controller
             'week_num'     =>  'required',
             'product_type'     =>  'required',
             'kgs_harvested'     =>  'required',
+            'first_quality'     =>  'required',
          ]);
 
         $weekly_harvest_forecasts = weekly_harvest_forecast::find($id);
@@ -105,6 +107,7 @@ class WeeklyHarvestController extends Controller
         $weekly_harvest_forecasts->year = $request->get('year');
         $weekly_harvest_forecasts->product_type = $request->get('product_type');
         $weekly_harvest_forecasts->kgs_harvested = $request->get('kgs_harvested');
+        $weekly_harvest_forecasts->first_quality = $request->get('first_quality');
         $weekly_harvest_forecasts->save();
         return redirect()->route('weekly_harvest_forecasts.index')->with('success', 'Data Updated');
     }

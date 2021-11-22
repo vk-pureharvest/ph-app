@@ -45,7 +45,8 @@ div {
     <th>Year</th>
     <th>Week Number</th>
     <th>Crop Variety</th>
-    <th>KGs Harvested</th>
+    <th>Total Quantity (KGs)</th>
+    <th>First Quality</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -55,6 +56,7 @@ div {
     <td>{{$row['week_num']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['kgs_harvested']}}</td>
+    <td>{{$row['first_quality']}}</td>
     <td><a href="{{action('WeeklyHarvestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('WeeklyHarvestController@destroy', $row['id'])}}">

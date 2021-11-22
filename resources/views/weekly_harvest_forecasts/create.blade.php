@@ -84,57 +84,70 @@ div {
     <thead>
       <tr>
         <th>Crop Variety</th>
-        <th>KGs Harvest</th>
+        <th>Total Quantity (Kgs)</th>
+        <th>First Quality (Kgs)</th>
       </tr>
     </thead>
     <tbody>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Round" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="TOV" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="COV" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Candy" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Mixed Candy" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Plum" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Strabena" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Yellow TOV" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Orange TOV" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Heirloom" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Yoom" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
       <tr>        
       <td><input type="text" name="product_type[]" class="form-control" value="Cocktail" /></td>
       <td><input type="decimal" name="kgs_harvested[]" class="form-control" placeholder="Enter KG" /></td>
+      <td><input type="decimal" name="first_quality[]" class="form-control" placeholder="Enter KG" /></td>
       </tr>
      </tbody>
   </table>

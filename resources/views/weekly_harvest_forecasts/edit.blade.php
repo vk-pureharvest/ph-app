@@ -90,9 +90,15 @@ div {
    </div>
    
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">KGs Harvested</label>
+    <label class="col-sm-2 col-form-label">Total Quantity (Kgs)</label>
       <input class="form-control w-25"  type="decimal" name="kgs_harvested" class="form-control" value="{{$weekly_harvest_forecasts->kgs_harvested}}"/>
   </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">First Quality (Kgs)</label>
+      <input class="form-control w-25"  type="decimal" name="first_quality" class="form-control" value="{{$weekly_harvest_forecasts->first_quality}}"/>
+  </div>
+
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />
