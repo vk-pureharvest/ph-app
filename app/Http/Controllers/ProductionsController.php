@@ -66,7 +66,7 @@ class ProductionsController extends Controller
             $data->start_time = $request->get('start_time');
             $data->end_time = $request->get('end_time');
             $data->workstation=$request->workstation[$key];
-            $data->ppl_num=$request->ppl_num[$key];
+            $data->employee=$request->employee[$key];
             $data->prod_boxes=$request->prod_boxes[$key];
             $data->product_type=$request->product_type[$key];
             $data->harvest_date=$request->harvest_date[$key];
@@ -124,7 +124,7 @@ class ProductionsController extends Controller
         $productions->start_time = $request->get('start_time');
         $productions->end_time = $request->get('end_time');
         $productions->workstation = $request->get('workstation');
-        $productions->ppl_num = $request->get('ppl_num');
+        $productions->employee = $request->get('employee');
         $productions->prod_boxes = $request->get('prod_boxes');
         $productions->product_type = $request->get('product_type');
         $productions->harvest_date = $request->get('harvest_date');

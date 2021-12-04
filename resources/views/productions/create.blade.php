@@ -96,7 +96,7 @@ div {
     <thead>
       <tr>
         <th>Workstation</th>
-        <th>Number of people</th>
+        <th>Person</th>
         <th>Production (Boxes)</th>
         <th>Product Type</th>
         <th>Harvest Date</th>
@@ -118,7 +118,19 @@ div {
         <option value="H">H</option>
         <option value="Candy Machine ">Candy Machine </option>
       </td>
-      <td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>
+      <td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>
+      <option value="" disabled selected>Select Name</option>          
+      <option value='Abbas'>Abbas</option>
+      <option value='Edawalay'>Edawalay</option>
+      <option value='Mahadi'>Mahadi</option>
+      <option value='Mazhar'>Mazhar</option>
+      <option value='Mehtab'>Mehtab</option>
+      <option value='Sadik'>Sadik</option>
+      <option value='Shakil'>Shakil</option>
+      <option value='Tariq'>Tariq</option>
+      <option value='Yasin'>Yasin</option>
+      <option value='Younas'>Younas</option>
+      </td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>

@@ -47,7 +47,7 @@ div {
     <th>Start Time</th>
     <th>End Time</th>
     <th>Workstation</th>
-    <th>Number of People</th>
+    <th>Employee</th>
     <th>Production (boxes)</th>
     <th>Product Type</th>
     <th>Harvest Date</th>
@@ -62,7 +62,7 @@ div {
     <td>{{$row['start_time']}}</td>
     <td>{{$row['end_time']}}</td>
     <td>{{$row['workstation']}}</td>
-    <td>{{$row['ppl_num']}}</td>
+    <td>{{$row['employee']}}</td>
     <td>{{$row['prod_boxes']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['harvest_date']}}</td>

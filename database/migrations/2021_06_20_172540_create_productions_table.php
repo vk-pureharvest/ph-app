@@ -21,7 +21,8 @@ class CreateProductionsTable extends Migration
             $table->time('start_time');
             $table->time('end_time');
             $table->string('workstation');
-            $table->integer('ppl_num');
+            $table->string('employee');
+            $table->integer('ppl_num')->default(1);
             $table->integer('prod_boxes');
             $table->string('product_type');
             $table->date('harvest_date'); 

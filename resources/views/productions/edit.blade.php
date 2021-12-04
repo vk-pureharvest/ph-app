@@ -99,6 +99,22 @@ div {
     <input class="form-control w-25" type="decimal" name="ppl_num" class="form-control" value="{{$productions->ppl_num}}" placeholder="Enter Color L" />
    </div>
    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Employee</label>
+    <select class="form-control w-25" id="text" name="employee" required focus>
+                <option value="{{$productions->employee}}" selected="selected">{{$productions->employee}}</option>  
+                <option value='Abbas'>Abbas</option>
+                <option value='Edawalay'>Edawalay</option>
+                <option value='Mahadi'>Mahadi</option>
+                <option value='Mazhar'>Mazhar</option>
+                <option value='Mehtab'>Mehtab</option>
+                <option value='Sadik'>Sadik</option>
+                <option value='Shakil'>Shakil</option>
+                <option value='Tariq'>Tariq</option>
+                <option value='Yasin'>Yasin</option>
+                <option value='Younas'>Younas</option>
+   </select>
+   </div>
+   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Production (boxes)</label>
     <input class="form-control w-25" type="decimal" name="prod_boxes" class="form-control" value="{{$productions->prod_boxes}}" placeholder="Enter Color A" />
    </div>
