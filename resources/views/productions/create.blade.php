@@ -120,17 +120,26 @@ div {
       </td>
       <td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>
       <option value="" disabled selected>Select Name</option>          
-      <option value='Abbas'>Abbas</option>
-      <option value='Edawalay'>Edawalay</option>
-      <option value='Mahadi'>Mahadi</option>
-      <option value='Mazhar'>Mazhar</option>
-      <option value='Mehtab'>Mehtab</option>
-      <option value='Sadik'>Sadik</option>
-      <option value='Shakil'>Shakil</option>
-      <option value='Tariq'>Tariq</option>
-      <option value='Yasin'>Yasin</option>
-      <option value='Younas'>Younas</option>
-      </td>
+      <option value="Mazharul Haq">Mazharul Haq</option>
+      <option value="Mohammad Shakil">Mohammad Shakil</option>
+      <option value="Gibrilla Kamara">Gibrilla Kamara</option>
+      <option value="Mohammad younus">Mohammad younus</option>
+      <option value="Saddkor Rahman">Saddkor Rahman</option>
+      <option value="Lamin Kamara">Lamin Kamara</option>
+      <option value="Khimananda Gautam">Khimananda Gautam</option>
+      <option value="Asghar Ali">Asghar Ali</option>
+      <option value="Yasin Kyobe">Yasin Kyobe</option>
+      <option value="Fahad Kalibala">Fahad Kalibala</option>
+      <option value="Mahad Kasozi">Mahad Kasozi</option>
+      <option value="Tariq Jameel">Tariq Jameel</option>
+      <option value="Dominic">Dominic</option>
+      <option value="Shoaib Khan">Shoaib Khan</option>
+      <option value="Hamza ">Hamza </option>
+      <option value="Abbas">Abbas</option>
+      <option value="Mehtab ">Mehtab </option>
+      <option value="Edewalay ">Edewalay </option>
+      <option value="Tariq Hassan">Tariq Hassan</option>
+  </td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
@@ -203,7 +212,29 @@ $('thead').on('click', '.addRow', function(){
         '<option value="H">H</option>'+
         '<option value="Candy Machine ">Candy Machine </option>'+
       '</td>'+
-      '<td><input type="integer" name="ppl_num[]" class="form-control" placeholder="Enter Number of people" /></td>'+
+      '<td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>'+
+      '<option value="" disabled selected>Select Name</option>          '+
+      '<option value="Mazharul Haq">Mazharul Haq</option>'+
+      '<option value="Mohammad Shakil">Mohammad Shakil</option>'+
+      '<option value="Gibrilla Kamara">Gibrilla Kamara</option>'+
+      '<option value="Mohammad younus">Mohammad younus</option>'+
+      '<option value="Saddkor Rahman">Saddkor Rahman</option>'+
+      '<option value="Lamin Kamara">Lamin Kamara</option>'+
+      '<option value="Khimananda Gautam">Khimananda Gautam</option>'+
+      '<option value="Asghar Ali">Asghar Ali</option>'+
+      '<option value="Yasin Kyobe">Yasin Kyobe</option>'+
+      '<option value="Fahad Kalibala">Fahad Kalibala</option>'+
+      '<option value="Mahad Kasozi">Mahad Kasozi</option>'+
+      '<option value="Tariq Jameel">Tariq Jameel</option>'+
+      '<option value="Dominic">Dominic</option>'+
+      '<option value="Shoaib Khan">Shoaib Khan</option>'+
+      '<option value="Hamza ">Hamza </option>'+
+      '<option value="Abbas">Abbas</option>'+
+      '<option value="Mehtab ">Mehtab </option>'+
+      '<option value="Edewalay ">Edewalay </option>'+
+      '<option value="Tariq Hassan">Tariq Hassan</option>'+
+
+  '</td>'+
       '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
       '<td>'+
         '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
