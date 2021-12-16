@@ -102,6 +102,7 @@ div {
     <option value="{{$truck_trackers->customer}}" selected="selected">{{$truck_trackers->customer}}</option>        
     <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
       <option value="AL DAHRA AGRICULTURE LLC">{{"AL DAHRA AGRICULTURE LLC"}}</option>
+      <option value="AL ZAYYAT TRADING LLC">{{"AL ZAYYAT TRADING LLC"}}</option>
       <option value="ANAZSINULABEEDEEN">{{"ANAZSINULABEEDEEN"}}</option>
       <option value="BARAKAT VEGETABLE AND FRUITS CO.">{{"BARAKAT VEGETABLE AND FRUITS CO."}}</option>
       <option value="CASH SALE">{{"CASH SALE"}}</option>
