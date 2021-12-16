@@ -102,17 +102,16 @@ div {
     <option value="{{$truck_trackers->customer}}" selected="selected">{{$truck_trackers->customer}}</option>        
     <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
       <option value="AL DAHRA AGRICULTURE LLC">{{"AL DAHRA AGRICULTURE LLC"}}</option>
-      <option value="AL ZAYYAT TRADING LLC">{{"AL ZAYYAT TRADING LLC"}}</option>
       <option value="ANAZSINULABEEDEEN">{{"ANAZSINULABEEDEEN"}}</option>
-      <option value="BEST OF LATIN FOODSTUFF">{{"BEST OF LATIN FOODSTUFF"}}</option>
       <option value="BARAKAT VEGETABLE AND FRUITS CO.">{{"BARAKAT VEGETABLE AND FRUITS CO."}}</option>
       <option value="CASH SALE">{{"CASH SALE"}}</option>
       <option value="EMIRATES FARM FOR LIVESTOCK AND AGRICULTURAL PRODUCTION LLC">{{"EMIRATES FARM FOR LIVESTOCK AND AGRICULTURAL PRODUCTION LLC"}}</option>
       <option value="FRESH FRUITS COMPANY VEGETABLES & FRUIT TRADING LLC">{{"FRESH FRUITS COMPANY VEGETABLES & FRUIT TRADING LLC"}}</option>
       <option value="FRESHONTABLE DWC-LLC">{{"FRESHONTABLE DWC-LLC"}}</option>
+      <option value="FRESH LEAF FOODSTUFF TRADING LLC">{{"FRESH LEAF FOODSTUFF TRADING LLC"}}</option>
+      <option value="GULF FRUITS TRADE COMPANY LLC">{{"GULF FRUITS TRADE COMPANY LLC"}}</option>
       <option value="GHAZI ALHAJERI">{{"GHAZI ALHAJERI"}}</option>
       <option value="GLOBAL FRESH FRUITS AND VEGETABLES L.L.C">{{"GLOBAL FRESH FRUITS AND VEGETABLES L.L.C"}}</option>
-      <option value="GULF FRUITS TRADE COMPANY LLC">{{"GULF FRUITS TRADE COMPANY LLC"}}</option>
       <option value="JALEEL FRESH PRODUCE LLC (BRANCH)">{{"JALEEL FRESH PRODUCE LLC (BRANCH)"}}</option>
       <option value="KIBSONS INTERNATIONAL LLC">{{"KIBSONS INTERNATIONAL LLC"}}</option>
       <option value="LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC">{{"LEVARHT GLOBAL FRUIT AND VEGETABLES TRADING LLC"}}</option>
@@ -124,6 +123,7 @@ div {
       <option value="ONE DAY ONE FRUIT TRADING - FZE">{{"ONE DAY ONE FRUIT TRADING - FZE"}}</option>
       <option value="SAMPLE TO PURE HARVEST MANAGEMENT">{{"SAMPLE TO PURE HARVEST MANAGEMENT"}}</option>
       <option value="SAMPLES TO NEW CUSTOMERS">{{"SAMPLES TO NEW CUSTOMERS"}}</option>
+      <option value="SHARIFA KENAR SADQI GENERAL TRADING LLC">{{"SHARIFA KENAR SADQI GENERAL TRADING LLC"}}</option>
       <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
       <option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>
       <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
