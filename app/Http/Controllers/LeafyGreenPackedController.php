@@ -60,6 +60,7 @@ class LeafyGreenPackedController extends Controller
             $data->user_id = $authUser->id;
             $data->site_name = $request->get('site_name');
             $data->date_added = $request->get('date_added');
+            $data->class=$request->class[$key];
             $data->product_type=$request->product_type[$key];
             $data->box_weight=$request->box_weight[$key];
             $data->no_of_punnets=$request->no_of_punnets[$key];
@@ -112,6 +113,7 @@ class LeafyGreenPackedController extends Controller
         $leafy_green_package->site_name = $request->get('site_name');
         $leafy_green_package->date_added = $request->get('date_added');
         $leafy_green_package->product_type = $request->get('product_type');
+        $leafy_green_package->class = $request->get('class');
         $leafy_green_package->box_weight = $request->get('box_weight');
         $leafy_green_package->no_of_punnets = $request->get('no_of_punnets');
         $leafy_green_package->no_of_boxes = $request->get('no_of_boxes');

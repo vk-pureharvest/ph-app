@@ -71,6 +71,15 @@ div {
   </div>
    
   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Class</label>
+    <select class="form-control w-25" name="class" required focus>
+                <option value="{{$leafy_green_package->class}}" selected="selected">{{$leafy_green_package->class}}</option>  
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Waste">Waste</option>
+            </select>
+   </div>
+  <div class="form-group row">
     <label class="col-sm-2 col-form-label">Boxes Weight in Grams</label>
     <select class="form-control w-25" name="box_weight" required focus>
                 <option value="{{$leafy_green_package->box_weight}}" selected="selected">{{$leafy_green_package->box_weight}}</option>  

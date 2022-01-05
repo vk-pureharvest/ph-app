@@ -44,8 +44,9 @@ div {
    <tr>
     <th>Site</th>
     <th>Date</th>
-    <th>Weight in Grams</th>
+    <th>Class</th>
     <th>Product Type</th>
+    <th>Weight in Grams</th>
     <th>Number of Punnets</th>
     <th>Number of Boxes</th>
     <th>Edit</th>
@@ -55,6 +56,7 @@ div {
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
+    <td>{{$row['class']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['box_weight']}}</td>
     <td>{{$row['no_of_punnets']}}</td>
