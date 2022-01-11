@@ -92,7 +92,7 @@ div {
    </div>
 
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Sunday Harvest Schedule</label>
+    <label class="col-sm-2 col-form-label">Friday Harvest Schedule</label>
     <input class="form-control w-25" type="decimal" name="fri_harvest" class="form-control" value="{{$harvest_schedules->fri_harvest}}" />
    </div>
 
