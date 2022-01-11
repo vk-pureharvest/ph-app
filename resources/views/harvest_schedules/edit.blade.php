@@ -72,16 +72,6 @@ div {
    </div>
    
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Saturday Harvest Schedule</label>
-    <input class="form-control w-25" type="decimal" name="sat_harvest" class="form-control" value="{{$harvest_schedules->sat_harvest}}" />
-   </div>
-
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Sunday Harvest Schedule</label>
-    <input class="form-control w-25" type="decimal" name="sun_harvest" class="form-control" value="{{$harvest_schedules->sun_harvest}}" />
-   </div>
-
-   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Monday Harvest Schedule</label>
     <input class="form-control w-25" type="decimal" name="mon_harvest" class="form-control" value="{{$harvest_schedules->mon_harvest}}" />
    </div>
@@ -99,6 +89,16 @@ div {
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Thursday Harvest Schedule</label>
     <input class="form-control w-25" type="decimal" name="thu_harvest" class="form-control" value="{{$harvest_schedules->thu_harvest}}" />
+   </div>
+
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Sunday Harvest Schedule</label>
+    <input class="form-control w-25" type="decimal" name="fri_harvest" class="form-control" value="{{$harvest_schedules->fri_harvest}}" />
+   </div>
+
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Saturday Harvest Schedule</label>
+    <input class="form-control w-25" type="decimal" name="sat_harvest" class="form-control" value="{{$harvest_schedules->sat_harvest}}" />
    </div>
 
    <br />

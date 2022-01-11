@@ -40,12 +40,12 @@ table.center {
     <th>Number of Harvests</th>
     <th>Rows Harvested</th>
     <th>Buffer(%)</th>
-    <th>Saturday Harvest</th>
-    <th>Sunday Harvest</th>
     <th>Monday Harvest</th>
     <th>Tuesday Harvest</th>
     <th>Wednesday Harvest</th>
     <th>Thursday Harvest</th>
+    <th>Friday Harvest</th>
+    <th>Saturday Harvest</th>
     <th>Edit</th>
    </tr>
    @foreach($harvest_schedules as $row)
@@ -54,12 +54,12 @@ table.center {
     <td align="center">{{$row['num_of_harvests']}}</td>
     <td align="center">{{$row['total_rows']}}</td>
     <td align="center">{{$row['buffer']}}</td>
-    <td align="center">{{$row['sat_harvest']}}</td>
-    <td align="center">{{$row['sun_harvest']}}</td>
     <td align="center">{{$row['mon_harvest']}}</td>
     <td align="center">{{$row['tue_harvest']}}</td>
     <td align="center">{{$row['wed_harvest']}}</td>
     <td align="center">{{$row['thu_harvest']}}</td>
+    <td align="center">{{$row['fri_harvest']}}</td>
+    <td align="center">{{$row['sat_harvest']}}</td>
     <td align="center"><a href="{{action('HarvestScheduleController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     
    </tr>

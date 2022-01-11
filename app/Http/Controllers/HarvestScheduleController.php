@@ -66,7 +66,7 @@ class HarvestScheduleController extends Controller
             'total_rows'     =>  'required',
             'buffer'     =>  'required',
             'sat_harvest'     =>  'required',
-            'sun_harvest'     =>  'required',
+            'fri_harvest'     =>  'required',
             'mon_harvest'     =>  'required',
             'tue_harvest'     =>  'required',
             'wed_harvest'     =>  'required',
@@ -78,7 +78,7 @@ class HarvestScheduleController extends Controller
         $harvest_schedules->total_rows = $request->get('total_rows');
         $harvest_schedules->buffer = $request->get('buffer');
         $harvest_schedules->sat_harvest = $request->get('sat_harvest');
-        $harvest_schedules->sun_harvest = $request->get('sun_harvest');
+        $harvest_schedules->fri_harvest = $request->get('fri_harvest');
         $harvest_schedules->mon_harvest = $request->get('mon_harvest');
         $harvest_schedules->tue_harvest = $request->get('tue_harvest');
         $harvest_schedules->wed_harvest = $request->get('wed_harvest');
