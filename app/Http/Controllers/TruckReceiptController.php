@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\truck_receipt;
+use App\Truck_receipt;
 use Illuminate\Support\Facades\Auth;
 use Excel;
 
