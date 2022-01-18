@@ -71,6 +71,8 @@ Route::resource('leafy_green_package','LeafyGreenPackedController');
 
 Route::resource('truck_trackers','TruckController');
 
+Route::resource('truck_receipts','TruckReceiptController');
+
 Route::resource('harvest_schedules','HarvestScheduleController');
 
 Route::get('/home', 'HomeController@index')->name('home');
