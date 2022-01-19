@@ -53,13 +53,13 @@ div {
   @endif
   
 
-  <form method="post" action="{{url('truck_receipts')}}">
+  <form method="post" action="{{url('truck_temps')}}">
    {{csrf_field()}}
    
    <div><H4 >  Add Truck Receipts Details </H4></div>
 
    <div align="middle">
-   <a href="{{route('truck_receipts.index')}}" class="btn btn-primary">View Truck Details</a>
+   <a href="{{route('truck_temps.index')}}" class="btn btn-primary">View Truck Details</a>
    <br />
    <br />
    <br />
@@ -86,51 +86,29 @@ div {
   <table class="table">
     <thead>
       <tr>
-        <th>Vehicle Registration</th>
-        <th>Truck Size</th>
-        <th>Number of Pallets</th>
-        <th>Supplier</th>
-        <th>Supplier</th>
-        <th>Quantity Received</th>
-        <th>DN Quantity</th>
-        <th>Time Entered</th>
-        <th>Time Left</th>
+        <th>Truck Number</th>
+        <th>Truck Temperature</th>
+        <th>Driver Name</th>
+        <th>Product Name</th>
+        <th>Truck Cleaning</th>
+        <th>Comments</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-      <td><input type="text" name="vehicle_reg[]" class="form-control" placeholder="Enter Vehicle Registration" /></td>      
+      <td><input type="text" name="truck_num[]" class="form-control" placeholder="Enter Truck Number" /></td>
+      <td><input type="text" name="truck_temp[]" class="form-control" placeholder="Enter Truck temperature" /></td>   
+      <td><input type="text" name="driver_name[]" class="form-control" placeholder="Enter Driver Name" /></td>    
+      <td><input type="text" name="product_name[]" class="form-control" placeholder="Enter Product Name" /></td>  
       <td>
-        <select class="form-control" id="selectProduct" name="truck_size[]" required focus>
+        <select class="form-control" id="selectProduct" name="truck_clean[]" required focus>
         <option value="" disabled selected>Truck Size</option>          
-        <option value="14F">14F</option>         
-        <option value="20F">20F</option>         
-        <option value="40F">40F</option>         
-        <option value="50F">50F</option>
+        <option value="Yea">Yes</option>         
+        <option value="No">No</option> 
         </select>  
-        </td>
-      <td><input type="integer" name="no_of_pallets[]" class="form-control" placeholder="Enter Number of Pallets" /></td>
-      <td>
-        <select class="form-control" id="selectProduct" name="supplier[]" required focus>
-        <option value="" disabled selected>Choose Supplier</option>          
-        <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
-      <option value="AL DAHRA AGRICULTURE LLC">{{"AL DAHRA AGRICULTURE LLC"}}</option>
-      <option value="AL ZAYYAT TRADING LLC">{{"AL ZAYYAT TRADING LLC"}}</option>
-      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
-      <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
-      <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
-      <option value="Other">{{"Other"}}</option>
-    </select>  
-        </td>
-        <td><input type="text" name="item[]" class="form-control" placeholder="Enter Item Received" /></td>
-        <td><input type="decimal" name="qty_received[]" class="form-control" placeholder="Enter Quantity Received" /></td>
-        
-        <td><input type="decimal" name="dn_qty[]" class="form-control" placeholder="Enter DN Quantity" /></td>
-        
-        <td><input class="form-control" type="time" name="time_entered[]" class="form-control" id="dob"  placeholder="Enter End Entered"/></td>
-        <td><input class="form-control" type="time" name="time_left[]" class="form-control"  placeholder="Enter End Left"/></td>
-  
+        </td>  
+      <td><input type="text" name="comments[]" class="form-control" placeholder="Enter Comments" /></td> 
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>

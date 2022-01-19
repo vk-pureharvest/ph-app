@@ -68,7 +68,6 @@ class TruckReceiptController extends Controller
             $data->dn_qty=$request->dn_qty[$key];
             $data->time_entered=$request->time_entered[$key];
             $data->time_left=$request->time_left[$key];
-            /*return($request->supplier[$key]);*/
             $data->save();
        }
        return redirect()->route('truck_receipts.create')->with('success', 'Data Added');

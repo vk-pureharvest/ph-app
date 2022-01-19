@@ -147,6 +147,9 @@
                                     <a class="dropdown-item" href="{{ route('truck_receipts.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Truck Receipt Details') }}
                                     </a>       
+                                    <a class="dropdown-item" href="{{ route('truck_temps.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Truck Temperature Monitoring') }}
+                                    </a>       
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

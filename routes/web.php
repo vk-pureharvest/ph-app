@@ -73,6 +73,8 @@ Route::resource('truck_trackers','TruckController');
 
 Route::resource('truck_receipts','TruckReceiptController');
 
+Route::resource('truck_temps','TruckTempController');
+
 Route::resource('harvest_schedules','HarvestScheduleController');
 
 Route::get('/home', 'HomeController@index')->name('home');
