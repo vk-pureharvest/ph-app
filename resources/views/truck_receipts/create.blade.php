@@ -90,7 +90,7 @@ div {
         <th>Truck Size</th>
         <th>Number of Pallets</th>
         <th>Supplier</th>
-        <th>Supplier</th>
+        <th>Item</th>
         <th>Quantity Received</th>
         <th>DN Quantity</th>
         <th>Time Entered</th>
@@ -111,18 +111,7 @@ div {
         </select>  
         </td>
       <td><input type="integer" name="no_of_pallets[]" class="form-control" placeholder="Enter Number of Pallets" /></td>
-      <td>
-        <select class="form-control" id="selectProduct" name="supplier[]" required focus>
-        <option value="" disabled selected>Choose Supplier</option>          
-        <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
-      <option value="AL DAHRA AGRICULTURE LLC">{{"AL DAHRA AGRICULTURE LLC"}}</option>
-      <option value="AL ZAYYAT TRADING LLC">{{"AL ZAYYAT TRADING LLC"}}</option>
-      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
-      <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
-      <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
-      <option value="Other">{{"Other"}}</option>
-    </select>  
-        </td>
+        <td><input type="text" name="supplier[]" class="form-control" placeholder="Enter Supplier Name" /></td>
         <td><input type="text" name="item[]" class="form-control" placeholder="Enter Item Received" /></td>
         <td><input type="decimal" name="qty_received[]" class="form-control" placeholder="Enter Quantity Received" /></td>
         

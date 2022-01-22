@@ -89,25 +89,13 @@ div {
     <label class="col-sm-2 col-form-label">Number of Pallets</label>
     <input class="form-control w-25" type="integer" name="no_of_pallets" class="form-control" value="{{$truck_receipts->no_of_pallets}}"  />
    </div>
-
+   
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Supplier Name</label>
-    <select class="form-control w-25" id="selectCustomer" name="supplier" required focus>
-    <option value="{{$truck_receipts->supplier}}" selected="selected">{{$truck_receipts->supplier}}</option>        
-    <option value="ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)">{{"ABU DHABI CO-OPERATIVE SOCIETY (ADCOOPS)"}}</option>
-       <option value="SHARIFA KENAR SADQI GENERAL TRADING LLC">{{"SHARIFA KENAR SADQI GENERAL TRADING LLC"}}</option>
-      <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
-      <option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>
-      <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
-      <option value="TRANSMED OVERSEAS INCORPORATED S.A.">{{"TRANSMED OVERSEAS INCORPORATED S.A."}}</option>
-      <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
-      <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
-      <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
-      <option value="Other">{{"Other"}}</option>
-   </select>   
+    <input class="form-control w-25" type="text" name="supplier" class="form-control" value="{{$truck_receipts->supplier}}" placeholder="Enter Color A" />
    </div>
-   
-   
+
+
 
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Item Received</label>
