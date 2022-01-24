@@ -56,7 +56,7 @@ div {
   <form method="post" action="{{url('alain_utilities')}}">
    {{csrf_field()}}
    
-   <div><H4 >  Add Nahel Utilities </H4></div>
+   <div><H4 >  Add Al Ain Utilities </H4></div>
 
    <div align="middle">
    <a href="{{route('alain_utilities.index')}}" class="btn btn-primary">View Al Ain Utilities Data</a>
