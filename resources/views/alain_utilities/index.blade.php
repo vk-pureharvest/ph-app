@@ -46,12 +46,8 @@ div {
     <th>Well water P2</th>
     <th>Well water P3</th>
     <th>Well water P4</th>
-    <th>RO daily water</th>
-    <th>RO reject water</th>
     <th>Mixing unit 1 </th>
     <th>Mixing unit 2</th>
-    <th>Transport unit 1 </th>
-    <th>Transport unit 2</th>
     <th>Pad wall 1 </th>
     <th>Pad wall 2</th>
     <th>Tap water 3</th>
@@ -60,7 +56,6 @@ div {
     <th>Chiller</th>
     <th>Mixing unit 50</th>
     <th>Mixing unit 60 </th>
-    <th>Electricity meter 1</th>
     <th>Electricity meter 2</th>
     <th>CO2 Leafy Greens</th>
     <th>CO2 Tomatoes</th>
@@ -75,12 +70,8 @@ div {
     <td>{{$row['well_water_p2']}}</td>
     <td>{{$row['well_water_p3']}}</td>
     <td>{{$row['well_water_p4']}}</td>
-    <td>{{$row['ro_daily_water']}}</td>
-    <td>{{$row['ro_reject_water']}}</td>
     <td>{{$row['mixing_unit_1']}}</td>
     <td>{{$row['mixing_unit_2']}}</td>
-    <td>{{$row['transport_unit_1']}}</td>
-    <td>{{$row['transport_unit_2']}}</td>
     <td>{{$row['pad_wall_1']}}</td>
     <td>{{$row['pad_wall_2']}}</td>
     <td>{{$row['tap_water_3']}}</td>
@@ -89,7 +80,6 @@ div {
     <td>{{$row['chiller']}}</td>
     <td>{{$row['mixing_unit_50']}}</td>
     <td>{{$row['mixing_unit_60']}}</td>
-    <td>{{$row['electric_meter_1']}}</td>
     <td>{{$row['electric_meter_2']}}</td>
     <td>{{$row['co2_leafy_green']}}</td>
     <td>{{$row['co2_tomatoes']}}</td>

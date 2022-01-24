@@ -81,6 +81,21 @@ div {
     <label class="col-sm-2 col-form-label">Date Added</label>
     <input class="form-control w-25" type="date" name="date_added" class="form-control" id="dob" value="{{$alain_utilities->date_added}}" placeholder="Enter Date" />
    </div>     
+   
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Condensation </label>
+    <input type="decimal" name="condensation" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->condensation}}" />
+    <label class="col-sm-2 col-form-label">CO2 Tomatoes</label>
+  <input type="decimal" name="co2_tomatoes" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_tomatoes}}"/>
+</div>
+
+  <div class="form-group row">
+  <label class="col-sm-2 col-form-label">CO2 Leafy Greens</label>
+  <input type="decimal" name="co2_leafy_green" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_leafy_green}}"/>
+ 
+    <label class="col-sm-2 col-form-label">Chiller </label>
+    <input type="decimal" name="chiller" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->chiller}}"/>
+  </div> 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Well water P1</label>
     <input type="decimal" name="well_water_p1" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->well_water_p1}}"/>
@@ -109,20 +124,6 @@ div {
   </div>
  
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">RO Daily Water</label>
-    <input type="decimal" name="ro_daily_water" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->ro_daily_water}}" />
-    <label class="col-sm-2 col-form-label">Condensation </label>
-    <input type="decimal" name="condensation" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->condensation}}" />
-  </div>
-
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">RO Reject Water</label>
-    <input type="decimal" name="ro_reject_water" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->ro_reject_water}}" />
-    <label class="col-sm-2 col-form-label">Chiller </label>
-    <input type="decimal" name="chiller" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->chiller}}"/>
-  </div>
-
-  <div class="form-group row">
     <label class="col-sm-2 col-form-label">Mixing Unit 1</label>
     <input type="decimal" name="mixing_unit_1" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->mixing_unit_1}}" />
     <label class="col-sm-2 col-form-label">Mixing Unit 50</label>
@@ -136,26 +137,12 @@ div {
     <input type="decimal" name="mixing_unit_60" class="form-control w-25"placeholder="Enter Value" value="{{$alain_utilities->mixing_unit_60}}" />
   </div>
 
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Transport Unit 1</label>
-    <input type="decimal" name="transport_unit_1" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->transport_unit_1}}"/>
-    <label class="col-sm-2 col-form-label">Electricity meter 1</label>
-    <input type="decimal" name="electric_meter_1" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->electric_meter_1}}"/>
-  </div>
-
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Transport Unit 2</label>
-    <input type="decimal" name="transport_unit_2" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->transport_unit_2}}"/>
+    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Electricity meter 2</label>
     <input type="decimal" name="electric_meter_2" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->electric_meter_2}}"/>
   </div>
 
-<div class="form-group row">
-  <label class="col-sm-2 col-form-label">CO2 Leafy Greens</label>
-  <input type="decimal" name="co2_leafy_green" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_leafy_green}}"/>
-  <label class="col-sm-2 col-form-label">CO2 Tomatoes</label>
-  <input type="decimal" name="co2_tomatoes" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->co2_tomatoes}}"/>
-</div>
+
   
   <br />
    <div class="form-group">

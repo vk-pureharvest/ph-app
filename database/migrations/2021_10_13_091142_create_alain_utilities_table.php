@@ -22,12 +22,8 @@ class CreateAlainUtilitiesTable extends Migration
             $table->decimal('well_water_p2');
             $table->decimal('well_water_p3');
             $table->decimal('well_water_p4');
-            $table->decimal('ro_daily_water');
-            $table->decimal('ro_reject_water');
             $table->decimal('mixing_unit_1');
             $table->decimal('mixing_unit_2');
-            $table->decimal('transport_unit_1');
-            $table->decimal('transport_unit_2');
             $table->decimal('pad_wall_1');
             $table->decimal('pad_wall_2');
             $table->decimal('tap_water_3');
@@ -36,7 +32,6 @@ class CreateAlainUtilitiesTable extends Migration
             $table->decimal('chiller');
             $table->decimal('mixing_unit_50');
             $table->decimal('mixing_unit_60');
-            $table->decimal('electric_meter_1');
             $table->decimal('electric_meter_2');
             $table->decimal('co2_leafy_green');
             $table->decimal('co2_tomatoes');

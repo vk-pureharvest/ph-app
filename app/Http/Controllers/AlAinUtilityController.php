@@ -57,12 +57,8 @@ class AlAinUtilityController extends Controller
             'well_water_p2'      =>   'required',
             'well_water_p3'      =>   'required',
             'well_water_p4'      =>   'required',
-            'ro_daily_water'      =>   'required',
-            'ro_reject_water'      =>   'required',
             'mixing_unit_1'      =>   'required',
             'mixing_unit_2'      =>   'required',
-            'transport_unit_1'      =>   'required',
-            'transport_unit_2'      =>   'required',
             'pad_wall_1'      =>   'required',
             'pad_wall_2'      =>   'required',
             'tap_water_3'      =>   'required',
@@ -71,7 +67,6 @@ class AlAinUtilityController extends Controller
             'chiller'      =>   'required',
             'mixing_unit_50'      =>   'required',
             'mixing_unit_60'      =>   'required',
-            'electric_meter_1'      =>   'required',
             'electric_meter_2'      =>   'required',
             'co2_leafy_green'      =>   'required',
             'co2_tomatoes'      =>   'required'
@@ -86,12 +81,8 @@ class AlAinUtilityController extends Controller
             'well_water_p2'    =>  $request->get('well_water_p2'),
             'well_water_p3'    =>  $request->get('well_water_p3'),
             'well_water_p4'    =>  $request->get('well_water_p4'),
-            'ro_daily_water'    =>  $request->get('ro_daily_water'),
-            'ro_reject_water'    =>  $request->get('ro_reject_water'),
             'mixing_unit_1'    =>  $request->get('mixing_unit_1'),
             'mixing_unit_2'    =>  $request->get('mixing_unit_2'),
-            'transport_unit_1'    =>  $request->get('transport_unit_1'),
-            'transport_unit_2'    =>  $request->get('transport_unit_2'),
             'pad_wall_1'    =>  $request->get('pad_wall_1'),
             'pad_wall_2'    =>  $request->get('pad_wall_2'),
             'tap_water_3'    =>  $request->get('tap_water_3'),
@@ -100,7 +91,6 @@ class AlAinUtilityController extends Controller
             'chiller'    =>  $request->get('chiller'),
             'mixing_unit_50'    =>  $request->get('mixing_unit_50'),
             'mixing_unit_60'    =>  $request->get('mixing_unit_60'),
-            'electric_meter_1'    =>  $request->get('electric_meter_1'),
             'electric_meter_2'    =>  $request->get('electric_meter_2'),
             'co2_leafy_green'    =>  $request->get('co2_leafy_green'),
             'co2_tomatoes'    =>  $request->get('co2_tomatoes')
@@ -143,12 +133,8 @@ class AlAinUtilityController extends Controller
            'well_water_p2'      =>   'required',
            'well_water_p3'      =>   'required',
            'well_water_p4'      =>   'required',
-           'ro_daily_water'      =>   'required',
-           'ro_reject_water'      =>   'required',
            'mixing_unit_1'      =>   'required',
            'mixing_unit_2'      =>   'required',
-           'transport_unit_1'      =>   'required',
-           'transport_unit_2'      =>   'required',
            'pad_wall_1'      =>   'required',
            'pad_wall_2'      =>   'required',
            'tap_water_3'      =>   'required',
@@ -157,7 +143,6 @@ class AlAinUtilityController extends Controller
            'chiller'      =>   'required',
            'mixing_unit_50'      =>   'required',
            'mixing_unit_60'      =>   'required',
-           'electric_meter_1'      =>   'required',
            'electric_meter_2'      =>   'required',
            'co2_leafy_green'      =>   'required',
            'co2_tomatoes'      =>   'required'
@@ -169,12 +154,8 @@ class AlAinUtilityController extends Controller
         $alain_utilities->well_water_p2 = $request->get('well_water_p2');
         $alain_utilities->well_water_p3 = $request->get('well_water_p3');
         $alain_utilities->well_water_p4 = $request->get('well_water_p4');
-        $alain_utilities->ro_daily_water = $request->get('ro_daily_water');
-        $alain_utilities->ro_reject_water = $request->get('ro_reject_water');
         $alain_utilities->mixing_unit_1 = $request->get('mixing_unit_1');
         $alain_utilities->mixing_unit_2 = $request->get('mixing_unit_2');
-        $alain_utilities->transport_unit_1 = $request->get('transport_unit_1');
-        $alain_utilities->transport_unit_2 = $request->get('transport_unit_2');
         $alain_utilities->pad_wall_1 = $request->get('pad_wall_1');
         $alain_utilities->pad_wall_2 = $request->get('pad_wall_2');
         $alain_utilities->tap_water_3 = $request->get('tap_water_3');
@@ -183,7 +164,6 @@ class AlAinUtilityController extends Controller
         $alain_utilities->chiller = $request->get('chiller');
         $alain_utilities->mixing_unit_50 = $request->get('mixing_unit_50');
         $alain_utilities->mixing_unit_60 = $request->get('mixing_unit_60');
-        $alain_utilities->electric_meter_1 = $request->get('electric_meter_1');
         $alain_utilities->electric_meter_2 = $request->get('electric_meter_2');
         $alain_utilities->co2_leafy_green = $request->get('co2_leafy_green');
         $alain_utilities->co2_tomatoes = $request->get('co2_tomatoes');

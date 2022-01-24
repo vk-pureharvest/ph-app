@@ -74,48 +74,49 @@ div {
     <input class="form-control w-25" type="date" name="date_added" class="form-control" id="dob"  placeholder="Enter Date"/>
        </div>
 
+       
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Well Water P1</label>
+    <label class="col-sm-2 col-form-label">CO2 Leafy Greens</label>
+    <input type="decimal" name="co2_leafy_green" class="form-control w-25" />
+    <label class="col-sm-2 col-form-label">Condensation </label>
+    <input type="decimal" name="condensation" class="form-control w-25" />
+  </div>
+
+  <div class="form-group row">
+  <label class="col-sm-2 col-form-label">CO2 Tomatoes</label>
+    <input type="decimal" name="co2_tomatoes" class="form-control w-25" />
+    <label class="col-sm-2 col-form-label">Chiller </label>
+    <input type="decimal" name="chiller" class="form-control w-25" />
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Well Water 1</label>
     <input type="decimal" name="well_water_p1" class="form-control w-25" />
     <label class="col-sm-2 col-form-label">Pad Wall 1</label>
     <input type="decimal" name="pad_wall_1" class="form-control w-25" />
   </div>
   
   <div class="form-group row">
-  <label class="col-sm-2 col-form-label">Well Water P2</label>
+  <label class="col-sm-2 col-form-label">Well Water 2</label>
     <input type="decimal" name="well_water_p2" class="form-control w-25" />
   <label class="col-sm-2 col-form-label">Pad Wall 2</label>
     <input type="decimal" name="pad_wall_2" class="form-control w-25"/>
   </div>
  
   <div class="form-group row">
-  <label class="col-sm-2 col-form-label">Well Water P3</label>
+  <label class="col-sm-2 col-form-label">Well Water 3</label>
     <input type="decimal" name="well_water_p3" class="form-control w-25" />
     <label class="col-sm-2 col-form-label">Tap Water 3</label>
     <input type="decimal" name="tap_water_3" class="form-control w-25" />
   </div>
  
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Well Water P4</label>
+    <label class="col-sm-2 col-form-label">Well Water 4</label>
     <input type="decimal" name="well_water_p4" class="form-control w-25" />
     <label class="col-sm-2 col-form-label">Tap Water 4</label>
     <input type="decimal" name="tap_water_4" class="form-control w-25" />
   </div>
  
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">RO Daily Water</label>
-    <input type="decimal" name="ro_daily_water" class="form-control w-25" />
-    <label class="col-sm-2 col-form-label">Condensation </label>
-    <input type="decimal" name="condensation" class="form-control w-25" />
-  </div>
-
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">RO Reject Water</label>
-    <input type="decimal" name="ro_reject_water" class="form-control w-25" />
-    <label class="col-sm-2 col-form-label">Chiller </label>
-    <input type="decimal" name="chiller" class="form-control w-25" />
-  </div>
-
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Mixing Unit 1</label>
     <input type="decimal" name="mixing_unit_1" class="form-control w-25" />
@@ -131,23 +132,8 @@ div {
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Transport Unit 1</label>
-    <input type="decimal" name="transport_unit_1" class="form-control w-25" />
-    <label class="col-sm-2 col-form-label">Electricity meter 1</label>
-    <input type="decimal" name="electric_meter_1" class="form-control w-25" />
-  </div>
-
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Transport Unit 2</label>
-    <input type="decimal" name="transport_unit_2" class="form-control w-25" />
-    <label class="col-sm-2 col-form-label">Electricity meter 2</label>
+    <label class="col-sm-2 col-form-label">Electric Meter 2 reading (AADC)</label>
     <input type="decimal" name="electric_meter_2" class="form-control w-25" />
-  </div>
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">CO2 Leafy Greens</label>
-    <input type="decimal" name="co2_leafy_green" class="form-control w-25" />
-    <label class="col-sm-2 col-form-label">CO2 Tomatoes</label>
-    <input type="decimal" name="co2_tomatoes" class="form-control w-25" />
   </div>
 
 <br />
