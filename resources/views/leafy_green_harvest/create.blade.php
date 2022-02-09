@@ -226,31 +226,7 @@ div {
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
       <tr>
-      <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="11"/></td>
-      <td>
-        <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Baby Spinach" selected>Baby Spinach</option>           
-        <option value="Red Lettuce">Red Lettuce</option>
-        <option value="Green Lettuce">Green Lettuce</option>
-        <option value="Baby Spinach">Baby Spinach</option>
-        <option value="Rucola">Rucola</option>
-        </select> 
-      <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
-      </tr>
-      <tr>
-      <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="12"/></td>
-      <td>
-        <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Rucola" selected>Rucola</option>          
-        <option value="Red Lettuce">Red Lettuce</option>
-        <option value="Green Lettuce">Green Lettuce</option>
-        <option value="Baby Spinach">Baby Spinach</option>
-        <option value="Rucola">Rucola</option>
-        </select> 
-      <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
-      </tr>
+     
 
      </tbody>
   </table>

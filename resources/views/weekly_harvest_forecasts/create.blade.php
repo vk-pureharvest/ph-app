@@ -71,7 +71,7 @@ div {
      
       <label class="col-sm-3 col-form-label">Year</label>
       <select class="form-control w-25" id="selectCategory" name="year" required focus>
-        <option value=2021 selected>2021</option>        
+               
         <option value=2022>{{"2022"}}</option>
       </select>
       

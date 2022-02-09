@@ -76,6 +76,7 @@ div {
                 <option value="{{$leafy_green_package->class}}" selected="selected">{{$leafy_green_package->class}}</option>  
                 <option value="Class 1">Class 1</option>
                 <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
                 <option value="Waste">Waste</option>
             </select>
    </div>
@@ -95,6 +96,11 @@ div {
                 <option value="Green Lettuce">Green Lettuce</option>
                 <option value="Baby Spinach">Baby Spinach</option>
                 <option value="Rucola">Rucola</option>
+                <option value="Mixed Salad">Mixed Salad</option>
+                <option value="Spring mix">Spring mix</option>
+                <option value="Green Tatsoi">Green Tatsoi</option>
+                <option value="Red Tatsoi">Red Tatsoi</option>
+                <option value="Mix Kale">Mix Kale</option>
             </select>
    </div>
    <div class="form-group row">

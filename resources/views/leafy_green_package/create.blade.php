@@ -101,6 +101,7 @@ div {
         <option value="" disabled selected>Select Class</option>        
         <option value="Class 1">Class 1</option>
         <option value="Class 2">Class 2</option>
+        <option value="Class 3">Class 3</option>
         <option value="Waste">Waste</option>
         </select>  </td>
       <td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>
@@ -111,6 +112,11 @@ div {
         <option value="Green Lettuce">Green Lettuce</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Mixed Salad">Mixed Salad</option>
+        <option value="Spring mix">Spring mix</option>
+        <option value="Green Tatsoi">Green Tatsoi</option>
+        <option value="Red Tatsoi">Red Tatsoi</option>
+        <option value="Mix Kale">Mix Kale</option>
         </select>  </td>
       <td><input type="integer" name="no_of_punnets[]" class="form-control" placeholder="Enter Number of Punnets" value="0"/></td>
       <td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes" value="0"/></td>
@@ -138,6 +144,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="" disabled selected>Select Class</option>        '+
         '<option value="Class 1">Class 1</option>'+
         '<option value="Class 2">Class 2</option>'+
+        '<option value="Class 3">Class 3</option>'+
         '<option value="Waste">Waste</option>'+
         '</select>  </td>'+
       '<td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
@@ -148,6 +155,11 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Green Lettuce">Green Lettuce</option>'+
         '<option value="Baby Spinach">Baby Spinach</option>'+
         '<option value="Rucola">Rucola</option>'+
+        '<option value="Mixed Salad">Mixed Salad</option>'+
+        '<option value="Spring mix">Spring mix</option>'+
+        '<option value="Green Tatsoi">Green Tatsoi</option>'+
+        '<option value="Red Tatsoi">Red Tatsoi</option>'+
+        '<option value="Mix Kale">Mix Kale</option>'+
         '</select>  '+
       '<td><input type="integer" name="no_of_punnets[]" class="form-control" placeholder="Enter Number of Punnets" value="0"/></td>'+
       '<td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
