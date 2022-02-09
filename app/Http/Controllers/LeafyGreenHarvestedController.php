@@ -51,12 +51,13 @@ class LeafyGreenHarvestedController extends Controller
         
         $this->validate($request, [
             'site_name'    =>  'required',
-            'date_added'    =>  'required'
+            'date_added'    =>  'required',
+            'no_of_gutters'    =>  'required'
          ]);
          
          foreach($request->no_of_gutters as $key=>$no_of_gutters){
-            if ($request->no_of_gutters[$key]===null){}
-            else{
+            /*if ($request->no_of_gutters[$key]===null){}
+            else{*/
             $data = new Leafy_green_harvest();
             $data->user_id = $authUser->id;
             $data->site_name = $request->get('site_name');
@@ -66,7 +67,7 @@ class LeafyGreenHarvestedController extends Controller
             $data->no_of_gutters=$request->no_of_gutters[$key];
             $data->comments=$request->comments[$key];
             
-            $data->save();}
+            $data->save();
        }
        return redirect()->route('leafy_green_harvest.create')->with('success', 'Data Added');
     }

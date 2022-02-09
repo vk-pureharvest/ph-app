@@ -80,14 +80,7 @@ div {
                 <option value="Waste">Waste</option>
             </select>
    </div>
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Boxes Weight in Grams</label>
-    <select class="form-control w-25" name="box_weight" required focus>
-                <option value="{{$leafy_green_package->box_weight}}" selected="selected">{{$leafy_green_package->box_weight}}</option>  
-                <option value="100">100</option>
-                <option value="125">125</option>
-            </select>
-   </div>
+
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
@@ -104,12 +97,21 @@ div {
             </select>
    </div>
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Number of Punnets</label>
-    <input class="form-control w-25" type="decimal" name="no_of_punnets" class="form-control" value="{{$leafy_green_package->no_of_punnets}}" />
+    <label class="col-sm-2 col-form-label">Package Type</label>
+    <select class="form-control w-25" name="package_type" required focus>
+                <option value="{{$leafy_green_package->package_type}}" selected="selected">{{$leafy_green_package->package_type}}</option>  
+                <option value="Boxes">Boxes</option>
+                <option value="Punnets">Punnets</option>
+                <option value="Crates">Crates</option>
+            </select>
+   </div>
+      <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Number of Packages</label>
+    <input class="form-control w-25" type="decimal" name="no_of_items" class="form-control" value="{{$leafy_green_package->no_of_items}}" />
    </div>
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Number of boxes</label>
-    <input class="form-control w-25" type="decimal" name="no_of_boxes" class="form-control" value="{{$leafy_green_package->no_of_boxes}}" />
+    <label class="col-sm-2 col-form-label">Weight in Grams</label>
+    <input class="form-control w-25" type="decimal" name="item_weight" class="form-control" value="{{$leafy_green_package->item_weight}}" />
    </div>
    <br />
    <div class="form-group">

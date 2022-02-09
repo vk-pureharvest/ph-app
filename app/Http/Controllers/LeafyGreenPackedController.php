@@ -59,15 +59,16 @@ class LeafyGreenPackedController extends Controller
             $data = new Leafy_green_package();
             $data->user_id = $authUser->id;
             $data->site_name = $request->get('site_name');
-            $data->date_added = $request->get('date_added');
-            $data->class=$request->class[$key];
+            $data->date_added = $request->get('date_added');            
             $data->product_type=$request->product_type[$key];
-            $data->box_weight=$request->box_weight[$key];
-            $data->no_of_punnets=$request->no_of_punnets[$key];
-            $data->no_of_boxes=$request->no_of_boxes[$key];
+            $data->class=$request->class[$key];
+            $data->item_weight=$request->item_weight[$key];
+            $data->no_of_items=$request->no_of_items[$key];
+            $data->package_type=$request->package_type[$key];
             
             $data->save();
        }
+
        return redirect()->route('leafy_green_package.create')->with('success', 'Data Added');
     }
 
@@ -114,9 +115,9 @@ class LeafyGreenPackedController extends Controller
         $leafy_green_package->date_added = $request->get('date_added');
         $leafy_green_package->product_type = $request->get('product_type');
         $leafy_green_package->class = $request->get('class');
-        $leafy_green_package->box_weight = $request->get('box_weight');
-        $leafy_green_package->no_of_punnets = $request->get('no_of_punnets');
-        $leafy_green_package->no_of_boxes = $request->get('no_of_boxes');
+        $leafy_green_package->item_weight = $request->get('item_weight');
+        $leafy_green_package->package_type = $request->get('package_type');
+        $leafy_green_package->no_of_items = $request->get('no_of_items');
 
         $leafy_green_package->save();
         return redirect()->route('leafy_green_package.index')->with('success', 'Data Updated');

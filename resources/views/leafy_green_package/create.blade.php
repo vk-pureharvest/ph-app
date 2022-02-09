@@ -87,10 +87,10 @@ div {
     <thead>
       <tr>
         <th>Class</th>
-        <th>Weight(Kgs)</th>
         <th>Product type</th>
-        <th>Number of Punnets</th>
-        <th>Number of Boxes</th>
+        <th>Package type</th>
+        <th>Number of Packages</th>
+        <th>Weight(Kgs)</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -104,7 +104,6 @@ div {
         <option value="Class 3">Class 3</option>
         <option value="Waste">Waste</option>
         </select>  </td>
-      <td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
         <option value="" disabled selected>Product Type</option>        
@@ -118,9 +117,15 @@ div {
         <option value="Red Tatsoi">Red Tatsoi</option>
         <option value="Mix Kale">Mix Kale</option>
         </select>  </td>
-      <td><input type="integer" name="no_of_punnets[]" class="form-control" placeholder="Enter Number of Punnets" value="0"/></td>
-      <td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes" value="0"/></td>
-      
+        <td><select class="form-control" id="package_type" name="package_type[]" required focus>
+        <option value="" disabled selected>Select Package</option>        
+        <option value="Boxes">Boxes</option>
+        <option value="Punnets">Punnets</option>
+        <option value="Crates">Crates</option>
+        </select>  </td>
+
+      <td><input type="integer" name="no_of_items[]" class="form-control" placeholder="Enter number of items" value="0"/></td>
+      <td><input type="integer" name="item_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -147,7 +152,6 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Class 3">Class 3</option>'+
         '<option value="Waste">Waste</option>'+
         '</select>  </td>'+
-      '<td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
       '<td>'+
         '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
         '<option value="" disabled selected>Product Type</option>        '+
@@ -161,8 +165,15 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Red Tatsoi">Red Tatsoi</option>'+
         '<option value="Mix Kale">Mix Kale</option>'+
         '</select>  '+
-      '<td><input type="integer" name="no_of_punnets[]" class="form-control" placeholder="Enter Number of Punnets" value="0"/></td>'+
-      '<td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
+        '<td><select class="form-control" id="package_type" name="package_type[]" required focus>'+
+        '<option value="" disabled selected>Select Package</option>        '+
+        '<option value="Boxes">Boxes</option>'+
+        '<option value="Punnets">Punnets</option>'+
+        '<option value="Crates">Crates</option>'+
+        '</select>  </td>'+
+        '<td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
+      
+      '<td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

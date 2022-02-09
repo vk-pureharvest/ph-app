@@ -46,9 +46,9 @@ div {
     <th>Date</th>
     <th>Class</th>
     <th>Product Type</th>
-    <th>Weight in Grams</th>
-    <th>Number of Punnets</th>
-    <th>Number of Boxes</th>
+    <th>Package Type</th>
+    <th>Number of packages</th>
+    <th>Weight in KG</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -58,9 +58,9 @@ div {
     <td>{{$row['date_added']}}</td>
     <td>{{$row['class']}}</td>
     <td>{{$row['product_type']}}</td>
-    <td>{{$row['box_weight']}}</td>
-    <td>{{$row['no_of_punnets']}}</td>
-    <td>{{$row['no_of_boxes']}}</td>
+    <td>{{$row['package_type']}}</td>
+    <td>{{$row['no_of_items']}}</td>
+    <td>{{$row['item_weight']}}</td>
     <td><a href="{{action('LeafyGreenPackedController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('LeafyGreenPackedController@destroy', $row['id'])}}">
