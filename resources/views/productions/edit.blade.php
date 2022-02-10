@@ -92,6 +92,7 @@ div {
                 <option value="G">G</option>
                 <option value="H">H</option>
                 <option value="Candy Machine ">Candy Machine </option>
+        <option value="Box Folding">Box Folding</option>
    </select>
    </div>
    <div class="form-group row">
@@ -116,10 +117,10 @@ div {
       <option value="Tariq Jameel">Tariq Jameel</option>
       <option value="Dominic">Dominic</option>
       <option value="Shoaib Khan">Shoaib Khan</option>
-      <option value="Hamza ">Hamza </option>
+      <option value="Hamza">Hamza</option>
       <option value="Abbas">Abbas</option>
-      <option value="Mehtab ">Mehtab </option>
-      <option value="Edewalay ">Edewalay </option>
+      <option value="Mehtab">Mehtab</option>
+      <option value="Edewalay">Edewalay</option>
       <option value="Tariq Hassan">Tariq Hassan</option>
    </select>
    </div>
