@@ -116,7 +116,7 @@ div {
         <option value="F">F</option>
         <option value="G">G</option>
         <option value="H">H</option>
-        <option value="Candy Machine ">Candy Machine </option>
+        <option value="Candy Machine">Candy Machine</option>
         <option value="Box Folding">Box Folding</option>
       </td>
       <td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>
@@ -160,8 +160,8 @@ div {
         <option value="Cocktail">Cocktail</option>
         <option value="Candy Cup">Candy Cup</option>
         <option value="Candy 350gm kft">Candy 350gm kft</option>
-        <option value="Candy Shaker ">Candy Shaker </option>
-        <option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>
+        <option value="Candy Shaker">Candy Shaker</option>
+        <option value="Candy Mixed Shaker">Candy Mixed Shaker</option>
         <option value="Candy Mixed">Candy Mixed</option>
         <option value="Candy (loose)">Candy (loose)</option>
         <option value="COV (loose)">COV (loose)</option>
@@ -211,7 +211,7 @@ $('thead').on('click', '.addRow', function(){
         '<option value="F">F</option>'+
         '<option value="G">G</option>'+
         '<option value="H">H</option>'+
-        '<option value="Candy Machine ">Candy Machine </option>'+
+        '<option value="Candy Machine">Candy Machine</option>'+
         '<option value="Box Folding">Box Folding</option>'+
       '</td>'+
       '<td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>'+
@@ -256,8 +256,8 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Cocktail">Cocktail</option>'+
         '<option value="Candy Cup">Candy Cup</option>'+
         '<option value="Candy 350gm kft">Candy 350gm kft</option>'+
-        '<option value="Candy Shaker ">Candy Shaker </option>'+
-        '<option value="Candy Mixed Shaker ">Candy Mixed Shaker </option>'+
+        '<option value="Candy Shaker">Candy Shaker</option>'+
+        '<option value="Candy Mixed Shaker">Candy Mixed Shaker</option>'+
         '<option value="Candy Mixed">Candy Mixed</option>'+
         '<option value="Candy (loose)">Candy (loose)</option>'+
         '<option value="COV (loose)">COV (loose)</option>'+

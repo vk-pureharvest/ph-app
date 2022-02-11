@@ -171,9 +171,9 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Punnets">Punnets</option>'+
         '<option value="Crates">Crates</option>'+
         '</select>  </td>'+
-        '<td><input type="integer" name="no_of_boxes[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
+        '<td><input type="integer" name="no_of_items[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
       
-      '<td><input type="integer" name="box_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
+      '<td><input type="integer" name="item_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 
