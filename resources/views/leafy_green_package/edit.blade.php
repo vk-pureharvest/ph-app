@@ -69,18 +69,7 @@ div {
     <label class="col-sm-2 col-form-label">Date Added</label>
       <input class="form-control w-25"  type="date" name="date_added" class="form-control" id="dob" value="{{$leafy_green_package->date_added}}"/>
   </div>
-   
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Class</label>
-    <select class="form-control w-25" name="class" required focus>
-                <option value="{{$leafy_green_package->class}}" selected="selected">{{$leafy_green_package->class}}</option>  
-                <option value="Class 1">Class 1</option>
-                <option value="Class 2">Class 2</option>
-                <option value="Class 3">Class 3</option>
-                <option value="Waste">Waste</option>
-            </select>
-   </div>
-
+  
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
@@ -89,29 +78,25 @@ div {
                 <option value="Green Lettuce">Green Lettuce</option>
                 <option value="Baby Spinach">Baby Spinach</option>
                 <option value="Rucola">Rucola</option>
-                <option value="Mixed Salad">Mixed Salad</option>
-                <option value="Spring mix">Spring mix</option>
-                <option value="Green Tatsoi">Green Tatsoi</option>
-                <option value="Red Tatsoi">Red Tatsoi</option>
-                <option value="Mix Kale">Mix Kale</option>
+                <option value="Green Kale">Green Kale</option>
             </select>
    </div>
+   
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Package Type</label>
-    <select class="form-control w-25" name="package_type" required focus>
-                <option value="{{$leafy_green_package->package_type}}" selected="selected">{{$leafy_green_package->package_type}}</option>  
-                <option value="Boxes">Boxes</option>
-                <option value="Punnets">Punnets</option>
-                <option value="Crates">Crates</option>
-            </select>
+    <label class="col-sm-2 col-form-label">Total Production (KGs)</label>
+    <input class="form-control w-25" type="decimal" name="total_prod" class="form-control" value="{{$leafy_green_package->total_prod}}" />
+   </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Class 1 Production (KGs)</label>
+    <input class="form-control w-25" type="decimal" name="class1_prod" class="form-control" value="{{$leafy_green_package->class1_prod}}" />
    </div>
       <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Number of Packages</label>
-    <input class="form-control w-25" type="decimal" name="no_of_items" class="form-control" value="{{$leafy_green_package->no_of_items}}" />
+    <label class="col-sm-2 col-form-label">Number of Lines</label>
+    <input class="form-control w-25" type="decimal" name="no_of_lines" class="form-control" value="{{$leafy_green_package->no_of_lines}}" />
    </div>
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Weight in Grams</label>
-    <input class="form-control w-25" type="decimal" name="item_weight" class="form-control" value="{{$leafy_green_package->item_weight}}" />
+    <label class="col-sm-2 col-form-label">Number of Gutters</label>
+    <input class="form-control w-25" type="decimal" name="no_of_gutters" class="form-control" value="{{$leafy_green_package->no_of_gutters}}" />
    </div>
    <br />
    <div class="form-group">

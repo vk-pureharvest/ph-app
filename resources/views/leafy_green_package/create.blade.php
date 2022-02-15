@@ -86,24 +86,16 @@ div {
   <table class="table">
     <thead>
       <tr>
-        <th>Class</th>
         <th>Product type</th>
-        <th>Package type</th>
-        <th>Number of Packages</th>
-        <th>Weight(Kgs)</th>
+        <th>Total Production (KGs)</th>
+        <th>Class 1 Production (KGs)</th>
+        <th>Number of Lines</th>
+        <th>Number of Gutters</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-      <td>
-        <select class="form-control" id="selectProduct" name="class[]" required focus>
-        <option value="" disabled selected>Select Class</option>        
-        <option value="Class 1">Class 1</option>
-        <option value="Class 2">Class 2</option>
-        <option value="Class 3">Class 3</option>
-        <option value="Waste">Waste</option>
-        </select>  </td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
         <option value="" disabled selected>Product Type</option>        
@@ -111,21 +103,12 @@ div {
         <option value="Green Lettuce">Green Lettuce</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
-        <option value="Mixed Salad">Mixed Salad</option>
-        <option value="Spring mix">Spring mix</option>
-        <option value="Green Tatsoi">Green Tatsoi</option>
-        <option value="Red Tatsoi">Red Tatsoi</option>
-        <option value="Mix Kale">Mix Kale</option>
+        <option value="Green Kale">Green Kale</option>
         </select>  </td>
-        <td><select class="form-control" id="package_type" name="package_type[]" required focus>
-        <option value="" disabled selected>Select Package</option>        
-        <option value="Boxes">Boxes</option>
-        <option value="Punnets">Punnets</option>
-        <option value="Crates">Crates</option>
-        </select>  </td>
-
-      <td><input type="integer" name="no_of_items[]" class="form-control" placeholder="Enter number of items" value="0"/></td>
-      <td><input type="integer" name="item_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>
+      <td><input type="decimal" name="total_prod[]" class="form-control" placeholder="Enter total production" value="0"/></td>
+      <td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>
+      <td><input type="decimal" name="no_of_lines[]" class="form-control" placeholder="Enter number of lines" /></td>
+      <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -144,36 +127,18 @@ div {
   <script>
 $('thead').on('click', '.addRow', function(){
     var tr='<tr>'+
-    '<td>'+
-        '<select class="form-control" id="selectProduct" name="class[]" required focus>'+
-        '<option value="" disabled selected>Select Class</option>        '+
-        '<option value="Class 1">Class 1</option>'+
-        '<option value="Class 2">Class 2</option>'+
-        '<option value="Class 3">Class 3</option>'+
-        '<option value="Waste">Waste</option>'+
-        '</select>  </td>'+
-      '<td>'+
-        '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
-        '<option value="" disabled selected>Product Type</option>        '+
-        '<option value="Red Lettuce">Red Lettuce</option>'+
-        '<option value="Green Lettuce">Green Lettuce</option>'+
-        '<option value="Baby Spinach">Baby Spinach</option>'+
+    '<td> <select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
+      ' <option value="" disabled selected>Product Type</option>        '+
+       ' <option value="Red Lettuce">Red Lettuce</option>'+
+      '  <option value="Green Lettuce">Green Lettuce</option>'+
+       ' <option value="Baby Spinach">Baby Spinach</option>'+
         '<option value="Rucola">Rucola</option>'+
-        '<option value="Mixed Salad">Mixed Salad</option>'+
-        '<option value="Spring mix">Spring mix</option>'+
-        '<option value="Green Tatsoi">Green Tatsoi</option>'+
-        '<option value="Red Tatsoi">Red Tatsoi</option>'+
-        '<option value="Mix Kale">Mix Kale</option>'+
-        '</select>  '+
-        '<td><select class="form-control" id="package_type" name="package_type[]" required focus>'+
-        '<option value="" disabled selected>Select Package</option>        '+
-        '<option value="Boxes">Boxes</option>'+
-        '<option value="Punnets">Punnets</option>'+
-        '<option value="Crates">Crates</option>'+
+        '<option value="Green Kale">Green Kale</option>'+
         '</select>  </td>'+
-        '<td><input type="integer" name="no_of_items[]" class="form-control" placeholder="Enter number of boxes"value="0" /></td>'+
-      
-      '<td><input type="integer" name="item_weight[]" class="form-control" placeholder="Enter Weights in Kgs" /></td>'+
+      '<td><input type="decimal" name="total_prod[]" class="form-control" placeholder="Enter total production" value="0"/></td>'+
+      '<td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>'+
+      '<td><input type="decimal" name="no_of_lines[]" class="form-control" placeholder="Enter number of lines" /></td>'+
+      '<td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

@@ -44,11 +44,11 @@ div {
    <tr>
     <th>Site</th>
     <th>Date</th>
-    <th>Class</th>
     <th>Product Type</th>
-    <th>Package Type</th>
-    <th>Number of packages</th>
-    <th>Weight in KG</th>
+    <th>Total Production (KGs)</th>
+    <th>Class 1 Production (KGs)</th>
+    <th>Number of Lines</th>
+    <th>Number of Gutters</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -56,11 +56,11 @@ div {
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
-    <td>{{$row['class']}}</td>
     <td>{{$row['product_type']}}</td>
-    <td>{{$row['package_type']}}</td>
-    <td>{{$row['no_of_items']}}</td>
-    <td>{{$row['item_weight']}}</td>
+    <td>{{$row['total_prod']}}</td>
+    <td>{{$row['class1_prod']}}</td>
+    <td>{{$row['no_of_lines']}}</td>
+    <td>{{$row['no_of_gutters']}}</td>
     <td><a href="{{action('LeafyGreenPackedController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('LeafyGreenPackedController@destroy', $row['id'])}}">

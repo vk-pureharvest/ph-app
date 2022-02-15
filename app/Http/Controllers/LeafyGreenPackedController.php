@@ -61,10 +61,10 @@ class LeafyGreenPackedController extends Controller
             $data->site_name = $request->get('site_name');
             $data->date_added = $request->get('date_added');            
             $data->product_type=$request->product_type[$key];
-            $data->class=$request->class[$key];
-            $data->item_weight=$request->item_weight[$key];
-            $data->no_of_items=$request->no_of_items[$key];
-            $data->package_type=$request->package_type[$key];
+            $data->total_prod=$request->total_prod[$key];
+            $data->class1_prod=$request->class1_prod[$key];
+            $data->no_of_lines=$request->no_of_lines[$key];
+            $data->no_of_gutters=$request->no_of_gutters[$key];
             
             $data->save();
        }
@@ -114,10 +114,10 @@ class LeafyGreenPackedController extends Controller
         $leafy_green_package->site_name = $request->get('site_name');
         $leafy_green_package->date_added = $request->get('date_added');
         $leafy_green_package->product_type = $request->get('product_type');
-        $leafy_green_package->class = $request->get('class');
-        $leafy_green_package->item_weight = $request->get('item_weight');
-        $leafy_green_package->package_type = $request->get('package_type');
-        $leafy_green_package->no_of_items = $request->get('no_of_items');
+        $leafy_green_package->total_prod = $request->get('total_prod');
+        $leafy_green_package->class1_prod = $request->get('class1_prod');
+        $leafy_green_package->no_of_lines = $request->get('no_of_lines');
+        $leafy_green_package->no_of_gutters = $request->get('no_of_gutters');
 
         $leafy_green_package->save();
         return redirect()->route('leafy_green_package.index')->with('success', 'Data Updated');

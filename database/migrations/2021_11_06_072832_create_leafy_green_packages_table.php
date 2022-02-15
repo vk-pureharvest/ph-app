@@ -19,10 +19,10 @@ class CreateLeafyGreenPackagesTable extends Migration
             $table->string('site_name');
             $table->date('date_added'); 
             $table->string('product_type');
-            $table->string('class');
-            $table->decimal('box_weight');
-            $table->decimal('no_of_punnets');
-            $table->decimal('no_of_boxes');
+            $table->string('total_prod');
+            $table->decimal('class1_prod');
+            $table->decimal('no_of_lines');
+            $table->decimal('no_of_gutters');
             $table->timestamps();
         });
     }
