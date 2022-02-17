@@ -104,6 +104,13 @@ div {
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
         <option value="Green Kale">Green Kale</option>
+        <option value="Green Curly Kale">Green Curly Kale</option>
+        <option value="Mix Kale">Mix Kale</option>
+        <option value="Red Kale">Red Kale</option>
+        <option value="Green Tatsoi">Green Tatsoi</option>
+        <option value="Red Tatsoi">Red Tatsoi</option>
+        <option value="Cabbage">Cabbage</option>
+        <option value="Red Russian">Red Russian</option>
         </select>  </td>
       <td><input type="decimal" name="total_prod[]" class="form-control" placeholder="Enter total production" value="0"/></td>
       <td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>
@@ -134,6 +141,13 @@ $('thead').on('click', '.addRow', function(){
        ' <option value="Baby Spinach">Baby Spinach</option>'+
         '<option value="Rucola">Rucola</option>'+
         '<option value="Green Kale">Green Kale</option>'+
+        '<option value="Green Curly Kale">Green Curly Kale</option>'+
+        '<option value="Mix Kale">Mix Kale</option>'+
+        '<option value="Red Kale">Red Kale</option>'+
+        '<option value="Green Tatsoi">Green Tatsoi</option>'+
+        '<option value="Red Tatsoi">Red Tatsoi</option>'+
+        '<option value="Cabbage">Cabbage</option>'+
+        '<option value="Red Russian">Red Russian</option>'+
         '</select>  </td>'+
       '<td><input type="decimal" name="total_prod[]" class="form-control" placeholder="Enter total production" value="0"/></td>'+
       '<td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>'+

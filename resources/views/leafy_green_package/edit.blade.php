@@ -79,6 +79,13 @@ div {
                 <option value="Baby Spinach">Baby Spinach</option>
                 <option value="Rucola">Rucola</option>
                 <option value="Green Kale">Green Kale</option>
+                <option value="Green Curly Kale">Green Curly Kale</option>
+                <option value="Mix Kale">Mix Kale</option>
+                <option value="Red Kale">Red Kale</option>
+                <option value="Green Tatsoi">Green Tatsoi</option>
+                <option value="Red Tatsoi">Red Tatsoi</option>
+                <option value="Cabbage">Cabbage</option>
+                <option value="Red Russian">Red Russian</option>
             </select>
    </div>
    
