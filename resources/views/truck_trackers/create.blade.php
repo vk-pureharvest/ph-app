@@ -56,7 +56,7 @@ div {
   <form method="post" action="{{url('truck_trackers')}}">
    {{csrf_field()}}
    
-   <div><H4 >  Add Truck Delivery Details </H4></div>
+   <div><H4 >  Add Truck Utilization Details </H4></div>
 
    <div align="middle">
    <a href="{{route('truck_trackers.index')}}" class="btn btn-primary">View Truck Details</a>
@@ -86,28 +86,16 @@ div {
   <table class="table">
     <thead>
       <tr>
-        <th>Vehicle Registration</th>
         <th>Truck Number</th>
-        <th>Truck Size</th>
         <th>Number of Pallets</th>
         <th>Customer</th>
-        <th>Location</th>
-        <th>Time Entered</th>
-        <th>Time Left</th>
+        <th>KGs Loaded</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-      <td><input type="text" name="vehicle_reg[]" class="form-control" placeholder="Enter Vehicle Registration" /></td>      
       <td><input type="text" name="truck_num[]" class="form-control" placeholder="Enter Truck Number" /></td>
-      <td>
-        <select class="form-control" id="selectProduct" name="truck_size[]" required focus>
-        <option value="" disabled selected>Truck Size</option>          
-        <option value="3T">3T</option>
-        <option value="5T">5T</option>
-        </select>  
-        </td>
       <td><input type="integer" name="no_of_pallets[]" class="form-control" placeholder="Enter Number of Pallets" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="customer[]" required focus>
@@ -147,18 +135,7 @@ div {
       <option value="Other">{{"Other"}}</option>
     </select>  
         </td>
-        <td>
-        <select class="form-control" id="selectProduct" name="location[]" required focus>
-        <option value="" disabled selected>Choose location</option>          
-        <option value="Abu Dhabi">Abu Dhabi</option>
-        <option value="Dubai">Dubai</option>
-        <option value="Sharjah">Sharjah</option>
-        </select>  
-        </td>
-  
-        <td><input class="form-control" type="time" name="time_entered[]" class="form-control" id="dob"  placeholder="Enter End Entered"/></td>
-        <td><input class="form-control" type="time" name="time_left[]" class="form-control"  placeholder="Enter End Left"/></td>
-  
+        <td><input class="form-control" type="decimal" name="kgs_loaded[]" class="form-control" placeholder="Enter KGs"/></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -177,15 +154,7 @@ div {
   <script>
 $('thead').on('click', '.addRow', function(){
     var tr='<tr>'+
-    '<td><input type="text" name="vehicle_reg[]" class="form-control" placeholder="Enter Vehicle Registration" /></td>     '+ 
     '<td><input type="text" name="truck_num[]" class="form-control" placeholder="Enter Truck Number" /></td>'+
-    '<td>'+
-    '<select class="form-control" id="selectProduct" name="truck_size[]" required focus>'+
-    '<option value="" disabled selected>Truck Size</option>          '+
-    '<option value="3T">3T</option>'+
-    '<option value="5T">5T</option>'+
-    '</select>'+  
-    '</td>'+
     '<td><input type="integer" name="no_of_pallets[]" class="form-control" placeholder="Enter Number of Pallets" /></td>'+
     '<td>'+
     '<select class="form-control" id="selectProduct" name="customer[]" required focus>'+
@@ -226,16 +195,7 @@ $('thead').on('click', '.addRow', function(){
       '<option value="Other">{{"Other"}}</option>'+
       '  </select> '+ 
      '  </td>'+
-     '  <td>'+
-     '  <select class="form-control" id="selectProduct" name="location[]" required focus>'+
-     '  <option value="" disabled selected>Choose location</option>       '+   
-     '  <option value="Abu Dhabi">Abu Dhabi</option>'+
-     '  <option value="Dubai">Dubai</option>'+
-     '  <option value="Sharjah">Sharjah</option>'+
-     '  </select>'+  
-     '  </td>'+
-     '  <td><input class="form-control" type="time" name="time_entered[]" class="form-control" id="dob"  placeholder="Enter End Entered"/></td>'+
-     '  <td><input class="form-control" type="time" name="time_left[]" class="form-control"  placeholder="Enter End Left"/></td>'+
+     '        <td><input class="form-control" type="decimal" name="kgs_loaded[]" class="form-control" placeholder="Enter KGs"/></td>'+
      '  <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

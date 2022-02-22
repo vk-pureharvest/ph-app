@@ -9,7 +9,7 @@ class truck_tracker extends Model
 {
   
     protected $fillable = [
-        'user_id','site_name','date_added', 'vehicle_reg','truck_num','truck_size','no_of_pallets','customer','location','time_entered','time_left',
+        'user_id','site_name','date_added', 'truck_num','no_of_pallets','customer','kgs_loaded',
     ];
  
     function user(){
@@ -19,7 +19,7 @@ class truck_tracker extends Model
     
     protected $table = 'truck_trackers';
     public static function getTruckTracker(){
-        $records = DB::table('truck_trackers')->select("site_name","date_added","vehicle_reg","truck_num","truck_size","no_of_pallets","customer","location","time_entered","time_left")->orderBy('date_added','desc')->get()->toArray();
+        $records = DB::table('truck_trackers')->select("site_name","date_added","truck_num","no_of_pallets","customer","kgs_loaded")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
     }
 }

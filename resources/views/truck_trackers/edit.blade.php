@@ -70,27 +70,13 @@ div {
       <input class="form-control w-25"  type="date" name="date_added" class="form-control" id="dob" value="{{$truck_trackers->date_added}}"/>
   </div>
    
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Vehicle Registration</label>
-    <input class="form-control w-25" type="text" name="vehicle_reg" class="form-control" value="{{$truck_trackers->vehicle_reg}}" placeholder="Enter Color A" />
-   </div>
-
+   
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Truck Number</label>
     <input class="form-control w-25" type="text" name="truck_num" class="form-control" value="{{$truck_trackers->truck_num}}" placeholder="Enter Color A" />
    </div>
 
    
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Truck Size</label>
-    <select class="form-control w-25" name="truck_size" required focus>
-    <option value="{{$truck_trackers->truck_size}}" selected="selected">{{$truck_trackers->truck_size}}</option>          
-        <option value="3T">3T</option>
-        <option value="5T">5T</option>
-   </select>   
-   </div>
-
-
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Number of Pallets</label>
     <input class="form-control w-25" type="integer" name="no_of_pallets" class="form-control" value="{{$truck_trackers->no_of_pallets}}"  />
@@ -137,25 +123,9 @@ div {
    </div>
    
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Location</label>
-    <select class="form-control w-25" name="location" required focus>
-    <option value="{{$truck_trackers->location}}" selected="selected">{{$truck_trackers->location}}</option>            
-        <option value="Abu Dhabi">Abu Dhabi</option>
-        <option value="Dubai">Dubai</option>
-        <option value="Sharjah">Sharjah</option>
-   </select>   
+    <label class="col-sm-2 col-form-label">KGs Loaded</label>
+    <input class="form-control w-25" type="decimal" name="kgs_loaded" class="form-control" value="{{$truck_trackers->kgs_loaded}}" placeholder="Enter KGs Loaded" />
    </div>
-
-  
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Enter Time Entered</label>
-    <input class="form-control w-25" type="time" name="time_entered" class="form-control" value="{{$truck_trackers->time_entered}}" placeholder="Enter Date" />
-   </div>
-   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Entered Time Left</label>
-    <input class="form-control w-25" type="time" name="time_left" class="form-control" value="{{$truck_trackers->time_left}}" placeholder="Enter Date" />
-   </div>
-
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />

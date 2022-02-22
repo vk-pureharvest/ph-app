@@ -18,14 +18,10 @@ class CreateTruckTrackersTable extends Migration
             $table->integer('user_id');
             $table->string('site_name');
             $table->date('date_added'); 
-            $table->string('vehicle_reg');
             $table->integer('truck_num');
-            $table->string('truck_size');
             $table->decimal('no_of_pallets');
             $table->string('customer');
-            $table->string('location');
-            $table->time('time_entered'); 
-            $table->time('time_left');
+            $table->string('kgs_loaded');
             $table->timestamps();
         });
     }

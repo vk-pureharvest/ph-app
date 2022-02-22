@@ -44,14 +44,10 @@ div {
    <tr>
     <th>Site</th>
     <th>Date</th>
-    <th>Vehicle Registration</th>
     <th>Truck Number</th>
-    <th>Truck Size</th>
     <th>Number of Pallets</th>
     <th>Customer</th>
-    <th>Location</th>
-    <th>Time Entered</th>
-    <th>Time Left</th>
+    <th>KGs Loaded</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -59,14 +55,10 @@ div {
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
-    <td>{{$row['vehicle_reg']}}</td>
     <td>{{$row['truck_num']}}</td>
-    <td>{{$row['truck_size']}}</td>
     <td>{{$row['no_of_pallets']}}</td>
     <td>{{$row['customer']}}</td>
-    <td>{{$row['location']}}</td>
-    <td>{{$row['time_entered']}}</td>
-    <td>{{$row['time_left']}}</td>
+    <td>{{$row['kgs_loaded']}}</td>
     <td><a href="{{action('TruckController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('TruckController@destroy', $row['id'])}}">
