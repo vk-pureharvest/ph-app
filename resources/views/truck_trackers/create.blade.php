@@ -185,6 +185,7 @@ $('thead').on('click', '.addRow', function(){
       '<option value="ONE DAY ONE FRUIT TRADING - FZE">{{"ONE DAY ONE FRUIT TRADING - FZE"}}</option>'+
       '<option value="SAMPLE TO PURE HARVEST MANAGEMENT">{{"SAMPLE TO PURE HARVEST MANAGEMENT"}}</option>'+
       '<option value="SAMPLES TO NEW CUSTOMERS">{{"SAMPLES TO NEW CUSTOMERS"}}</option>'+
+      '<option value="SHARIFA KENAR SADQI GENERAL TRADING LLC">{{"SHARIFA KENAR SADQI GENERAL TRADING LLC"}}</option>'+
       '<option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>'+
       '<option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>'+
       '<option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>'+
