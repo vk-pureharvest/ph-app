@@ -100,8 +100,10 @@ div {
         <option value="Baby Spinach" selected>Baby Spinach</option>          
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select>  
         </td>
@@ -116,8 +118,10 @@ div {
         <option value="Baby Spinach" selected>Baby Spinach</option>      
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -130,8 +134,10 @@ div {
         <option value="Baby Spinach" selected>Baby Spinach</option>           
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -144,8 +150,10 @@ div {
         <option value="Baby Spinach" selected>Baby Spinach</option>      
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -158,8 +166,10 @@ div {
         <option value="Green Lettuce" selected>Green Lettuce</option>          
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -172,8 +182,10 @@ div {
         <option value="Red Lettuce" selected>Red Lettuce</option>       
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -186,8 +198,11 @@ div {
         <option value="Empty" selected>Empty</option>          
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
+        <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" value="0" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
@@ -199,8 +214,10 @@ div {
         <option value="Empty" selected>Empty</option>            
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" value="0"/></td>
@@ -210,11 +227,13 @@ div {
       <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="9"/></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Rucola" selected>Rucola</option>           
+        <option value="Red & Green Tatsoi" selected>Red & Green Tatsoi</option>           
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -224,11 +243,13 @@ div {
       <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="10"/></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Rucola" selected>Rucola</option>        
+        <option value="Green Kale" selected>Green Kale</option>        
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
@@ -238,11 +259,13 @@ div {
       <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="11"/></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Empty" selected>Empty</option>        
+        <option value="Rucola" selected>Rucola</option>        
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" value="0"/></td>
@@ -252,11 +275,13 @@ div {
       <td><input class="form-control" type="integer" name="line_num[]" class="form-control"  value="12"/></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>
-        <option value="Empty" selected>Empty</option>        
+        <option value="Rucola" selected>Rucola</option>        
         <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
         <option value="Empty">Empty</option>
         </select> 
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" value="0"/></td>

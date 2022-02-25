@@ -77,11 +77,13 @@ div {
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="product_type" required focus>
       <option value="{{$leafy_green_harvest->product_type}}" selected="selected">{{$leafy_green_harvest->product_type}}</option>
-               
-        <option value="Red Lettuce">Red Lettuce</option>
+      <option value="Red Lettuce">Red Lettuce</option>
         <option value="Green Lettuce">Green Lettuce</option>
+        <option value="Green Kale">Green Kale</option>
         <option value="Baby Spinach">Baby Spinach</option>
         <option value="Rucola">Rucola</option>
+        <option value="Red & Green Tatsoi">Red & Green Tatsoi</option>
+        <option value="Empty">Empty</option>
       </select>
   </div>
     <div class="form-group row">
