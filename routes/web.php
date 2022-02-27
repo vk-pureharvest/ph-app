@@ -73,6 +73,8 @@ Route::resource('truck_trackers','TruckController');
 
 Route::resource('leafy_closing_stock','Leafy_Closing_Stock_Controller');
 
+Route::resource('leafy_waste','Leafy_Waste_Controller');
+
 Route::resource('truck_receipts','TruckReceiptController');
 
 Route::resource('truck_temps','TruckTempController');
