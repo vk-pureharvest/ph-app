@@ -122,7 +122,10 @@
                                     </a>            
                                     <a class="dropdown-item" href="{{ route('leafy_green_package.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Leafy Green Packaging Details') }}
-                                    </a>          
+                                    </a>                
+                                    <a class="dropdown-item" href="{{ route('leafy_closing_stock.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Leafy Green Closing Stock') }}
+                                    </a>     
                                     <a class="dropdown-item" href="{{ route('pallet_tracker.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Pallet Tracking') }}
                                     </a>
