@@ -113,6 +113,10 @@ div {
     <label class="col-sm-2 col-form-label">Ground Water</label>
     <input type="decimal" name="ground_water" class="form-control w-25"  placeholder="Enter Value" value="{{$nahel_utilities->ground_water}}"/>
   </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">EC Padwall Water</label>
+    <input type="decimal" name="ec_padwall_water" class="form-control w-25"  placeholder="Enter Value" value="{{$nahel_utilities->ec_padwall_water}}"/>
+  </div>
   <br />
    <div class="form-group">
     <input style="position: relative; left: 250px"  type="submit" class="btn btn-primary" value="Edit" />

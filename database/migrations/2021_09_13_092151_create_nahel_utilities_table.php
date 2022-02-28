@@ -25,6 +25,7 @@ class CreateNahelUtilitiesTable extends Migration
             $table->decimal('supply_water_2');
             $table->decimal('irrigation_water');
             $table->decimal('ground_water');
+            $table->decimal('ec_padwall_water');
             $table->timestamps();
         });
     }

@@ -59,7 +59,8 @@ class NahelUtilityController extends Controller
            'supply_water_1'     =>  'required',
            'supply_water_2'     =>  'required',
            'irrigation_water'     =>  'required',
-           'ground_water'     =>  'required'
+           'ground_water'     =>  'required',
+           'ec_padwall_water' => 'required'
         ]);
 
         
@@ -73,7 +74,8 @@ class NahelUtilityController extends Controller
            'supply_water_1'     =>  $request->get('supply_water_1'),
            'supply_water_2'     =>  $request->get('supply_water_2'),
            'irrigation_water'     =>  $request->get('irrigation_water'),
-           'ground_water'     =>  $request->get('ground_water')
+           'ground_water'     =>  $request->get('ground_water'),
+           'ec_padwall_water'     =>  $request->get('ec_padwall_water')
         ]);
         $nahel_utilities->save();
         //print($request->get('image'));
@@ -115,7 +117,8 @@ class NahelUtilityController extends Controller
            'supply_water_1'     =>  'required',
            'supply_water_2'     =>  'required',
            'irrigation_water'     =>  'required',
-           'ground_water'     =>  'required'
+           'ground_water'     =>  'required',
+           'ec_padwall_water' => 'required'
         ]);
 
         $nahel_utilities = Nahel_Utility::find($id);
@@ -127,6 +130,7 @@ class NahelUtilityController extends Controller
         $nahel_utilities->supply_water_2 = $request->get('supply_water_2');
         $nahel_utilities->irrigation_water = $request->get('irrigation_water');
         $nahel_utilities->ground_water = $request->get('ground_water');
+        $nahel_utilities->ec_padwall_water = $request->get('ec_padwall_water');
         $nahel_utilities->save();
         return redirect()->route('nahel_utilities.index')->with('success', 'Data Updated');
     

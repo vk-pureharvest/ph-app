@@ -49,6 +49,7 @@ div {
     <th>Supply Water Corridor 2</th>
     <th>Irrigation Water</th>
     <th>Ground Water</th>
+    <th>EC Padwall Water</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -63,6 +64,7 @@ div {
     <td>{{$row['supply_water_2']}}</td>
     <td>{{$row['irrigation_water']}}</td>
     <td>{{$row['ground_water']}}</td>
+    <td>{{$row['ec_padwall_water']}}</td>
     <td><a href="{{action('NahelUtilityController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('NahelUtilityController@destroy', $row['id'])}}">

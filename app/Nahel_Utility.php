@@ -13,7 +13,7 @@ class Nahel_Utility extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id','site_name','date_added','electra_1','electra_2','reject_water','supply_water_1','supply_water_2','irrigation_water','ground_water'
+        'user_id','site_name','date_added','electra_1','electra_2','reject_water','supply_water_1','supply_water_2','irrigation_water','ground_water','ec_padwall_water',
     ];
 
     function user(){
@@ -24,7 +24,7 @@ class Nahel_Utility extends Model
     
     protected $table = 'nahel_utilities';
     public static function getNahel_Utility(){
-        $records = DB::table('nahel_utilities')->select("site_name","date_added","electra_1","electra_2","reject_water","supply_water_1","supply_water_2","irrigation_water","ground_water")->orderBy('date_added','desc')->get()->toArray();
+        $records = DB::table('nahel_utilities')->select("site_name","date_added","electra_1","electra_2","reject_water","supply_water_1","supply_water_2","irrigation_water","ground_water","ec_padwall_water")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
     }
 }
