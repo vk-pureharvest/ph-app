@@ -10,7 +10,7 @@ class ProductionExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "Site","Date", "Start Time","End Time","Workstation","Number of People","Production (boxes)","Product Type",
+            "Site","Date", "Start Time","End Time","Workstation","Employee","Production (boxes)","Product Type",
             "Harvest Date","Comments"
         ];
     }
