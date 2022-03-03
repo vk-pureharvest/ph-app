@@ -212,23 +212,23 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Box Folding">Box Folding</option>'+
       '</td>'+
       '<td><select type="text" name="employee[]" class="form-control" placeholder="Enter Name of person" required focus>'+
-      '<option value="" disabled selected>Select Name</option>          '+
-      '<option value="Person 1">Person 1</option>         
-      '<option value="Person 2">Person 2</option>   '+      
-      '<option value="Person 3">Person 3</option> '+        
-      '<option value="Person 4">Person 4</option>    '+     
-      '<option value="Person 5">Person 5</option>     '+    
-      '<option value="Person 6">Person 6</option>      '+   
-      '<option value="Person 7">Person 7</option>        '+ 
-      '<option value="Person 8">Person 8</option>         '+
-      '<option value="Person 9">Person 9</option>         '+
-      '<option value="Person 10">Person 10</option>         '+
-      '<option value="Person 11">Person 11</option>        '+ 
-      '<option value="Person 12">Person 12</option>      '+   
-      '<option value="Person 13">Person 13</option>    '+     
-      '<option value="Person 14">Person 14</option>  '+       
-      '<option value="Person 15">Person 15</option>'+         
-      '<option value="Person 16">Person 16</option>'+
+      '<option value="" disabled selected>Select Name</option>'+
+      '<option value="Person 1">Person 1</option>'+         
+                '<option value="Person 2">Person 2</option>'+         
+                '<option value="Person 3">Person 3</option>'+         
+                '<option value="Person 4">Person 4</option>'+         
+                '<option value="Person 5">Person 5</option>'+         
+                '<option value="Person 6">Person 6</option>'+         
+                '<option value="Person 7">Person 7</option>'+         
+                '<option value="Person 8">Person 8</option>'+         
+                '<option value="Person 9">Person 9</option>'+         
+                '<option value="Person 10">Person 10</option>'+         
+                '<option value="Person 11">Person 11</option>'+         
+                '<option value="Person 12">Person 12</option>'+         
+                '<option value="Person 13">Person 13</option>'+         
+                '<option value="Person 14">Person 14</option>'+       
+                '<option value="Person 15">Person 15</option>'+         
+                '<option value="Person 16">Person 16</option>'+
 
   '</td>'+
       '<td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>'+
