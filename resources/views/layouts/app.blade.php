@@ -42,11 +42,6 @@
                                 <a class="dropdown-item" href="{{ route('users.show',['id'=>Auth::user()->id]) }}">
                                         {{ __('Download Reports') }}
                                     </a>
-                                  <!--  
-                                <a class="dropdown-item" href="{{ route('users.index') }}">
-                                        {{ __('Priva Reports') }}
-                                    </a>
-                                </div> -->
                             </li>
                         @endif
                         @if(Auth::user()->role_id==1)
@@ -63,42 +58,28 @@
                                     
                                     <a class="dropdown-item" href="{{ route('weekly_harvest_forecasts.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Weekly Harvest Forecast') }}
-                                    </a>      
-                                  <!--  
-                                <a class="dropdown-item" href="{{ route('users.index') }}">
-                                        {{ __('Priva Reports') }}
-                                    </a>
-                                </div> -->
+                                    </a> 
                             </li>
                             @endif
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    KSA<span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('productions_ksa.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Hourly Production') }}
+                                    </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Menu <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <!--
-                                    <a class="dropdown-item" href="{{ route('users.show',['id'=>Auth::user()->id]) }}">
-                                        {{ __('My Profile') }}
-                                    </a>
-                                    -->
                                     <a class="dropdown-item" href="{{ route('complaints.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Customer Complaint') }}
                                     </a>
-                                    
-                                     <!-- Right Side Of Navbar 
-
-                                    <a class="dropdown-item" href="{{ route('meter_readings.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add Climate Metrics') }}
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('dimensions.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add Fruit Size and Weight') }}
-                                    </a>
-
-                                    <a class="dropdown-item" href="{{ route('brixs.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add BRIX') }}
-                                    </a>
-                                    -->
                                     <a class="dropdown-item" href="{{ route('productions.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Hourly Production') }}
                                     </a>
