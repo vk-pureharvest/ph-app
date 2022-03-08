@@ -65,6 +65,7 @@ class LeafyGreenPackedController extends Controller
             $data->class1_prod=$request->class1_prod[$key];
             $data->no_of_lines=$request->no_of_lines[$key];
             $data->no_of_gutters=$request->no_of_gutters[$key];
+            $data->comments=$request->comments[$key];
             
             $data->save();
        }
@@ -118,6 +119,7 @@ class LeafyGreenPackedController extends Controller
         $leafy_green_package->class1_prod = $request->get('class1_prod');
         $leafy_green_package->no_of_lines = $request->get('no_of_lines');
         $leafy_green_package->no_of_gutters = $request->get('no_of_gutters');
+        $leafy_green_package->comments = $request->get('comments');
 
         $leafy_green_package->save();
         return redirect()->route('leafy_green_package.index')->with('success', 'Data Updated');

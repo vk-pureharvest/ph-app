@@ -8,7 +8,7 @@ class leafy_waste extends Model
 {
   
     protected $fillable = [
-        'user_id','site_name','date_added', 'product_type','total_kgs',
+        'user_id','site_name','date_added', 'product_type','total_kgs','comments',
     ];
  
     function user(){
@@ -18,7 +18,7 @@ class leafy_waste extends Model
     
     protected $table = 'leafy_wastes';
     public static function leafy_waste(){
-        $records = DB::table('leafy_wastes')->select("site_name","date_added","product_type","total_kgs")->orderBy('date_added','desc')->get()->toArray();
+        $records = DB::table('leafy_wastes')->select("site_name","date_added","product_type","total_kgs","comments")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
     }
 }

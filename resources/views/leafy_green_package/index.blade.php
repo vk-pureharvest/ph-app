@@ -49,6 +49,7 @@ div {
     <th>Class 1 Production (KGs)</th>
     <th>Number of Lines</th>
     <th>Number of Gutters</th>
+    <th>Comments</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -61,6 +62,7 @@ div {
     <td>{{$row['class1_prod']}}</td>
     <td>{{$row['no_of_lines']}}</td>
     <td>{{$row['no_of_gutters']}}</td>
+    <td>{{$row['comments']}}</td>
     <td><a href="{{action('LeafyGreenPackedController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('LeafyGreenPackedController@destroy', $row['id'])}}">

@@ -20,6 +20,7 @@ class CreateLeafyWastesTable extends Migration
             $table->date('date_added'); 
             $table->string('product_type');
             $table->decimal('total_kgs');
+            $table->string('comments');
             $table->timestamps();
         });
     }

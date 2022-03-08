@@ -88,6 +88,7 @@ div {
       <tr>
         <th>Product type</th>
         <th>Closing Stock (KGs)</th>
+        <th>Comments</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -110,6 +111,7 @@ div {
         <option value="Red Russian">Red Russian</option>
         </select>  </td>
       <td><input type="decimal" name="total_kgs[]" class="form-control" placeholder="Enter KGs" value="0"/></td>
+      <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>
         <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
@@ -144,7 +146,8 @@ $('thead').on('click', '.addRow', function(){
         '<option value="Red Russian">Red Russian</option>'+
         '</select>  </td>'+
       '<td><input type="decimal" name="total_kgs[]" class="form-control" placeholder="Enter total production" value="0"/></td>'+
-        '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
+      '<td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>'+
+      '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 
         $('tbody').append(tr);

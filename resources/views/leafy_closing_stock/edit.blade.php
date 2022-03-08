@@ -93,6 +93,10 @@ div {
     <label class="col-sm-2 col-form-label">Total Closing Stock (KGs)</label>
     <input class="form-control w-25" type="decimal" name="total_kgs" class="form-control" value="{{$leafy_closing_stock->total_kgs}}" />
    </div>
+   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Comments</label>
+      <input class="form-control w-25"  type="text" name="comments" class="form-control" value="{{$leafy_closing_stock->comments}}"/>
+  </div>
    <br />
    <div class="form-group">
     <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" value="Edit" />

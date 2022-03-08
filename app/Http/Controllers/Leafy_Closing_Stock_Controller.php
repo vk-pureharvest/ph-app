@@ -60,6 +60,7 @@ class Leafy_Closing_Stock_Controller extends Controller
             $data->date_added = $request->get('date_added');
             $data->product_type=$request->product_type[$key];
             $data->total_kgs=$request->total_kgs[$key];
+            $data->comments=$request->comments[$key];
             
             $data->save();
        }
@@ -109,6 +110,7 @@ class Leafy_Closing_Stock_Controller extends Controller
         $leafy_closing_stock->date_added = $request->get('date_added');
         $leafy_closing_stock->product_type = $request->get('product_type');
         $leafy_closing_stock->total_kgs = $request->get('total_kgs');
+        $leafy_closing_stock->comments = $request->get('comments');
 
         $leafy_closing_stock->save();
         return redirect()->route('leafy_closing_stock.index')->with('success', 'Data Updated');

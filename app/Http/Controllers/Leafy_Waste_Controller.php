@@ -60,6 +60,7 @@ class Leafy_Waste_Controller extends Controller
             $data->date_added = $request->get('date_added');
             $data->product_type=$request->product_type[$key];
             $data->total_kgs=$request->total_kgs[$key];
+            $data->comments=$request->comments[$key];
             
             $data->save();
        }
@@ -109,6 +110,7 @@ class Leafy_Waste_Controller extends Controller
         $leafy_waste->date_added = $request->get('date_added');
         $leafy_waste->product_type = $request->get('product_type');
         $leafy_waste->total_kgs = $request->get('total_kgs');
+        $leafy_waste->comments = $request->get('comments');
 
         $leafy_waste->save();
         return redirect()->route('leafy_waste.index')->with('success', 'Data Updated');

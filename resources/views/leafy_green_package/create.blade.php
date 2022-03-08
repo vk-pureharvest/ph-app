@@ -91,6 +91,7 @@ div {
         <th>Class 1 Production (KGs)</th>
         <th>Number of Lines</th>
         <th>Number of Gutters</th>
+        <th>Comments</th>
         <th><a href="javascript:;" type="button" class="btn btn-primary addRow" >+</a> </th>
       </tr>
     </thead>
@@ -116,7 +117,8 @@ div {
       <td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>
       <td><input type="decimal" name="no_of_lines[]" class="form-control" placeholder="Enter number of lines" /></td>
       <td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>
-        <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
+      <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>
+      <td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>
       </tr>
      </tbody>
   </table>
@@ -153,6 +155,7 @@ $('thead').on('click', '.addRow', function(){
       '<td><input type="decimal" name="class1_prod[]" class="form-control" placeholder="Enter class 1 KGs" value="0"/></td>'+
       '<td><input type="decimal" name="no_of_lines[]" class="form-control" placeholder="Enter number of lines" /></td>'+
       '<td><input type="decimal" name="no_of_gutters[]" class="form-control" placeholder="Enter number of gutters" /></td>'+
+      '<td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>'+
         '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
       '</tr>';
 

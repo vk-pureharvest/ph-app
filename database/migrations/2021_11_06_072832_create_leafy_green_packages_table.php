@@ -23,6 +23,7 @@ class CreateLeafyGreenPackagesTable extends Migration
             $table->decimal('class1_prod');
             $table->decimal('no_of_lines');
             $table->decimal('no_of_gutters');
+            $table->string('comments');
             $table->timestamps();
         });
     }

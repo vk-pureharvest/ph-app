@@ -46,6 +46,7 @@ div {
     <th>Date</th>
     <th>Product Type</th>
     <th>Waste (KGs)</th>
+    <th>Comments</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -55,6 +56,7 @@ div {
     <td>{{$row['date_added']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['total_kgs']}}</td>
+    <td>{{$row['comments']}}</td>
     <td><a href="{{action('Leafy_Waste_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('Leafy_Waste_Controller@destroy', $row['id'])}}">
