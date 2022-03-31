@@ -118,6 +118,7 @@ div {
     <option value="{{$complaint->site_name}}" selected="selected">{{$complaint->site_name}}</option>   
     <option value="Al Ain">{{"Al Ain"}}</option>   
     <option value="Nahel">{{"Nahel"}}</option>
+    <option value="Harradh">{{"Harradh"}}</option>
   </select>
   </div>
    <div class="form-group row">
@@ -156,6 +157,7 @@ div {
       <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
       <option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>
       <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
+      <option value="THE NATIONAL AGRICULTURAL DEVELOPMENT">{{"THE NATIONAL AGRICULTURAL DEVELOPMENT"}}</option>
       <option value="TRANSMED OVERSEAS INCORPORATED S.A.">{{"TRANSMED OVERSEAS INCORPORATED S.A."}}</option>
       <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
       <option value="URBAN FOODS LLC">{{"URBAN FOODS LLC"}}</option>

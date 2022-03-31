@@ -120,7 +120,8 @@ div {
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
-        <option value="Nahel">{{"Nahel"}}</option>
+        <option value="Nahel">{{"Nahel"}}</option>      
+        <option value="Harradh">{{"Harradh"}}</option>
       </select>
   </div>
 
@@ -161,6 +162,7 @@ div {
       <option value="SPINNEYS DUBAI LLC">{{"SPINNEYS DUBAI LLC"}}</option>
       <option value="TAMRAAT GENERAL TRADING LLC">{{"TAMRAAT GENERAL TRADING LLC"}}</option>
       <option value="TFC FRUITS TRADING LLC">{{"TFC FRUITS TRADING LLC"}}</option>
+      <option value="THE NATIONAL AGRICULTURAL DEVELOPMENT">{{"THE NATIONAL AGRICULTURAL DEVELOPMENT"}}</option>
       <option value="TRANSMED OVERSEAS INCORPORATED S.A.">{{"TRANSMED OVERSEAS INCORPORATED S.A."}}</option>
       <option value="T.V. VIJAYAN">{{"T.V. VIJAYAN"}}</option>
       <option value="URBAN FOODS LLC">{{"URBAN FOODS LLC"}}</option>
