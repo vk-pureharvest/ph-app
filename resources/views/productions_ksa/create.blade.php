@@ -116,6 +116,10 @@ div {
         <option value="F">F</option>
         <option value="G">G</option>
         <option value="H">H</option>
+        <option value="I">I</option>
+        <option value="J">J</option>
+        <option value="K">K</option>
+        <option value="L">L</option>
         <option value="Candy Machine">Candy Machine</option>
         <option value="Box Folding">Box Folding</option>
       </td>
@@ -208,6 +212,10 @@ $('thead').on('click', '.addRow', function(){
         '<option value="F">F</option>'+
         '<option value="G">G</option>'+
         '<option value="H">H</option>'+
+        '<option value="I">I</option>'+
+        '<option value="J">J</option>'+
+        '<option value="K">K</option>'+
+        '<option value="L">L</option>'+
         '<option value="Candy Machine">Candy Machine</option>'+
         '<option value="Box Folding">Box Folding</option>'+
       '</td>'+
