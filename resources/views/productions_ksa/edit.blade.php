@@ -107,22 +107,35 @@ div {
     <label class="col-sm-2 col-form-label">Employee</label>
     <select class="form-control w-25" id="text" name="employee" required focus>
                 <option value="{{$productions->employee}}" selected="selected">{{$productions->employee}}</option>  
-                <option value="Person 1">Person 1</option>         
-                <option value="Person 2">Person 2</option>         
-                <option value="Person 3">Person 3</option>         
-                <option value="Person 4">Person 4</option>         
-                <option value="Person 5">Person 5</option>         
-                <option value="Person 6">Person 6</option>         
-                <option value="Person 7">Person 7</option>         
-                <option value="Person 8">Person 8</option>         
-                <option value="Person 9">Person 9</option>         
-                <option value="Person 10">Person 10</option>         
-                <option value="Person 11">Person 11</option>         
-                <option value="Person 12">Person 12</option>         
-                <option value="Person 13">Person 13</option>         
-                <option value="Person 14">Person 14</option>         
-                <option value="Person 15">Person 15</option>         
-                <option value="Person 16">Person 16</option>
+                <option value='Abdulkadir Mwichande Abdi'>Abdulkadir Mwichande Abdi</option>
+                <option value='Abu Baker Adam'>Abu Baker Adam</option>
+                <option value='Akram Ssesanga'>Akram Ssesanga</option>
+                <option value='Andrew . Kityo'>Andrew . Kityo</option>
+                <option value='Atrash Zuber Mohamed'>Atrash Zuber Mohamed</option>
+                <option value='Daniel Denge Karisa'>Daniel Denge Karisa</option>
+                <option value='Daniel Muchira Kinyua'>Daniel Muchira Kinyua</option>
+                <option value='David Daniel Sebuliba'>David Daniel Sebuliba</option>
+                <option value='Dominic Njuguna Karanja'>Dominic Njuguna Karanja</option>
+                <option value='Eria Mpoya'>Eria Mpoya</option>
+                <option value='Francis Tudeka'>Francis Tudeka</option>
+                <option value='Francis Wanderi Maina'>Francis Wanderi Maina</option>
+                <option value='Francisco Tamale'>Francisco Tamale</option>
+                <option value='Geofrey Mulumba Buyinza'>Geofrey Mulumba Buyinza</option>
+                <option value='Haidara Athman Kirao'>Haidara Athman Kirao</option>
+                <option value='Henry Ndungu Mwituria'>Henry Ndungu Mwituria</option>
+                <option value='Israel Tom Kiru'>Israel Tom Kiru</option>
+                <option value='Ivan Tulinawe'>Ivan Tulinawe</option>
+                <option value='Lokendra Bahadur Mahato'>Lokendra Bahadur Mahato</option>
+                <option value='Manisulu Kimera'>Manisulu Kimera</option>
+                <option value='Mbarak Hussein Mbarak'>Mbarak Hussein Mbarak</option>
+                <option value='Moses Amani Thomas'>Moses Amani Thomas</option>
+                <option value='Mulishid Wangi'>Mulishid Wangi</option>
+                <option value='Paul Kamau Migwi'>Paul Kamau Migwi</option>
+                <option value='Raphael Gituru Ndegwa'>Raphael Gituru Ndegwa</option>
+                <option value='Samuel Murithi Waringa'>Samuel Murithi Waringa</option>
+                <option value='Suleiman Dena Mwalimu'>Suleiman Dena Mwalimu</option>
+                <option value='Zacharia Kariuki Kamau'>Zacharia Kariuki Kamau</option>
+
    </select>
    </div>
    <div class="form-group row">
