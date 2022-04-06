@@ -110,7 +110,7 @@ div {
                 <option value='Abdulkadir Mwichande Abdi'>Abdulkadir Mwichande Abdi</option>
                 <option value='Abu Baker Adam'>Abu Baker Adam</option>
                 <option value='Akram Ssesanga'>Akram Ssesanga</option>
-                <option value='Andrew . Kityo'>Andrew . Kityo</option>
+                <option value='Andrew Kityo'>Andrew Kityo</option>
                 <option value='Atrash Zuber Mohamed'>Atrash Zuber Mohamed</option>
                 <option value='Daniel Denge Karisa'>Daniel Denge Karisa</option>
                 <option value='Daniel Muchira Kinyua'>Daniel Muchira Kinyua</option>
