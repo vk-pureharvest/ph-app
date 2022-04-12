@@ -18,7 +18,7 @@ class ProductionsController extends Controller
      */
     public function index()
     {
-        $productions = Production::all()->where('site_name', 'not like', 'KSA')->sortBy('id')->reverse()->take(50)->toArray();
+        $productions = Production::all()->where('site_name', 'like', 'Al Ain')->sortBy('id')->reverse()->take(50)->toArray();
         return view('productions.index',compact('productions'));
     }
 
