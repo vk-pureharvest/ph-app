@@ -59,7 +59,7 @@ div {
    <div><H4 >  Add Hourly Production </H4></div>
 
    <div align="middle">
-   <a href="{{route('productions_ksa.index_ksa')}}" class="btn btn-primary">View Hourly Production</a>
+   <a href="{{route('productions_ksa.index')}}" class="btn btn-primary">View Hourly Production</a>
    <br />
    <br />
    <br />
