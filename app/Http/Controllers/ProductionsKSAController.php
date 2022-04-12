@@ -18,7 +18,7 @@ class ProductionsKSAController extends Controller
      */
     public function index()
     {
-        $productions = Production::all()->sortBy('id')->reverse()->take(50)->toArray();
+        $productions = Production::all()->where('site_name', 'like', 'KSA')->sortBy('id')->reverse()->take(50)->toArray();
         return view('productions_ksa.index',compact('productions'));
     }
 
