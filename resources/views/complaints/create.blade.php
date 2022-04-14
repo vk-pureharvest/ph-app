@@ -202,6 +202,7 @@ div {
     <option value="Cocktail">Cocktail</option>
     <option value="COV">COV</option>
     <option value="Heirloom">Heirloom</option>
+    <option value="Kale">Kale</option>
     <option value="Mixed Candy">Mixed Candy</option>
     <option value="Orange TOV">Orange TOV</option>
     <option value="Plum">Plum</option>
