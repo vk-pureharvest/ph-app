@@ -218,6 +218,7 @@ div {
     <option value="Strawberry - Furore">Strawberry - Furore</option>
     <option value="Strawberry - Murano">Strawberry - Murano</option>
     <option value="Strawberry - San Andreas">Strawberry - San Andreas</option>
+    <option value="Sweet Pointed Chili Pepper">Sweet Pointed Chili Pepper</option>
     <option value="Red Lettuce">Red Lettuce</option>
     <option value="Green Lettuce">Green Lettuce</option>
     <option value="Baby Spinach">Baby Spinach</option>
