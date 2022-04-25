@@ -67,6 +67,7 @@ class AlAinUtilityController extends Controller
             'chiller'      =>   'required',
             'mixing_unit_50'      =>   'required',
             'mixing_unit_60'      =>   'required',
+            'electric_meter_1'      =>   'required',
             'electric_meter_2'      =>   'required',
             'co2_leafy_green'      =>   'required',
             'co2_tomatoes'      =>   'required'
@@ -91,6 +92,7 @@ class AlAinUtilityController extends Controller
             'chiller'    =>  $request->get('chiller'),
             'mixing_unit_50'    =>  $request->get('mixing_unit_50'),
             'mixing_unit_60'    =>  $request->get('mixing_unit_60'),
+            'electric_meter_1'    =>  $request->get('electric_meter_1'),
             'electric_meter_2'    =>  $request->get('electric_meter_2'),
             'co2_leafy_green'    =>  $request->get('co2_leafy_green'),
             'co2_tomatoes'    =>  $request->get('co2_tomatoes')
@@ -143,6 +145,7 @@ class AlAinUtilityController extends Controller
            'chiller'      =>   'required',
            'mixing_unit_50'      =>   'required',
            'mixing_unit_60'      =>   'required',
+           'electric_meter_1'      =>   'required',
            'electric_meter_2'      =>   'required',
            'co2_leafy_green'      =>   'required',
            'co2_tomatoes'      =>   'required'
@@ -164,6 +167,7 @@ class AlAinUtilityController extends Controller
         $alain_utilities->chiller = $request->get('chiller');
         $alain_utilities->mixing_unit_50 = $request->get('mixing_unit_50');
         $alain_utilities->mixing_unit_60 = $request->get('mixing_unit_60');
+        $alain_utilities->electric_meter_1 = $request->get('electric_meter_1');
         $alain_utilities->electric_meter_2 = $request->get('electric_meter_2');
         $alain_utilities->co2_leafy_green = $request->get('co2_leafy_green');
         $alain_utilities->co2_tomatoes = $request->get('co2_tomatoes');

@@ -138,6 +138,9 @@ div {
   </div>
 
     <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Electricity meter 1</label>
+    <input type="decimal" name="electric_meter_1" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->electric_meter_1}}"/>
+
     <label class="col-sm-2 col-form-label">Electricity meter 2</label>
     <input type="decimal" name="electric_meter_2" class="form-control w-25" placeholder="Enter Value" value="{{$alain_utilities->electric_meter_2}}"/>
   </div>

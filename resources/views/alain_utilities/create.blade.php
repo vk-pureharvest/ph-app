@@ -132,6 +132,8 @@ div {
   </div>
 
   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Electric Meter 1 reading (AADC)</label>
+    <input type="decimal" name="electric_meter_1" class="form-control w-25" />
     <label class="col-sm-2 col-form-label">Electric Meter 2 reading (AADC)</label>
     <input type="decimal" name="electric_meter_2" class="form-control w-25" />
   </div>

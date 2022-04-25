@@ -56,6 +56,7 @@ div {
     <th>Chiller</th>
     <th>Mixing unit 50</th>
     <th>Mixing unit 60 </th>
+    <th>Electricity meter 1</th>
     <th>Electricity meter 2</th>
     <th>CO2 Leafy Greens</th>
     <th>CO2 Tomatoes</th>
@@ -80,6 +81,7 @@ div {
     <td>{{$row['chiller']}}</td>
     <td>{{$row['mixing_unit_50']}}</td>
     <td>{{$row['mixing_unit_60']}}</td>
+    <td>{{$row['electric_meter_1']}}</td>
     <td>{{$row['electric_meter_2']}}</td>
     <td>{{$row['co2_leafy_green']}}</td>
     <td>{{$row['co2_tomatoes']}}</td>
