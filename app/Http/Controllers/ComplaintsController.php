@@ -17,7 +17,7 @@ class ComplaintsController extends Controller
      */
     public function index()
     {
-        $complaints = Complaint::all()->sortBy('id')->reverse()->take(10)->toArray();
+        $complaints = Complaint::all()->sortBy('id')->reverse()->toArray();
         return view('complaints.index', compact('complaints'));
     }
 
