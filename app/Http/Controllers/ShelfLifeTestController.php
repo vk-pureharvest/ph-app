@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ShelfLifeTest;
+use App\Shelf_life_Berry;
 use Illuminate\Support\Facades\Auth;
 use App\Exports\ShelfLifeTestExport;
 use Excel;
@@ -17,7 +18,7 @@ class ShelfLifeTestController extends Controller
      */
     public function index()
     {
-        $shelflifetests = ShelfLifeTest::all()->sortBy('id')->reverse()->toArray();
+        $shelflifetests = Shelf_life_Berry::all()->sortBy('id')->reverse()->toArray();
         return view('shelflifetests.index',compact('shelflifetests'));
     }
 
