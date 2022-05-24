@@ -45,6 +45,7 @@ div {
     <th>Site</th>
     <th>Testing Date</th>
     <th>Day of Testing</th>
+    <th>Day Harvested</th>
     <th>Product type</th>
     <th>Color</th>
     <th>Color Rank</th>
@@ -66,6 +67,7 @@ div {
     <td>{{$row['site_name']}}</td>
     <td>{{$row['testing_date']}}</td>
     <td>{{$row['day_of_testing']}}</td>
+    <td>{{$row['date_harvested']}}</td>
     <td>{{$row['product_type']}}</td>
     <td>{{$row['color']}}</td>
     <td>{{$row['color_rank']}}</td>

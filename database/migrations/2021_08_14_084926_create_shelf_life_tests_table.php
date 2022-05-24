@@ -19,6 +19,7 @@ class CreateShelfLifeTestsTable extends Migration
             $table->string('site_name');
             $table->date('testing_date'); 
             $table->string('day_of_testing');
+            $table->string('date_harvested');
             $table->string('product_type');
             $table->decimal('color',10,2);
             $table->integer('color_rank');

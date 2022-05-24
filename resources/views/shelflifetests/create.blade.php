@@ -82,6 +82,10 @@ div {
   </div> 
   
   <div style="position: relative; left: 50px" class="form-group row">
+    <label class="col-sm-2 col-form-label">Date Harvested</label>
+    <input class="form-control w-25" type="date" name="date_harvested" value=""/>
+  </div> 
+  <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Day of Testing</label>
         <select class="form-control w-25" id="selectProduct" name="day_of_testing" required focus>
         <option value="" disabled selected>Day of Testing</option>          
