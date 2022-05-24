@@ -52,8 +52,8 @@ div {
   </div>
   @endif
   
-
-  <form method="post" action="{{url('shelflifetests')}}">
+  
+  <form action="{{url('shelflifetests')}}"  method="post" enctype="multipart/form-data">
    {{csrf_field()}}
    
    <div><H4 >  Add Shelf Life Testing </H4></div>
@@ -227,44 +227,4 @@ div {
   </form>
 </div>
 </div>
-  <script>
-$('thead').on('click', '.addRow', function(){
-    var tr='<tr>'+
-      '<td>'+
-        '<select class="form-control" id="selectProduct" name="product_type[]" required focus>'+
-        '<option value="" disabled selected>Product Type</option>          '+
-        '<option value="Candy">Candy</option>'+
-        '<option value="Cocktail">Cocktail</option>'+
-        '<option value="COV">COV</option>'+
-        '<option value="Heirloom">Heirloom</option>'+
-        '<option value="Mixed Candy">Mixed Candy</option>'+
-        '<option value="Orange TOV">Orange TOV</option>'+
-        '<option value="Plum">Plum</option>'+
-        '<option value="Round">Round</option>'+
-        '<option value="Strabena">Strabena</option>'+
-        '<option value="TOV">TOV</option>'+
-        '<option value="Yellow TOV">Yellow TOV</option>'+
-        '<option value="Yoom">Yoom</option>'+
-        '</select>  '+
-        '</td>'+
-        '<td><input type="decimal" name="BRIX[]" class="form-control" placeholder="Enter BRIX" /></td>'+
-        '<td><input type="decimal" name="color_L[]" class="form-control" placeholder="Enter Color (L)" /></td>'+
-        '<td><input type="decimal" name="color_A[]" class="form-control" placeholder="Enter Color (A)" /></td>'+
-        '<td><input type="decimal" name="color_B[]" class="form-control" placeholder="Enter Color (B)" /></td>'+
-        '<td><input type="decimal" name="weight[]" class="form-control" placeholder="Enter Weight" /></td>'+
-        '<td><input type="decimal" name="length[]" class="form-control" placeholder="Enter Length" /></td>'+
-        '<td><input type="decimal" name="width[]" class="form-control" placeholder="Enter Width" /></td>'+
-        '<td><input type="decimal" name="pressure[]" class="form-control" placeholder="Enter Pressure" /></td>'+
-        '        <td><textarea  class="form-control" white-space="pre-wrap" type="text"  name="remarks[]" placeholder="Remarks" rows="1" ></textarea></td>'+
-        '<td><a href="javascript:;" class="btn btn-danger deleteRow">-</a></td>'+
-      '</tr>';
-
-        $('tbody').append(tr);
-});
-
-$('tbody').on('click', '.deleteRow', function(){
-    $(this).parent().parent().remove();
-});
-
-</script>
 @endsection
