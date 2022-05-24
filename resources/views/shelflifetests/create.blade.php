@@ -144,38 +144,38 @@ div {
         <td><input type="decimal" name="color" class="form-control" placeholder="Enter Color" />
         <select class="form-control" id="selectProduct" name="color_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
-        <option value="1">1</option>         
-        <option value="2">2</option>         
-        <option value="3">3</option>         
-        <option value="4">4</option>         
-        <option value="5">5</option>  
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>  
         </select></td>
         <td><input type="decimal" name="BRIX" class="form-control" placeholder="Enter BRIX" /></td>
         <td><input type="decimal" name="firmness" class="form-control" placeholder="Enter Firmness" />
         <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
-        <option value="1">1</option>         
-        <option value="2">2</option>         
-        <option value="3">3</option>         
-        <option value="4">4</option>         
-        <option value="5">5</option>  
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>  
         </select></td>
         <td><select class="form-control" id="selectProduct" name="smell_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
-        <option value="1">1</option>         
-        <option value="2">2</option>         
-        <option value="3">3</option>         
-        <option value="4">4</option>         
-        <option value="5">5</option>  
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>   
         </select></td>
         <td><input type="decimal" name="weight" class="form-control" placeholder="Enter Weight" />
         <select class="form-control" id="selectProduct" name="weight_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
-        <option value="1">1</option>         
-        <option value="2">2</option>         
-        <option value="3">3</option>         
-        <option value="4">4</option>         
-        <option value="5">5</option>  
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>   
         </select></td>
         <td><select class="form-control" id="selectProduct" name="vine_quality" required focus>
         <option value="" disabled selected>Enter Vine Quality</option>        
@@ -199,11 +199,11 @@ div {
         </select></td>
         <td><select class="form-control" id="selectProduct" name="quality_rank" required focus>
         <option value="" disabled selected>Enter Quality Rank</option>        
-        <option value="1">1</option>         
-        <option value="2">2</option>         
-        <option value="3">3</option>         
-        <option value="4">4</option>         
-        <option value="5">5</option>  
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>  
         </select></td>
         
         <td><textarea  class="form-control" white-space="pre-wrap" type="text"  name="remarks" placeholder="Remarks" rows="1" ></textarea></td>

@@ -45,7 +45,7 @@ div {
     <th>Site</th>
     <th>Testing Date</th>
     <th>Day of Testing</th>
-    <th>Day Harvested</th>
+    <th>Date Harvested</th>
     <th>Product type</th>
     <th>Color</th>
     <th>Color Rank</th>
