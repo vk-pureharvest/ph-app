@@ -44,41 +44,48 @@ div {
    <tr>
     <th>Site</th>
     <th>Testing Date</th>
-    <th>Harvest Test</th>
+    <th>Day of Testing</th>
     <th>Product type</th>
+    <th>Color</th>
+    <th>Color Rank</th>
     <th>BRIX</th>
-    <th>Color L</th>
-    <th>Color A</th>
-    <th>Color B</th>
+    <th>Firmness</th>
+    <th>Firmness Rank</th>
+    <th>Smell Rank</th>
     <th>Weight</th>
-    <th>Length</th>
-    <th>Width</th>
-    <th>Pressure</th>
+    <th>Weight Rank</th>
+    <th>Vine Quality</th>
+    <th>Presence of Spots</th>
+    <th>Presence of Fungus</th>
+    <th>Quality Rank</th>
     <th>Remarks</th>
-    <th>Edit</th>
-    <th>Delete</th>
    </tr>
    @foreach($shelflifetests as $row)
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['testing_date']}}</td>
-    <td>{{$row['harvest_date']}}</td>
+    <td>{{$row['day_of_testing']}}</td>
     <td>{{$row['product_type']}}</td>
+    <td>{{$row['color']}}</td>
+    <td>{{$row['color_rank']}}</td>
     <td>{{$row['BRIX']}}</td>
-    <td>{{$row['color_L']}}</td>
-    <td>{{$row['color_A']}}</td>
-    <td>{{$row['color_B']}}</td>
+    <td>{{$row['firmness']}}</td>
+    <td>{{$row['firmness_rank']}}</td>
+    <td>{{$row['smell_rank']}}</td>
     <td>{{$row['weight']}}</td>
-    <td>{{$row['length']}}</td>
-    <td>{{$row['width']}}</td>
-    <td>{{$row['pressure']}}</td>
+    <td>{{$row['weight_rank']}}</td>
+    <td>{{$row['vine_quality']}}</td>
+    <td>{{$row['spots']}}</td>
+    <td>{{$row['fungus']}}</td>
+    <td>{{$row['quality_rank']}}</td>
     <td>{{$row['remarks']}}</td>
+      <!-- Authentication Links 
     <td><a href="{{action('ShelfLifeTestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-     <form method="post" class="delete_form" action="{{action('ShelfLifeTestController@destroy', $row['id'])}}">
+    <form method="post" class="delete_form" action="{{action('ShelfLifeTestController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
-      <button type="submit" class="btn btn-danger">Delete</button>
+      <button type="submit" class="btn btn-danger">Delete</button>-->
      </form>
     </td>
    </tr>

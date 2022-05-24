@@ -17,7 +17,7 @@ class ShelfLifeTestController extends Controller
      */
     public function index()
     {
-        $shelflifetests = ShelfLifeTest::all()->sortBy('id')->reverse()->take(50)->toArray();
+        $shelflifetests = ShelfLifeTest::all()->sortBy('id')->reverse()->toArray();
         return view('shelflifetests.index',compact('shelflifetests'));
     }
 
@@ -52,31 +52,59 @@ class ShelfLifeTestController extends Controller
         
         $authUser = auth()->user();
         
+        
         $this->validate($request, [
-            'site_name'    =>  'required',
-            'testing_date'     =>  'required',
-            'harvest_date'     =>  'required'
-         ]);
-          
-         foreach($request->product_type as $key=>$product_type){
-            $data = new ShelfLifeTest();
-            $data->user_id = $authUser->id;
-            $data->site_name = $request->get('site_name');
-            $data->testing_date = $request->get('testing_date');
-            $data->harvest_date = $request->get('harvest_date');
-            $data->product_type=$request->product_type[$key];
-            $data->BRIX=$request->BRIX[$key];
-            $data->color_L=$request->color_L[$key];
-            $data->color_A=$request->color_A[$key];
-            $data->color_B=$request->color_B[$key];
-            $data->weight=$request->weight[$key];
-            $data->length=$request->length[$key];
-            $data->width=$request->width[$key];
-            $data->pressure=$request->pressure[$key];
-            $data->remarks=$request->remarks[$key];
+            'site_name'      =>   'required',
+           'testing_date'    =>  'required',
+           'day_of_testing'     =>  'required',
+           'product_type'     =>  'required',
+           'color'     =>  'required',
+           'color_rank'     =>  'required',
+           'BRIX'     =>  'required',
+           'firmness'     =>  'required',
+           'firmness_rank'     =>  'required',
+           'smell_rank'     =>  'required',
+           'weight'     =>  'required',
+           'weight_rank'     =>  'required',
+           'vine_quality'     =>  'required',
+           'spots'     =>  'required',
+           'fungus'     =>  'required',
+           'quality_rank'     =>  'required'
+        ]);
+
+        
+        $shelflifetests = new ShelfLifeTest([
+           'user_id'    =>  $authUser->id,
+           'site_name'    =>  $request->get('site_name'),
+           'testing_date'    =>  $request->get('testing_date'),
+           'product_type'     =>  $request->get('product_type'),
+           'day_of_testing'     =>  $request->get('day_of_testing'),
+           'color'     =>  $request->get('color'),
+           'color_rank'     =>  $request->get('color_rank'),
+           'BRIX'     =>  $request->get('BRIX'),
+           'firmness'     =>  $request->get('firmness'),
+           'firmness_rank'     =>  $request->get('firmness_rank'),
+           'smell_rank'     =>  $request->get('smell_rank'),
+           'weight'     =>  $request->get('weight'),
+           'weight_rank'     =>  $request->get('weight_rank'),
+           'vine_quality'     =>  $request->get('vine_quality'),
+           'spots'     =>  $request->get('spots'),
+           'fungus'     =>  $request->get('fungus'),
+           'quality_rank'     =>  $request->get('quality_rank'),
+           'remarks'     =>  $request->get('remarks')
+        ]);
+        if ($request->hasfile('image')){
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads/shelflifetesting/', $filename);
+            $shelflifetests->image = $filename;
+        } else {
+            $shelflifetests->image='';
+        }
             
-            $data->save();
-       }
+        $shelflifetests->save();
+               //print($request->get('image'));
        return redirect()->route('shelflifetests.create')->with('success', 'Data Added');
     }
 
