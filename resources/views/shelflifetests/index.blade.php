@@ -59,6 +59,7 @@ div {
     <th>Presence of Fungus</th>
     <th>Quality Rank</th>
     <th>Remarks</th>
+    <th>Image</th>
    </tr>
    @foreach($shelflifetests as $row)
    <tr>
@@ -79,6 +80,8 @@ div {
     <td>{{$row['fungus']}}</td>
     <td>{{$row['quality_rank']}}</td>
     <td>{{$row['remarks']}}</td>
+    <td><img src="{{ asset('uploads/shelflifetesting/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
+    
       <!-- Authentication Links 
     <td><a href="{{action('ShelfLifeTestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
