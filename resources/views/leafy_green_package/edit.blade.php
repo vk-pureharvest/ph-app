@@ -74,18 +74,40 @@ div {
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
                 <option value="{{$leafy_green_package->product_type}}" selected="selected">{{$leafy_green_package->product_type}}</option>  
-                <option value="Red Lettuce">Red Lettuce</option>
-                <option value="Green Lettuce">Green Lettuce</option>
+                <option value="Red lettuce">Red lettuce</option>
+                <option value="Green lettuce">Green lettuce</option>
                 <option value="Baby Spinach">Baby Spinach</option>
                 <option value="Rucola">Rucola</option>
-                <option value="Green Kale">Green Kale</option>
-                <option value="Green Curly Kale">Green Curly Kale</option>
-                <option value="Mix Kale">Mix Kale</option>
-                <option value="Red Kale">Red Kale</option>
+                <option value="Mixed Salad">Mixed Salad</option>
                 <option value="Green Tatsoi">Green Tatsoi</option>
-                <option value="Red Tatsoi">Red Tatsoi</option>
-                <option value="Cabbage">Cabbage</option>
+                <option value="Red Totsoi">Red Totsoi</option>
+                <option value="Mix Kales">Mix Kales</option>
+                <option value="Green kale">Green kale</option>
+                <option value="Caltivated Rucola">Caltivated Rucola</option>
+                <option value="Sweet Genovess">Sweet Genovess</option>
+                <option value="Rubi">Rubi</option>
+                <option value="Green Fire">Green Fire</option>
+                <option value="Bullas Blood">Bullas Blood</option>
+                <option value="Red chard">Red chard</option>
+                <option value="wasabina improved">wasabina improved</option>
+                <option value="Russian kale">Russian kale</option>
                 <option value="Red Russian">Red Russian</option>
+                <option value="Red carpet">Red carpet</option>
+                <option value="Red drgon">Red drgon</option>
+                <option value="kale Scarlet">kale Scarlet</option>
+                <option value="Pak choi">Pak choi</option>
+                <option value="Gibbard Rz">Gibbard Rz</option>
+                <option value="Crunchy Red">Crunchy Red</option>
+                <option value="Warhol Rz">Warhol Rz</option>
+                <option value="Crystal red lettuce/44CL5001">Crystal red lettuce/44CL5001</option>
+                <option value="79-M/8166">79-M/8166</option>
+                <option value="Bonarda Rz">Bonarda Rz</option>
+                <option value="Frisee Lettuce">Frisee Lettuce</option>
+                <option value="Curnchy Green Lettuce/ Exaudio">Curnchy Green Lettuce/ Exaudio</option>
+                <option value="Oak leaf">Oak leaf</option>
+                <option value="Lob jot">Lob jot</option>
+                <option value="Curnchy Red Lettuce/ Binex">Curnchy Red Lettuce/ Binex</option>
+
             </select>
    </div>
    
