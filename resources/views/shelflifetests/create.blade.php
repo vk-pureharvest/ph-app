@@ -107,6 +107,7 @@ div {
         <option value="COV- Red">COV- Red</option>
         <option value="Plum">Plum</option>
         <option value="Heirloom">Heirloom</option>
+        <option value="Yellow Candy">Yellow Candy</option>
         <option value="Yoom">Yoom</option>
         <option value="Candy mix- Yellow">Candy mix- Yellow</option>
         <option value="Candy mix- Red">Candy mix- Red</option>
