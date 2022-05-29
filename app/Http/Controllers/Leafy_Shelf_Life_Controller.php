@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\leafy_shelf_life;
 use Illuminate\Support\Facades\Auth;
 use App\Exports\Leafy_Shelf_Life_Export;
+use Excel;
 
 class Leafy_Shelf_Life_Controller extends Controller
 {

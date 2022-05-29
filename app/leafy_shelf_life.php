@@ -24,7 +24,7 @@ class leafy_shelf_life extends Model
 
    protected $table = 'leafy_shelf_lives';
    public static function getLeafyShelfLifeTest(){
-       $records = DB::table('shelf_life_tests')->select("site_name","testing_date", "day_of_testing","date_harvested","product_type","smell","texture","cracks","wrinkles","color","spots","dryness","crunch","remarks")->orderBy('product_type','day_of_testing','desc')->get()->toArray();
+       $records = DB::table('leafy_shelf_lives')->select("site_name","testing_date", "day_of_testing","date_harvested","product_type","smell","texture","cracks","wrinkles","color","spots","dryness","crunch","remarks")->orderBy('product_type','day_of_testing','desc')->get()->toArray();
        return $records; 
    }
 
