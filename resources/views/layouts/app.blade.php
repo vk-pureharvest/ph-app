@@ -125,8 +125,8 @@
                                     <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Shelf Life Testing - Tomatoes') }}
                                     </a> 
-                                    <a class="dropdown-item" href="{{ route('shelflifeberry.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Shelf Life Testing - Strawberry') }}
+                                    <a class="dropdown-item" href="{{ route('leafy_shelf_lives.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing - Leafy Greens') }}
                                     </a>   
                                     <a class="dropdown-item" href="{{ route('truck_trackers.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Truck Delivery Details') }}

@@ -51,7 +51,7 @@ Route::resource('packingqc','PackingQCController');
 
 Route::resource('shelflifetests','ShelfLifeTestController');
 
-Route::resource('shelflifeberry','ShelfLifeBerryController');
+Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
@@ -112,8 +112,8 @@ Route::get('/packingqc-excel/PackingQCExport', 'PackingQCController@exportPackin
 Route::get('/shelflifetests-excel','ShelfLifeTestController@exportShelfLifeTestExcel');
 Route::get('/shelflifetests-excel/ShelfLifeTestExport', 'ShelfLifeTestController@exportShelfLifeTestExcel')->name('shelflifetests-excel.exportShelfLifeTestExcel');
 
-Route::get('/shelflifeberry-excel','ShelfLifeBerryController@exportShelfLifeBerryExcel');
-Route::get('/shelflifeberry-excel/ShelfLifeBerryExport', 'ShelfLifeBerryController@exportShelfLifeBerryExcel')->name('shelflifeberry-excel.exportShelfLifeBerryExcel');
+Route::get('/leafy_shelf_lives-excel','Leafy_Shelf_Life_Controller@exportLeafyShelfLifeTestExcel');
+Route::get('/leafy_shelf_lives-excel/Leafy_Shelf_Life_Export', 'Leafy_Shelf_Life_Controller@exportLeafyShelfLifeTestExcel')->name('leafy_shelf_lives-excel.exportLeafyShelfLifeTestExcel');
 
 Route::get('/inventory-excel','InventoryController@exportInventoryExcel');
 Route::get('/inventory-excel/InventoryExport', 'InventoryController@exportInventoryExcel')->name('inventory-excel.exportInventoryExcel');
