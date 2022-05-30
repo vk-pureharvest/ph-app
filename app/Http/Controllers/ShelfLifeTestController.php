@@ -18,7 +18,7 @@ class ShelfLifeTestController extends Controller
      */
     public function index()
     {
-        $shelflifetests = Shelf_life_Berry::all()->toArray();
+        $shelflifetests = ShelfLifeTest::all()->toArray();
         return view('shelflifetests.index',compact('shelflifetests'));
     }
 

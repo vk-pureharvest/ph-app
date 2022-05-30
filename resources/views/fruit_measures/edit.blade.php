@@ -83,6 +83,7 @@ div {
                 <option value="COV">COV</option>
                 <option value="Heirloom">Heirloom</option>
                 <option value="Mixed Candy">Mixed Candy</option>
+                <option value="Nebula">Nebula</option>
                 <option value="Orange TOV">Orange TOV</option>
                 <option value="Plum">Plum</option>
                 <option value="Round">Round</option>
