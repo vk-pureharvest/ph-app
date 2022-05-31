@@ -46,8 +46,11 @@ div {
     <th>Complaint Category 1</th>
     <th>Complaint Category 2</th>
     <th>Additional Details</th>
+    <th>Batch Code</th>
     <th>Product Type</th>
-    <th>Classype</th>
+    <th>Product Details</th>
+    <th>Class</th>
+    <th>Quantity Returned</th>
     <th>Financial Impact</th>
     <th>Image</th>
     <th>Delete</th>
@@ -60,8 +63,11 @@ div {
     <td>{{$row['complaint_category_1']}}</td>
     <td>{{$row['complaint_category_2']}}</td>
     <td>{{$row['complaint_sub_category']}}</td>
+    <td>{{$row['batch_code']}}</td>
     <td>{{$row['product_type']}}</td>
+    <td>{{$row['product_type_2']}}</td>
     <td>{{$row['class']}}</td>
+    <td>{{$row['quantity_returned']}}</td>
     <td>{{$row['fin_impact']}}</td>
     <td><img src="{{ asset('uploads/complaints/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
     <td>

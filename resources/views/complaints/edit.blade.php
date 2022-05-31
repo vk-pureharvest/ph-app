@@ -194,6 +194,11 @@ div {
     <textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
     {{$complaint->complaint_sub_category}}</textarea>
    </div>
+   
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Batch Code</label>
+    <input type="text" name="batch_code" class="form-control w-25" placeholder="Enter Batch Code"/> {{$complaint->batch_code}}
+  </div>
    <div class="form-group row">
    <label class="col-sm-2 col-form-label">Product Type</label>
    <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
@@ -226,6 +231,10 @@ div {
   </div>
   </div>
   <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Product Details</label>
+    <input type="text" name="product_type_2" class="form-control w-25" placeholder="Enter Product details"/>{{$complaint->product_type_2}}
+  </div>
+  <div class="form-group row">
     <label class="col-sm-2 col-form-label">Quality</label>
     <select class="form-control w-25" id="selectProduct" name="class" required focus>
     <option value="{{$complaint->class}}" selected="selected">{{$complaint->class}}</option> 
@@ -233,6 +242,11 @@ div {
     <option value="Class 2">Class 2</option>
     <option value="Class 3">Class 3</option>
   </select>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Quantity Returned</label>
+    <input type="decimal" name="quantity_returned" class="form-control w-25" placeholder="Enter KGs"/>{{$complaint->quantity_returned}}
   </div>
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Financial Impact</label>
