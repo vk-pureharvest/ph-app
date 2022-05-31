@@ -80,7 +80,7 @@ div {
 
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Row number</label>
-    <input class="form-control w-25" type="text" name="row_num" class="form-control"  placeholder="Enter Row number"/>
+    <input class="form-control w-25" type="text" name="row_num" class="form-control" value=0 placeholder="Enter Row number"/>
   </div>
   <br />
 
