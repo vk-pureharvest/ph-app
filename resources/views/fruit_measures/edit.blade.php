@@ -90,6 +90,7 @@ div {
                 <option value="Strabena">Strabena</option>
                 <option value="TOV">TOV</option>
                 <option value="Yellow TOV">Yellow TOV</option>
+                <option value="Orange Candy">Orange Candy</option>
         <option value="Yellow Candy">Yellow Candy</option>
                 <option value="Yoom">Yoom</option>
                 <option value="Strawberry - Albion">Strawberry - Albion</option>  
