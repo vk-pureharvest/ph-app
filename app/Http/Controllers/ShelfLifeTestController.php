@@ -67,6 +67,8 @@ class ShelfLifeTestController extends Controller
            'firmness_rank'     =>  'required',
            'smell_rank'     =>  'required',
            'weight'     =>  'required',
+           'height'     =>  'required',
+           'width'     =>  'required',
            'weight_rank'     =>  'required',
            'vine_quality'     =>  'required',
            'spots'     =>  'required',
@@ -89,6 +91,8 @@ class ShelfLifeTestController extends Controller
            'firmness_rank'     =>  $request->get('firmness_rank'),
            'smell_rank'     =>  $request->get('smell_rank'),
            'weight'     =>  $request->get('weight'),
+           'height'     =>  $request->get('height'),
+           'width'     =>  $request->get('width'),
            'weight_rank'     =>  $request->get('weight_rank'),
            'vine_quality'     =>  $request->get('vine_quality'),
            'spots'     =>  $request->get('spots'),
@@ -159,6 +163,8 @@ class ShelfLifeTestController extends Controller
         $shelflifetests->color_B = $request->get('color_B');
         $shelflifetests->weight = $request->get('weight');
         $shelflifetests->length = $request->get('length');
+        $shelflifetests->width = $request->get('width');
+        $shelflifetests->height = $request->get('height');
         $shelflifetests->width = $request->get('width');
         $shelflifetests->pressure = $request->get('pressure');
         $shelflifetests->remarks = $request->get('remarks');

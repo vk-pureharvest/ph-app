@@ -28,6 +28,8 @@ class CreateShelfLifeTestsTable extends Migration
             $table->integer('firmness_rank');
             $table->integer('smell_rank');
             $table->decimal('weight',10,2);
+            $table->decimal('height',10,2);
+            $table->decimal('width',10,2);
             $table->integer('weight_rank');
             $table->string('vine_quality');
             $table->string('spots');

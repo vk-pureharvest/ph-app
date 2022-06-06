@@ -55,6 +55,8 @@ div {
     <th>Smell Rank</th>
     <th>Weight</th>
     <th>Weight Rank</th>
+    <th>Height</th>
+    <th>Width</th>
     <th>Vine Quality</th>
     <th>Presence of Spots</th>
     <th>Presence of Fungus</th>
@@ -77,6 +79,8 @@ div {
     <td>{{$row['smell_rank']}}</td>
     <td>{{$row['weight']}}</td>
     <td>{{$row['weight_rank']}}</td>
+    <td>{{$row['height']}}</td>
+    <td>{{$row['width']}}</td>
     <td>{{$row['vine_quality']}}</td>
     <td>{{$row['spots']}}</td>
     <td>{{$row['fungus']}}</td>

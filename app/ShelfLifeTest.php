@@ -15,7 +15,7 @@ class ShelfLifeTest extends Model
     */
    protected $fillable = [
        'user_id','site_name','testing_date', 'day_of_testing','date_harvested','product_type','color','color_rank','BRIX',
-       'firmness','firmness_rank','smell_rank','weight','weight_rank','vine_quality','spots','fungus','quality_rank','remarks'
+       'firmness','firmness_rank','smell_rank','weight','weight_rank','height','width','vine_quality','spots','fungus','quality_rank','remarks'
    ];
 
    function user(){
@@ -24,7 +24,7 @@ class ShelfLifeTest extends Model
 
    protected $table = 'shelf_life_tests';
    public static function getShelfLifeTest(){
-       $records = DB::table('shelf_life_tests')->select("site_name","testing_date", "day_of_testing","date_harvested","product_type","color","color_rank","BRIX","firmness","firmness_rank","smell_rank","weight","weight_rank","vine_quality","spots","fungus","quality_rank","remarks")->orderBy('product_type','day_of_testing','desc')->get()->toArray();
+       $records = DB::table('shelf_life_tests')->select("site_name","testing_date", "day_of_testing","date_harvested","product_type","color","color_rank","BRIX","firmness","firmness_rank","smell_rank","weight","weight_rank","height","width","vine_quality","spots","fungus","quality_rank","remarks")->orderBy('product_type','day_of_testing','desc')->get()->toArray();
        return $records; 
    }
 

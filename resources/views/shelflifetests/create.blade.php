@@ -109,13 +109,13 @@ div {
         <option value="Heirloom">Heirloom</option>
         <option value="Yellow Candy">Yellow Candy</option>
         <option value="Yoom">Yoom</option>
-        <option value="Candy mix- Yellow">Candy mix- Yellow</option>
-        <option value="Candy mix- Red">Candy mix- Red</option>
-        <option value="Candy mix- Pink">Candy mix- Pink</option>
-        <option value="Candy mix- Green">Candy mix- Green</option>
-        <option value="Candy mix- Orange">Candy mix- Orange</option>
-        <option value="Candy mix- Brown">Candy mix- Brown</option>
-        <option value="Candy mix- Nobula">Candy mix- Nobula</option>
+        <option value="Candy Yellow">Candy Yellow</option>
+        <option value="Candy Red">Candy Red</option>
+        <option value="Candy Pink">Candy Pink</option>
+        <option value="Candy Green">Candy Green</option>
+        <option value="Candy Orange">Candy Orange</option>
+        <option value="Candy Brown">Candy Brown</option>
+        <option value="Candy Nobula">Candy Nobula</option>
         <option value="Cocktail Tomato">Cocktail Tomato</option>
         <option value="Strabena">Strabena</option>
         </select>  
@@ -132,6 +132,8 @@ div {
         <th>Firmness</th>
         <th>Smell</th>
         <th>Weight (gm)</th>
+        <th>Height (mm)</th>
+        <th>Width (mm)</th>
         <th>Vine Quality</th>
         <th>Presence of Spots</th>
         <th>Presence of Wrinkles</th>
@@ -178,6 +180,8 @@ div {
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>   
         </select></td>
+        <td><input type="decimal" name="height" class="form-control" placeholder="Enter Height" /></td>
+        <td><input type="decimal" name="width" class="form-control" placeholder="Enter Width" /></td>
         <td><select class="form-control" id="selectProduct" name="vine_quality" required focus>
         <option value="" disabled selected>Enter Vine Quality</option>        
         <option value="Good">Good</option>         
