@@ -116,6 +116,9 @@
                                     <a class="dropdown-item" href="{{ route('class2_prod.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Product Sorting') }}
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('quality_patrols.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Quality Patrols') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('cold_storage_temps.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Record Cold Storage Temperature') }}
                                     </a>                            

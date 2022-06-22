@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShelfLifeBerriesTable extends Migration
+class CreateQualityPatrolsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,15 @@ class CreateShelfLifeBerriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('shelf_life_berries', function (Blueprint $table) {
+        Schema::create('quality_patrols', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->string('site_name');
-            $table->date('testing_date'); 
-            $table->date('harvest_date');
-            $table->string('product_type');
-            $table->decimal('days_old', 10, 2);
-            $table->decimal('good', 10, 2);
-            $table->decimal('bad', 10, 2);
-            $table->string('remarks')->nullable();
+            $table->date('date_added');
+            $table->string('category');
+            $table->string('sub_category');
+            $table->string('details');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -35,6 +33,6 @@ class CreateShelfLifeBerriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shelf_life_berries');
+        Schema::dropIfExists('quality_patrols');
     }
 }
