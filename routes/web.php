@@ -53,6 +53,8 @@ Route::resource('shelflifetests','ShelfLifeTestController');
 
 Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
+Route::resource('quality_patrols','Quality_Patrol_Controller');
+
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
 Route::resource('nahel_utilities','NahelUtilityController');
