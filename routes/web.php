@@ -81,6 +81,8 @@ Route::resource('leafy_waste','Leafy_Waste_Controller');
 
 Route::resource('truck_receipts','TruckReceiptController');
 
+Route::resource('quality_patrols','Quality_Patrol_Controller');
+
 Route::resource('truck_temps','TruckTempController');
 
 Route::resource('harvest_schedules','HarvestScheduleController');

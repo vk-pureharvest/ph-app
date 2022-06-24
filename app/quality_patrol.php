@@ -13,5 +13,4 @@ class quality_patrol extends Model
     function user(){
         return $this->belongsto('App\User');
     }
-
 }
