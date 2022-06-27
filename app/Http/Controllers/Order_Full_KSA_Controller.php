@@ -63,7 +63,7 @@ class Order_Full_KSA_Controller extends Controller
         ]);
 
         
-        foreach($request->product_type as $key=>$product_type){
+        foreach($request->ordered_kg as $key=>$ordered_kg){
             $data = new order_ful_ksa();
             $data->user_id = $authUser->id;
             $data->site_name = $request->get('site_name');
