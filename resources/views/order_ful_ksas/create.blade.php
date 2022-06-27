@@ -107,10 +107,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
       <tr>
@@ -126,10 +126,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
      
@@ -146,10 +146,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
 
@@ -166,10 +166,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
       <tr>
@@ -185,10 +185,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
       <tr>
@@ -204,10 +204,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
       <tr>
@@ -223,10 +223,10 @@ div {
         </select>  
         </td>
         
-      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
-      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="Enter number of gutters" /></td>
+      <td><input type="decimal" name="ordered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
+      <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
        <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
       </tr>
     </tbody>
