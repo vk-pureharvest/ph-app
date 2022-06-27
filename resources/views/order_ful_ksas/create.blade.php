@@ -111,7 +111,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
       <tr>
       <td>
@@ -130,7 +130,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
      
       <tr>
@@ -150,7 +150,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
 
       <tr>
@@ -170,7 +170,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
       <tr>
       <td>
@@ -189,7 +189,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
       <tr>
       <td>
@@ -208,7 +208,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
       <tr>
       <td>
@@ -227,7 +227,7 @@ div {
       <td><input type="decimal" name="delivered_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="forecast_kg[]" class="form-control" placeholder="" /></td>
       <td><input type="decimal" name="harvest_kg[]" class="form-control" placeholder="" /></td>
-       <td><textarea class="form-control" type="text" name="comments[]" cols="50" rows="1" placeholder="Comments"></textarea></td>       
+       <td><textarea class="form-control" type="text" name="comment[]" cols="50" rows="1" placeholder="Comment"></textarea></td>       
       </tr>
     </tbody>
   </table>
