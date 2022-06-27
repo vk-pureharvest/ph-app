@@ -23,7 +23,7 @@ class CreateOrderFulKsasTable extends Migration
             $table->decimal('delivered_kg');
             $table->decimal('forecast_kg');
             $table->decimal('harvest_kg');
-            $table->string('comment')->nullable();;
+            $table->string('comment')->nullable();
             $table->timestamps();
         });
     }
