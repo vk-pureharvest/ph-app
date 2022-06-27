@@ -65,10 +65,13 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     KSA<span class="caret"></span>
                                 </a>
-
+                                
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('productions_ksa.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Hourly Production') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Order Fulfillment report') }}
                                     </a>
                             </li>
                             <li class="nav-item dropdown">

@@ -55,6 +55,8 @@ Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
 Route::resource('quality_patrols','Quality_Patrol_Controller');
 
+Route::resource('order_ful_ksas','Order_Full_KSA_Controller');
+
 Route::resource('cold_storage_temps','ColdStorageTempController');
 
 Route::resource('nahel_utilities','NahelUtilityController');
