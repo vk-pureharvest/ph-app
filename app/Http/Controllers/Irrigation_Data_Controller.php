@@ -16,7 +16,7 @@ class Irrigation_Data_Controller extends Controller
          */
         public function index()
         {
-            $irrigation_datas = Irrigation_data::all()->where('site_name', 'like', 'Al Ain')->sortBy('id')->reverse()->take(50)->toArray();
+            $irrigation_datas = irrigation_data::all()->where('site_name', 'like', 'Al Ain')->sortBy('id')->reverse()->take(50)->toArray();
             return view('irrigation_datas.index',compact('irrigation_datas'));
         }
     
