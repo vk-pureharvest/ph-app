@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlantDatasTable extends Migration
+class CreateSubstrateDatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,16 @@ class CreatePlantDatasTable extends Migration
      */
     public function up()
     {
-        Schema::create('plant_datas', function (Blueprint $table) {
+        Schema::create('substrate_datas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->string('site_name');
-            $table->date('date_added'); 
+            $table->date('date_added');
+            $table->string('compartment'); 
             $table->string('metric');
-            $table->string('product_type');
             $table->decimal('pl_1')->nullable;
             $table->decimal('pl_2')->nullable; 
             $table->decimal('pl_3')->nullable;
-            $table->decimal('pl_4')->nullable;
-            $table->decimal('pl_5')->nullable;
             $table->timestamps();
         });
     }
@@ -36,6 +34,6 @@ class CreatePlantDatasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('plant_datas');
+        Schema::dropIfExists('substrate_datas');
     }
 }

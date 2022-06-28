@@ -72,16 +72,16 @@
                                     </a>
                                     <a class="dropdown-item" href="{{ route('plant_datas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Plant Data') }}
-                                    </a>
-                                                        <!-- Right Side Of Navbar 
-                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                    </a>            
+                                    <a class="dropdown-item" href="{{ route('substrate_datas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Substrate Data Tomatoes') }}
                                     </a>
+                                     <!-- Right Side Of Navbar 
                                     <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Substrate Data Leafy') }}
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Fertilizer Sample data Tomatoes') }}-->
+                                    </a>-->
+                                    <a class="dropdown-item" href="{{ route('fertilizer_toms.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Fertilizer Sample data Tomatoes') }}
                                     </a>
                             </li>
                             <li class="nav-item dropdown">
