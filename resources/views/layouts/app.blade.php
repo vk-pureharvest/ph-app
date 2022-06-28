@@ -70,6 +70,7 @@
                                 <a class="dropdown-item" href="{{ route('irrigation_datas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Irrigation Data') }}
                                     </a>
+                                                        <!-- Right Side Of Navbar 
                                     <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Plant Data') }}
                                     </a>
@@ -80,7 +81,7 @@
                                         {{ __('Substrate Data Leafy') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Fertilizer Sample data Tomatoes') }}
+                                        {{ __('Fertilizer Sample data Tomatoes') }}-->
                                     </a>
                             </li>
                             <li class="nav-item dropdown">
