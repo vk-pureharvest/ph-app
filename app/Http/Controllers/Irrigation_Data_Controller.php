@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Irrigation_Data;
+use App\irrigation_data;
 use Illuminate\Support\Facades\Auth;
 use Excel;
 
@@ -56,7 +56,7 @@ class Irrigation_Data_Controller extends Controller
              ]);
     
              foreach($request->metric as $key=>$metric){
-                $data = new Irrigation_data();
+                $data = new irrigation_data();
                 $data->user_id = $authUser->id;
                 $data->site_name = $request->get('site_name');
                 $data->date_added = $request->get('date_added');
@@ -84,7 +84,7 @@ class Irrigation_Data_Controller extends Controller
          */
         public function show($id)
         {
-            $irrigation_datas = Irrigation_data::find($id);
+            $irrigation_datas = irrigation_data::find($id);
             return view('irrigation_datas.edit', compact('irrigation_datas', 'id'));
         }
     
@@ -96,7 +96,7 @@ class Irrigation_Data_Controller extends Controller
          */
         public function edit($id)
         {
-            $irrigation_datas = Irrigation_data::find($id);
+            $irrigation_datas = irrigation_data::find($id);
             return view('irrigation_datas.edit', compact('irrigation_datas', 'id'));
         }
     
@@ -117,7 +117,7 @@ class Irrigation_Data_Controller extends Controller
                 'workstation'     =>  'required',
              ]);
     
-            $irrigation_datas = Irrigation_data::find($id);
+            $irrigation_datas = irrigation_data::find($id);
             $irrigation_datas->site_name = $request->get('site_name');
             $irrigation_datas->date_added = $request->get('date_added');
             $irrigation_datas->start_time = $request->get('start_time');
@@ -140,7 +140,7 @@ class Irrigation_Data_Controller extends Controller
          */
         public function destroy($id)
         {
-            $irrigation_datas = Irrigation_data::find($id);
+            $irrigation_datas = irrigation_data::find($id);
             $irrigation_datas->delete();
             return redirect()->route('irrigation_datas.index')->with('success', 'Data Deleted');
         }
