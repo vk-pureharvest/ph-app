@@ -86,10 +86,10 @@ div {
     <thead>
       <tr>
         <th>Product Type</th>
-        <th>Ordered Quantity (KG)</th>
-        <th>Delivered Quantity (KG)</th>
-        <th>Forecasted Quantity (KG)</th>
-        <th>Harvested Quantity (KG)</th> 
+        <th>Ordered Quantity</th>
+        <th>Delivered Quantity</th>
+        <th>Forecasted Quantity</th>
+        <th>Harvested Quantity</th> 
         <th>Remarks</th>
       </tr>
     </thead>

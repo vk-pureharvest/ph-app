@@ -63,6 +63,28 @@
                             @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Growing Team<span class="caret"></span>
+                                </a>
+                                
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('irrigation_datas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Irrigation Data') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Plant Data') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Substrate Data Tomatoes') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Substrate Data Leafy') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Fertilizer Sample data Tomatoes') }}
+                                    </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     KSA<span class="caret"></span>
                                 </a>
                                 

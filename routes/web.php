@@ -43,6 +43,8 @@ Route::resource('brixs','BrixesController');
 
 Route::resource('incidents','IncidentsController');
 
+Route::resource('irrigation_datas','Irrigation_Data_Controller');
+
 Route::resource('class2_prod','Class2_productionController');
 
 Route::resource('pallet_tracker','Pallect_trackerController');

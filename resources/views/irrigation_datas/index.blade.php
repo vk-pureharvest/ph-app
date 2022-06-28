@@ -28,7 +28,7 @@ div {
 <div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Order fulfillment details</h3>
+  <h3 align="center">Irrigation Data</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
@@ -36,34 +36,44 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('order_ful_ksas.create')}}" class="btn btn-primary">Add Order Fulfillment Details</a>
+   <a href="{{route('irrigation_datas.create')}}" class="btn btn-primary">Add Irrigation Data</a>
    <br />
    <br />
   </div>
   <table class="table table-bordered table-striped">
    <tr>
-   <th>Site Name</th>
-    <th>Date</th> 
-    <th>Product Type</th>
-        <th>Ordered Quantity</th>
-        <th>Delivered Quantity</th>
-        <th>Forecasted Quantity</th>
-        <th>Harvested Quantity</th> 
-        <th>Remarks</th> 
+    <th>Site</th>
+    <th>Date</th>
+    <th>Radiation Sum</th> 
+    <th>Metric</th>
+        <th>Valve 70</th>
+        <th>Valve 80</th>
+        <th>Valve 90</th>
+        <th>Valve 100</th>
+        <th>Valve 110</th>
+        <th>Valve 120</th>
+        <th>Valve 130</th>
+        <th>Valve 140</th>
+        <th>Valve 150</th>
     <th>Delete</th>
    </tr>
-   @foreach($order_ful_ksas as $row)
+   @foreach($irrigation_datas as $row)
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
-    <td>{{$row['product_type']}}</td>
-    <td>{{$row['ordered_kg']}}</td>
-    <td>{{$row['delivered_kg']}}</td>
-    <td>{{$row['forecast_kg']}}</td>
-    <td>{{$row['harvest_kg']}}</td>
-    <td>{{$row['comment']}}</td>
+    <td>{{$row['rad_sum']}}</td>
+    <td>{{$row['metric']}}</td>
+    <td>{{$row['v_70']}}</td>
+    <td>{{$row['v_80']}}</td>
+    <td>{{$row['v_90']}}</td>
+    <td>{{$row['v_100']}}</td>
+    <td>{{$row['v_110']}}</td>
+    <td>{{$row['v_120']}}</td>
+    <td>{{$row['v_130']}}</td>
+    <td>{{$row['v_140']}}</td>
+    <td>{{$row['v_150']}}</td>
     <td>
-     <form method="post" class="delete_form" action="{{action('Order_Full_KSA_Controller@destroy', $row['id'])}}">
+     <form method="post" class="delete_form" action="{{action('Irrigation_Data_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
       <button type="submit" class="btn btn-danger">Delete</button>
