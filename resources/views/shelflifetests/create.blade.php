@@ -192,8 +192,8 @@ div {
         <option value="Yes">Yes</option>         
         <option value="No">No</option>  
         </select></td>
-        <td><select class="form-control" id="selectProduct" name="wrinkes" required focus>
-        <option value="" disabled selected>Presence of Wrinkes</option>        
+        <td><select class="form-control" id="selectProduct" name="wrinkles" required focus>
+        <option value="" disabled selected>Presence of Wrinkles</option>        
         <option value="Yes">Yes</option>         
         <option value="No">No</option>  
         </select></td>

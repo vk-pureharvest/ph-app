@@ -54,7 +54,7 @@ div {
     <th>Comments</th>
     <th>Edit</th>
     <th>Delete</th>
-   </tr>
+   </tr> 
    @foreach($productions as $row)
    <tr>
     <td>{{$row['site_name']}}</td>

@@ -34,8 +34,10 @@ class CreateShelfLifeTestsTable extends Migration
             $table->string('vine_quality');
             $table->string('spots');
             $table->string('fungus');
+            $table->string('wrinkles');
             $table->integer('quality_rank');
             $table->string('remarks');
+            $table->string('image');
             $table->timestamps();
         });
     }

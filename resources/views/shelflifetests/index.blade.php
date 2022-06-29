@@ -59,10 +59,13 @@ div {
     <th>Width</th>
     <th>Vine Quality</th>
     <th>Presence of Spots</th>
+    <th>Presence of Wrikles</th>
     <th>Presence of Fungus</th>
     <th>Quality Rank</th>
     <th>Remarks</th>
     <th>Image</th>
+    <th>Edit</th>
+    <th>Delete</th>
    </tr>
    @foreach($shelflifetests as $row)
    <tr>
@@ -83,18 +86,18 @@ div {
     <td>{{$row['width']}}</td>
     <td>{{$row['vine_quality']}}</td>
     <td>{{$row['spots']}}</td>
+    <td>{{$row['wrinkles']}}</td>
     <td>{{$row['fungus']}}</td>
     <td>{{$row['quality_rank']}}</td>
     <td>{{$row['remarks']}}</td>
     <td><img src="{{ asset('uploads/shelflifetesting/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
-    
-      <!-- Authentication Links 
+     
     <td><a href="{{action('ShelfLifeTestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
     <form method="post" class="delete_form" action="{{action('ShelfLifeTestController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
-      <button type="submit" class="btn btn-danger">Delete</button>-->
+      <button type="submit" class="btn btn-danger">Delete</button>
      </form>
     </td>
    </tr>

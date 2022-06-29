@@ -72,6 +72,7 @@ class ShelfLifeTestController extends Controller
            'weight_rank'     =>  'required',
            'vine_quality'     =>  'required',
            'spots'     =>  'required',
+           'wrinkles'     =>  'required',
            'fungus'     =>  'required',
            'quality_rank'     =>  'required'
         ]);
@@ -97,6 +98,7 @@ class ShelfLifeTestController extends Controller
            'vine_quality'     =>  $request->get('vine_quality'),
            'spots'     =>  $request->get('spots'),
            'fungus'     =>  $request->get('fungus'),
+           'wrinkles'     =>  $request->get('wrinkles'),
            'quality_rank'     =>  $request->get('quality_rank'),
            'remarks'     =>  $request->get('remarks')
         ]);
@@ -150,23 +152,29 @@ class ShelfLifeTestController extends Controller
         $this->validate($request, [
             'site_name'    =>  'required',
             'testing_date'     =>  'required',
-            'harvest_date'     =>  'required'
+            'date_harvested'     =>  'required'
          ]);
 
         $shelflifetests = ShelfLifeTest::find($id);
         $shelflifetests->site_name = $request->get('site_name');
         $shelflifetests->testing_date = $request->get('testing_date');
         $shelflifetests->product_type = $request->get('product_type');
+        $shelflifetests->day_of_testing = $request->get('day_of_testing');
+        $shelflifetests->date_harvested = $request->get('date_harvested');
+        $shelflifetests->color = $request->get('color');
+        $shelflifetests->color_rank = $request->get('color_rank');
         $shelflifetests->BRIX = $request->get('BRIX');
-        $shelflifetests->color_L = $request->get('color_L');
-        $shelflifetests->color_A = $request->get('color_A');
-        $shelflifetests->color_B = $request->get('color_B');
+        $shelflifetests->firmness = $request->get('firmness');
+        $shelflifetests->firmness_rank = $request->get('firmness_rank');
+        $shelflifetests->smell_rank = $request->get('smell_rank');
         $shelflifetests->weight = $request->get('weight');
-        $shelflifetests->length = $request->get('length');
         $shelflifetests->width = $request->get('width');
-        $shelflifetests->height = $request->get('height');
-        $shelflifetests->width = $request->get('width');
-        $shelflifetests->pressure = $request->get('pressure');
+        $shelflifetests->weight_rank = $request->get('weight_rank');
+        $shelflifetests->vine_quality = $request->get('vine_quality');
+        $shelflifetests->wrinkles = $request->get('wrinkles');
+        $shelflifetests->spots = $request->get('spots');
+        $shelflifetests->fungus = $request->get('fungus');
+        $shelflifetests->quality_rank = $request->get('quality_rank');
         $shelflifetests->remarks = $request->get('remarks');
         $shelflifetests->save();
         return redirect()->route('shelflifetests.index')->with('success', 'Data Updated');
