@@ -201,7 +201,7 @@ div {
   </div>
   <br />
    <div class="form-group w-25">
-    <input style="position: relative; left: 250px" type="submit" class="btn btn-primary" />
+    <input style="position: relative; left: 50px" type="submit" class="btn btn-primary" />
    </div>
   </form>
  </div>
