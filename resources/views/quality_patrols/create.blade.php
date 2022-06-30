@@ -116,6 +116,7 @@ div {
   <form action="{{url('quality_patrols')}}"  method="post" enctype="multipart/form-data">
    {{csrf_field()}}
  
+   
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
