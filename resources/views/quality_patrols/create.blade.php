@@ -116,30 +116,37 @@ div {
   <form action="{{url('quality_patrols')}}"  method="post" enctype="multipart/form-data">
    {{csrf_field()}}
  
-   
-   <div class="form-group row">
-    <label class="col-sm-9 col-form-label">Site Name</label>
-      <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
+   <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Site Name</label>
+      <select class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>      
         <option value="Harradh">{{"Harradh"}}</option>
       </select>
   </div>
+  <br />
   <?php
   date_default_timezone_set('Asia/Dubai');
   ?>
-   <div class="form-group row">
-    <label class="col-sm-9 col-form-label">Date</label>
-    <input class="form-control w-25" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
+   <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Date</label>
+    <input class="row col-md-5 col-lg-5 col-sm-5 pull-left" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
   </div> 
   
-  <div class="form-group row">
-    <label class="col-sm-9 col-form-label">Product Type</label>
-    <select class="form-control w-25" id="selectProduct" name="category" required focus>
+  <br />
+  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Product Type</label>
+    <select class="row col-md-5 col-lg-5 col-sm-5 pull-left" id="selectProduct" name="category" required focus>
     <option value="" disabled selected>Select Product Type</option>        
-    <option value="Candy">Candy</option>
+    <option value="Red Candy">Red Candy</option>
+    <option value="Pink Candy">Pink Candy</option>
+    <option value="Brown Candy">Brown Candy</option>
+    <option value="Green Candy">Green Candy</option>
+    <option value="Yellow Candy">Yellow Candy</option>
+    <option value="Orange Candy">Orange Candy</option>
     <option value="Cocktail">Cocktail</option>
-    <option value="COV">COV</option>
+    <option value="Red COV">Red COV</option>
+    <option value="Yellow COV">Yellow COV</option>
     <option value="Heirloom">Heirloom</option>
     <option value="Kale">Kale</option>
     <option value="Mixed Candy">Mixed Candy</option>
@@ -163,22 +170,29 @@ div {
     <option value="Baby Spinach">Baby Spinach</option>
     <option value="Rucola">Rucola</option>
     <option value="Mix Salad">Mix Salad</option>
+    <option value="Green Tatsoi">Green Tatsoi</option>
+    <option value="Microgreens">Microgreens</option>
+    <option value="Nebola">Nebola</option>
     <option value="Other">Other</option>
   </select>
   </div>
-    <div class="form-group row">
-    <label class="col-sm-9 col-form-label">If Other State Reason?</label>
-    <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="sub_category" placeholder="If Other enter reason" cols="100" rows="1"></textarea>
+  
+  <br />
+    <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">If Other State Reason?</label>
+    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="sub_category" placeholder="If Other enter reason" cols="100" rows="1"></textarea>
   </div>
    
+  <br />
   
-  <div class="form-group row">
-    <label class="col-sm-9 col-form-label">Details</label>
-    <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="details" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
+  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Details</label>
+    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="details" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
   </div>
   
-  <div class="form-group row">
-    <label for="files" class="col-sm-9 col-form-label">Select Images for Upload</label>
+  <br />
+  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
+    <label for="files" class="row col-md-5 col-lg-5 col-sm-5 pull-left">Select Images for Upload</label>
      <tr> <td width="30"><input type="file" name="images[]"  multiple /></td></tr>
    
      <!--  <input type="file" name="image" class="custom-file_input">
