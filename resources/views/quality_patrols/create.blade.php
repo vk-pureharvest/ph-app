@@ -118,7 +118,7 @@ div {
  
    
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Site Name</label>
+    <label class="col-sm-9 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>      
@@ -129,12 +129,12 @@ div {
   date_default_timezone_set('Asia/Dubai');
   ?>
    <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Date</label>
+    <label class="col-sm-9 col-form-label">Date</label>
     <input class="form-control w-25" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
   </div> 
   
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Product Type</label>
+    <label class="col-sm-9 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="category" required focus>
     <option value="" disabled selected>Select Product Type</option>        
     <option value="Candy">Candy</option>
@@ -167,18 +167,18 @@ div {
   </select>
   </div>
     <div class="form-group row">
-    <label class="col-sm-2 col-form-label">If Other State Reason?</label>
+    <label class="col-sm-9 col-form-label">If Other State Reason?</label>
     <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="sub_category" placeholder="If Other enter reason" cols="100" rows="1"></textarea>
   </div>
    
   
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Details</label>
+    <label class="col-sm-9 col-form-label">Details</label>
     <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="details" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
   </div>
   
   <div class="form-group row">
-    <label for="files" class="col-sm-2 col-form-label">Select Images for Upload</label>
+    <label for="files" class="col-sm-9 col-form-label">Select Images for Upload</label>
      <tr> <td width="30"><input type="file" name="images[]"  multiple /></td></tr>
    
      <!--  <input type="file" name="image" class="custom-file_input">
