@@ -59,7 +59,7 @@ div {
     <th>Width</th>
     <th>Vine Quality</th>
     <th>Presence of Spots</th>
-    <th>Presence of Wrikles</th>
+    <th>Presence of Wrinkles</th>
     <th>Presence of Fungus</th>
     <th>Quality Rank</th>
     <th>Remarks</th>

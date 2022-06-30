@@ -57,6 +57,8 @@ div {
         <th>Crunch</th>
         <th>Remarks</th>
     <th>Image</th>
+    <th>Edit</th>
+    <th>Delete</th>
    </tr>
    @foreach($leafy_shelf_lives as $row)
    <tr>
@@ -75,14 +77,13 @@ div {
     <td>{{$row['crunch']}}</td>
     <td>{{$row['remarks']}}</td>
     <td><img src="{{ asset('uploads/shelflifetesting/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
-    
-      <!-- Authentication Links 
-    <td><a href="{{action('ShelfLifeTestController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+     
+    <td><a href="{{action('Leafy_Shelf_Life_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-    <form method="post" class="delete_form" action="{{action('ShelfLifeTestController@destroy', $row['id'])}}">
+    <form method="post" class="delete_form" action="{{action('Leafy_Shelf_Life_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
-      <button type="submit" class="btn btn-danger">Delete</button>-->
+      <button type="submit" class="btn btn-danger">Delete</button>
      </form>
     </td>
    </tr>

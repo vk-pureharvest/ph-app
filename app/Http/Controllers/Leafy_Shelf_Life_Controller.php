@@ -136,21 +136,23 @@ class Leafy_Shelf_Life_Controller extends Controller
         $this->validate($request, [
             'site_name'    =>  'required',
             'testing_date'     =>  'required',
-            'harvest_date'     =>  'required'
+            'date_harvested'     =>  'required'
          ]);
 
         $leafy_shelf_lives = Leafy_shelf_life::find($id);
         $leafy_shelf_lives->site_name = $request->get('site_name');
         $leafy_shelf_lives->testing_date = $request->get('testing_date');
         $leafy_shelf_lives->product_type = $request->get('product_type');
-        $leafy_shelf_lives->BRIX = $request->get('BRIX');
-        $leafy_shelf_lives->color_L = $request->get('color_L');
-        $leafy_shelf_lives->color_A = $request->get('color_A');
-        $leafy_shelf_lives->color_B = $request->get('color_B');
-        $leafy_shelf_lives->weight = $request->get('weight');
-        $leafy_shelf_lives->length = $request->get('length');
-        $leafy_shelf_lives->width = $request->get('width');
-        $leafy_shelf_lives->pressure = $request->get('pressure');
+        $leafy_shelf_lives->day_of_testing = $request->get('day_of_testing');
+        $leafy_shelf_lives->date_harvested = $request->get('date_harvested');
+        $leafy_shelf_lives->smell = $request->get('smell');
+        $leafy_shelf_lives->texture = $request->get('texture');
+        $leafy_shelf_lives->cracks = $request->get('cracks');
+        $leafy_shelf_lives->wrinkles = $request->get('wrinkles');
+        $leafy_shelf_lives->color = $request->get('color');
+        $leafy_shelf_lives->spots = $request->get('spots');
+        $leafy_shelf_lives->dryness = $request->get('dryness');
+        $leafy_shelf_lives->crunch = $request->get('crunch');
         $leafy_shelf_lives->remarks = $request->get('remarks');
         $leafy_shelf_lives->save();
         return redirect()->route('leafy_shelf_lives.index')->with('success', 'Data Updated');
