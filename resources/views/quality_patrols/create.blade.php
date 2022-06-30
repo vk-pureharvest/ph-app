@@ -116,9 +116,9 @@ div {
   <form action="{{url('quality_patrols')}}"  method="post" enctype="multipart/form-data">
    {{csrf_field()}}
  
-   <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Site Name</label>
-      <select class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="site_name" required focus>
+   <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">Site Name</label>
+      <select class="row col-md-5 col-lg-5 col-sm-9 pull-left" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>      
         <option value="Harradh">{{"Harradh"}}</option>
@@ -128,15 +128,15 @@ div {
   <?php
   date_default_timezone_set('Asia/Dubai');
   ?>
-   <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Date</label>
-    <input class="row col-md-5 col-lg-5 col-sm-5 pull-left" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
+   <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">Date</label>
+    <input class="row col-md-5 col-lg-5 col-sm-9 pull-left" type="date" name="date_added" value="<?php echo date('Y-m-d'); ?>"/>
   </div> 
   
   <br />
-  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Product Type</label>
-    <select class="row col-md-5 col-lg-5 col-sm-5 pull-left" id="selectProduct" name="category" required focus>
+  <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">Product Type</label>
+    <select class="row col-md-5 col-lg-5 col-sm-9 pull-left" id="selectProduct" name="category" required focus>
     <option value="" disabled selected>Select Product Type</option>        
     <option value="Red Candy">Red Candy</option>
     <option value="Pink Candy">Pink Candy</option>
@@ -178,21 +178,21 @@ div {
   </div>
   
   <br />
-    <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">If Other State Reason?</label>
-    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="sub_category" placeholder="If Other enter reason" cols="100" rows="1"></textarea>
+    <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">If Other State Reason?</label>
+    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-9 pull-left" name="sub_category" placeholder="If Other enter reason" cols="100" rows="1"></textarea>
   </div>
    
   <br />
   
-  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label class="row col-md-5 col-lg-5 col-sm-5 pull-left">Details</label>
-    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-5 pull-left" name="details" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
+  <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">Details</label>
+    <textarea white-space="pre-wrap" type="text" class="row col-md-5 col-lg-5 col-sm-9 pull-left" name="details" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
   </div>
   
   <br />
-  <div class="row col-md-5 col-lg-5 col-sm-5 pull-left">
-    <label for="files" class="row col-md-5 col-lg-5 col-sm-5 pull-left">Select Images for Upload</label>
+  <div class="row col-md-5 col-lg-5 col-sm-9 pull-left">
+    <label for="files" class="row col-md-5 col-lg-5 col-sm-9 pull-left">Select Images for Upload</label>
      <tr> <td width="30"><input type="file" name="images[]"  multiple /></td></tr>
    
      <!--  <input type="file" name="image" class="custom-file_input">
