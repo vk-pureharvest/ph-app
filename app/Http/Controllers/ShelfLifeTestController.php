@@ -18,7 +18,7 @@ class ShelfLifeTestController extends Controller
      */
     public function index()
     {
-        $shelflifetests = ShelfLifeTest::all()->toArray();
+        $shelflifetests = ShelfLifeTest::all()->sortBy('id')->reverse()->toArray();
         return view('shelflifetests.index',compact('shelflifetests'));
     }
 
