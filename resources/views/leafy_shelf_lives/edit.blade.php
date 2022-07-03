@@ -41,7 +41,7 @@ div {
 <div class="row">
  <div class="col-md-12">
   <br />
-  <h3>Edit Size data</h3>
+  <h3>Edit Shelf life data</h3>
   <br />
   @if(count($errors) > 0)
 

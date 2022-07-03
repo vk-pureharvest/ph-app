@@ -111,23 +111,23 @@ class Irrigation_Data_Controller extends Controller
         {
             $this->validate($request, [
                 'site_name'    =>  'required',
-                'date_added'     =>  'required',
-                'start_time'     =>  'required',
-                'end_time'     =>  'required',
-                'workstation'     =>  'required',
+                'date_added'     =>  'required'
              ]);
     
             $irrigation_datas = irrigation_data::find($id);
             $irrigation_datas->site_name = $request->get('site_name');
             $irrigation_datas->date_added = $request->get('date_added');
-            $irrigation_datas->start_time = $request->get('start_time');
-            $irrigation_datas->end_time = $request->get('end_time');
-            $irrigation_datas->workstation = $request->get('workstation');
-            $irrigation_datas->employee = $request->get('employee');
-            $irrigation_datas->prod_boxes = $request->get('prod_boxes');
-            $irrigation_datas->product_type = $request->get('product_type');
-            $irrigation_datas->harvest_date = $request->get('harvest_date');
-            $irrigation_datas->comment = $request->get('comment');
+            $irrigation_datas->rad_sum = $request->get('rad_sum');
+            $irrigation_datas->metric = $request->get('metric');
+            $irrigation_datas->v_70 = $request->get('v_70');
+            $irrigation_datas->v_80 = $request->get('v_80');
+            $irrigation_datas->v_90 = $request->get('v_90');
+            $irrigation_datas->v_100 = $request->get('v_100');
+            $irrigation_datas->v_110 = $request->get('v_110');
+            $irrigation_datas->v_120 = $request->get('v_120');
+            $irrigation_datas->v_130 = $request->get('v_130');
+            $irrigation_datas->v_140 = $request->get('v_140');
+            $irrigation_datas->v_150 = $request->get('v_150');
             $irrigation_datas->save();
             return redirect()->route('irrigation_datas.index')->with('success', 'Data Updated');
         }

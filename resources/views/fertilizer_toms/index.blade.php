@@ -47,6 +47,7 @@ div {
     <th>Metric</th>
         <th>Drip</th>
         <th>Drain</th>
+    <th>Edit</th>
     <th>Delete</th>
    </tr>
    @foreach($fertilizer_toms as $row)
@@ -55,7 +56,9 @@ div {
     <td>{{$row['date_added']}}</td>
     <td>{{$row['metric']}}</td>
     <td>{{$row['drip']}}</td> 
-    <td>{{$row['drain']}}</td> 
+    <td>{{$row['drain']}}</td>   
+    <td><a href="{{action('Fertilizer_Tom_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+   
     <td>
      <form method="post" class="delete_form" action="{{action('Fertilizer_Tom_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}

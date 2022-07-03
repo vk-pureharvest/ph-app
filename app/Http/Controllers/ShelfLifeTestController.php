@@ -60,7 +60,9 @@ class ShelfLifeTestController extends Controller
            'day_of_testing'     =>  'required',
            'date_harvested'     =>  'required',
            'product_type'     =>  'required',
-           'color'     =>  'required',
+           'color_A'     =>  'required',
+           'color_B'     =>  'required',
+           'color_L'     =>  'required',
            'color_rank'     =>  'required',
            'BRIX'     =>  'required',
            'firmness'     =>  'required',
@@ -85,7 +87,9 @@ class ShelfLifeTestController extends Controller
            'product_type'     =>  $request->get('product_type'),
            'day_of_testing'     =>  $request->get('day_of_testing'),
            'date_harvested'     =>  $request->get('date_harvested'),
-           'color'     =>  $request->get('color'),
+           'color_L'     =>  $request->get('color_L'),
+           'color_A'     =>  $request->get('color_A'),
+           'color_B'     =>  $request->get('color_B'),
            'color_rank'     =>  $request->get('color_rank'),
            'BRIX'     =>  $request->get('BRIX'),
            'firmness'     =>  $request->get('firmness'),
@@ -161,7 +165,9 @@ class ShelfLifeTestController extends Controller
         $shelflifetests->product_type = $request->get('product_type');
         $shelflifetests->day_of_testing = $request->get('day_of_testing');
         $shelflifetests->date_harvested = $request->get('date_harvested');
-        $shelflifetests->color = $request->get('color');
+        $shelflifetests->color_L = $request->get('color_L');
+        $shelflifetests->color_A = $request->get('color_A');
+        $shelflifetests->color_B = $request->get('color_B');
         $shelflifetests->color_rank = $request->get('color_rank');
         $shelflifetests->BRIX = $request->get('BRIX');
         $shelflifetests->firmness = $request->get('firmness');

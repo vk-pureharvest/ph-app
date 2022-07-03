@@ -106,23 +106,17 @@ class Substrate_Data_Controller extends Controller
     {
         $this->validate($request, [
             'site_name'    =>  'required',
-            'date_added'     =>  'required',
-            'start_time'     =>  'required',
-            'end_time'     =>  'required',
-            'workstation'     =>  'required',
+            'date_added'     =>  'required'
             ]);
 
         $substrate_datas = substrate_data::find($id);
         $substrate_datas->site_name = $request->get('site_name');
         $substrate_datas->date_added = $request->get('date_added');
-        $substrate_datas->start_time = $request->get('start_time');
-        $substrate_datas->end_time = $request->get('end_time');
-        $substrate_datas->workstation = $request->get('workstation');
-        $substrate_datas->employee = $request->get('employee');
-        $substrate_datas->prod_boxes = $request->get('prod_boxes');
-        $substrate_datas->product_type = $request->get('product_type');
-        $substrate_datas->harvest_date = $request->get('harvest_date');
-        $substrate_datas->comment = $request->get('comment');
+        $substrate_datas->compartment = $request->get('compartment');
+        $substrate_datas->metric = $request->get('metric');
+        $substrate_datas->pl_1 = $request->get('pl_1');
+        $substrate_datas->pl_2 = $request->get('pl_2');
+        $substrate_datas->pl_3 = $request->get('pl_3');
         $substrate_datas->save();
         return redirect()->route('substrate_datas.index')->with('success', 'Data Updated');
     }

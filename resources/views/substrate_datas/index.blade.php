@@ -49,6 +49,7 @@ div {
         <th>Plant 1</th>
         <th>Plant 2</th>
         <th>Plant 3</th> 
+    <th>Edit</th>
     <th>Delete</th>
    </tr>
    @foreach($substrate_datas as $row)
@@ -60,6 +61,8 @@ div {
     <td>{{$row['pl_1']}}</td> 
     <td>{{$row['pl_2']}}</td> 
     <td>{{$row['pl_3']}}</td>  
+    <td><a href="{{action('Substrate_Data_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+   
     <td>
      <form method="post" class="delete_form" action="{{action('Substrate_Data_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}

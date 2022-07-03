@@ -41,7 +41,7 @@ div {
 <div class="row">
  <div class="col-md-12">
   <br />
-  <h3>Edit Size data</h3>
+  <h3>Edit Shelf life data</h3>
   <br />
   @if(count($errors) > 0)
 
@@ -67,17 +67,17 @@ div {
   </div> 
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Date of Testing</label>
-    <input class="form-control w-25" value="{{$shelflifetests->testing_date}}"  type="date" name="testing_date"/>
+    <input class="form-control w-25" type="date" name="testing_date"  value="{{$shelflifetests->testing_date}}"/>
   </div> 
   
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Date Harvested</label>
-    <input class="form-control w-25"  value="{{$shelflifetests->date_harvested}}"  type="date" name="date_harvested" />
+    <input class="form-control w-25" type="date" name="date_harvested"  value="{{$shelflifetests->date_harvested}}"/>
   </div> 
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Day of Testing</label>
         <select class="form-control w-25" id="selectProduct" name="day_of_testing" required focus>
-      <option value="{{$shelflifetests->day_of_testing}}" selected="selected">{{$shelflifetests->day_of_testing}}</option>        
+      <option value="{{$shelflifetests->day_of_testing}}" selected="selected">{{$shelflifetests->day_of_testing}}</option>
         <option value="Day 1">Day 1</option>
         <option value="Day 4">Day 4</option>
         <option value="Day 6">Day 6</option>
@@ -89,7 +89,7 @@ div {
   <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
         <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
-      <option value="{{$shelflifetests->product_type}}" selected="selected">{{$shelflifetests->product_type}}</option>        
+      <option value="{{$shelflifetests->product_type}}" selected="selected">{{$shelflifetests->product_type}}</option>
         <option value="TOV- Red">TOV- Red</option>
         <option value="TOV- Yellow">TOV- Yellow</option>
         <option value="TOV- Orange">TOV- Orange</option>
@@ -110,6 +110,8 @@ div {
         </select>  
         </div>
         
+  <br />
+
   <div class="form-group row">
   <table class="table">
     <thead>
@@ -131,19 +133,21 @@ div {
     </thead>
     <tbody>
       <tr>
-        <td><input type="decimal" name="color" class="form-control" value="{{$shelflifetests->color}}"/>
+        <td><input type="decimal" name="color_L" class="form-control" value="{{$shelflifetests->color_L}}"/>
+        <input type="decimal" name="color_A" class="form-control" value="{{$shelflifetests->color_A}}" />
+        <input type="decimal" name="color_B" class="form-control" value="{{$shelflifetests->color_B}}"/>
         <select class="form-control" id="selectProduct" name="color_rank" required focus>
-      <option value="{{$shelflifetests->color_rank}}" selected="selected">{{$shelflifetests->color_rank}}</option>  
+      <option value="{{$shelflifetests->color_rank}}" selected="selected">{{$shelflifetests->color_rank}}</option>
         <option value="1">1 - Best</option>         
         <option value="2">2 - Good</option>         
         <option value="3">3 - Moderate</option>         
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td>
-        <td><input type="decimal" name="BRIX" class="form-control" value="{{$shelflifetests->BRIX}}" /></td>
+        <td><input type="decimal" name="BRIX" class="form-control" value="{{$shelflifetests->BRIX}}"/></td>
         <td><input type="decimal" name="firmness" class="form-control" value="{{$shelflifetests->firmness}}" />
         <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
-      <option value="{{$shelflifetests->firmness_rank}}" selected="selected">{{$shelflifetests->firmness_rank}}</option>  
+      <option value="{{$shelflifetests->firmness_rank}}" selected="selected">{{$shelflifetests->firmness_rank}}</option>
         <option value="1">1 - Best</option>         
         <option value="2">2 - Good</option>         
         <option value="3">3 - Moderate</option>         
@@ -151,57 +155,55 @@ div {
         <option value="5">5 - Worst</option>  
         </select></td>
         <td><select class="form-control" id="selectProduct" name="smell_rank" required focus>
-      <option value="{{$shelflifetests->smell_rank}}" selected="selected">{{$shelflifetests->smell_rank}}</option> 
+      <option value="{{$shelflifetests->smell_rank}}" selected="selected">{{$shelflifetests->smell_rank}}</option>
         <option value="1">1 - Best</option>         
         <option value="2">2 - Good</option>         
         <option value="3">3 - Moderate</option>         
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>   
         </select></td>
-        <td><input type="decimal" name="weight" class="form-control" value="{{$shelflifetests->weight}}" />
+        <td><input type="decimal" name="weight" class="form-control" value="{{$shelflifetests->smell_rank}}"  />
         <select class="form-control" id="selectProduct" name="weight_rank" required focus>
-        <option value="{{$shelflifetests->weight_rank}}" selected="selected">{{$shelflifetests->weight_rank}}</option> 
+      <option value="{{$shelflifetests->weight_rank}}" selected="selected">{{$shelflifetests->weight_rank}}</option>
         <option value="1">1 - Best</option>         
         <option value="2">2 - Good</option>         
         <option value="3">3 - Moderate</option>         
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>   
         </select></td>
-        <td><input type="decimal" name="height" class="form-control" value="{{$shelflifetests->height}}" /></td>
-        <td><input type="decimal" name="width" class="form-control" value="{{$shelflifetests->width}}"/></td>
+        <td><input type="decimal" name="height" class="form-control" value="{{$shelflifetests->height}}"/></td>
+        <td><input type="decimal" name="width" class="form-control" value="{{$shelflifetests->width}}" /></td>
         <td><select class="form-control" id="selectProduct" name="vine_quality" required focus>
-        <option value="{{$shelflifetests->vine_quality}}" selected="selected">{{$shelflifetests->vine_quality}}</option> 
+      <option value="{{$shelflifetests->vine_quality}}" selected="selected">{{$shelflifetests->vine_quality}}</option>
         <option value="Good">Good</option>         
         <option value="Dry">Dry</option>  
         </select></td>    
         <td><select class="form-control" id="selectProduct" name="spots" required focus>
-        <option value="{{$shelflifetests->spots}}" selected="selected">{{$shelflifetests->spots}}</option> 
+      <option value="{{$shelflifetests->spots}}" selected="selected">{{$shelflifetests->spots}}</option>
         <option value="Yes">Yes</option>         
         <option value="No">No</option>  
         </select></td>
         <td><select class="form-control" id="selectProduct" name="wrinkles" required focus>
-        <option value="{{$shelflifetests->wrinkles}}" selected="selected">{{$shelflifetests->wrinkles}}</option> 
+      <option value="{{$shelflifetests->wrinkles}}" selected="selected">{{$shelflifetests->wrinkles}}</option>
         <option value="Yes">Yes</option>         
         <option value="No">No</option>  
         </select></td>
         <td><select class="form-control" id="selectProduct" name="fungus" required focus>
-        <option value="{{$shelflifetests->fungus}}" selected="selected">{{$shelflifetests->fungus}}</option> 
+      <option value="{{$shelflifetests->fungus}}" selected="selected">{{$shelflifetests->fungus}}</option>
         <option value="Yes">Yes</option>         
         <option value="No">No</option>  
         </select></td>
         <td><select class="form-control" id="selectProduct" name="quality_rank" required focus>
-        <option value="{{$shelflifetests->quality_rank}}" selected="selected">{{$shelflifetests->quality_rank}}</option> 
+      <option value="{{$shelflifetests->quality_rank}}" selected="selected">{{$shelflifetests->quality_rank}}</option>
         <option value="1">1 - Best</option>         
         <option value="2">2 - Good</option>         
         <option value="3">3 - Moderate</option>         
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td>
-        
-        
-        <td><input type="text" name="remarks" class="form-control" value="{{$shelflifetests->remarks}}"/></td>
-      </tr>
+        <td><textarea  class="form-control"  type="text"  name="remarks" value="{{$shelflifetests->remarks}}" rows="1" ></textarea></td>
       
+        </tr>
     </tbody>
   </table>
 </div>

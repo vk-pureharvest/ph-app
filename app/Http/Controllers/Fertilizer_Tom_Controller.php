@@ -105,23 +105,15 @@ class Fertilizer_Tom_Controller extends Controller
     {
         $this->validate($request, [
             'site_name'    =>  'required',
-            'date_added'     =>  'required',
-            'start_time'     =>  'required',
-            'end_time'     =>  'required',
-            'workstation'     =>  'required',
+            'date_added'     =>  'required'
             ]);
 
         $fertilizer_toms = fertilizer_tom::find($id);
         $fertilizer_toms->site_name = $request->get('site_name');
         $fertilizer_toms->date_added = $request->get('date_added');
-        $fertilizer_toms->start_time = $request->get('start_time');
-        $fertilizer_toms->end_time = $request->get('end_time');
-        $fertilizer_toms->workstation = $request->get('workstation');
-        $fertilizer_toms->employee = $request->get('employee');
-        $fertilizer_toms->prod_boxes = $request->get('prod_boxes');
-        $fertilizer_toms->product_type = $request->get('product_type');
-        $fertilizer_toms->harvest_date = $request->get('harvest_date');
-        $fertilizer_toms->comment = $request->get('comment');
+        $fertilizer_toms->metric = $request->get('metric');
+        $fertilizer_toms->drip = $request->get('drip');
+        $fertilizer_toms->drain = $request->get('drain');
         $fertilizer_toms->save();
         return redirect()->route('fertilizer_toms.index')->with('success', 'Data Updated');
     }

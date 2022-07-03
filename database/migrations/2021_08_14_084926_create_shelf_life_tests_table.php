@@ -21,7 +21,9 @@ class CreateShelfLifeTestsTable extends Migration
             $table->string('day_of_testing');
             $table->string('date_harvested');
             $table->string('product_type');
-            $table->decimal('color',10,2);
+            $table->decimal('color_L',10,2);
+            $table->decimal('color_A',10,2);
+            $table->decimal('color_B',10,2);
             $table->integer('color_rank');
             $table->decimal('BRIX',10,2);
             $table->decimal('firmness',10,2);

@@ -51,6 +51,7 @@ div {
         <th>Plant 3</th>
         <th>Plant 4</th>
         <th>Plant 5</th>
+    <th>Edit</th>
     <th>Delete</th>
    </tr>
    @foreach($plant_datas as $row)
@@ -64,6 +65,8 @@ div {
     <td>{{$row['pl_3']}}</td> 
     <td>{{$row['pl_4']}}</td> 
     <td>{{$row['pl_5']}}</td> 
+    
+    <td><a href="{{action('Plant_Data_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('Plant_Data_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}

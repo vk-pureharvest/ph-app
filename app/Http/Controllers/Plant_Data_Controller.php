@@ -107,23 +107,19 @@ class Plant_Data_Controller extends Controller
         {
             $this->validate($request, [
                 'site_name'    =>  'required',
-                'date_added'     =>  'required',
-                'start_time'     =>  'required',
-                'end_time'     =>  'required',
-                'workstation'     =>  'required',
+                'date_added'     =>  'required'
              ]);
     
             $plant_datas = plant_data::find($id);
             $plant_datas->site_name = $request->get('site_name');
             $plant_datas->date_added = $request->get('date_added');
-            $plant_datas->start_time = $request->get('start_time');
-            $plant_datas->end_time = $request->get('end_time');
-            $plant_datas->workstation = $request->get('workstation');
-            $plant_datas->employee = $request->get('employee');
-            $plant_datas->prod_boxes = $request->get('prod_boxes');
             $plant_datas->product_type = $request->get('product_type');
-            $plant_datas->harvest_date = $request->get('harvest_date');
-            $plant_datas->comment = $request->get('comment');
+            $plant_datas->metric = $request->get('metric');
+            $plant_datas->pl_1 = $request->get('pl_1');
+            $plant_datas->pl_2 = $request->get('pl_2');
+            $plant_datas->pl_3 = $request->get('pl_3');
+            $plant_datas->pl_4 = $request->get('pl_4');
+            $plant_datas->pl_5 = $request->get('pl_5');
             $plant_datas->save();
             return redirect()->route('plant_datas.index')->with('success', 'Data Updated');
         }

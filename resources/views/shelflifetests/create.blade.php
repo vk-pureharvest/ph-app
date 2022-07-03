@@ -144,7 +144,9 @@ div {
     </thead>
     <tbody>
       <tr>
-        <td><input type="decimal" name="color" class="form-control" placeholder="Enter Color" />
+        <td><input type="decimal" name="color_L" class="form-control" placeholder="Enter L" />
+        <input type="decimal" name="color_A" class="form-control" placeholder="Enter A" />
+        <input type="decimal" name="color_B" class="form-control" placeholder="Enter B" />
         <select class="form-control" id="selectProduct" name="color_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
         <option value="1">1 - Best</option>         

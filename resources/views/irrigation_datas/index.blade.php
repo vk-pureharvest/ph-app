@@ -55,6 +55,7 @@ div {
         <th>Valve 130</th>
         <th>Valve 140</th>
         <th>Valve 150</th>
+    <th>Edit</th>
     <th>Delete</th>
    </tr>
    @foreach($irrigation_datas as $row)
@@ -72,6 +73,7 @@ div {
     <td>{{$row['v_130']}}</td>
     <td>{{$row['v_140']}}</td>
     <td>{{$row['v_150']}}</td>
+    <td><a href="{{action('Irrigation_Data_Controller@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('Irrigation_Data_Controller@destroy', $row['id'])}}">
       {{csrf_field()}}
