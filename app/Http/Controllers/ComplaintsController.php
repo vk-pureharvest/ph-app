@@ -56,6 +56,7 @@ class ComplaintsController extends Controller
            'customer_name'     =>  'required',
            'complaint_category_1'     =>  'required',
            'complaint_category_2'     =>  'required',
+           'batch_code'     =>  'required',
            'product_type'     =>  'required',
            'class'     =>  'required',
            'fin_impact'     =>  'required'
@@ -74,7 +75,7 @@ class ComplaintsController extends Controller
            'class'     =>  $request->get('class'),
            'fin_impact'     =>  $request->get('fin_impact'),
            'quantity_returned'     =>  $request->get('quantity_returned'),
-           'batch_code'     =>  $request->get('batch_code'),
+           'batch_code'     =>  $request->get('quantity_returned'),
            'product_type_2'     =>  $request->get('product_type_2')
         ]);
         if ($request->hasfile('image')){

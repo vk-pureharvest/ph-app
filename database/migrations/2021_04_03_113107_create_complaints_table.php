@@ -24,6 +24,9 @@ class CreateComplaintsTable extends Migration
             $table->string('complaint_sub_category')->default("NA");
             $table->string('product_type');
             $table->string('class');
+            $table->string('batch_code');
+            $table->string('product_type_2');
+            $table->float('quantity_returned');
             $table->decimal('fin_impact');
             $table->string('image');
             $table->timestamps();

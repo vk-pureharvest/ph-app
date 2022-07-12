@@ -197,11 +197,11 @@ div {
     <label class="col-sm-2 col-form-label">Additional Details</label>
     <textarea white-space="pre-wrap" type="text" class="form-control w-25" name="complaint_sub_category" placeholder="If Other enter reason" cols="100" rows="4"></textarea>
   </div>
-  
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Batch Code</label>
-    <input type="text" name="batch_code" class="form-control w-25" placeholder="Enter Batch Code"/>
+    <label class="col-sm-2 col-form-label">Batch code</label>
+    <input type="text" name="batch_code" class="form-control w-25" placeholder="Enter batch_code"/>
   </div>
+  
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Product Type</label>
     <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
