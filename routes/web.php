@@ -57,11 +57,15 @@ Route::resource('pallet_tracker','Pallect_trackerController');
 
 Route::resource('packingqc','PackingQCController');
 
+Route::resource('po_status','POStatusController');
+
 Route::resource('shelflifetests','ShelfLifeTestController');
 
 Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
 Route::resource('quality_patrols','Quality_Patrol_Controller');
+
+Route::resource('po_requests','PORequestController'); 
 
 Route::resource('order_ful_ksas','Order_Full_KSA_Controller');
 

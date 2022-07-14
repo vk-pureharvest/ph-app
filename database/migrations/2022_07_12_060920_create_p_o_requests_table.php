@@ -10,7 +10,7 @@ class CreatePORequestsTable extends Migration
      * Run the migrations.
      *
      * @return void
-     */
+     */ 
     public function up()
     {
         Schema::create('p_o_requests', function (Blueprint $table) {
@@ -22,6 +22,8 @@ class CreatePORequestsTable extends Migration
             $table->date('request_date');
             $table->decimal('amount');
             $table->string('terms');
+            $table->string('status')->default('Pending Approval');
+            $table->string('payment')->default('Pending');
             $table->string('comments');
             $table->timestamps();
         });

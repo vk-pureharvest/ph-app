@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\PO_request;
 use App\PO_request_files;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Stroage;
-use Excel;
+use Excel; 
 
-class PORequestController extends Controller
+class POStatusController extends Controller
 {
+  
 
     /**
      * Display a listing of the resource.
@@ -21,19 +23,9 @@ class PORequestController extends Controller
     {
         $p_o_requests = PO_request::all()->sortBy('id')->reverse()->toArray();
         $p_o_request_files = PO_request_files::all()->sortBy('id')->reverse()->toArray();
-        return view('po_requests.index', compact('p_o_requests','p_o_request_files'));
+        return view('po_status.index', compact('p_o_requests','p_o_request_files'));
     }
- /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index2()
-    {
-        $p_o_requests = PO_request::all()->sortBy('id')->reverse()->toArray();
-        $p_o_request_files = PO_request_files::all()->sortBy('id')->reverse()->toArray();
-        return view('po_requests.index2', compact('p_o_requests','p_o_request_files'));
-    }
+ 
 
     /**
      * Show the form for creating a new resource.
@@ -42,7 +34,7 @@ class PORequestController extends Controller
      */
     public function create()
     {
-        return view('po_requests.create');
+        return view('po_status.create');
     }
 
     
@@ -97,7 +89,43 @@ class PORequestController extends Controller
         //print($request->get('image'));
         return redirect()->route('po_requests.create')->with('success', 'Data Added');
     }
-
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $postatus = PO_request::find($id);
+        return view('po_status.edit', compact('postatus', 'id'));
+    }
    
+        /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'status'     =>  'required',
+            'payment'     =>  'required'
+         ]);
+
+        $postatus = PO_request::find($id);
+        $postatus->requestor = $request->get('requestor');
+        $postatus->amount = $request->get('amount');
+        $postatus->account = $request->get('account');
+        $postatus->request_date = $request->get('request_date');
+        $postatus->terms = $request->get('terms');
+        $postatus->comments = $request->get('comments');
+        $postatus->status = $request->get('status');
+        $postatus->payment = $request->get('payment');
+        $postatus->save();
+        return redirect()->route('po_status.index')->with('success', 'Data Updated');
+    }
 }
     

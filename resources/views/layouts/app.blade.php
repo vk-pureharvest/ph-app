@@ -42,6 +42,9 @@
                                 <a class="dropdown-item" href="{{ route('users.show',['id'=>Auth::user()->id]) }}">
                                         {{ __('Download Reports') }}
                                     </a>
+                                <a class="dropdown-item" href="{{ route('po_status.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('PO Status Updates') }}
+                                    </a>
                             </li>
                         @endif
                         @if(Auth::user()->role_id==1)
@@ -96,6 +99,16 @@
                                     <a class="dropdown-item" href="{{ route('order_ful_ksas.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Order Fulfillment report') }}
                                     </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    PO Requests<span class="caret"></span>
+                                </a>
+                                
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('po_requests.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Request PO') }}
+                                    </a> 
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
