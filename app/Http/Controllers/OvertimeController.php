@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Overtime;
+use App\overtime;
 use Illuminate\Support\Facades\Auth;
 use App\Exports\OvertimeExport;
 use Excel;
@@ -18,7 +18,7 @@ class OvertimeController extends Controller
      */
     public function index()
     {
-        $overtimes = Overtime::all()->sortBy('id')->reverse()->take(50)->toArray();
+        $overtimes = overtime::all()->sortBy('id')->reverse()->take(50)->toArray();
         return view('overtimes.index',compact('overtimes'));
     }
 
@@ -57,7 +57,7 @@ class OvertimeController extends Controller
             ]);
 
             foreach($request->employee as $key=>$employee){
-            $data = new Overtime();
+            $data = new overtime();
             $data->user_id = $authUser->id;
             $data->site_name = $request->get('site_name');
             $data->date_added = $request->get('date_added');
@@ -109,7 +109,7 @@ class OvertimeController extends Controller
             'date_added'     =>  'required'
             ]);
 
-        $overtimes = Overtime::find($id);
+        $overtimes = overtime::find($id);
         $overtimes->site_name = $request->get('site_name');
         $overtimes->date_added = $request->get('date_added');
         $overtimes->employee = $request->get('employee');
@@ -129,7 +129,7 @@ class OvertimeController extends Controller
      */
     public function destroy($id)
     {
-        $overtimes = Overtime::find($id);
+        $overtimes = overtime::find($id);
         $overtimes->delete();
         return redirect()->route('overtimes.index')->with('success', 'Data Deleted');
     }
