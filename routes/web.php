@@ -61,6 +61,8 @@ Route::resource('po_status','POStatusController');
 
 Route::resource('shelflifetests','ShelfLifeTestController');
 
+Route::resource('overtimes','OvertimeController');
+
 Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
 Route::resource('quality_patrols','Quality_Patrol_Controller');

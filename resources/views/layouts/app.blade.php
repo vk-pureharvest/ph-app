@@ -50,11 +50,15 @@
                         @if(Auth::user()->role_id==1)
                         <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Harvest Plan<span class="caret"></span>
+                                    Over time and Harvest<span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                    
+                                <a class="dropdown-item" href="{{ route('overtimes.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Over Time Request') }}
+                                    </a>      
+                                    
                                 <a class="dropdown-item" href="{{ route('harvest_schedules.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Harvesting Schedule') }}
                                     </a>      
