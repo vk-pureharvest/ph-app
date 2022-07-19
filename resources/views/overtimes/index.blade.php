@@ -28,7 +28,7 @@ div {
 <div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Hourly Production</h3>
+  <h3 align="center">OT Requests</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
@@ -36,7 +36,7 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('overtimes.create')}}" class="btn btn-primary">Add Hourly Production</a>
+   <a href="{{route('overtimes.create')}}" class="btn btn-primary">Submit New Request</a>
    <br />
    <br />
   </div>
