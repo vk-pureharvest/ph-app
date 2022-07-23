@@ -174,7 +174,7 @@ div {
       <option value="SHURUTI RIDHA HEMED">SHURUTI RIDHA HEMED</option>
       <option value="SULEIMAN DENA MWALIMU">SULEIMAN DENA MWALIMU</option>
       <option value="ZACHARIA KARIUKI KAMAU">ZACHARIA KARIUKI KAMAU</option>
-      </td>
+   </select>
   </div>
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Reason</label>
