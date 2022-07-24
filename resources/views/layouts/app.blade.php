@@ -93,6 +93,29 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Quality Testing<span class="caret"></span>
+                                </a>
+                                
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Add Quality Measures') }}
+                                    </a> 
+                                    <a class="dropdown-item" href="{{ route('quality_patrols.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Quality Patrols') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('rejectedpiles.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Record Rejected Pile') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing - Tomatoes') }}
+                                    </a> 
+                                    <a class="dropdown-item" href="{{ route('leafy_shelf_lives.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing - Leafy Greens') }}
+                                    </a>   
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     KSA<span class="caret"></span>
                                 </a>
                                 
@@ -126,9 +149,6 @@
                                     <a class="dropdown-item" href="{{ route('productions.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Hourly Production') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('fruit_measures.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Add Quality Measures') }}
-                                    </a>    
                                     <a class="dropdown-item" href="{{ route('packingqc.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Add Packing QC') }}
                                     </a>   
@@ -159,21 +179,12 @@
                                     <a class="dropdown-item" href="{{ route('class2_prod.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Product Sorting') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('quality_patrols.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Quality Patrols') }}
-                                    </a>
                                     <a class="dropdown-item" href="{{ route('cold_storage_temps.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Record Cold Storage Temperature') }}
                                     </a>                            
                                     <a class="dropdown-item" href="{{ route('incidents.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Report Incident') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('shelflifetests.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Shelf Life Testing - Tomatoes') }}
-                                    </a> 
-                                    <a class="dropdown-item" href="{{ route('leafy_shelf_lives.create',['id'=>Auth::user()->id]) }}">
-                                        {{ __('Shelf Life Testing - Leafy Greens') }}
-                                    </a>   
                                     <a class="dropdown-item" href="{{ route('truck_trackers.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Truck Delivery Details') }}
                                     </a>      

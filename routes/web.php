@@ -69,6 +69,8 @@ Route::resource('quality_patrols','Quality_Patrol_Controller');
 
 Route::resource('po_requests','PORequestController'); 
 
+Route::resource('rejectedpiles','RejectedPileController'); 
+
 Route::resource('order_ful_ksas','Order_Full_KSA_Controller');
 
 Route::resource('cold_storage_temps','ColdStorageTempController');
