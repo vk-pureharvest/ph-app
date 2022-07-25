@@ -18,7 +18,7 @@ class OvertimeController extends Controller
      */
     public function index()
     {
-        $overtimes = overtime::all()->sortBy('id')->reverse()->take(50)->toArray();
+        $overtimes = overtime::all()->sortBy('id')->reverse()->toArray();
         return view('overtimes.index',compact('overtimes'));
     }
 
