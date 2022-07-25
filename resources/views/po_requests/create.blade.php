@@ -149,6 +149,7 @@ div {
     <option value="Cleaning">Cleaning</option>
     <option value="Consumables">Consumables</option>
     <option value="Inventory">Inventory</option>
+    <option value="Marketing">Marketing</option>
     <option value="Repair & maintenance">Repair & maintenance</option>
     <option value="Tools/equipments/uniform">Tools/equipments/uniform</option>
   </select>
