@@ -86,6 +86,7 @@ div {
         <option value="Caltivated Rucola">Caltivated Rucola</option>
         <option value="Sweet Genovess">Sweet Genovess</option>
         <option value="Rubi">Rubi</option>
+        <option value="Sorell Red">Sorell Red</option>
         <option value="Green Fire">Green Fire</option>
         <option value="Bullas Blood">Bullas Blood</option>
         <option value="Red chard">Red chard</option>
