@@ -74,8 +74,7 @@ div {
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Employee</label>
     <select class="form-control w-25" id="text" name="employee" required focus>
-                <option value="{{$overtimes->employee}}" selected="selected">{{$overtimes->employee}}</option>  
-      <option value="" disabled selected>Select Employee</option>          
+                <option value="{{$overtimes->employee}}" selected="selected">{{$overtimes->employee}}</option> 
       <option value="SSEMANDA . JULIUS">SSEMANDA . JULIUS</option>
       <option value="CHARLES OKUMU AVUNGANA">CHARLES OKUMU AVUNGANA</option>
       <option value="CORNEL AGUKO OGOLA">CORNEL AGUKO OGOLA</option>
