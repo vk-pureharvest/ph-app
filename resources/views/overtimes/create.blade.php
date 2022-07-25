@@ -196,6 +196,13 @@ div {
       <option value="SHURUTI RIDHA HEMED">SHURUTI RIDHA HEMED</option>
       <option value="SULEIMAN DENA MWALIMU">SULEIMAN DENA MWALIMU</option>
       <option value="ZACHARIA KARIUKI KAMAU">ZACHARIA KARIUKI KAMAU</option>
+      <option value="Mohammad Shakil">Mohammad Shakil</option>
+<option value="Lamin Kamara">Lamin Kamara</option>
+<option value="Sunday">Sunday</option>
+<option value="Pricilla">Pricilla</option>
+<option value="Sochan">Sochan</option>
+<option value="Mohammad Younus">Mohammad Younus</option>
+<option value="Alice Nyambura">Alice Nyambura</option>
       </td>
       <td><input type="decimal" name="ot_requested[]" class="form-control" placeholder="Enter hours" /></td>
       <td><select type="text" name="reason[]" class="form-control" placeholder="Enter Reason" required focus>
@@ -278,6 +285,7 @@ $('thead').on('click', '.addRow', function(){
       '<option value="BASHIR SULEIMAN EBRAHIM">BASHIR SULEIMAN EBRAHIM</option>'+
       '<option value="KIBWANA RASHID SALIM">KIBWANA RASHID SALIM</option>'+
       '<option value="MARWAN FUAD ALI">MARWAN FUAD ALI</option>'+
+      
       '<option value="ALI  MURILO">ALI  MURILO</option>'+
       '<option value="KELVIN THEURI MURUTHI">KELVIN THEURI MURUTHI</option>'+
       '<option value="RONALD  KABUYE">RONALD  KABUYE</option>'+
@@ -327,6 +335,13 @@ $('thead').on('click', '.addRow', function(){
       '<option value="SHURUTI RIDHA HEMED">SHURUTI RIDHA HEMED</option>'+
       '<option value="SULEIMAN DENA MWALIMU">SULEIMAN DENA MWALIMU</option>'+
       '<option value="ZACHARIA KARIUKI KAMAU">ZACHARIA KARIUKI KAMAU</option>'+
+      '<option value="Mohammad Shakil">Mohammad Shakil</option>'+
+      '<option value="Lamin Kamara">Lamin Kamara</option>'+
+      '<option value="Sunday">Sunday</option>'+
+      '<option value="Pricilla">Pricilla</option>'+
+      '<option value="Sochan">Sochan</option>'+
+      '<option value="Mohammad Younus">Mohammad Younus</option>'+
+      '<option value="Alice Nyambura">Alice Nyambura</option>'+
       '</td>'+
       '<td><input type="decimal" name="ot_requested[]" class="form-control" placeholder="Enter hours" /></td>'+
       '<td><select type="text" name="reason[]" class="form-control" placeholder="Enter Reason" required focus>'+
