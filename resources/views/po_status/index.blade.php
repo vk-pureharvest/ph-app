@@ -41,6 +41,7 @@ div {
   <table class="table table-bordered table-striped">
    <tr>
    <th>Request#</th>
+   <th>PO#</th>
    <th>Requestor</th>
     <th>Supplier</th> 
     <th>Request Date</th>
@@ -56,6 +57,7 @@ div {
    @foreach($p_o_requests as $row)
    <tr>
     <td>{{$row['id']}}</td>
+    <td>{{$row['po_number']}}</td>
     <td>{{$row['requestor']}}</td>
     <td>{{$row['supplier']}}</td> 
     <td>{{$row['request_date']}}</td>

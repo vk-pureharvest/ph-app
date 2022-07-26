@@ -63,6 +63,11 @@ div {
       value="{{$postatus->request_date}}"/>
   </div>
   
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">PO#</label>
+    <input class="form-control w-25" type="text" name="po_number" class="form-control" value="{{$postatus->po_number}}" placeholder="Enter PO#" />
+   </div>
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">Requestor</label>
     <input class="form-control w-25" type="text" name="requestor" class="form-control" value="{{$postatus->requestor}}" placeholder="Enter Color A" />

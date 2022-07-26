@@ -64,6 +64,7 @@ class POStatusController extends Controller
         $data->supplier = $request->get('supplier');
         $data->account = $request->get('account');
         $data->request_date = $request->get('request_date'); 
+        $data->po_number = $request->get('po_number'); 
         $data->amount = $request->get('amount');
         $data->terms = $request->get('terms');
         $data->comments = $request->get('comments');
@@ -120,6 +121,7 @@ class POStatusController extends Controller
         $postatus->amount = $request->get('amount');
         $postatus->account = $request->get('account');
         $postatus->request_date = $request->get('request_date');
+        $postatus->po_number = $request->get('po_number');
         $postatus->terms = $request->get('terms');
         $postatus->comments = $request->get('comments');
         $postatus->status = $request->get('status');
