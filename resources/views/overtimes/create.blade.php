@@ -197,12 +197,22 @@ div {
       <option value="SULEIMAN DENA MWALIMU">SULEIMAN DENA MWALIMU</option>
       <option value="ZACHARIA KARIUKI KAMAU">ZACHARIA KARIUKI KAMAU</option>
       <option value="Mohammad Shakil">Mohammad Shakil</option>
-<option value="Lamin Kamara">Lamin Kamara</option>
-<option value="Sunday">Sunday</option>
-<option value="Pricilla">Pricilla</option>
-<option value="Sochan">Sochan</option>
-<option value="Mohammad Younus">Mohammad Younus</option>
-<option value="Alice Nyambura">Alice Nyambura</option>
+      <option value="Lamin Kamara">Lamin Kamara</option>
+      <option value="Sunday">Sunday</option>
+      <option value="Pricilla">Pricilla</option>
+      <option value="Sochan">Sochan</option>
+      <option value="Mohammad Younus">Mohammad Younus</option>
+      <option value="Alice Nyambura">Alice Nyambura</option>
+      <option value="Ajegenjang Mathias Egyawan">Ajegenjang Mathias Egyawan</option>
+      <option value="Paul  Ndoko ">Paul  Ndoko </option>
+      <option value="Stephen  Takyi">Stephen  Takyi</option>
+      <option value="Bilal Yasin">Bilal Yasin</option>
+      <option value="Hope  Otebor">Hope  Otebor</option>
+      <option value="Mohammed Kuzaru Dalawi">Mohammed Kuzaru Dalawi</option>
+      <option value="Abravi Dedekpokpo Ataglinyi Epse Aguda">Abravi Dedekpokpo Ataglinyi Epse Aguda</option>
+      <option value="Larydianshevette Arrey">Larydianshevette Arrey</option>
+      <option value="Blandin Yufenyuy">Blandin Yufenyuy</option>
+      <option value="Djariatou Daki">Djariatou Daki</option>
       </td>
       <td><input type="decimal" name="ot_requested[]" class="form-control" placeholder="Enter hours" /></td>
       <td><select type="text" name="reason[]" class="form-control" placeholder="Enter Reason" required focus>
@@ -342,6 +352,16 @@ $('thead').on('click', '.addRow', function(){
       '<option value="Sochan">Sochan</option>'+
       '<option value="Mohammad Younus">Mohammad Younus</option>'+
       '<option value="Alice Nyambura">Alice Nyambura</option>'+
+      '<option value="Ajegenjang Mathias Egyawan">Ajegenjang Mathias Egyawan</option>'+
+      '<option value="Paul  Ndoko ">Paul  Ndoko </option>'+
+      '<option value="Stephen  Takyi">Stephen  Takyi</option>'+
+      '<option value="Bilal Yasin">Bilal Yasin</option>'+
+      '<option value="Hope  Otebor">Hope  Otebor</option>'+
+      '<option value="Mohammed Kuzaru Dalawi">Mohammed Kuzaru Dalawi</option>'+
+      '<option value="Abravi Dedekpokpo Ataglinyi Epse Aguda">Abravi Dedekpokpo Ataglinyi Epse Aguda</option>'+
+      '<option value="Larydianshevette Arrey">Larydianshevette Arrey</option>'+
+      '<option value="Blandin Yufenyuy">Blandin Yufenyuy</option>'+
+      '<option value="Djariatou Daki">Djariatou Daki</option>'+
       '</td>'+
       '<td><input type="decimal" name="ot_requested[]" class="form-control" placeholder="Enter hours" /></td>'+
       '<td><select type="text" name="reason[]" class="form-control" placeholder="Enter Reason" required focus>'+

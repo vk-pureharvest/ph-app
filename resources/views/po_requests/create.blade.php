@@ -109,7 +109,7 @@ div {
       
   <br /> 
   <div align="middle">
-   <a href="{{route('po_requests.index')}}" class="btn btn-primary">View Quality Check Data</a>
+   <a href="{{route('po_requests.index')}}" class="btn btn-primary">View PO History</a>
    <br />
    <br />
   </div> 
