@@ -67,9 +67,17 @@ Route::resource('leafy_shelf_lives','Leafy_Shelf_Life_Controller');
 
 Route::resource('quality_patrols','Quality_Patrol_Controller');
 
+Route::resource('visualchecks','VisualCheckController');
+
 Route::resource('po_requests','PORequestController'); 
 
 Route::resource('rejectedpiles','RejectedPileController'); 
+
+Route::resource('packedvisuals','TomatoesPackedController'); 
+
+Route::resource('receivedvisuals','ReceivedTomatoesController'); 
+
+Route::resource('batchvisuals','BatchCheckTomatoesController'); 
 
 Route::resource('order_ful_ksas','Order_Full_KSA_Controller');
 

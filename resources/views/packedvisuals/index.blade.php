@@ -28,7 +28,7 @@ div {
 <div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Add Reject Data</h3>
+  <h3 align="center">Add Visual Checks</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
@@ -36,7 +36,7 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('rejectedpiles.create')}}" class="btn btn-primary">Add New Request</a>
+   <a href="{{route('packedvisuals.create')}}" class="btn btn-primary">Add new checks</a>
    <br />
    <br />
   </div>
@@ -44,24 +44,26 @@ div {
    <tr>
     <th>Site</th>
     <th>Date</th>
-    <th>Check Type</th>
-    <th>Product Type</th>
-    <th>Weight</th>
-    <th>Comments</th>
+    <th>Crop</th>
+    <th>Sample</th>    
+    <th>Overall weight</th>
+    <th>Packing Quality</th>
+    <th>Packaging specs (batch code, expiry date etc)</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr> 
-   @foreach($rejectedpiles as $row)
+   @foreach($packedvisuals as $row)
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
-    <td>{{$row['check_type']}}</td>
     <td>{{$row['product_type']}}</td>
+    <td>{{$row['sample']}}</td>
     <td>{{$row['weight']}}</td>
-    <td>{{$row['comment']}}</td>
-    <td><a href="{{action('RejectedPileController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+    <td>{{$row['quality']}}</td>
+    <td>{{$row['specs']}}</td>
+    <td><a href="{{action('TomatoesPackedController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-     <form method="post" class="delete_form" action="{{action('RejectedPileController@destroy', $row['id'])}}">
+     <form method="post" class="delete_form" action="{{action('TomatoesPackedController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
       <button type="submit" class="btn btn-danger">Delete</button>

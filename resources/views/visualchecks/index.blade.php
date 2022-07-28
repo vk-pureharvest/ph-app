@@ -28,7 +28,7 @@ div {
 <div class="row" padding="10px 20px 10px 200px">
  <div class="col-md-12">
   <br />
-  <h3 align="center">Add Reject Data</h3>
+  <h3 align="center">Add Visual Checks</h3>
   <br />
   @if($message = Session::get('success'))
   <div class="alert alert-success">
@@ -36,7 +36,7 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('rejectedpiles.create')}}" class="btn btn-primary">Add New Request</a>
+   <a href="{{route('visualchecks.create')}}" class="btn btn-primary">Add new checks</a>
    <br />
    <br />
   </div>
@@ -44,24 +44,34 @@ div {
    <tr>
     <th>Site</th>
     <th>Date</th>
-    <th>Check Type</th>
     <th>Product Type</th>
-    <th>Weight</th>
-    <th>Comments</th>
+    <th>Sample</th>
+    <th>Correct quantity as per invoice</th>
+    <th>Correct order variety</th>
+    <th>Good appearance</th>
+    <th>Correct batch code and expiry/production date</th>
+    <th>Correct sticker placement</th>
+    <th>Correct weight</th>
+    <th>Correct packaging</th>
     <th>Edit</th>
     <th>Delete</th>
    </tr> 
-   @foreach($rejectedpiles as $row)
+   @foreach($visualchecks as $row)
    <tr>
     <td>{{$row['site_name']}}</td>
     <td>{{$row['date_added']}}</td>
-    <td>{{$row['check_type']}}</td>
     <td>{{$row['product_type']}}</td>
+    <td>{{$row['sample']}}</td>
+    <td>{{$row['quality']}}</td>
+    <td>{{$row['order_variety']}}</td>
     <td>{{$row['weight']}}</td>
-    <td>{{$row['comment']}}</td>
-    <td><a href="{{action('RejectedPileController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+    <td>{{$row['appearance']}}</td>
+    <td>{{$row['batch']}}</td>
+    <td>{{$row['weight']}}</td>
+    <td>{{$row['packaging']}}</td>
+    <td><a href="{{action('VisualCheckController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
-     <form method="post" class="delete_form" action="{{action('RejectedPileController@destroy', $row['id'])}}">
+     <form method="post" class="delete_form" action="{{action('VisualCheckController@destroy', $row['id'])}}">
       {{csrf_field()}}
       <input type="hidden" name="_method" value="DELETE" />
       <button type="submit" class="btn btn-danger">Delete</button>

@@ -60,7 +60,6 @@ div {
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
       <option value="{{$shelflifetests->site_name}}" selected="selected">{{$shelflifetests->site_name}}</option>
-        <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>       
         <option value="KSA">{{"KSA"}}</option>
       </select>

@@ -59,7 +59,7 @@ div {
    <div><H4 >  Add OT Requests </H4></div>
 
    <div align="middle">
-   <a href="{{route('rejectedpiles.index')}}" class="btn btn-primary">Edit Reject Data</a>
+   <a href="{{route('rejectedpiles.index')}}" class="btn btn-primary">View Reject Data</a>
    <br />
    <br />
    <br />

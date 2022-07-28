@@ -18,7 +18,7 @@ class rejectedpile extends Model
     
     protected $table = 'rejectedpiles';
     public static function getRejectedPile(){
-        $records = DB::table('overtimes')->select("site_name","date_added", "check_type","product_type","weight","comment")->orderBy('date_added','desc')->get()->toArray();
+        $records = DB::table('rejectedpiles')->select("site_name","date_added", "check_type","product_type","weight","comment")->orderBy('date_added','desc')->get()->toArray();
         return $records; 
     }
 }

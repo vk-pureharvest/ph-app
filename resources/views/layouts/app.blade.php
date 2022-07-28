@@ -112,6 +112,18 @@
                                     <a class="dropdown-item" href="{{ route('leafy_shelf_lives.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Shelf Life Testing - Leafy Greens') }}
                                     </a>   
+                                    <a class="dropdown-item" href="{{ route('batchvisuals.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Visual Inspection - Batch Code') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('visualchecks.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Visual Inspection - Pallets') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('packedvisuals.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Visual Inspection - Packed Tomatoes') }}
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('receivedvisuals.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Visual Inspection - Time of Receiving Tomatoes') }}
+                                    </a>   
                                 
                             </li>
                             <li class="nav-item dropdown">
