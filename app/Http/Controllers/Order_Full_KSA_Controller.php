@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\order_ful_ksa;
 use Illuminate\Support\Facades\Auth;
+use App\Exports\OrderFulKSAExport;
 use Excel;
-
+ 
 class Order_Full_KSA_Controller extends Controller
 {
    
@@ -21,13 +22,13 @@ class Order_Full_KSA_Controller extends Controller
         return view('order_ful_ksas.index',compact('order_ful_ksas'));
     }
 
-    public function exportLeafyShelfLifeTestExcel(){
-        return Excel::download(new Order_Ful_Ksa_Export,'Order_Ful_Ksa_Testing.xlsx');
+    public function exportOrderFulfillmentExcel(){
+        return Excel::download(new OrderFulKSAExport,'Order_Fulfillment.xlsx');
     }
 
     
-    public function exportLeafyShelfLifeTestCSV(){
-        return Excel::download(new Order_Ful_Ksa_Export,'Order_Ful_Ksa_Testing.csv');
+    public function exportOrderFulfillmentCSV(){
+        return Excel::download(new OrderFulKSAExport,'Order_Fulfillment.csv');
     }
 
     /**

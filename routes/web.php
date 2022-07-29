@@ -121,6 +121,13 @@ Route::post('/uploadfile', 'UploadWtfileController@store');
 Route::get('/production-excel','ProductionsController@exportProdExcel');
 Route::get('/production-excel/exportProdExcel', 'ProductionsController@exportProdExcel')->name('production-excel.exportProdExcel');
 
+Route::get('/overtime-excel','OvertimeController@exportOTExcel');
+Route::get('/overtime-excel/exportOTExcel', 'OvertimeController@exportOTExcel')->name('overtime-excel.exportOTExcel');
+
+Route::get('/order_ful_ksas-excel','Order_Full_KSA_Controller@exportOrderFulfillmentExcel');
+Route::get('/order_ful_ksas-excel/exportOrderFulfillmentExcel', 'Order_Full_KSA_Controller@exportOrderFulfillmentExcel')->name('order_ful_ksas-excel.exportOrderFulfillmentExcel');
+
+
 Route::get('/complaint-excel','ComplaintsController@exportCompExcel');
 Route::get('/complaint-excel/exportCompExcel', 'ComplaintsController@exportCompExcel')->name('complaint-excel.exportCompExcel');
 

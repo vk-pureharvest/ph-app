@@ -37,6 +37,7 @@ div {
   @endif
   <div align="right">
    <a href="{{route('overtimes.create')}}" class="btn btn-primary">Submit New Request</a>
+   <a href="{{route('overtime-excel.exportOTExcel')}}" class="btn btn-primary">Download</a>
    <br />
    <br />
   </div>

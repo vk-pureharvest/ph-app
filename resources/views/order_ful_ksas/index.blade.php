@@ -36,7 +36,8 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('order_ful_ksas.create')}}" class="btn btn-primary">Add Order Fulfillment Details</a>
+   <a href="{{route('order_ful_ksas.create')}}" class="btn btn-primary">Add Order Fulfillment Details</a> 
+   <a href="{{route('order_ful_ksas-excel.exportOrderFulfillmentExcel')}}" class="btn btn-primary">Download</a>
    <br />
    <br />
   </div>

@@ -36,7 +36,7 @@ div {
   </div>
   @endif
   <div align="right">
-   <a href="{{route('batchvisuals.create')}}" class="btn btn-primary">Add new checks</a>
+   <a href="{{route('batchvisuals.create')}}" class="btn btn-primary">Add new checks</a>                    
    <br />
    <br />
   </div>

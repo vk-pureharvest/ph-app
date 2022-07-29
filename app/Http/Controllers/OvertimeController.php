@@ -22,12 +22,12 @@ class OvertimeController extends Controller
         return view('overtimes.index',compact('overtimes'));
     }
 
-    public function exportProdExcel(){
+    public function exportOTExcel(){
         return Excel::download(new OvertimeExport,'Overtime.xlsx');
     }
 
     
-    public function exportProdCSV(){
+    public function exportOTCSV(){
         return Excel::download(new OvertimeExport,'Overtime.csv');
     }
 
