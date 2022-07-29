@@ -11,7 +11,7 @@ class OvertimeExport implements FromCollection,WithHeadings
 {
     public function headings():array{
         return[
-            "Site","Date", "Date","Employee","Reason","Requested Hours","Hours Granted","Comments"
+            "Site","Date", "Employee","Reason","Requested Hours","Hours Granted","Comments"
         ];
     }
     /**
