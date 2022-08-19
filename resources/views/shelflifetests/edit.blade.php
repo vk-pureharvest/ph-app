@@ -106,6 +106,7 @@ div {
         <option value="Candy Nobula">Candy Nobula</option>
         <option value="Cocktail Tomato">Cocktail Tomato</option>
         <option value="Strabena">Strabena</option>
+        <option value="Eggplant">Eggplant</option>
         </select>  
         </div>
         
