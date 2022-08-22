@@ -68,7 +68,8 @@ div {
 <div style="position: relative; left: 50px" class="form-group row">
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
-        <option value="Nahel" selected>Nahel</option>  
+        <option value="Nahel" selected>Nahel</option>              
+        <option value="Oasis">{{"Oasis"}}</option> 
       </select>
   </div>
   <?php

@@ -116,7 +116,10 @@ div {
     <label class="col-sm-2 col-form-label">Site Name</label>
     <select class="form-control w-25" id="site" name="site_name" required focus>
     <option value="{{$complaint->site_name}}" selected="selected">{{$complaint->site_name}}</option>   
-    <option value="Nahel">{{"Nahel"}}</option>
+                
+    <option value="Al Ain">{{"Al Ain"}}</option> 
+    <option value="Nahel">{{"Nahel"}}</option>            
+        <option value="Oasis">{{"Oasis"}}</option> 
     <option value="Harradh">{{"Harradh"}}</option>
   </select>
   </div>

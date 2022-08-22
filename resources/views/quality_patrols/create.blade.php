@@ -120,7 +120,8 @@ div {
     <label class="row col-md-5 col-lg-5 col-sm-9 pull-left">Site Name</label>
       <select class="row col-md-5 col-lg-5 col-sm-9 pull-left" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
-        <option value="Nahel">{{"Nahel"}}</option>      
+        <option value="Nahel">{{"Nahel"}}</option>             
+        <option value="Oasis">{{"Oasis"}}</option>      
         <option value="Harradh">{{"Harradh"}}</option>
       </select>
   </div>
