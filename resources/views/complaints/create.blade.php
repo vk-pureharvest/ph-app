@@ -120,7 +120,8 @@ div {
     <label class="col-sm-2 col-form-label">Site Name</label>
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
-        <option value="Nahel">{{"Nahel"}}</option>      
+        <option value="Nahel">{{"Nahel"}}</option>             
+        <option value="Oasis">{{"Oasis"}}</option>      
         <option value="Harradh">{{"Harradh"}}</option>
       </select>
   </div>
