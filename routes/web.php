@@ -99,6 +99,9 @@ Route::resource('leafy_green_harvest','LeafyGreenHarvestedController');
 
 Route::resource('leafy_green_package','LeafyGreenPackedController');
 
+
+Route::resource('strawberry_shelf_lives','StrawberryShelfLifeController');
+
 Route::resource('truck_trackers','TruckController');
 
 Route::resource('leafy_closing_stock','Leafy_Closing_Stock_Controller');

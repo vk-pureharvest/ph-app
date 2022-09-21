@@ -112,6 +112,9 @@
                                     <a class="dropdown-item" href="{{ route('leafy_shelf_lives.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Shelf Life Testing - Leafy Greens') }}
                                     </a>   
+                                    <a class="dropdown-item" href="{{ route('strawberry_shelf_lives.create',['id'=>Auth::user()->id]) }}">
+                                        {{ __('Shelf Life Testing - Strawberry') }}
+                                    </a>   
                                     <a class="dropdown-item" href="{{ route('batchvisuals.create',['id'=>Auth::user()->id]) }}">
                                         {{ __('Visual Inspection - Batch Code') }}
                                     </a>   

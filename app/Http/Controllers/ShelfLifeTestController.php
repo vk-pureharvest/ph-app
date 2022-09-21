@@ -175,6 +175,7 @@ class ShelfLifeTestController extends Controller
         $shelflifetests->smell_rank = $request->get('smell_rank');
         $shelflifetests->weight = $request->get('weight');
         $shelflifetests->width = $request->get('width');
+        $shelflifetests->height = $request->get('height');        
         $shelflifetests->weight_rank = $request->get('weight_rank');
         $shelflifetests->vine_quality = $request->get('vine_quality');
         $shelflifetests->wrinkles = $request->get('wrinkles');
