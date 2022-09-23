@@ -91,25 +91,14 @@ div {
     <label class="col-sm-2 col-form-label">Product Type</label>
         <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
       <option value="{{$strawberry_shelf_lives->product_type}}" selected="selected">{{$strawberry_shelf_lives->product_type}}</option>
-        <option value="TOV- Red">TOV- Red</option>
-        <option value="TOV- Yellow">TOV- Yellow</option>
-        <option value="TOV- Orange">TOV- Orange</option>
-        <option value="COV- Red">COV- Red</option>
-        <option value="Plum">Plum</option>
-        <option value="Heirloom">Heirloom</option>
-        <option value="Yoom">Yoom</option>
-        <option value="Yellow COV">Yellow COV</option>
-        <option value="Candy Yellow">Candy Yellow</option>
-        <option value="Candy Red">Candy Red</option>
-        <option value="Candy Pink">Candy Pink</option>
-        <option value="Candy Green">Candy Green</option>
-        <option value="Candy Orange">Candy Orange</option>
-        <option value="Candy Brown">Candy Brown</option>
-        <option value="Candy Nobula">Candy Nobula</option>
-        <option value="Cocktail Tomato">Cocktail Tomato</option>
-        <option value="Strabena">Strabena</option>
-        <option value="Eggplant">Eggplant</option>
-        </select>  
+        <option value="Bravura">Bravura</option>
+        <option value="Albion">Albion</option>
+        <option value="Carbillo">Carbillo</option>
+        <option value="Furore">Furore</option>
+        <option value="Mon' Murono">Mon' Murono</option>
+        <option value="San Andreas">San Andreas</option>
+    
+       </select>  
         </div>
         
   <br />
