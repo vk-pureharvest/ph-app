@@ -14,7 +14,7 @@ class strawberry_shelf_life extends Model
    protected $fillable = [
     'user_id','site_name','testing_date', 'day_of_testing','date_harvested','product_type',
     'class','color_L','color_A','color_B','color_rank','BRIX','firmness','firmness_rank',
-    'weight','height','width','remarks',
+    'weight','height','width','remarks','image',
 ];
 
 function user(){

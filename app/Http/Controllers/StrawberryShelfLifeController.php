@@ -96,9 +96,18 @@ class StrawberryShelfLifeController extends Controller
            'remarks'     =>  $request->get('remarks')
         ]); 
             
+        if ($request->hasfile('image')){
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads/strawberry_shelf_life/', $filename);
+            $strawberry_shelf_lives->image = $filename;
+        } else {
+            $strawberry_shelf_lives->image='';
+        }
         $strawberry_shelf_lives->save();
-               //print($request->get('image'));
-       return redirect()->route('strawberry_shelf_lives.create')->with('success', 'Data Added');
+        //print($request->get('remarks'));
+      return redirect()->route('strawberry_shelf_lives.create')->with('success', 'Data Added');
     }
 
     /**

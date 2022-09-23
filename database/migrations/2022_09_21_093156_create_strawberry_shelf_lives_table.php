@@ -33,6 +33,7 @@ class CreateStrawberryShelfLivesTable extends Migration
             $table->decimal('firmness',10,2);
             $table->integer('firmness_rank');
             $table->string('remarks');
+            $table->string('image');
             $table->timestamps();
         });
     }

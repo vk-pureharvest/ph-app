@@ -59,6 +59,7 @@ div {
     <th>Height</th>
     <th>Width</th> 
     <th>Remarks</th> 
+    <th>Image</th> 
     <th>Edit</th>
     <th>Delete</th>
    </tr>
@@ -81,6 +82,9 @@ div {
     <td>{{$row['height']}}</td>
     <td>{{$row['width']}}</td> 
     <td>{{$row['remarks']}}</td>
+
+    <td><img src="{{ asset('uploads/strawberry_shelf_life/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
+    
     <td><a href="{{action('StrawberryShelfLifeController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
     <td>
      <form method="post" class="delete_form" action="{{action('StrawberryShelfLifeController@destroy', $row['id'])}}">

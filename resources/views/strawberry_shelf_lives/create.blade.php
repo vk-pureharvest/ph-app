@@ -111,7 +111,6 @@ div {
         </div>
         
   <br />
-
   <div class="form-group row">
   <table class="table">
     <thead>
@@ -166,12 +165,12 @@ div {
     </tbody>
   </table>
 </div>
-     <!-- 
-<div class="form-group row">
+    
+  <div class="form-group row">
     <label class="col-sm-2 col-form-label">Select Image for Upload</label>
      <tr> <td width="30"><input type="file" name="image" /></td></tr>
    
- <input type="file" name="image" class="custom-file_input">
+     <!--  <input type="file" name="image" class="custom-file_input">
        <label class ="custom-file-label"> Choose file</lable>-->
     
   </div>
