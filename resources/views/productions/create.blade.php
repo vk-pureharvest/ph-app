@@ -140,7 +140,7 @@ div {
       <option value="Mehtab">Mehtab</option>
       <option value="Edewalay">Edewalay</option>
       <option value="Tariq Hassan">Tariq Hassan</option>
-  </td>
+      </td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
         <select class="form-control" id="selectProduct" name="product_type[]" required focus>

@@ -152,6 +152,7 @@ div {
                 <option value="Samuel Murithi Waringa">Samuel Murithi Waringa</option>
                 <option value="Suleiman Dena Mwalimu">Suleiman Dena Mwalimu</option>
                 <option value="Zacharia Kariuki Kamau">Zacharia Kariuki Kamau</option>
+                <option value="Martin mbugua">Martin mbugua</option>
   </td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
