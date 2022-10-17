@@ -135,6 +135,7 @@ div {
                 <option value='Suleiman Dena Mwalimu'>Suleiman Dena Mwalimu</option>
                 <option value='Zacharia Kariuki Kamau'>Zacharia Kariuki Kamau</option>
                 <option value='Martin mbugua'>Martin mbugua</option>
+                <option value='Bjorn Gibendi Eganza'>Bjorn Gibendi Eganza</option>
    </select>
    </div>
    <div class="form-group row">
