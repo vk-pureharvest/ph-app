@@ -103,25 +103,25 @@ div {
     <label class="col-sm-2 col-form-label">Employee</label>
     <select class="form-control w-25" id="text" name="employee" required focus>
                 <option value="{{$productions->employee}}" selected="selected">{{$productions->employee}}</option>  
-                <option value="Mazharul Haq">Mazharul Haq</option>
-      <option value="Mohammad Shakil">Mohammad Shakil</option>
-      <option value="Gibrilla Kamara">Gibrilla Kamara</option>
-      <option value="Mohammad younus">Mohammad younus</option>
+                <option value="Mahtah Alam">Mahtah Alam</option>
+      <option value="Kashaija Alex">Kashaija Alex</option>
+      <option value="Paymbar Raza">Paymbar Raza</option>
+      <option value="Fakhruddin Hawari">Fakhruddin Hawari</option>
       <option value="Saddkor Rahman">Saddkor Rahman</option>
-      <option value="Lamin Kamara">Lamin Kamara</option>
+      <option value="Nawahereza Daniel">Nawahereza Daniel</option>
       <option value="Khimananda Gautam">Khimananda Gautam</option>
       <option value="Asghar Ali">Asghar Ali</option>
       <option value="Yasin Kyobe">Yasin Kyobe</option>
-      <option value="Fahad Kalibala">Fahad Kalibala</option>
+      <option value="Ivan Lubowa">Ivan Lubowa</option>
       <option value="Mahad Kasozi">Mahad Kasozi</option>
-      <option value="Tariq Jameel">Tariq Jameel</option>
-      <option value="Dominic">Dominic</option>
-      <option value="Shoaib Khan">Shoaib Khan</option>
-      <option value="Hamza">Hamza</option>
-      <option value="Abbas">Abbas</option>
-      <option value="Mehtab">Mehtab</option>
-      <option value="Edewalay">Edewalay</option>
-      <option value="Tariq Hassan">Tariq Hassan</option>
+      <option value="Devananda Mahato">Devananda Mahato</option>
+      <option value="Brian Mutebi">Brian Mutebi</option>
+      <option value="Rishi Kandel">Rishi Kandel</option>
+      <option value="Ajay Rajbanshi">Ajay Rajbanshi</option>
+      <option value="Ezra Churchill">Ezra Churchill</option>
+      <option value="Wilson Ndungu">Wilson Ndungu</option>
+      <option value="Sunil Kumar">Sunil Kumar</option>
+      <option value="Mohammad Sayid">Mohammad Sayid</option>
       
   </select>
    </div>
