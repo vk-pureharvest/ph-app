@@ -15,7 +15,8 @@ class ShelfLifeTest extends Model
     */
    protected $fillable = [
        'user_id','site_name','testing_date', 'day_of_testing','date_harvested','product_type','color_L','color_A','color_B','color_rank','BRIX',
-       'firmness','firmness_rank','smell_rank','weight','weight_rank','height','width','vine_quality','spots','wrinkles','fungus','quality_rank','remarks'
+       'firmness','firmness_rank','smell_rank','weight','weight_rank','height','width',
+       'vine_quality','spots','wrinkles','fungus','quality_rank','remarks'
    ];
 
    function user(){
