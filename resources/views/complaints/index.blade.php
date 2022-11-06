@@ -52,7 +52,11 @@ div {
     <th>Class</th>
     <th>Quantity Returned</th>
     <th>Financial Impact</th>
+    <th>RCA</th>
+    <th>Internal Resolution</th>
+    <th> Customer Resolution</th>
     <th>Image</th>
+    <th>Edit</th>
     <th>Delete</th>
    </tr>
    @foreach($complaints as $row)
@@ -69,7 +73,12 @@ div {
     <td>{{$row['class']}}</td>
     <td>{{$row['quantity_returned']}}</td>
     <td>{{$row['fin_impact']}}</td>
+    <td>{{$row['RCA']}}</td>
+    <td>{{$row['internal_resolution']}}</td>
+    <td>{{$row['customer_resolution']}}</td>
     <td><img src="{{ asset('uploads/complaints/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>
+    <td><a href="{{action('ComplaintsController@edit', $row['id'])}}" class="btn btn-warning">Edit</a></td>
+    
     <td>
      <form method="post" class="delete_form" action="{{action('ComplaintsController@destroy', $row['id'])}}">
       {{csrf_field()}}

@@ -4,36 +4,21 @@
 @section('header')
 
 <head>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head> 
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel1') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    
-     
-<style>
-div {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-</style>
-</head>
 
 <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>     
+     
+
     <script>
     $( function() {
         $( "#datepicker" ).datepicker({
@@ -41,7 +26,6 @@ div {
         changeYear: true
         });
     } );
-
     function dynamicdropdown(listindex)
     {
         switch (listindex)
@@ -83,6 +67,15 @@ div {
         return true;
     }
     </script>
+<style>
+div {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+</style>    
+
+    
+  
 
 
 
@@ -93,6 +86,10 @@ div {
 
 <div class="row">
  <div class="col-md-12">
+ <br />
+  <h3>Edit Complaint</h3>
+ <br />
+  
   @if(count($errors) > 0)
 
   <div class="alert alert-danger">
@@ -108,9 +105,7 @@ div {
 
    <input type="hidden" name="_method" value="PATCH" />
    
-  <br />
-  <h3>Edit Complaint</h3>
-  <br />
+  
 
    <div class="form-group row">
     <label class="col-sm-2 col-form-label">Site Name</label>
@@ -180,32 +175,28 @@ div {
     </div>
     <div class="form-group row">
     <label class="col-sm-2 col-form-label">Complaint Category #2</label> 
-        <script class="form-control w-25"  type="text/javascript" language="JavaScript">
-        document.write('<select class="form-control w-25"  name="complaint_category_2" id="status"><option value="{{$complaint->complaint_category_2}}">Select status</option></select>')
-        </script>
-        <noscript>
-        <select class="form-control w-25"  id="status" name="complaint_category_2">
-          <option value="100 - Product Quality">100 - Product Quality</option>
-          <option value="200 - Service quality">200 - Service quality</option>
-          <option value="300 - Admin error">300 - Admin Error</option>
-        </select>
-        </noscript>
+    <!--<div class="sub_category_div" id="sub_category_div">Status:-->
+     <!-- <script class="form-control w-25"  type="text/javascript" language="JavaScript"> -->
+     <select class="form-control w-25"  name="complaint_category_2" id="status"><option value="{{$complaint->complaint_category_2}}">{{$complaint->complaint_category_2}}</option></select>'
+     <!-- </script> -->
+       
     </div>
 
    </div>
-   <div class="form-group row">
+   <div style= "padding-left:45px" class ="form-group row">
     <label class="col-sm-2 col-form-label">Additional Details</label>
-    <textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea type="text" name="complaint_sub_category" class="form-control w-25" value="{{$complaint->complaint_sub_category}}" cols="100" rows="4"/>
     {{$complaint->complaint_sub_category}}</textarea>
    </div>
-   
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Batch Code</label>
-    <input type="text" name="batch_code" class="form-control w-25" placeholder="Enter Batch Code"/> {{$complaint->batch_code}}
+   <br/>
+  <div style= "padding-left:55px" class="form-group row">
+    <label style="width:150px;" >Batch Code</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="batch_code" class="form-control w-25" placeholder="Enter Batch Code" value= "{{$complaint->batch_code}}" cols= "100" rows="4"/>
   </div>
-   <div class="form-group row">
-   <label class="col-sm-2 col-form-label">Product Type</label>
-   <select class="form-control w-25" id="selectProduct" name="product_type" required focus>
+  <br/>
+   <div style= "float:right;" class="form-group row">
+   <label style="width:150px;" >Product Type</label>
+   <select  style="width:150px;border: 1px solid #ced4da;"  id="selectProduct" name="product_type" required focus>
     <option value="{{$complaint->product_type}}" selected="selected">{{$complaint->product_type}}</option>        
     <option value="Candy">Candy</option>
                 <option value="Cocktail">Cocktail</option>
@@ -235,11 +226,11 @@ div {
   </select>
   </div>
   </div>
-  <div class="form-group row">
+  <div style= "padding-left:55px" class="form-group row">
     <label class="col-sm-2 col-form-label">Product Details</label>
-    <input type="text" name="product_type_2" class="form-control w-25" placeholder="Enter Product details"/>{{$complaint->product_type_2}}
+    <input type="text" name="product_type_2" class="form-control w-25" placeholder="Enter Product details" value= "{{$complaint->product_type_2}}" cols= 100 , rows=4/>
   </div>
-  <div class="form-group row">
+  <div style= "padding-left:55px" class="form-group row">
     <label class="col-sm-2 col-form-label">Quality</label>
     <select class="form-control w-25" id="selectProduct" name="class" required focus>
     <option value="{{$complaint->class}}" selected="selected">{{$complaint->class}}</option> 
@@ -249,13 +240,25 @@ div {
   </select>
   </div>
   
-  <div class="form-group row">
+  <div style= "padding-left:55px" class="form-group row">
     <label class="col-sm-2 col-form-label">Quantity Returned</label>
-    <input type="decimal" name="quantity_returned" class="form-control w-25" placeholder="Enter KGs"/>{{$complaint->quantity_returned}}
+    <input type="decimal" name="quantity_returned" class="form-control w-25" placeholder="Enter KGs" value= "{{$complaint->quantity_returned}}" cols=100 , rows= 4 />
   </div>
-  <div class="form-group row">
+  <div style= "padding-left:55px" class="form-group row">
     <label class="col-sm-2 col-form-label">Financial Impact</label>
-    <input type="decimal" name="fin_impact" class="form-control w-25" placeholder="Enter Value"/>{{$complaint->fin_impact}}
+    <input type="decimal" name="fin_impact" class="form-control w-25" placeholder="Enter Value" value= "{{$complaint->fin_impact}}" cols=100, rows= 4 />
+  </div>
+  <div style= "padding-left:55px" class="form-group row">
+    <label class="col-sm-2 col-form-label">RCA</label>
+    <input type="text" name="RCA" class="form-control w-25" placeholder="Enter RCA details" value= "{{$complaint->RCA}}" cols= 100 , rows=4/>
+  </div>
+  <div style= "padding-left:55px" class="form-group row">
+    <label class="col-sm-2 col-form-label">Internal Resolution</label>
+    <input type="text" name="internal_resolution" class="form-control w-25" placeholder="Enter Internal Resolution" value= "{{$complaint->internal_resolution}}" cols= 100 , rows=4/>
+  </div>
+  <div style= "padding-left:55px" class="form-group row">
+    <label class="col-sm-2 col-form-label">Customer Resolution</label>
+    <input type="text" name="customer_resolution" class="form-control w-25" placeholder="Enter Customer Resolution" value= "{{$complaint->customer_resolution}}" cols= 100 , rows=4/>
   </div>
   <br />
    <div class="form-group">

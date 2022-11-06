@@ -76,7 +76,10 @@ class ComplaintsController extends Controller
            'fin_impact'     =>  $request->get('fin_impact'),
            'quantity_returned'     =>  $request->get('quantity_returned'),
            'batch_code'     =>  $request->get('batch_code'),
-           'product_type_2'     =>  $request->get('product_type_2')
+           'product_type_2'     =>  $request->get('product_type_2'),
+           'RCA'     =>  $request->get('RCA'),
+           'internal_resolution'     =>  $request->get('internal_resolution'),
+           'customer_resolution'     =>  $request->get('customer_resolution')
         ]);
         if ($request->hasfile('image')){
             $file = $request->file('image');
@@ -140,6 +143,9 @@ class ComplaintsController extends Controller
         $complaint->batch_code = $request->get('batch_code');
         $complaint->quantity_returned = $request->get('quantity_returned');
         $complaint->product_type_2 = $request->get('product_type_2');
+        $complaint->RCA = $request->get('RCA');
+        $complaint->internal_resolution = $request->get('internal_resolution');
+        $complaint->customer_resolution = $request->get('customer_resolution');
         $complaint->save();
         return redirect()->route('complaints.index')->with('success', 'Data Updated');
     
