@@ -21,10 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::group(['middleware' => ['auth','verified']], function () {
+// Route::group(['middleware' => ['auth','verified']], function () {
     
     Route::get('register', 'HomeController@index')->name('register');
-});
+// });
 
 //Route::get('/multi-insert', [BrixesController::class, 'index'])->name('multi-insert');
 //Route::get('/submitData', [BrixesController::class, 'submitData'])->name('submitData');
