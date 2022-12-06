@@ -21,6 +21,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth','verified']], function () {
+    
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 
 //Route::get('/multi-insert', [BrixesController::class, 'index'])->name('multi-insert');
 //Route::get('/submitData', [BrixesController::class, 'submitData'])->name('submitData');
