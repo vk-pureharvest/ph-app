@@ -18,17 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Auth::routes();
-Auth::routes([
-  'register' => false, // Registration Routes...
-  'reset' => false, // Password Reset Routes...
-  'verify' => false, // Email Verification Routes...
-]);
+Auth::routes();
 
-// Route::group(['middleware' => ['auth','verified']], function () {
+
+Route::group(['middleware' => ['auth','verified']], function () {
     
-//     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-// });
+    Route::get('register', 'HomeController@index')->name('register');
+});
 
 //Route::get('/multi-insert', [BrixesController::class, 'index'])->name('multi-insert');
 //Route::get('/submitData', [BrixesController::class, 'submitData'])->name('submitData');
