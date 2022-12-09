@@ -97,7 +97,8 @@ div {
         <option value="Furore">Furore</option>
         <option value="Mon' Murono">Mon' Murono</option>
         <option value="San Andreas">San Andreas</option>
-    
+        <option value="Aurora">Aurora</option>
+        <option value="Favore">Favore</option>
        </select>  
         </div>
         
