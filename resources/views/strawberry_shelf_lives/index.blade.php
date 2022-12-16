@@ -47,17 +47,27 @@ div {
     <th>Day of Testing</th>
     <th>Date Harvested</th>
     <th>Product type</th>
+
+    <th>Class</th>
+
     <th>Color L</th>
     <th>Color A</th>
     <th>Color B</th>
     <th>Color Rank</th>
-    <th>BRIX</th>
-    <th>Firmness</th>
-    <th>Firmness Rank</th>
-    <th>Class</th>
+
     <th>Weight</th> 
     <th>Height</th>
-    <th>Width</th> 
+    <th>Width</th>
+    <th>Firmness</th>
+    <th>Firmness Rank</th>
+
+    <th>BRIX</th>
+    <!-- <th>Firmness</th>
+    <th>Firmness Rank</th> -->
+    <!-- <th>Class</th> -->
+    <!-- <th>Weight</th> 
+    <th>Height</th>
+    <th>Width</th>  -->
     <th>Remarks</th> 
     <th>Image</th> 
     <th>Edit</th>
@@ -70,17 +80,27 @@ div {
     <td>{{$row['day_of_testing']}}</td>
     <td>{{$row['date_harvested']}}</td>
     <td>{{$row['product_type']}}</td>
+
+    <td>{{$row['class']}}</td>
+
     <td>{{$row['color_L']}}</td>
     <td>{{$row['color_A']}}</td>
     <td>{{$row['color_B']}}</td>
     <td>{{$row['color_rank']}}</td>
-    <td>{{$row['BRIX']}}</td>
-    <td>{{$row['firmness']}}</td>
-    <td>{{$row['firmness_rank']}}</td>
-    <td>{{$row['class']}}</td>
+
     <td>{{$row['weight']}}</td> 
     <td>{{$row['height']}}</td>
-    <td>{{$row['width']}}</td> 
+    <td>{{$row['width']}}</td>
+    <td>{{$row['firmness']}}</td>
+    <td>{{$row['firmness_rank']}}</td>
+
+    <td>{{$row['BRIX']}}</td>
+    <!-- <td>{{$row['firmness']}}</td>
+    <td>{{$row['firmness_rank']}}</td> -->
+    <!-- <td>{{$row['class']}}</td> -->
+    <!-- <td>{{$row['weight']}}</td> 
+    <td>{{$row['height']}}</td>
+    <td>{{$row['width']}}</td>  -->
     <td>{{$row['remarks']}}</td>
 
     <td><img src="{{ asset('uploads/strawberry_shelf_life/' . $row['image']) }}" width="100px;" height="100px;" alt="No Image"></td>

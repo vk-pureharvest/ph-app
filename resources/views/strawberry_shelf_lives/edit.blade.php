@@ -108,18 +108,32 @@ div {
   <table class="table">
     <thead>
       <tr>
-        <th>Color</th>
-        <th>BRIX</th>
-        <th>Firmness</th>
         <th>Class</th>
+        <th>Color</th>
+
         <th>Weight (gm)</th>
         <th>Height (mm)</th>
         <th>Width (mm)</th> 
+        <th>Firmness</th>
+
+        <th>BRIX</th>
+        <!-- <th>Firmness</th> -->
+        <!-- <th>Class</th> -->
+        <!-- <th>Weight (gm)</th>
+        <th>Height (mm)</th>
+        <th>Width (mm)</th>  -->
         <th>Remarks</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+      <td><select class="form-control" id="selectProduct" name="class" required focus>
+      <option value="{{$strawberry_shelf_lives->class}}" selected="selected">{{$strawberry_shelf_lives->class}}</option>
+        <option value="1A">1A</option>         
+        <option value="1B">1B</option>         
+        <option value="2">2</option> 
+        </select></td>
+        
         <td><input type="decimal" name="color_L" class="form-control" value="{{$strawberry_shelf_lives->color_L}}"/>
         <input type="decimal" name="color_A" class="form-control" value="{{$strawberry_shelf_lives->color_A}}" />
         <input type="decimal" name="color_B" class="form-control" value="{{$strawberry_shelf_lives->color_B}}"/>
@@ -131,7 +145,9 @@ div {
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td>
-        <td><input type="decimal" name="BRIX" class="form-control" value="{{$strawberry_shelf_lives->BRIX}}"/></td>
+        <td><input type="decimal" name="weight" class="form-control" value="{{$strawberry_shelf_lives->weight}}"  />
+        <td><input type="decimal" name="height" class="form-control" value="{{$strawberry_shelf_lives->height}}"/></td>
+        <td><input type="decimal" name="width" class="form-control" value="{{$strawberry_shelf_lives->width}}" /></td>
         <td><input type="decimal" name="firmness" class="form-control" value="{{$strawberry_shelf_lives->firmness}}" />
         <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
       <option value="{{$strawberry_shelf_lives->firmness_rank}}" selected="selected">{{$strawberry_shelf_lives->firmness_rank}}</option>
@@ -141,19 +157,30 @@ div {
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td>
-        <td><select class="form-control" id="selectProduct" name="class" required focus>
+
+        <td><input type="decimal" name="BRIX" class="form-control" value="{{$strawberry_shelf_lives->BRIX}}"/></td>
+        <!-- <td><input type="decimal" name="firmness" class="form-control" value="{{$strawberry_shelf_lives->firmness}}" />
+        <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
+      <option value="{{$strawberry_shelf_lives->firmness_rank}}" selected="selected">{{$strawberry_shelf_lives->firmness_rank}}</option>
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>  
+        </select></td> -->
+        <!-- <td><select class="form-control" id="selectProduct" name="class" required focus>
       <option value="{{$strawberry_shelf_lives->class}}" selected="selected">{{$strawberry_shelf_lives->class}}</option>
         <option value="1A">1A</option>         
         <option value="1B">1B</option>         
         <option value="2">2</option> 
-        </select></td>
-        <td><input type="decimal" name="weight" class="form-control" value="{{$strawberry_shelf_lives->weight}}"  />
+        </select></td> -->
+        <!-- <td><input type="decimal" name="weight" class="form-control" value="{{$strawberry_shelf_lives->weight}}"  />
        
         <td><input type="decimal" name="height" class="form-control" value="{{$strawberry_shelf_lives->height}}"/></td>
-        <td><input type="decimal" name="width" class="form-control" value="{{$strawberry_shelf_lives->width}}" /></td>
+        <td><input type="decimal" name="width" class="form-control" value="{{$strawberry_shelf_lives->width}}" /></td> -->
          
-      
-        <td><textarea  class="form-control"  type="text"  name="remarks" value="{{$strawberry_shelf_lives->remarks}}" rows="1" ></textarea></td>
+        <td><input type="text" name="remarks" class="form-control" value="{{$strawberry_shelf_lives->remarks}}" /></td>
+        <!-- <td><textarea  class="form-control"  type="text"  name="remarks" value="{{$strawberry_shelf_lives->remarks}}" rows="1" ></textarea></td> -->
       
         </tr>
     </tbody>

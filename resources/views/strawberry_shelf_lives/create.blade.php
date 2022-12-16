@@ -120,11 +120,17 @@ div {
       <tr>
         <th>Class</th>
         <th>Color</th>
-        <th>BRIX</th>
-        <th>Firmness</th> 
+
         <th>Weight (gm)</th>
         <th>Height (mm)</th>
-        <th>Width (mm)</th> 
+        <th>Width (mm)</th>
+        <th>Firmness</th> 
+
+        <th>BRIX</th>
+        <!-- <th>Firmness</th>  -->
+        <!-- <th>Weight (gm)</th> -->
+        <!-- <th>Height (mm)</th> -->
+        <!-- <th>Width (mm)</th>  -->
         <th>Remarks</th>
       </tr>
     </thead>
@@ -148,7 +154,10 @@ div {
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td>
-        <td><input type="decimal" name="BRIX" class="form-control" placeholder="Enter BRIX" /></td>
+
+        <td><input type="decimal" name="weight" class="form-control" placeholder="Enter Weight" /></td>
+        <td><input type="decimal" name="height" class="form-control" placeholder="Enter Height" /></td>
+        <td><input type="decimal" name="width" class="form-control" placeholder="Enter Width" /></td> 
         <td><input type="decimal" name="firmness" class="form-control" placeholder="Enter Firmness" />
         <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
         <option value="" disabled selected>Choose Rank</option>        
@@ -158,9 +167,20 @@ div {
         <option value="4">4 - Poor</option>         
         <option value="5">5 - Worst</option>  
         </select></td> 
-        <td><input type="decimal" name="weight" class="form-control" placeholder="Enter Weight" /></td>
-        <td><input type="decimal" name="height" class="form-control" placeholder="Enter Height" /></td>
-        <td><input type="decimal" name="width" class="form-control" placeholder="Enter Width" /></td> 
+
+        <td><input type="decimal" name="BRIX" class="form-control" placeholder="Enter BRIX" /></td>
+        <!-- <td><input type="decimal" name="firmness" class="form-control" placeholder="Enter Firmness" />
+        <select class="form-control" id="selectProduct" name="firmness_rank" required focus>
+        <option value="" disabled selected>Choose Rank</option>        
+        <option value="1">1 - Best</option>         
+        <option value="2">2 - Good</option>         
+        <option value="3">3 - Moderate</option>         
+        <option value="4">4 - Poor</option>         
+        <option value="5">5 - Worst</option>  
+        </select></td>  -->
+        <!-- <td><input type="decimal" name="weight" class="form-control" placeholder="Enter Weight" /></td> -->
+        <!-- <td><input type="decimal" name="height" class="form-control" placeholder="Enter Height" /></td> -->
+        <!-- <td><input type="decimal" name="width" class="form-control" placeholder="Enter Width" /></td>  -->
         <td><textarea  class="form-control" white-space="pre-wrap" type="text"  name="remarks" placeholder="Remarks" rows="1" ></textarea></td>
       
       </tr>
