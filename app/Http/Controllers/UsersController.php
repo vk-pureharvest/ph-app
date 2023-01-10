@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Exports\PrivaProductionExport;
 use Excel;
+use Hash;
 
 class UsersController extends Controller
 {
@@ -16,7 +17,9 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('users.priva');
+        $users = User::orderBy('id', 'DESC')->get();
+        return view('users.index', compact('users'));
+        // return view('users.priva');
     }
 
     public function exportPrivaProdExcel(){
@@ -30,7 +33,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -41,7 +44,18 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|same:confirm-password',
+        ]);
+    
+        $input = $request->all();
+        $input['password'] = Hash::make($input['password']);
+
+        $user = User::create($input);
+
+        return redirect()->route('users.index')->with('success', 'User Created Successfully');
     }
 
     /**
@@ -52,7 +66,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
         return view('users.show',['user'=>$user]);
     }
 
@@ -64,7 +78,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::findOrFail($id);
+        return view('users.edit', compact('user'));
     }
 
     /**
@@ -76,7 +91,24 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,'.$id,
+            'password' => 'same:confirm-password',
+        ]);
+    
+        $input = $request->all();
+        if(!empty($input['password'])){ 
+            $input['password'] = Hash::make($input['password']);
+        }else{
+            $input['password'] = $user->password;   
+        }
+    
+        $user->update($input);
+
+        return redirect()->route('users.index')->with('success', 'User Updated Successfully');
     }
 
     /**
@@ -87,6 +119,8 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->route('users.index')->with('success', 'User Deleted Successfully');
     }
 }
