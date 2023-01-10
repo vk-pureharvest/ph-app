@@ -30,14 +30,6 @@
             @if(Auth::user()->role_id==1)
             <li class="nav-item dropdown">
                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-               Users<span class="caret"></span>
-               </a>
-               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="{{ route('users.index') }}">{{ __('All Users') }}</a>
-               <a class="dropdown-item" href="{{ route('users.create') }}">{{ __('Create Users') }}</a>
-            </li>
-            <li class="nav-item dropdown">
-               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                Admin<span class="caret"></span>
                </a>
                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -66,6 +58,14 @@
                </a> 
             </li>
             @endif
+            <li class="nav-item dropdown">
+               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+               Users<span class="caret"></span>
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="{{ route('users.index') }}">{{ __('All Users') }}</a>
+               <a class="dropdown-item" href="{{ route('users.create') }}">{{ __('Create Users') }}</a>
+            </li>
             <li class="nav-item dropdown">
                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                Growing Team<span class="caret"></span>
