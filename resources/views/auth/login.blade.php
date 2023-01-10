@@ -10,7 +10,7 @@
       <meta name="author" content="PIXINVENT">
       <title>Login | PH Data</title>
       <link rel="apple-touch-icon" href="{{ asset('assets/frontend/logindesign/images/ico/apple-icon-120.png') }}">
-      <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/frontend/logindesign/images/ico/favicon.ico') }}">
+      <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/frontend/logindesign/images/ico/favicon.png') }}">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
       <!-- BEGIN: Vendor CSS-->
       <link rel="stylesheet" type="text/css" href="{{ asset('assets/frontend/logindesign/vendors/css/vendors.min.css') }}">
@@ -36,15 +36,23 @@
    <!-- BEGIN: Body-->
    <body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
       <!-- BEGIN: Content-->
+      <style>
+         .company-logo-brand{text-align: center; }
+         .company-logo-brand img{width: 300px; object-fit: contain; position: absolute; top: 5%; left:0; right: 0; margin: 0 auto; }
+      </style>
       <div class="app-content content ">
          <div class="content-overlay"></div>
          <div class="header-navbar-shadow"></div>
          <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
+            <div class="content-header row"> </div>
             <div class="content-body">
+               
                <div class="auth-wrapper auth-basic px-2">
+                  <div class="company-logo-brand">
+                     <img src="https://i.imgur.com/gXYYUU8.png" alt="PH Data">
+                  </div>
                   <div class="auth-inner my-2">
+                  
                      <!-- Login basic -->
                      <div class="card mb-0">
                         <div class="card-body">
