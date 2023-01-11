@@ -7,6 +7,7 @@ use App\User;
 use App\Exports\PrivaProductionExport;
 use Excel;
 use Hash;
+use Auth;
 
 class UsersController extends Controller
 {
@@ -17,9 +18,13 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy('id', 'DESC')->get();
-        return view('users.index', compact('users'));
-        // return view('users.priva');
+        if (Auth::user()->email == 's.khan@pureharvestfarms.com' || Auth::user()->email == 'p.mathew@pureharvestfarms.com' || Auth::user()->email == 'vanmukil@pureharvest.ae') {
+            $users = User::orderBy('id', 'DESC')->get();
+            return view('users.index', compact('users'));
+            // return view('users.priva');
+        } else {
+            abort(404);
+        }
     }
 
     public function exportPrivaProdExcel(){
@@ -33,7 +38,11 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('users.create');
+        if (Auth::user()->email == 's.khan@pureharvestfarms.com' || Auth::user()->email == 'p.mathew@pureharvestfarms.com' || Auth::user()->email == 'vanmukil@pureharvest.ae') {
+            return view('users.create');
+        } else {
+            abort(404);
+        }
     }
 
     /**
@@ -78,8 +87,12 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        $user = User::findOrFail($id);
-        return view('users.edit', compact('user'));
+        if (Auth::user()->email == 's.khan@pureharvestfarms.com' || Auth::user()->email == 'p.mathew@pureharvestfarms.com' || Auth::user()->email == 'vanmukil@pureharvest.ae') {
+            $user = User::findOrFail($id);
+            return view('users.edit', compact('user'));
+        } else {
+            abort(404);
+        }
     }
 
     /**

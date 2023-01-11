@@ -58,6 +58,7 @@
                </a> 
             </li>
             @endif
+            @if(Auth::user()->email == 's.khan@pureharvestfarms.com' || Auth::user()->email == 'p.mathew@pureharvestfarms.com' || Auth::user()->email == 'vanmukil@pureharvest.ae')
             <li class="nav-item dropdown">
                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                Users<span class="caret"></span>
@@ -66,6 +67,7 @@
                <a class="dropdown-item" href="{{ route('users.index') }}">{{ __('All Users') }}</a>
                <a class="dropdown-item" href="{{ route('users.create') }}">{{ __('Create Users') }}</a>
             </li>
+            @endif
             <li class="nav-item dropdown">
                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                Growing Team<span class="caret"></span>
