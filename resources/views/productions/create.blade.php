@@ -70,6 +70,7 @@ div {
       <select class="form-control w-25" id="selectCategory" name="site_name" required focus>
         <option value="Al Ain" selected>Al Ain</option>        
         <option value="Nahel">{{"Nahel"}}</option>
+        <option value="Oasis" selected>Oasis</option> 
       </select>
   </div>
 
@@ -149,6 +150,21 @@ div {
       <option value="Ritesh Singh">Ritesh Singh</option>
       <option value="Sunil Neupane">Sunil Neupane</option>
       <option value="Priscilla Wairimu">Priscilla Wairimu</option>
+      <option value="Istekhar Mahamad">Istekhar Mahamad</option>
+      <option value="Md Tahamul">Md Tahamul</option>
+      <option value="Vipin Kumar Ramdulare">Vipin Kumar Ramdulare</option>
+      <option value="Mohd Irfan">Mohd Irfan</option>
+      <option value="Ishfaq Ahmad">Ishfaq Ahmad</option>
+      <option value="Amin Uddin">Amin Uddin</option>
+      <option value="Tauseef Aftab">Tauseef Aftab</option>
+      <option value="Muhammad Azhar Uddin">Muhammad Azhar Uddin</option>
+      <option value="Fakhruddin Hawari">Fakhruddin Hawari</option>
+      <option value="Muhammed Jeeshan">Muhammed Jeeshan</option>
+      <option value="Alex Kashaija">Alex Kashaija</option>
+      <option value="Ezra Ainebyoona">Ezra Ainebyoona</option>
+      <option value="Allosious Owomugisha">Allosious Owomugisha</option>
+      <option value="Sunil Kumal">Sunil Kumal</option>
+      <option value="Sunil Kumal">Sunil Kumal</option>
       </td>
       <td><input type="integer" name="prod_boxes[]" class="form-control" placeholder="Enter number of boxes" /></td>
       <td>
@@ -179,6 +195,13 @@ div {
         <option value="Mixed candy (loose)">Mixed candy (loose)</option>
         <option value="COV Yellow (Loose)">COV Yellow (Loose)</option>
         <option value="COV Orange(Loose)">COV Orange(Loose)</option>
+        <option value="Red Cherry">Red Cherry</option>
+        <option value="Yellow Cherry">Yellow Cherry</option>
+        <option value="Beef">Beef</option>
+        <option value="Round">Round</option>
+        <option value="Red Candy">Red Candy</option>
+        <option value="Mixed Candy">Mixed Candy</option>
+        <option value="Plum">Plum</option>
         <option value="SF COV">SF COV</option>
         <option value="FF COV">FF COV</option>
         <option value="SF Candy">SF Candy</option>
