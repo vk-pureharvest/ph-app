@@ -175,6 +175,28 @@ div {
       <option value="URBAN FOODS LLC">{{"URBAN FOODS LLC"}}</option>
       <option value="VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC">{{"VEGBERRY MIDDLE EAST FRUITS & VEGETABLES TRADING LLC"}}</option>
       <option value="VIP SAMPLE BOX">{{"VIP SAMPLE BOX"}}</option>
+      <option value="AL MANAL FRESH FOODS L.L.C">{{"AL MANAL FRESH FOODS L.L.C"}}</option>
+      <option value="Sawheny Foodstuff Trading CO LLC">{{"Sawheny Foodstuff Trading CO LLC"}}</option>
+      <option value="NASIK FRUIT & VEG LLC">{{"NASIK FRUIT & VEG LLC"}}</option>
+      <option value="GOOD DEAL GENERAL TRADING LLC">{{"GOOD DEAL GENERAL TRADING LLC"}}</option>
+      <option value="BADIA AL SAHRA AGRICULTURAL L.L.C">{{"BADIA AL SAHRA AGRICULTURAL L.L.C"}}</option>
+      <option value="CLASSIC FINE FOODSTUFF TRADING L.L.C">{{"CLASSIC FINE FOODSTUFF TRADING L.L.C"}}</option>
+      <option value="HeroGo FZ-LLC">{{"HeroGo FZ-LLC"}}</option>
+      <option value="INTERCITY TRADING LLC">{{"INTERCITY TRADING LLC"}}</option>
+      <option value="Nesto">{{"Nesto"}}</option>
+      <option value="ONE DAY ONE FRUIT TRADING - FZE">{{"ONE DAY ONE FRUIT TRADING - FZE"}}</option>
+      <option value="CAPE FRESH INDUSTRIES L.L.C">{{"CAPE FRESH INDUSTRIES L.L.C"}}</option>
+      <option value="AL BAKRAWE GENERAL TRADING L.L.C">{{"AL BAKRAWE GENERAL TRADING L.L.C"}}</option>
+      <option value="BEST PICK VEGETABLES & FRUITS TRADING CO. L.L.C">{{"BEST PICK VEGETABLES & FRUITS TRADING CO. L.L.C"}}</option>
+      <option value="KARIMAN FOODSTUFF TRADING L.L.C">{{"KARIMAN FOODSTUFF TRADING L.L.C"}}</option>
+      <option value="SHAHID AND MOHEUDDIN VEGETABLES AND FRUITS TRADE L.L.C">{{"SHAHID AND MOHEUDDIN VEGETABLES AND FRUITS TRADE L.L.C"}}</option>
+      <option value="DELIVERY HERO STORES DB L.L.C">{{"DELIVERY HERO STORES DB L.L.C"}}</option>
+      <option value="FARM VALE FRUITS& VEGETABLE TRADING L.L.C">{{"FARM VALE FRUITS& VEGETABLE TRADING L.L.C"}}</option>
+      
+
+      
+
+
  </select>
   </div>
   
@@ -236,6 +258,12 @@ div {
     <option value="Baby Spinach">Baby Spinach</option>
     <option value="Rucola">Rucola</option>
     <option value="Mix Salad">Mix Salad</option>
+    <option value="Leafy">Leafy</option>
+    <option value="Eve Cherry Red ">Eve Cherry Red</option>
+    <option value="Eve Yellow Cherry">Eve Yellow Cherry</option>
+    <option value="Eve Red Candy">Eve Red Candy</option>
+    <option value="Eve Mix Candy">Eve Mix Candy</option>
+    <option value="Beef Tomatoes">Beef Tomatoes</option>
   </select>
   </div>
   <div class="form-group row">
