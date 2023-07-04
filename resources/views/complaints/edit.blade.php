@@ -63,6 +63,12 @@
             document.getElementById("status").options[7]=new Option("","");
             document.getElementById("status").options[8]=new Option("","");
             break;
+        case "400 - Customer Error" :
+            document.getElementById("status").options[0]=new Option("Select Category #2","");
+            document.getElementById("status").options[1]=new Option("410 - Wrong order","310 - Wrong order");
+            document.getElementById("status").options[2]=new Option("420 - Excess Stock","420 - Excess Stock");
+            document.getElementById("status").options[3]=new Option("430 - Not required","430 - Not required"); 
+            break;      
         }
         return true;
     }
@@ -179,6 +185,15 @@ div {
       <option value="SHAHID AND MOHEUDDIN VEGETABLES AND FRUITS TRADE L.L.C">{{"SHAHID AND MOHEUDDIN VEGETABLES AND FRUITS TRADE L.L.C"}}</option>
       <option value="DELIVERY HERO STORES DB L.L.C">{{"DELIVERY HERO STORES DB L.L.C"}}</option>
       <option value="FARM VALE FRUITS& VEGETABLE TRADING L.L.C">{{"FARM VALE FRUITS& VEGETABLE TRADING L.L.C"}}</option>
+      <option value="Sultan Center for Trading & General Contracting LLC">{{"Sultan Center for Trading & General Contracting LLC"}}</option>
+      <option value="BERRY MOUNT VEGETABLES AND FRUIT TRADING L.L.C">{{"BERRY MOUNT VEGETABLES AND FRUIT TRADING L.L.C"}}</option>
+      <option value="ISTANBUL SUPERMARKET L.L.C">{{"ISTANBUL SUPERMARKET L.L.C"}}</option>
+      <option value="IBRAHIM JOYNOB INTERNATIONAL TRADING LLC">{{"IBRAHIM JOYNOB INTERNATIONAL TRADING LLC"}}</option>
+      <option value="TOMATO AND BASILICO FOODSTUFF TRADING LLC">{{"TOMATO AND BASILICO FOODSTUFF TRADING LLC"}}</option>
+      <option value="FARZANA TRADING LLC">{{"FARZANA TRADING LLC"}}</option>
+      <option value="SOUQ MANBAT SUPERMARKET SOLE PROPRIETORSHIP.L L C">{{"SOUQ MANBAT SUPERMARKET SOLE PROPRIETORSHIP.L L C"}}</option>
+      <option value="TAAZA QUALITY FOODSTUFF TRADING L.L.C">{{"TAAZA QUALITY FOODSTUFF TRADING L.L.C"}}</option>
+      <option value="GMG CONSUMER LLC">{{"GMG CONSUMER LLC"}}</option>
    </select>   
    </div>
    <div class="form-group row">
@@ -188,6 +203,7 @@ div {
         <option value="100 - Product Quality">100 - Product Quality</option>
         <option value="200 - Service quality">200 - Service quality</option>
         <option value="300 - Admin error">300 - Admin Error</option>
+        <option value="400 - Customer Error">400 - Customer Error</option>
         </select>
     </div>
     <div class="form-group row">
@@ -246,6 +262,9 @@ div {
                 <option value="Eve Red Candy">Eve Red Candy</option>
                 <option value="Eve Mix Candy">Eve Mix Candy</option>
                 <option value="Beef Tomatoes">Beef Tomatoes</option>
+                <option value="Melon">Melon</option>
+                <option value="Raspberry">Raspberry</option>
+                <option value="Blackberry">Blackberry</option>
 
   </select>
   </div>
