@@ -86,7 +86,8 @@ div {
             document.getElementById("status").options[0]=new Option("Select Category #2","");
             document.getElementById("status").options[1]=new Option("410 - Wrong order","310 - Wrong order");
             document.getElementById("status").options[2]=new Option("420 - Excess Stock","420 - Excess Stock");
-            document.getElementById("status").options[3]=new Option("430 - Not required","430 - Not required");   
+            document.getElementById("status").options[3]=new Option("430 - Not required","430 - Not required"); 
+            break;  
         }
         return true;
     }
@@ -278,6 +279,9 @@ div {
     <option value="Melon">Melon</option>
     <option value="Raspberry">Raspberry</option>
     <option value="Blackberry">Blackberry</option>
+    <option value="Capsicum">Capsicum</option>
+    <option value="Tomato">Tomato</option>
+    <option value="Strawberry">Strawberry</option>
   </select>
   </div>
   <div class="form-group row">

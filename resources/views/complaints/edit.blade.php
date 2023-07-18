@@ -265,6 +265,9 @@ div {
                 <option value="Melon">Melon</option>
                 <option value="Raspberry">Raspberry</option>
                 <option value="Blackberry">Blackberry</option>
+                <option value="Capsicum">Capsicum</option>
+                <option value="Tomato">Tomato</option>
+                <option value="Strawberry">Strawberry</option>
 
   </select>
   </div>
